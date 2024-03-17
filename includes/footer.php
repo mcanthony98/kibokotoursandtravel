@@ -1,6 +1,7 @@
     <!-- ======================= Footer START -->
 
-<footer class="bg-dark pt-5">
+
+<footer class="bg-dark pt-5" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/footer-bg.jpg'); background-size: cover;">
         <div class="container">
             <!-- Row START -->
             <div class="row g-4">
@@ -9,9 +10,11 @@
                 <div class="col-lg-3">
                     <!-- logo -->
                     <a href="index.html">
-                        <img class="h-40px" src="assets/images/kiboko-logo.png" alt="logo">
+                        <img class="h-60px" src="assets/images/kiboko-logo.png" alt="logo">
                     </a>
                     <p class="my-3 text-muted">Kiboko Tours & Travel.</p>
+                    <p class="my-3 text-muted">We lead the path to your intended destination.</p>
+
                     <p class="mb-2"><a href="kibokotoursandtravel.com" class="text-muted text-primary-hover"><i
                                 class="bi bi-telephone me-2"></i>+254 712 123 123</a> </p>
                     <p class="mb-0"><a href="mailto:info@kibokotoursandtravel.com"
@@ -24,11 +27,12 @@
                 <div class="col-lg-8 ms-auto">
                     <div class="row g-4">
                         <!-- Link block -->
-                        <div class="col-6 col-md-3">
-                            <h5 class="text-white mb-2 mb-md-4">Page</h5>
+                        <div class="col-6 col-md-4">
+                            <h5 class="text-white mb-4 mb-md-4">Pages</h5>
                             <ul class="nav flex-column text-primary-hover">
                                 <li class="nav-item"><a class="nav-link text-muted" href="index.html">Home</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="#">Safaris</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="#">Packages</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="about-us.html">About us</a>
                                 </li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="contact-us.html">Contact
@@ -39,15 +43,15 @@
                         </div>
 
                         <!-- Link block -->
-                        <div class="col-6 col-md-3">
-                            <h5 class="text-white mb-2 mb-md-4">Link</h5>
+                        <div class="col-6 col-md-5">
+                            <h5 class="text-white mb-2 mb-md-">Destinations</h5>
                             <ul class="nav flex-column text-primary-hover">
-                                <li class="nav-item"><a class="nav-link text-muted" href="login.html">Login</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="login.html">Register</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#">Privacy Policy</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#">Terms</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#">Cookie</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#">Support</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="login.html">Maasai Mara National Reserve</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="login.html">Amboseli National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="#">Lake Naivasha National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="#">Lake Nakuru National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="#">Ol Pajeta Conservancy</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="login.html">Samburu National Reserve</a></li>
                             </ul>
                         </div>
 
@@ -65,21 +69,6 @@
                             </ul>
                         </div>
 
-                        <!-- Link block -->
-                        <div class="col-6 col-md-3">
-                            <h5 class="text-white mb-2 mb-md-4">Extra Services</h5>
-                            <ul class="nav flex-column text-primary-hover">
-                                <li class="nav-item"><a class="nav-link text-muted" href="#"><i
-                                            class="fa-solid fa-hotel me-2"></i>Hotel Booking</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#"><i
-                                            class="fa-solid fa-plane me-2"></i>Flight Booking</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#"><i
-                                            class="fa-solid fa-globe-americas me-2"></i>Personlized Tours</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#"><i
-                                            class="fa-solid fa-car me-2"></i>Cabs Booking</a></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
                 <!-- Widget 2 END -->
 

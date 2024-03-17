@@ -1,3 +1,12 @@
+        
+    <div class="row bg-dark text-white py-2">
+        <div class="col text-center">
+            Email: info@kibokotoursandtravel.com  |  Phone: +254 712 123 123
+        </div>
+
+    </div>
+
+    
     <!-- Header START -->
     <header class="navbar-light py-3">
         <!-- Logo Nav START -->
@@ -6,7 +15,7 @@
                 <div class="row align-items-center">
                     <div class="col-4">
                         <!-- Logo START -->
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="index.php">
                             <img class="light-mode-item navbar-brand-item d-inline h-40px h-md-60px"
                                 src="assets/images/kiboko-logo.png" alt="logo">
                             <img class="dark-mode-item navbar-brand-item d-inline h-40px h-md-60px"
@@ -43,12 +52,10 @@
                                                     src="assets/images/flags/turkey.svg" alt="">Turkish</a> </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"> <a href="account-bookings.html" class="nav-link small pb-2"><i
-                                            class="bi bi-briefcase me-2"></i>My Adventures</a> </li>
                                 <li class="nav-item"> <a href="help-center.html" class="nav-link small pb-2"><i
                                             class="bi bi-info-circle me-2"></i>Help</a> </li>
                                 <li class="nav-item"> <a href="sign-in.html" class="nav-link small pb-2"><i
-                                            class="far fa-user me-2"></i>Login or Register</a> </li>
+                                            class="far fa-user me-2"></i>B2B Login</a> </li>
                                 <!-- Dark mode option START -->
                                 <li class="nav-item dropdown">
                                     <button class="btn btn-link text-warning lh-3 p-0 mb-0" id="bd-theme" type="button"
@@ -113,6 +120,87 @@
                                 <ul class="navbar-nav navbar-nav-scroll ms-auto">
 
 
+                                    								<!-- Nav item Find hotel -->
+								<li class="nav-item dropdown dropdown-fullwidth">
+									<a class="nav-link dropdown-toggle" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
+									<div class="dropdown-menu" aria-labelledby="hotelMenu">
+										<div class="container">
+											<div class="row g-4 justify-content-between p-lg-3">
+												<!-- Destination -->
+												<div class="col-lg-5">
+													<h6 class="mb-3"><i class="bi bi-pin-map-fill text-primary me-2"></i>Destinations</h6>
+													<hr class="my-2">
+													<div class="row">
+														<div class="col-lg-6">
+															<ul class="list-unstyled">
+																<li> <a class="dropdown-item" href="#">Amboseli National Park</a> </li>
+																<li> <a class="dropdown-item" href="#">Maasai Mara National Reserve</a> </li>
+																<li> <a class="dropdown-item" href="#">Lake Naivasha National Park</a> </li>
+																<li> <a class="dropdown-item" href="#">Lake Nakuru National Park</a> </li>
+																<li> <a class="dropdown-item" href="#">Samburu National Reserve</a> </li>
+															</ul>
+														</div>
+	
+														<div class="col-lg-6">
+															<ul class="list-unstyled">
+																<li> <a class="dropdown-item" href="#">Nairobi National Park</a> </li>
+																<li> <a class="dropdown-item" href="#">Ol Pejeta Conservancy</a> </li>
+																<li> <a class="dropdown-item" href="#">Malaysia</a> </li>
+																<li> <a class="dropdown-item" href="#">manhattan</a> </li>
+															</ul>
+														</div>
+													</div>
+												</div>
+	
+												<!-- Activities -->
+												<div class="col-lg-3">
+													<h6 class="mb-3"><i class="bi bi-list-ul text-primary me-2"></i>Activities</h6>
+													<hr class="my-2">
+													<ul class="list-unstyled">
+														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+													</ul>
+												</div>
+	
+												<!-- Safari Types -->
+												<div class="col-lg-3">
+													<h6 class="mb-3"><i class="bi bi-grid-3x3-gap text-primary me-2"></i>Safari Types</h6>
+													<hr class="my-2">
+													<ul class="list-unstyled">
+														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
+														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
+														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
+													</ul>
+												</div>
+	
+												<!-- Action box -->
+												<div class="col-12">
+													<div class="card overflow-hidden" style="background-image:url(assets/images/bg/05.jpg); background-position: center left; background-size: cover;">
+														<div class="bg-overlay bg-dark opacity-5"></div>
+														<div class="card-body d-lg-flex justify-content-between align-items-center position-relative z-index-9">
+															<!-- Meta -->
+															<div class="mb-3 mb-lg-0">
+																<h5 class="text-white">Enjoy What Nature Offers in Kenya</h5>
+																<ul class="list-inline">
+																	<li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1"></i>Easy Online Booking</li>
+																	<li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1"></i>Fast Payment System</li>
+																	<li class="list-inline-item text-white"> <i class="bi bi-patch-check-fill me-1"></i>Variety of Destinations</li>
+																</ul>
+															</div>
+															<!-- Button -->
+															<a href="#" class="btn btn-white mb-0">Book a Dream Package Now!</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+
+
                                     <!-- Safaris -->
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="pagesFacilities"
@@ -120,27 +208,27 @@
                                             aria-expanded="false">Safaris</a>
                                         <ul class="dropdown-menu" aria-labelledby="pagesFacilities">
                                             <li class="dropdown-submenu dropend">
-                                                <a class="dropdown-item" href="classic-safaris.html">
+                                                <a class="dropdown-item" href="classic-safaris.php">
                                                     Classic <i class="fas fa-chevron-right align-icon-right"></i>
                                                 </a>
                                                 <ul class="dropdown-menu" data-bs-popper="none">
-                                                    <li> <a class="dropdown-item" href="classic-safaris.html">3-Day
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">3-Day
                                                             Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.html">4-Day
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">4-Day
                                                             Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.html">5-Day
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">5-Day
                                                             Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.html">3 Day
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">3 Day
                                                             Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.html">6-Day
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">6-Day
                                                             Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.html">7-Day
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">7-Day
                                                             Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.html">8-Day
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">8-Day
                                                             Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.html">9-Day
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">9-Day
                                                             Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.html">10-Day
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">10-Day
                                                             Tours</a></li>
 
 
@@ -148,59 +236,59 @@
                                             </li>
 
                                             <li class="dropdown-submenu dropend">
-                                                <a class="dropdown-item" href="accessible-safaris.html">
+                                                <a class="dropdown-item" href="accessible-safaris.php">
                                                     Accessible Safaris <i
                                                         class="fas fa-chevron-right align-icon-right"></i>
                                                 </a>
                                                 <ul class="dropdown-menu" data-bs-popper="none">
                                                     <li> <a class="dropdown-item"
-                                                            href="accessible-safaris.html">Therapeutic Horseback
+                                                            href="accessible-safaris.php">Therapeutic Horseback
                                                             Riding</a></li>
-                                                    <li> <a class="dropdown-item" href="accessible-safaris.html">Special
+                                                    <li> <a class="dropdown-item" href="accessible-safaris.php">Special
                                                             Needs Buzz Tour</a>
                                                     </li>
-                                                    <li> <a class="dropdown-item" href="accessible-safaris.html">Game
+                                                    <li> <a class="dropdown-item" href="accessible-safaris.php">Game
                                                             Drive & Dining
                                                             Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="accessible-safaris.html">Safari
+                                                    <li> <a class="dropdown-item" href="accessible-safaris.php">Safari
                                                             Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="accessible-safaris.html">Group
+                                                    <li> <a class="dropdown-item" href="accessible-safaris.php">Group
                                                             Shopping</a></li>
                                                     <li> <a class="dropdown-item"
-                                                            href="accessible-safaris.html">Countryside Road
+                                                            href="accessible-safaris.php">Countryside Road
                                                             Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="accessible-safaris.html">Coast
+                                                    <li> <a class="dropdown-item" href="accessible-safaris.php">Coast
                                                             Experience & Dolphin
                                                             Watching in Watamu</a></li>
                                                     <li> <a class="dropdown-item"
-                                                            href="accessible-safaris.html">Agricultural Farm Visit</a>
+                                                            href="accessible-safaris.php">Agricultural Farm Visit</a>
                                                     </li>
                                                 </ul>
                                             </li>
 
                                             <li class="dropdown-submenu dropend">
-                                                <a class="dropdown-item" href="family-couple-safaris.html">
+                                                <a class="dropdown-item" href="family-couple-safaris.php">
                                                     Family & Couple <i
                                                         class="fas fa-chevron-right align-icon-right"></i>
                                                 </a>
                                                 <ul class="dropdown-menu" data-bs-popper="none">
                                                     <li> <a class="dropdown-item"
-                                                            href="family-couple-safaris.html">Exploring Ways of Growing
+                                                            href="family-couple-safaris.php">Exploring Ways of Growing
                                                             Rich Together</a></li>
                                                     <li> <a class="dropdown-item"
-                                                            href="family-couple-safaris.html">Learn Parenting in an
+                                                            href="family-couple-safaris.php">Learn Parenting in an
                                                             Exciting Way</a></li>
-                                                    <li> <a class="dropdown-item" href="family-couple-safaris.html">Keep
+                                                    <li> <a class="dropdown-item" href="family-couple-safaris.php">Keep
                                                             Discovering your Spouse
                                                             for Healthy & Enriching Relationship</a></li>
                                                     <li> <a class="dropdown-item"
-                                                            href="family-couple-safaris.html">Learn to Fight in Love</a>
+                                                            href="family-couple-safaris.php">Learn to Fight in Love</a>
                                                     </li>
-                                                    <li> <a class="dropdown-item" href="family-couple-safaris.html">Keep
+                                                    <li> <a class="dropdown-item" href="family-couple-safaris.php">Keep
                                                             Dating your Spouse</a>
                                                     </li>
                                                     <li> <a class="dropdown-item"
-                                                            href="family-couple-safaris.html">Enriching Communication
+                                                            href="family-couple-safaris.php">Enriching Communication
                                                             for
                                                             Better Days</a></li>
 
@@ -211,15 +299,15 @@
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href="about-us.html" id="pagesFacilities">About Us</a>
+                                        <a class="nav-link" href="about-us.php" id="pagesFacilities">About Us</a>
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href="contact-us.html" id="pagesFacilities">Contact Us</a>
+                                        <a class="nav-link" href="blog.php" id="pagesFacilities">Blog</a>
                                     </li>
 
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href="blog.html" id="pagesFacilities">Blog</a>
+                                        <a class="nav-link" href="contact-us.php" id="pagesFacilities">Contact Us</a>
                                     </li>
 
 
@@ -261,4 +349,7 @@
         </nav>
         <!-- Logo Nav END -->
     </header>
-    <!-- Header END -->
+    <!-- Header END -->    
+    
+
+
