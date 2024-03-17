@@ -341,7 +341,9 @@ Team START -->
                             <!-- Card body -->
                             <div class="card-body px-2 pb-0">
                                 <h5 class="card-title"><a href="#">MICHAEL N MWAURA</a></h5>
-                                <span>FINANCE & ACCOUNTS</span>                            </div>
+                                <span>FINANCE & ACCOUNTS</span> 
+                                <span>kfbwjeqkbfewqfbwqeiofeqwi</span>                           
+                             </div>
                         </div>
                     </div>
                     <!-- Team item END -->

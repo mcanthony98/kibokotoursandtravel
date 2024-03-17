@@ -1,9 +1,11 @@
-        
-    <div class="row bg-dark text-white py-2">
-        <div class="col text-center">
-            Email: info@kibokotoursandtravel.com  |  Phone: +254 712 123 123
-        </div>
-
+    <!-- Top alert START -->
+    <div class="alert alert-warning py-2 m-0 bg-dark border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-around w-100" role="alert">
+        <p class="text-warning m-0" style="color: orange; margin-right: 5px;">
+            <a href="mailto:info@kibokotoursandtravel.com" class="link-light"><i class="fa fa-envelope"></i>  <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+        </p>
+        <span style="margin-left: 5px;">
+            <a href="https://api.whatsapp.com/send?phone=254712123123" target="_blank" class="pl-1 link-success"><i class="bi bi-whatsapp "></i> <span class="d-none d-md-inline">Whatsapp: +254 712 123 123</span></a>
+        </span>
     </div>
 
     
