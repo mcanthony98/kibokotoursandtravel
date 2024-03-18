@@ -1,32 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Home | Kiboko Tours & Travel</title>
+    <head>
+        <title>Sample Page | Kiboko Tours & Travel</title>
 
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="GNM">
-    <meta name="description" content="Kiboko Tours & Travel">
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="GNM">
+        <meta name="description" content="Kiboko Tours & Travel">
 
-    <!-- Libraries, Favicon & CSS -->
-    <?php include "includes/libs_fav.php";?>
+        <!-- Libraries, Favicon & CSS -->
+        <?php include "includes/libs_fav.php";?>
 
 
 
-</head>
+    </head>
 
-<body>
+    <body>
+	<!-- Offcanvas menu START -->
+	<div class="offcanvas offcanvas-w-500px offcanvas-end" tabindex="-1" id="offcanvasBookstay" aria-labelledby="offcanvasBookstayLabel">
+		<div class="offcanvas-header border-bottom px-3">
+			<h5 class="offcanvas-title" id="offcanvasBookstayLabel">Book a Room</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body form-control-bg-light d-flex flex-column px-3">
+			<!-- Form START -->
+			<form>
+				<!-- Pickup -->
+				<div class="mb-3">
+					<label class="form-label mb-0">Room & Suite Type</label>
+					<select class="form-select js-choice" data-search-enabled="true" aria-label=".form-select-sm">
+						<option value="">Select location</option>
+						<option>Agave suite</option>
+						<option>Olive Grove Suite</option>
+						<option>Palm Suite</option>
+						<option>Casa Green Suite</option>
+					</select>
+				</div>
+
+				<!-- Date -->
+				<div class="mb-3">
+					<label class="form-label mb-0">Check in</label>
+					<input type="text" class="form-control flatpickr" data-date-format="d M Y" placeholder="Select date">
+				</div>
+				
+				<!-- Date -->
+				<div class="mb-3">
+					<label class="form-label mb-0">Check out</label>
+					<input type="text" class="form-control flatpickr" data-date-format="d M Y" placeholder="Select date">
+				</div>
+
+				<!-- Occupant -->
+				<div class="mb-3">
+					<!-- Dropdown input -->
+					<label class="form-label mb-0">Guests & rooms</label>
+					<div class="dropdown guest-selector me-2">
+						<input type="text" class="form-guest-selector form-control selection-result" value="2 Guests 1 Room" data-bs-auto-close="outside" data-bs-toggle="dropdown">
+					
+						<!-- dropdown items -->
+						<ul class="dropdown-menu guest-selector-dropdown">
+							<!-- Adult -->
+							<li class="d-flex justify-content-between">
+								<div>
+									<h6 class="mb-0">Adults</h6>
+									<small>Ages 13 or above</small>
+								</div>
+
+								<div class="hstack gap-1 align-items-center">
+									<button type="button" class="btn btn-link adult-remove p-0 mb-0"><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+									<h6 class="guest-selector-count mb-0 adults">2</h6>
+									<button type="button" class="btn btn-link adult-add p-0 mb-0"><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+								</div>
+							</li>
+
+							<!-- Divider -->
+							<li class="dropdown-divider"></li>
+
+							<!-- Child -->
+							<li class="d-flex justify-content-between">
+								<div>
+									<h6 class="mb-0">Child</h6>
+									<small>Ages 13 below</small>
+								</div>
+
+								<div class="hstack gap-1 align-items-center">
+									<button type="button" class="btn btn-link child-remove p-0 mb-0" ><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+									<h6 class="guest-selector-count mb-0 child">0</h6>
+									<button type="button" class="btn btn-link child-add p-0 mb-0" ><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+								</div>
+							</li>
+
+							<!-- Divider -->
+							<li class="dropdown-divider"></li>
+
+							<!-- Rooms -->
+							<li class="d-flex justify-content-between">
+								<div>
+									<h6 class="mb-0">Rooms</h6>
+									<small>Max room 8</small>
+								</div>
+
+								<div class="hstack gap-1 align-items-center">
+									<button type="button" class="btn btn-link room-remove p-0 mb-0" ><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
+									<h6 class="guest-selector-count mb-0 rooms">1</h6>
+									<button type="button" class="btn btn-link room-add p-0 mb-0" ><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Buttons -->
+				<div class="text-center">
+					<button class="btn btn-primary-soft w-100 mb-0">Check Availability</button>
+				</div>
+			</form>
+			<!-- Form END -->
+
+			<!-- List -->
+			<div class="bg-light p-3 rounded mt-auto">
+				<h6>Why Book Direct?</h6>
+				<ul class="small ps-3">
+					<li class="mb-2">10% discount is applied</li>
+					<li class="mb-2">15% off on spa treatment</li>
+					<li class="mb-2">Best price guaranteed</li>
+					<li class="mb-2">Daily complimentary sunrise yoga</li>
+					<li class="mb-2">Early check-in and late check-out</li>
+				</ul>
+			</div>
+		</div>	
+	</div>
+	<!-- Offcanvas menu END -->
 
 <!-- Header START -->
 <header class="header-transparent">
 	<!-- Logo Nav START -->
 	<nav class="navbar navbar-dark navbar-expand-xl">
-		<div class="container">
+		<div class="container-fluid px-md-5">
 			<!-- Logo START -->
 			<a class="navbar-brand" href="index.html">
-				<img class="navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
+				<img class="navbar-brand-item" src="assets/images/kiboko-logo.png" alt="logo">
 			</a>
 			<!-- Logo END -->
 
@@ -39,322 +153,216 @@
 				</span>
 			</button>
 
-			<!-- Main navbar START -->
-			<div class="navbar-collapse collapse" id="navbarCollapse">
+ 			<!-- Main navbar START -->
+			 <div class="navbar-collapse collapse" id="navbarCollapse">
 				<ul class="navbar-nav navbar-nav-scroll mx-auto">
 
-					<!-- Nav item Listing -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="listingMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listings</a>
-						<ul class="dropdown-menu" aria-labelledby="listingMenu">
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Hotel</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index.html">Hotel Home</a></li>
-									<li> <a class="dropdown-item" href="index-hotel-chain.html">Hotel Chain</a></li>
-									<li> <a class="dropdown-item" href="index-resort.html">Hotel Resort</a></li>
-									<li> <a class="dropdown-item" href="hotel-grid.html">Hotel Grid</a></li>
-									<li> <a class="dropdown-item" href="hotel-list.html">Hotel List</a></li>
-									<li> <a class="dropdown-item" href="hotel-detail.html">Hotel Detail</a></li>
-									<li> <a class="dropdown-item" href="room-detail.html">Room Detail</a></li>
-									<li> <a class="dropdown-item" href="hotel-booking.html">Hotel Booking</a></li>
-								</ul>
-							</li>
 
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Flight</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-flight.html">Flight Home</a></li>
-									<li> <a class="dropdown-item" href="flight-list.html">Flight List</a></li>
-									<li> <a class="dropdown-item" href="flight-detail.html">Flight Detail</a></li>
-									<li> <a class="dropdown-item" href="flight-booking.html">Flight Booking</a></li>
-								</ul>
-							</li>
+					<!-- Nav item Find hotel -->
+					<li class="nav-item dropdown dropdown-fullwidth">
+					<a class="nav-link dropdown-toggle" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
+					<div class="dropdown-menu" aria-labelledby="hotelMenu">
+						<div class="container">
+							<div class="row g-4 justify-content-between p-lg-3">
+								<!-- Destination -->
+								<div class="col-lg-5">
+									<h6 class="mb-3"><i class="bi bi-pin-map-fill text-primary me-2"></i>Destinations</h6>
+									<hr class="my-2">
+									<div class="row">
+										<div class="col-lg-6">
+											<ul class="list-unstyled">
+												<li> <a class="dropdown-item" href="#">Amboseli National Park</a> </li>
+												<li> <a class="dropdown-item" href="#">Maasai Mara National Reserve</a> </li>
+												<li> <a class="dropdown-item" href="#">Lake Naivasha National Park</a> </li>
+												<li> <a class="dropdown-item" href="#">Lake Nakuru National Park</a> </li>
+												<li> <a class="dropdown-item" href="#">Samburu National Reserve</a> </li>
+											</ul>
+										</div>
 
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Tour</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-tour.html">Tour Home</a></li>
-									<li> <a class="dropdown-item" href="tour-grid.html">Tour Grid</a></li>
-									<li> <a class="dropdown-item" href="tour-detail.html">Tour Detail</a></li>
-									<li> <a class="dropdown-item" href="tour-booking.html">Tour Booking</a></li>
-								</ul>
-							</li>
+										<div class="col-lg-6">
+											<ul class="list-unstyled">
+												<li> <a class="dropdown-item" href="#">Nairobi National Park</a> </li>
+												<li> <a class="dropdown-item" href="#">Ol Pejeta Conservancy</a> </li>
+												<li> <a class="dropdown-item" href="#">Malaysia</a> </li>
+												<li> <a class="dropdown-item" href="#">manhattan</a> </li>
+											</ul>
+										</div>
+									</div>
+								</div>
 
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Cab</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-cab.html">Cab Home</a></li>
-									<li> <a class="dropdown-item" href="cab-list.html">Cab List</a></li>
-									<li> <a class="dropdown-item" href="cab-detail.html">Cab Detail</a></li>
-									<li> <a class="dropdown-item" href="cab-booking.html">Cab Booking</a></li>
-								</ul>
-							</li>
+								<!-- Activities -->
+								<div class="col-lg-3">
+									<h6 class="mb-3"><i class="bi bi-list-ul text-primary me-2"></i>Activities</h6>
+									<hr class="my-2">
+									<ul class="list-unstyled">
+										<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+										<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+										<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+										<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+										<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+									</ul>
+								</div>
 
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Directory</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="index-directory.html">Directory Home</a></li>
-									<li> <a class="dropdown-item" href="directory-detail.html">Directory Detail</a></li>
-								</ul>
-							</li>
+								<!-- Safari Types -->
+								<div class="col-lg-3">
+									<h6 class="mb-3"><i class="bi bi-grid-3x3-gap text-primary me-2"></i>Safari Types</h6>
+									<hr class="my-2">
+									<ul class="list-unstyled">
+										<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
+										<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
+										<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
+									</ul>
+								</div>
 
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Add Listing</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="join-us.html">Join us</a></li>
-									<li> <a class="dropdown-item" href="add-listing.html">Add Listing</a></li>
-									<li> <a class="dropdown-item" href="add-listing-minimal.html">Add Listing Minimal</a></li>
-									<li> <a class="dropdown-item" href="listing-added.html">Listing Added</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Hero</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="hero-inline-form.html">Hero Inline Form</a></li>
-									<li> <a class="dropdown-item" href="hero-multiple-search.html">Hero Multiple Search</a></li>
-									<li> <a class="dropdown-item" href="hero-image-gallery.html">Hero Image Gallery</a></li>
-									<li> <a class="dropdown-item" href="hero-split.html">Hero Split</a></li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="booking-confirm.html">Booking Confirmed</a></li>
-							<li> <a class="dropdown-item" href="compare-listing.html">Compare Listing</a></li>
-							<li> <a class="dropdown-item" href="offer-detail.html">Offer Detail</a></li>
-						</ul>
-					</li>
-
-					<!-- Nav item Pages -->
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="pagesMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
-						<ul class="dropdown-menu" aria-labelledby="pagesMenu">
-
-							<li> <a class="dropdown-item" href="about.html">About</a></li>
-							<li> <a class="dropdown-item" href="contact.html">Contact</a></li>
-							<li> <a class="dropdown-item" href="contact-2.html">Contact 2</a></li>
-							<li> <a class="dropdown-item" href="team.html">Our Team</a></li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="sign-in.html">Sign In</a></li>
-									<li> <a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
-									<li> <a class="dropdown-item" href="forgot-password.html">Forgot Password</a></li>
-									<li> <a class="dropdown-item" href="two-factor-auth.html">Two factor authentication</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Blog</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="blog.html">Blog</a></li>
-									<li> <a class="dropdown-item" href="blog-detail.html">Blog Detail</a></li>
-								</ul>
-							</li>
-
-							<!-- Dropdown submenu -->
-							<li class="dropdown-submenu dropend">
-								<a class="dropdown-item dropdown-toggle" href="#">Help</a>
-								<ul class="dropdown-menu" data-bs-popper="none">
-									<li> <a class="dropdown-item" href="help-center.html">Help Center</a></li>
-									<li> <a class="dropdown-item" href="help-detail.html">Help Detail</a></li>
-									<li> <a class="dropdown-item" href="privacy-policy.html">Privacy Policy</a></li>
-									<li> <a class="dropdown-item" href="terms-of-service.html">Terms of Service</a></li>
-								</ul>
-							</li>
-
-							<li> <a class="dropdown-item" href="pricing.html">Pricing</a></li>
-							<li> <a class="dropdown-item" href="faq.html">FAQs</a></li>
-							<li> <a class="dropdown-item" href="error.html">Error 404</a></li>
-							<li> <a class="dropdown-item" href="coming-soon.html">Coming Soon</a></li>
-						</ul>
-					</li>
-
-					<!-- Nav item Link -->
-					<li class="nav-item"> <a class="nav-link" href="#">Contact us</a> </li>
-
-					<!-- Nav item Link -->
-					<li class="nav-item"> <a class="nav-link" href="#">About us</a> </li>
-
-					<!-- Nav item link-->
-					<li class="nav-item dropdown">
-						<a class="nav-link" href="#" id="advanceMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							<i class="fas fa-ellipsis-h"></i>
-						</a>
-						<ul class="dropdown-menu min-w-auto" data-bs-popper="none">
-							<li> 
-								<a class="dropdown-item" href="https://support.webestica.com/" target="_blank">
-									<i class="text-warning fa-fw bi bi-life-preserver me-2"></i>Support
-								</a> 
-							</li>
-							<li> 
-								<a class="dropdown-item" href="docs/index.html" target="_blank">
-									<i class="text-danger fa-fw bi bi-card-text me-2"></i>Documentation
-								</a> 
-							</li>
-							<li> <hr class="dropdown-divider"></li>
-							<li> 
-								<a class="dropdown-item" href="rtl/index.html" target="_blank">
-									<i class="text-info fa-fw bi bi-toggle-off me-2"></i>RTL demo
-								</a> 
-							</li>
-							<li> 
-								<a class="dropdown-item" href="https://themes.getbootstrap.com/store/webestica/" target="_blank">
-									<i class="text-success fa-fw bi bi-cloud-download-fill me-2"></i>Buy Booking!
-								</a> 
-							</li>
-							<li> <hr class="dropdown-divider"></li>
-							<li> 
-								<a class="dropdown-item" href="docs/alerts.html" target="_blank">
-									<i class="text-orange fa-fw bi bi-puzzle-fill me-2"></i>Components
-								</a> 
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<!-- Main navbar END -->
-
-			<!-- Profile and Notification START -->
-			<ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
-
-				<!-- Notification dropdown START -->
-				<li class="nav-item dropdown ms-0 ms-md-3">
-					<!-- Notification button -->
-					<a class="nav-notification btn btn-light p-0 mb-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-						<i class="bi bi-bell fa-fw"></i>
-					</a>
-					<!-- Notification dote -->
-					<span class="notif-badge animation-blink"></span>
-
-					<!-- Notification dropdown menu START -->
-					<div class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md shadow-lg p-0">
-						<div class="card bg-transparent">
-							<!-- Card header -->
-							<div class="card-header bg-transparent d-flex justify-content-between align-items-center border-bottom">
-								<h6 class="m-0">Notifications <span class="badge bg-danger bg-opacity-10 text-danger ms-2">4 new</span></h6>
-								<a class="small" href="#">Clear all</a>
-							</div>
-
-							<!-- Card body START -->
-							<div class="card-body p-0">
-								<ul class="list-group list-group-flush list-unstyled p-2">
-									<!-- Notification item -->
-									<li>
-										<a href="#" class="list-group-item list-group-item-action rounded notif-unread border-0 mb-1 p-3">
-											<h6 class="mb-2">New! Booking flights from New York ✈️</h6>
-											<p class="mb-0 small">Find the flexible ticket on flights around the world. Start searching today</p>
-											<span>Wednesday</span>
-										</a>
-									</li>
-									<!-- Notification item -->
-									<li>
-										<a href="#" class="list-group-item list-group-item-action rounded border-0 mb-1 p-3">
-											<h6 class="mb-2">Sunshine saving are here 🌞 save 30% or more on a stay</h6>
-											<span>15 Nov 2022</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<!-- Card body END -->
-
-							<!-- Card footer -->
-							<div class="card-footer bg-transparent text-center border-top">
-								<a href="#" class="btn btn-sm btn-link mb-0 p-0">See all incoming activity</a>
+								<!-- Action box -->
+								<div class="col-12">
+									<div class="card overflow-hidden" style="background-image:url(assets/images/bg/05.jpg); background-position: center left; background-size: cover;">
+										<div class="bg-overlay bg-dark opacity-5"></div>
+										<div class="card-body d-lg-flex justify-content-between align-items-center position-relative z-index-9">
+											<!-- Meta -->
+											<div class="mb-3 mb-lg-0">
+												<h5 class="text-white">Enjoy What Nature Offers in Kenya</h5>
+												<ul class="list-inline">
+													<li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1"></i>Easy Online Booking</li>
+													<li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1"></i>Fast Payment System</li>
+													<li class="list-inline-item text-white"> <i class="bi bi-patch-check-fill me-1"></i>Variety of Destinations</li>
+												</ul>
+											</div>
+											<!-- Button -->
+											<a href="#" class="btn btn-white mb-0">Book a Dream Package Now!</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-					<!-- Notification dropdown menu END -->
 				</li>
-				<!-- Notification dropdown END -->
 
-				<!-- Dark mode options START -->
-				<li class="nav-item dropdown ms-3">
-					<button class="nav-notification btn btn-light lh-0 p-0 mb-0" id="bd-theme"
-					type="button"
-					aria-expanded="false"
-					data-bs-toggle="dropdown"
-					data-bs-display="static">
-						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half fa-fw theme-icon-active" viewBox="0 0 16 16">
-							<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-							<use href="#"></use>
-						</svg>
-					</button>
 
-					<ul class="dropdown-menu min-w-auto dropdown-menu-end" aria-labelledby="bd-theme">
-						<li class="mb-1">
-							<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light">
-								<svg width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
-									<path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
-									<use href="#"></use>
-								</svg>Light
-							</button>
+				<!-- Safaris -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="pagesFacilities"
+						data-bs-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Safaris</a>
+					<ul class="dropdown-menu" aria-labelledby="pagesFacilities">
+						<li class="dropdown-submenu dropend">
+							<a class="dropdown-item" href="classic-safaris.php">
+								Classic <i class="fas fa-chevron-right align-icon-right"></i>
+							</a>
+							<ul class="dropdown-menu" data-bs-popper="none">
+								<li> <a class="dropdown-item" href="classic-safaris.php">3-Day
+										Tours</a></li>
+								<li> <a class="dropdown-item" href="classic-safaris.php">4-Day
+										Tours</a></li>
+								<li> <a class="dropdown-item" href="classic-safaris.php">5-Day
+										Tours</a></li>
+								<li> <a class="dropdown-item" href="classic-safaris.php">3 Day
+										Tours</a></li>
+								<li> <a class="dropdown-item" href="classic-safaris.php">6-Day
+										Tours</a></li>
+								<li> <a class="dropdown-item" href="classic-safaris.php">7-Day
+										Tours</a></li>
+								<li> <a class="dropdown-item" href="classic-safaris.php">8-Day
+										Tours</a></li>
+								<li> <a class="dropdown-item" href="classic-safaris.php">9-Day
+										Tours</a></li>
+								<li> <a class="dropdown-item" href="classic-safaris.php">10-Day
+										Tours</a></li>
+
+
+							</ul>
 						</li>
-						<li class="mb-1">
-							<button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark">
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill fa-fw mode-switch me-1" viewBox="0 0 16 16">
-									<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-									<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-									<use href="#"></use>
-								</svg>Dark
-							</button>
+
+						<li class="dropdown-submenu dropend">
+							<a class="dropdown-item" href="accessible-safaris.php">
+								Accessible Safaris <i
+									class="fas fa-chevron-right align-icon-right"></i>
+							</a>
+							<ul class="dropdown-menu" data-bs-popper="none">
+								<li> <a class="dropdown-item"
+										href="accessible-safaris.php">Therapeutic Horseback
+										Riding</a></li>
+								<li> <a class="dropdown-item" href="accessible-safaris.php">Special
+										Needs Buzz Tour</a>
+								</li>
+								<li> <a class="dropdown-item" href="accessible-safaris.php">Game
+										Drive & Dining
+										Experience</a></li>
+								<li> <a class="dropdown-item" href="accessible-safaris.php">Safari
+										Experience</a></li>
+								<li> <a class="dropdown-item" href="accessible-safaris.php">Group
+										Shopping</a></li>
+								<li> <a class="dropdown-item"
+										href="accessible-safaris.php">Countryside Road
+										Experience</a></li>
+								<li> <a class="dropdown-item" href="accessible-safaris.php">Coast
+										Experience & Dolphin
+										Watching in Watamu</a></li>
+								<li> <a class="dropdown-item"
+										href="accessible-safaris.php">Agricultural Farm Visit</a>
+								</li>
+							</ul>
 						</li>
-						<li>
-							<button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto">
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half fa-fw mode-switch" viewBox="0 0 16 16">
-									<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
-									<use href="#"></use>
-								</svg>Auto
-							</button>
+
+						<li class="dropdown-submenu dropend">
+							<a class="dropdown-item" href="family-couple-safaris.php">
+								Family & Couple <i
+									class="fas fa-chevron-right align-icon-right"></i>
+							</a>
+							<ul class="dropdown-menu" data-bs-popper="none">
+								<li> <a class="dropdown-item"
+										href="family-couple-safaris.php">Exploring Ways of Growing
+										Rich Together</a></li>
+								<li> <a class="dropdown-item"
+										href="family-couple-safaris.php">Learn Parenting in an
+										Exciting Way</a></li>
+								<li> <a class="dropdown-item" href="family-couple-safaris.php">Keep
+										Discovering your Spouse
+										for Healthy & Enriching Relationship</a></li>
+								<li> <a class="dropdown-item"
+										href="family-couple-safaris.php">Learn to Fight in Love</a>
+								</li>
+								<li> <a class="dropdown-item" href="family-couple-safaris.php">Keep
+										Dating your Spouse</a>
+								</li>
+								<li> <a class="dropdown-item"
+										href="family-couple-safaris.php">Enriching Communication
+										for
+										Better Days</a></li>
+
+							</ul>
 						</li>
+
 					</ul>
 				</li>
-				<!-- Dark mode options END -->
 
-				<!-- Profile dropdown START -->
-				<li class="nav-item ms-3 dropdown">
-					<!-- Avatar -->
-					<a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
-						<img class="avatar-img rounded-2" src="assets/images/avatar/01.jpg" alt="avatar">
-					</a>
-
-					<ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown">
-						<!-- Profile info -->
-						<li class="px-3 mb-3">
-							<div class="d-flex align-items-center">
-								<!-- Avatar -->
-								<div class="avatar me-3">
-									<img class="avatar-img rounded-circle shadow" src="assets/images/avatar/01.jpg" alt="avatar">
-								</div>
-								<div>
-									<a class="h6 mt-2 mt-sm-0" href="#">Lori Ferguson</a>
-									<p class="small m-0">example@gmail.com</p>
-								</div>
-							</div>
-						</li>
-
-						<!-- Links -->
-						<li> <hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#"><i class="bi bi-bookmark-check fa-fw me-2"></i>My Bookings</a></li>
-						<li><a class="dropdown-item" href="#"><i class="bi bi-heart fa-fw me-2"></i>My Wishlist</a></li>
-						<li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Settings</a></li>
-						<li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Help Center</a></li>
-						<li><a class="dropdown-item bg-danger-soft-hover" href="#"><i class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
-					</ul>
+				<li class="nav-item dropdown">
+					<a class="nav-link" href="about-us.php" id="pagesFacilities">About Us</a>
 				</li>
-				<!-- Profile dropdown END -->
-			</ul>
-			<!-- Profile and Notification START -->
+
+				<li class="nav-item dropdown">
+					<a class="nav-link" href="blog.php" id="pagesFacilities">Blog</a>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link" href="contact-us.php" id="pagesFacilities">Contact Us</a>
+				</li>
+
+
+			</div>
+			<!-- Main navbar END -->
+
+			<!-- Booking form dropdown START -->
+			<div class="nav-item dropdown form-control-bg-light">
+				<!-- Stay button -->
+				<a class="btn btn-sm btn-primary mb-0" href="#" role="button"
+					data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+					Get a Free Quote Today! </i>
+				</a>
+
+				<!-- Form END -->
+			</div>
+			<!-- Booking form dropdown END -->
 
 		</div>
 	</nav>
@@ -362,57 +370,163 @@
 </header>
 <!-- Header END -->
 
-    <!-- **************** MAIN CONTENT START **************** -->
-    <main>
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
 
-        <!-- =======================
-Main Banner START -->
-        <section class="py-0">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-11 mx-auto">
-
-                        <!-- Card item START -->
-                        <div class="card overflow-hidden h-400px h-sm-600px bg-parallax text-center rounded-0"
-                            data-jarallax-video="https://www.youtube.com/watch?v=NhvlTGMQTZQ&pp=ygUac2hvcnQgd2lsZGxpZmUgdmlkZW8ga2VueWE%3D">
-                            <!-- Background dark overlay -->
-                            <div class="bg-overlay bg-dark opacity-3"></div>
-                            <!-- Card image overlay -->
-                            <div class="card-img-overlay d-flex align-items-center">
-                                <div class="container w-100 my-auto">
-                                    <div class="row justify-content-center">
-                                        <div class="col-11 col-lg-8">
-                                            <!-- Title -->
-                                            <h1 class="text-white">Book your front-row seat to nature's
-                                                wonders.</h1>
-                                            <a href="contact-us.html" class="btn btn-sm btn-primary mb-0">Speak to our
-                                                Expert</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card item END -->
-                    </div>
-                </div>
+<!-- =======================
+Main banner START -->
+<section class="position-relative py-8 py-sm-9">
+    <video autoplay loop muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+        <source src="assets/video/wildlife.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay bg-dark opacity-2"></div>
+    <div class="container z-index-9 position-relative">
+        <div class="row">
+            <div class="col-xl-8 m-auto text-center py-xl-8">
+                <h1 class="display-4 text-white mb-3">Book your front-row seat to nature's wonders.</h1>
+                <h5 class="text-white mb-3">Experience Great Adventures in the Wild.</h5>
+                <a href="#" class="btn btn-lg btn-dark mb-0">Speak to our Expert Today!</a>
             </div>
-            </div>
-            </div>
-        </section>
-        <!-- =======================
-Main Banner END -->
+        </div> </div>
+</section>
 
+<!-- =======================
+Main banner END -->
 
+<!-- =======================
+About START -->
+<section class="pt-5 pt-md-8 pb-0">
+	<div class="container z-index-9">
+		<div class="row">
+			<div class="col-lg-10 m-auto text-center">
+				<h2>Get the Best Tours Travel has to Offer</h2>
+				<p class="lead">Kiboko Tours and Travel is a Kenyan tour company with a unique approach to life celebration and travel services. Our main goal is to connect people from different backgrounds, life experiences, social classes, cultures, abilities, and challenges. We are particular specialists in disability travel services and we offer unique and tailored travel experiences to our customers that are spiritually nourishing, therapeutic, and often, transformational.</p>
+				
+				<!-- List -->
+				<ul class="list-inline hstack gap-4 flex-wrap justify-content-center mt-4">
+					<li class="list-inline-item">
+						<h5 class="mb-0 fw-normal"><i class="bi bi-person fa-fw text-warning me-1"></i>Excellent Service</h5>
+					</li>
+					<li class="list-inline-item"> 
+						<h5 class="mb-0 fw-normal"><i class="bi bi-pin-map fa-fw text-primary me-1"></i>Best Destinations</h5>
+					</li>
+					<li>
+					<div class="d-flex justify-content-center align-items-center text-start me-0 me-sm-4">
+						<h3 class="me-2 mb-0">4.8</h3>
+						<div>
+							<ul class="list-inline mb-0">
+								<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0 small"><i class="fas fa-star text-warning"></i></li>
+								<li class="list-inline-item me-0 small"><i class="fas fa-star-half-alt text-warning"></i></li>
+							</ul>
+							<p class="mb-0 small">Clients Love Us!</p>
+						</div>
+					</li>
+				</ul>
+
+					<!-- About Us Btn -->
+					<div class="d-flex justify-content-center align-items-center text-start me-0 me-sm-4">
+					<!-- Button -->
+					<br>
+					<div> <a href="about-us.php" class="btn btn-lg btn-dark mb-0">About Us</a> </div>
+				</div>
+
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+About END -->
+
+<!-- =======================
+Offers START -->
+<section class="pt-5 pt-md-8 pb-0">
+	<div class="container-fluid px-lg-5">
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-12 text-center">
+				<h2>EXPERIENCE OUR ACTIVITIES</h2>
+			</div>
+		</div>
+
+		<div class="row g-4">
+			<!-- Offer item -->
+			<div class="col-6 col-md-4 col-xl-2">
+				<div class="card bg-transparent h-100">
+					<img src="assets/images/activities/hot-air-balloon.jpg" class="card-img" alt="">
+					<div class="card-body text-center p-2">
+						<h6 class="mb-0"><a href="#" class="stretched-link">Hot Air Balloon Rides</a></h6>
+					</div>
+				</div>
+			</div>
+
+			<!-- Offer item -->
+			<div class="col-6 col-md-4 col-xl-2">
+				<div class="card bg-transparent h-100">
+					<img src="assets/images/activities/maasai.webp" class="card-img" alt="">
+					<div class="card-body text-center p-2">
+						<h6 class="mb-0"><a href="#" class="stretched-link">Cultural Immersion</a></h6>
+					</div>
+				</div>
+			</div>
+
+			<!-- Offer item -->
+			<div class="col-6 col-md-4 col-xl-2">
+				<div class="card bg-transparent h-100">
+					<img src="assets/images/activities/bush-walk.jpg" class="card-img" alt="">
+					<div class="card-body text-center p-2">
+						<h6 class="mb-0"><a href="#" class="stretched-link">Bush Walks</a></h6>
+					</div>
+				</div>
+			</div>
+
+			<!-- Offer item -->
+			<div class="col-6 col-md-4 col-xl-2">
+				<div class="card bg-transparent h-100">
+					<img src="assets/images/activities/night-game-drive.jpg" class="card-img" alt="">
+					<div class="card-body text-center p-2">
+						<h6 class="mb-0"><a href="#" class="stretched-link">Night Game Visits</a></h6>
+					</div>
+				</div>
+			</div>
+
+			<!-- Offer item -->
+			<div class="col-6 col-md-4 col-xl-2">
+				<div class="card bg-transparent h-100">
+					<img src="assets/images/activities/chopper-ride.jpg" class="card-img" alt="">
+					<div class="card-body text-center p-2">
+						<h6 class="mb-0"><a href="#" class="stretched-link">Scenic Flights</a></h6>
+					</div>
+				</div>
+			</div>
+
+			<!-- Offer item -->
+			<div class="col-6 col-md-4 col-xl-2">
+				<div class="card bg-transparent h-100">
+					<img src="assets/images/activities/sunset.webp" class="card-img" alt="">
+					<div class="card-body text-center p-2">
+						<h6 class="mb-0"><a href="#" class="stretched-link">Sundowners in the Wild</a></h6>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- =======================
+Offers END -->
 
         <!-- =======================
 Featured Packages START -->
-        <section>
+<section>
             <div class="container">
 
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-12 text-center">
-                        <h2 class="mb-0">Featured Packages</h2>
+                        <h2 class="mb-0">OUR TOP 5 PACAKAGES</h2>
                     </div>
                 </div>
 
@@ -559,151 +673,355 @@ Featured Packages START -->
 Featured Packages END -->
 
 
+<!-- =======================
+Client START -->
+<section class="py-0 py-md-5">
+	<div class="container">
+
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-12 text-center">
+				<h2 class="mb-0">MEMBERSHIPS & ACCREDITATIONS</h2>
+			</div>
+		</div>
+
+		<div class="row g-4 g-lg-7 justify-content-center align-items-center">
+			<!-- Image -->
+			<div class="col-5 col-sm-3 col-xl-2">
+				<img src="assets/images/client/ECO.jpg" class="grayscale" alt="">
+			</div>
+			<!-- Image -->
+			<div class="col-5 col-sm-3 col-xl-2">
+				<img src="assets/images/client/KAT.jpg" class="grayscale" alt="">
+			</div>
+			<!-- Image -->
+			<div class="col-5 col-sm-3 col-xl-2">
+				<img src="assets/images/client/MK.jpeg" class="grayscale" alt="">
+			</div>
+			<!-- Image -->
+			<div class="col-5 col-sm-3 col-xl-2">
+				<img src="assets/images/client/TRA.png" class="grayscale" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Client END -->
+
+<!-- =======================
+Main Banner START -->
+<section class="pt-4 pt-md-5">
+	<div class="container">
+		<div class="row g-4 align-items-center">				
+			<div class="col-lg-7">
+				<!-- Title -->
+				<h1 class="mb-4 display-5">Experience a Wildlife Tour of a  <span class="text-primary">Lifetime?</span></h1>
+				<!-- Info -->
+				<p class="mb-4">Life is all about adventure and enjoying what nature has to offer</p>
+				<!-- Button -->
+				<a href="add-listing.html" class="btn btn-primary-soft mb-4">Book a Package Now! <i class="fa-solid fa-arrow-right-long fa-fw"></i></a>
+				<!-- List -->
+				<h6 class="fw-normal mb-1">Our Benefits</h6>
+				<ul class="list-group list-group-borderless mb-0 small">
+					<li class="list-group-item d-flex mb-0">
+						<i class="fa-solid fa-check-circle text-success me-2 mt-1"></i>A variety of the best destinations in Kenya 
+					</li>
+					<li class="list-group-item d-flex mb-0">
+						<i class="fa-solid fa-check-circle text-success me-2 mt-1"></i>Accessible Safaris to cater for everyone
+					</li>
+					<li class="list-group-item d-flex mb-0">
+						<i class="fa-solid fa-check-circle text-success me-2 mt-1"></i>Family & Couple Packages are available; enjoy with your loved ones.
+					</li>
+				</ul>
+			</div>
+			<!-- Image -->
+			<div class="col-lg-5 text-center">
+				<img src="assets/images/element/wild.svg" alt="">
+			</div>
+		</div>
+	</div>
+</section>
+<!-- =======================
+Main Banner END -->
 
 
+<!-- =======================
+Experience START -->
+<section class="pt-5 pt-md-8 pb-0">
+	<div class="container-fluid px-lg-5">
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-12 text-center">
+				<h2>Top Destinations</h2>
+			</div>
+		</div>
+
+		<!-- Slider START -->
+		<div class="tiny-slider arrow-round arrow-blur rounded-3 overflow-hidden">
+			<div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" data-dots="false" data-items-xl="4" data-items-lg="3" data-items-md="2" data-items-xs="1">
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/wildlife/wildebeasts.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Maasai Mara National Reserve</a></h4>
+									<p class="text-white mb-2">Where the Big Five roam and the Great Migration thunders across the plains.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/wildlife/birds.png" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Amboseli National Park</a></h4>
+									<p class="text-white mb-2">Elephants dwarfed by the majesty of Kilimanjaro.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/wildlife/wildebeasts.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Tsavo National Park</a></h4>
+									<p class="text-white mb-2">Kenya's wilderness giants, painted red by volcanic earth.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/wildlife/gazelles.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Lake Naivasha National Park</a></h4>
+									<p class="text-white mb-2">Hippos bask, and eagles soar across shimmering waters.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/wildlife/rhinos.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Ol Pajeta Conservancy</a></h4>
+									<p class="text-white mb-2">Rhino sanctuary and a beacon of conservation hope.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/wildlife/cheetahs-2.png" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Lake Nakuru National Park</a></h4>
+									<p class="text-white mb-2">A vibrant spectacle of pink – flamingos in their breathtaking thousands.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/wildlife/rhinos.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="#" class="text-white stretched-link">Samburu National Reserve</a></h4>
+									<p class="text-white mb-2">The rugged north, where unique species and vibrant cultures thrive.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+			</div>	
+		</div>
+	</div>
+</section>
+<!-- =======================
+Experience END -->
+
+
+<!-- =======================
+Action box START -->
+<section class="pt-5 pt-md-8">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="bg-light position-relative overflow-hidden rounded-3 p-4 p-md-0">
+					
+					<!-- Image -->
+					<div class="position-absolute bottom-0 end-0 me-n5 d-none d-md-block">
+						<img src="assets/images/element/island.svg" alt="">
+					</div>
+
+					<!-- SVG decoration -->
+					<figure class="position-absolute top-0 start-0 d-none d-sm-block z-index-1">
+						<svg class="fill-primary" width="148px" height="133px">
+							<path d="M145.013,6.751 C143.905,6.733 143.022,5.819 143.041,4.712 C143.060,3.604 143.973,2.721 145.080,2.740 C146.188,2.759 147.071,3.672 147.052,4.779 C147.033,5.887 146.121,6.770 145.013,6.751 ZM144.552,34.160 C145.660,34.179 146.543,35.092 146.524,36.199 C146.506,37.307 145.592,38.190 144.485,38.171 C143.377,38.153 142.495,37.240 142.513,36.132 C142.532,35.024 143.445,34.141 144.552,34.160 ZM144.024,65.580 C145.132,65.599 146.015,66.512 145.996,67.619 C145.978,68.727 145.065,69.610 143.957,69.591 C142.849,69.572 141.966,68.659 141.985,67.552 C142.004,66.444 142.917,65.561 144.024,65.580 ZM143.496,97.000 C144.604,97.019 145.487,97.932 145.468,99.039 C145.450,100.147 144.537,101.030 143.429,101.011 C142.321,100.992 141.438,100.079 141.457,98.972 C141.476,97.864 142.389,96.981 143.496,97.000 ZM142.968,128.420 C144.076,128.439 144.959,129.351 144.940,130.460 C144.921,131.567 144.008,132.450 142.901,132.431 C141.793,132.413 140.910,131.500 140.929,130.392 C140.948,129.284 141.861,128.401 142.968,128.420 ZM116.936,6.279 C115.828,6.261 114.945,5.348 114.964,4.240 C114.982,3.132 115.895,2.250 117.003,2.268 C118.111,2.287 118.993,3.200 118.975,4.308 C118.956,5.415 118.043,6.298 116.936,6.279 ZM116.475,33.688 C117.582,33.707 118.465,34.620 118.447,35.727 C118.428,36.835 117.515,37.718 116.407,37.699 C115.300,37.681 114.417,36.768 114.436,35.660 C114.454,34.552 115.367,33.670 116.475,33.688 ZM115.947,65.108 C117.055,65.127 117.937,66.040 117.919,67.147 C117.900,68.255 116.987,69.138 115.880,69.119 C114.772,69.101 113.889,68.188 113.908,67.080 C113.926,65.973 114.839,65.090 115.947,65.108 ZM115.419,96.528 C116.527,96.547 117.409,97.460 117.391,98.567 C117.372,99.675 116.459,100.558 115.352,100.539 C114.244,100.521 113.361,99.608 113.380,98.500 C113.398,97.392 114.311,96.510 115.419,96.528 ZM114.891,127.948 C115.998,127.967 116.881,128.880 116.863,129.987 C116.844,131.095 115.931,131.978 114.823,131.959 C113.716,131.941 112.833,131.028 112.852,129.920 C112.870,128.812 113.783,127.930 114.891,127.948 ZM88.858,5.807 C87.750,5.789 86.868,4.876 86.886,3.768 C86.905,2.660 87.818,1.777 88.925,1.796 C90.033,1.815 90.916,2.728 90.897,3.835 C90.879,4.943 89.966,5.826 88.858,5.807 ZM88.397,33.216 C89.505,33.235 90.388,34.148 90.369,35.256 C90.351,36.363 89.438,37.246 88.330,37.227 C87.222,37.209 86.340,36.296 86.358,35.188 C86.377,34.081 87.290,33.198 88.397,33.216 ZM87.869,64.636 C88.977,64.655 89.860,65.568 89.841,66.676 C89.823,67.783 88.910,68.666 87.802,68.648 C86.694,68.629 85.812,67.716 85.830,66.608 C85.849,65.501 86.762,64.618 87.869,64.636 ZM87.341,96.056 C88.449,96.075 89.332,96.988 89.313,98.095 C89.295,99.203 88.382,100.086 87.274,100.067 C86.166,100.049 85.284,99.136 85.302,98.028 C85.321,96.921 86.234,96.038 87.341,96.056 ZM86.813,127.476 C87.921,127.495 88.804,128.408 88.785,129.516 C88.767,130.623 87.854,131.506 86.746,131.488 C85.638,131.469 84.756,130.556 84.774,129.448 C84.793,128.341 85.706,127.458 86.813,127.476 ZM60.781,5.336 C59.673,5.317 58.790,4.404 58.809,3.296 C58.827,2.189 59.740,1.306 60.848,1.324 C61.956,1.343 62.838,2.256 62.820,3.364 C62.801,4.471 61.888,5.354 60.781,5.336 ZM60.320,32.745 C61.428,32.763 62.310,33.676 62.292,34.784 C62.273,35.891 61.360,36.774 60.253,36.756 C59.145,36.737 58.262,35.824 58.281,34.717 C58.299,33.609 59.213,32.726 60.320,32.745 ZM59.792,64.165 C60.900,64.183 61.783,65.096 61.764,66.204 C61.745,67.311 60.832,68.194 59.725,68.175 C58.617,68.157 57.734,67.244 57.753,66.136 C57.771,65.029 58.684,64.146 59.792,64.165 ZM59.264,95.584 C60.372,95.603 61.255,96.516 61.236,97.624 C61.217,98.731 60.304,99.614 59.197,99.596 C58.089,99.577 57.206,98.664 57.225,97.556 C57.243,96.449 58.156,95.566 59.264,95.584 ZM58.736,127.005 C59.843,127.023 60.726,127.936 60.708,129.044 C60.689,130.151 59.776,131.034 58.669,131.016 C57.561,130.997 56.678,130.084 56.697,128.977 C56.715,127.869 57.628,126.986 58.736,127.005 ZM32.703,4.864 C31.595,4.845 30.713,3.932 30.731,2.825 C30.750,1.717 31.663,0.834 32.771,0.853 C33.878,0.871 34.761,1.784 34.742,2.892 C34.724,4.000 33.811,4.882 32.703,4.864 ZM32.243,32.273 C33.350,32.291 34.233,33.205 34.214,34.312 C34.196,35.420 33.283,36.303 32.175,36.284 C31.068,36.265 30.185,35.352 30.203,34.245 C30.222,33.137 31.135,32.254 32.243,32.273 ZM31.715,63.693 C32.822,63.712 33.705,64.624 33.686,65.732 C33.668,66.839 32.755,67.722 31.647,67.704 C30.539,67.685 29.657,66.772 29.675,65.665 C29.694,64.557 30.607,63.674 31.715,63.693 ZM31.187,95.113 C32.294,95.131 33.177,96.044 33.158,97.152 C33.140,98.260 32.227,99.142 31.119,99.124 C30.011,99.105 29.129,98.192 29.147,97.084 C29.166,95.977 30.079,95.094 31.187,95.113 ZM30.659,126.533 C31.766,126.551 32.649,127.465 32.630,128.572 C32.612,129.680 31.699,130.563 30.591,130.544 C29.484,130.525 28.601,129.612 28.619,128.505 C28.638,127.397 29.551,126.514 30.659,126.533 ZM4.626,4.392 C3.518,4.373 2.635,3.460 2.654,2.353 C2.672,1.245 3.585,0.362 4.693,0.381 C5.801,0.399 6.684,1.313 6.665,2.420 C6.646,3.528 5.733,4.411 4.626,4.392 ZM4.165,31.801 C5.273,31.820 6.156,32.732 6.137,33.840 C6.118,34.948 5.205,35.831 4.098,35.812 C2.990,35.793 2.107,34.880 2.126,33.773 C2.145,32.665 3.058,31.782 4.165,31.801 ZM3.637,63.221 C4.745,63.239 5.628,64.152 5.609,65.260 C5.590,66.368 4.677,67.251 3.570,67.232 C2.462,67.213 1.579,66.300 1.598,65.193 C1.616,64.085 2.529,63.202 3.637,63.221 ZM3.109,94.641 C4.217,94.659 5.100,95.573 5.081,96.680 C5.062,97.788 4.149,98.671 3.042,98.652 C1.934,98.633 1.051,97.720 1.070,96.613 C1.089,95.505 2.001,94.622 3.109,94.641 ZM2.581,126.061 C3.689,126.080 4.572,126.992 4.553,128.100 C4.534,129.208 3.621,130.091 2.514,130.072 C1.406,130.053 0.523,129.140 0.542,128.033 C0.561,126.925 1.474,126.042 2.581,126.061 Z"></path>
+						</svg>
+					</figure>
+
+					<div class="row position-relative">
+						<div class="col-md-7 text-center mx-auto py-md-5">
+							<!-- Title -->
+							<h2 class="mb-4">Subscribe & Get Special Discount!</h2>
+							<p class="mb-4">Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced.</p>
+							<!-- Form -->
+							<form class="bg-body d-flex rounded-2 p-2">
+								<input class="form-control border-0 me-1" type="email" placeholder="Enter your email">
+								<button type="button" class="btn btn-dark btn-round flex-shrink-0 mb-0"><i class="bi bi-arrow-right fa-fw"></i></button>
+							</form>
+						</div>
+					</div> <!-- Row END -->
+				</div>
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Action box END -->
 
         <!-- =======================
-Near by START -->
-        <section>
+Blog grid START -->
+<section class="pt-0 pt-sm-5">
             <div class="container">
+
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-12 text-center">
-                        <h2 class="mb-0">Explore our Breathtaking Destinations</h2>
+                        <h2 class="mb-0">A Glimpse of Our Blogs</h2>
                     </div>
                 </div>
 
-                <div class="row g-4 g-md-5">
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-3 col-lg-3 col-xl-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
+                <!-- Blog grid -->
+                <div class="row g-4">
+                    <!-- Blog item START -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-transparent">
                             <!-- Image -->
-                            <img src="assets/images/wildlife/birds.png" class="rounded-circle" alt="">
+                            <div class="position-relative">
+                                <img src="assets/images/wildlife/lion.png" class="card-img" alt="">
+                                <!-- Badge -->
+                                <div class="card-img-overlay p-3">
+                                    <a href="#" class="badge text-bg-warning mb-2">History</a>
+                                </div>
+                            </div>
 
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">Amboseli
-                                        National Park</a>
-                                </h5>
+                            <!-- Card body -->
+                            <div class="card-body p-3 pb-0">
+                                <!-- Title -->
+                                <h5 class="card-title mt-2"><a href="blog-detail.html">Kenya's Hidden Gems: Exploring
+                                        Beyond the Safari Mainstays</a></h5>
+                                <h6 class="fw-light mb-0">By <a href="#">Kevin Ocheing</a></h6>
                             </div>
                         </div>
                     </div>
-                    <!-- Card item END -->
+                    <!-- Blog item END -->
 
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-3 col-lg-3 col-xl-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
+                    <!-- Blog item START -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-transparent">
                             <!-- Image -->
-                            <img src="assets/images/wildlife/wildebeasts.jpg" class="rounded-circle" alt="">
+                            <div class="position-relative">
+                                <img src="assets/images/wildlife/wildebeasts.jpg" class="card-img" alt="">
+                                <!-- Badge -->
+                                <div class="card-img-overlay p-3">
+                                    <a href="#" class="badge text-bg-dark mb-2">Adventure</a>
+                                </div>
+                            </div>
 
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">Maasai Mara
-                                        National
-                                        Reserve</a></h5>
+                            <!-- Card body -->
+                            <div class="card-body p-3 pb-0">
+                                <!-- Title -->
+                                <h5 class="card-title"><a href="blog-detail.html">Kenya's Hidden Gems: Exploring Beyond
+                                        the Safari Mainstays</a></h5>
+                                <h6 class="fw-light mb-0">By <a href="#">John Kipchumba</a></h6>
                             </div>
                         </div>
                     </div>
-                    <!-- Card item END -->
+                    <!-- Blog item END -->
 
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-3 col-lg-3 col-xl-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
+                    <!-- Blog item START -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card bg-transparent">
                             <!-- Image -->
-                            <img src="assets/images/wildlife/rhinos.jpg" class="rounded-circle" alt="">
+                            <div class="position-relative">
+                                <img src="assets/images/wildlife/rhinos.jpg" class="card-img" alt="">
+                                <!-- Badge -->
+                                <div class="card-img-overlay p-3">
+                                    <a href="#" class="badge text-bg-danger mb-2">Business</a>
+                                </div>
+                            </div>
 
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">Samburu
-                                        National Park</a></h5>
+                            <!-- Card body -->
+                            <div class="card-body p-3 pb-0">
+                                <!-- Title -->
+                                <h5 class="card-title"><a href="blog-detail.html">Wildlife Encounters That Changed My
+                                        Life: A Kiboko Tour Guide's Stories</a></h5>
+                                <h6 class="fw-light mb-0">By <a href="#">Ashley Mwikali</a></h6>
                             </div>
                         </div>
                     </div>
-                    <!-- Card item END -->
+                    <!-- Blog item END -->
+                </div>
 
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-3 col-lg-3 col-xl-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/wildlife/gazelles.jpg" class="rounded-circle" alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">Lake
-                                        Naivasha National
-                                        Park</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-3 col-lg-3 col-xl-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/wildlife/cheetahs-2.png" class="rounded-circle" alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">Nairobi
-                                        National Park</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-3 col-lg-3 col-xl-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/wildlife/lion.png" class="rounded-circle" alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">Tsavo East
-                                        National Park</a>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-3 col-lg-3 col-xl-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/wildlife/gazelles.jpg" class="rounded-circle" alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">Tsavo West
-                                        National Park</a>
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-3 col-lg-3 col-xl-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="assets/images/wildlife/rhinos.jpg" class="rounded-circle" alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">Ol Pejeta
-                                        Conservancy</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-
-                </div> <!-- Row END -->
+                <!-- Buttons -->
+                <div class="text-center mt-4">
+                    <a href="#" class="btn btn-primary-soft mb-0">Load more<i class="fas fa-sync ms-2"></i></a>
+                </div>
             </div>
         </section>
         <!-- =======================
-Near by END -->
-
-
-
+Blog grid END -->
 
         <!-- =======================
 Gallery START -->
-        <section>
+<section>
             <div class="container-fluid">
                 <!-- Title -->
                 <div class="row mb-md-4">
@@ -846,15 +1164,14 @@ Gallery START -->
         <!-- =======================
 Gallery END -->
 
-    </main>
-    <!-- **************** MAIN CONTENT END **************** -->
 
-    <!-- Footer START -->
-    <?php include "includes/footer.php";?>
-    <!-- Footer END -->
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
 
-
-</body>
+        <!-- Footer START -->
+            <?php include "includes/footer.php";?>
+        <!-- Footer END -->
+    </body>
 
 
 </html>
