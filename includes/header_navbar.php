@@ -56,7 +56,7 @@
                                 </li>
                                 <li class="nav-item"> <a href="help-center.html" class="nav-link small pb-2"><i
                                             class="bi bi-info-circle me-2"></i>Help</a> </li>
-                                <li class="nav-item"> <a href="sign-in.html" class="nav-link small pb-2"><i
+                                <li class="nav-item"> <a href="sign-in.php" class="nav-link small pb-2"><i
                                             class="far fa-user me-2"></i>B2B Login</a> </li>
                                 <!-- Dark mode option START -->
                                 <li class="nav-item dropdown">
