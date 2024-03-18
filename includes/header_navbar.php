@@ -159,11 +159,12 @@
 													<h6 class="mb-3"><i class="bi bi-list-ul text-primary me-2"></i>Activities</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+                                                    <li> <a class="dropdown-item" href="#">Hot Air Ballon Rides</a> </li>
+														<li> <a class="dropdown-item" href="#">Cultural Immersion</a> </li>
+														<li> <a class="dropdown-item" href="#">Bush Walks</a> </li>
+														<li> <a class="dropdown-item" href="#">Night Game Visits</a> </li>
+														<li> <a class="dropdown-item" href="#">Scenic Flights</a> </li>
+                                                        <li> <a class="dropdown-item" href="#">Sundowners in the Wild</a> </li>
 													</ul>
 												</div>
 	
@@ -172,9 +173,9 @@
 													<h6 class="mb-3"><i class="bi bi-grid-3x3-gap text-primary me-2"></i>Safari Types</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
+														<li> <a class="dropdown-item" href="classic-safaris.php"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
+														<li> <a class="dropdown-item" href="accessible-safaris.php"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
+														<li> <a class="dropdown-item" href="family-couple-safaris.php"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
 													</ul>
 												</div>
 	

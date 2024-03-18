@@ -30,14 +30,14 @@ Main Banner START -->
             <div class="container">
                 <!-- Background image -->
                 <div class="p-3 p-sm-5 rounded-3"
-                    style="background-image: url(assets/images/wildlife/wildebeasts.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                    style="background-image: url(assets/images/kiboko/view-2.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
                     <!-- Banner title -->
                     <div class="row">
                         <div class="col-md-8 mx-auto my-5">
-                            <h1 class="text-center text-dark">Explore Kenya's Most Incredible Tour Destinations</h1></h1>
+                            <h1 class="text-center text-dark">Explore Kenya's Most Exciting Tour Destinations</h1></h1>
                             <ul class="nav nav-divider h6 text-dark mb-0 justify-content-center">
-                                <li class="nav-item">10 Destinations</li>
-                                <li class="nav-item">50+ Package</li>
+                                <li class="nav-item" style="color: white; font-weight: bold;">10 Destinations</li>
+                                <li class="nav-item" style="color: white; font-weight: bold;">50+ Packages</li>
                             </ul>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ Main Banner START -->
                 <div class="alert alert-danger d-flex align-items-center mt-5 rounded-3 mb-0" role="alert">
                     <span class="h4 mb-0 alert-heading"><i class="bi bi-exclamation-octagon-fill me-2"></i> </span>
                     <div class="ms-3">
-                        <h6 class="mb-0 alert-heading">Hurry! 65% off the tours are already fully booked</h6>
+                        <h6 class="mb-0 alert-heading">Hurry! 65% of the tours are already fully booked</h6>
                         <p class="mb-0">Many tours to various areas have been booked, don't miss out!</p>
                     </div>
                 </div>
