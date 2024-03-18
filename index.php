@@ -152,22 +152,22 @@
 
                                 <!-- Nav item Find hotel -->
 								<li class="nav-item dropdown dropdown-fullwidth">
-									<a class="nav-link dropdown-toggle" href="destinations.php" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
+									<a class="nav-link dropdown-toggle" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
 									<div class="dropdown-menu" aria-labelledby="hotelMenu">
 										<div class="container">
 											<div class="row g-4 justify-content-between p-lg-3">
 												<!-- Destination -->
 												<div class="col-lg-5">
-													<h6 class="mb-3"><i class="bi bi-pin-map-fill text-primary me-2"></i>Destinations</h6>
+													<h6 class="mb-3"><i class="bi bi-pin-map-fill text-primary me-2" href="destinations.php"></i>Destinations</h6>
 													<hr class="my-2">
 													<div class="row">
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-																<li> <a class="dropdown-item" href="#">Amboseli National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Maasai Mara National Reserve</a> </li>
-																<li> <a class="dropdown-item" href="#">Lake Naivasha National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Lake Nakuru National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Samburu National Reserve</a> </li>
+																<li> <a class="dropdown-item" href="destinations.php">Amboseli National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations.php">Maasai Mara National Reserve</a> </li>
+																<li> <a class="dropdown-item" href="destinations.php">Lake Naivasha National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations.php">Lake Nakuru National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations.php">Samburu National Reserve</a> </li>
 															</ul>
 														</div>
 	
@@ -186,12 +186,12 @@
 													<h6 class="mb-3"><i class="bi bi-list-ul text-primary me-2"></i>Activities</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Rides</a> </li>
-														<li> <a class="dropdown-item" href="#">Cultural Immersion</a> </li>
-														<li> <a class="dropdown-item" href="#">Bush Walks</a> </li>
-														<li> <a class="dropdown-item" href="#">Night Game Visits</a> </li>
-														<li> <a class="dropdown-item" href="#">Scenic Flights</a> </li>
-                                                        <li> <a class="dropdown-item" href="#">Sundowners in the Wild</a> </li>
+														<li> <a class="dropdown-item" href="destinations.php">Hot Air Ballon Rides</a> </li>
+														<li> <a class="dropdown-item" href="destinations.php">Cultural Immersion</a> </li>
+														<li> <a class="dropdown-item" href="destinations.php">Bush Walks</a> </li>
+														<li> <a class="dropdown-item" href="destinations.php">Night Game Visits</a> </li>
+														<li> <a class="dropdown-item" href="destinations.php">Scenic Flights</a> </li>
+                                                        <li> <a class="dropdown-item" href="destinations.php">Sundowners in the Wild</a> </li>
 
 													</ul>
 												</div>
