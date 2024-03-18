@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>Sample Page | Kiboko Tours & Travel</title>
+        <title>Home | Kiboko Tours & Travel</title>
 
         <!-- Meta Tags -->
         <meta charset="utf-8">
@@ -18,120 +18,6 @@
     </head>
 
     <body>
-	<!-- Offcanvas menu START -->
-	<div class="offcanvas offcanvas-w-500px offcanvas-end" tabindex="-1" id="offcanvasBookstay" aria-labelledby="offcanvasBookstayLabel">
-		<div class="offcanvas-header border-bottom px-3">
-			<h5 class="offcanvas-title" id="offcanvasBookstayLabel">Book a Room</h5>
-			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-		</div>
-		<div class="offcanvas-body form-control-bg-light d-flex flex-column px-3">
-			<!-- Form START -->
-			<form>
-				<!-- Pickup -->
-				<div class="mb-3">
-					<label class="form-label mb-0">Room & Suite Type</label>
-					<select class="form-select js-choice" data-search-enabled="true" aria-label=".form-select-sm">
-						<option value="">Select location</option>
-						<option>Agave suite</option>
-						<option>Olive Grove Suite</option>
-						<option>Palm Suite</option>
-						<option>Casa Green Suite</option>
-					</select>
-				</div>
-
-				<!-- Date -->
-				<div class="mb-3">
-					<label class="form-label mb-0">Check in</label>
-					<input type="text" class="form-control flatpickr" data-date-format="d M Y" placeholder="Select date">
-				</div>
-				
-				<!-- Date -->
-				<div class="mb-3">
-					<label class="form-label mb-0">Check out</label>
-					<input type="text" class="form-control flatpickr" data-date-format="d M Y" placeholder="Select date">
-				</div>
-
-				<!-- Occupant -->
-				<div class="mb-3">
-					<!-- Dropdown input -->
-					<label class="form-label mb-0">Guests & rooms</label>
-					<div class="dropdown guest-selector me-2">
-						<input type="text" class="form-guest-selector form-control selection-result" value="2 Guests 1 Room" data-bs-auto-close="outside" data-bs-toggle="dropdown">
-					
-						<!-- dropdown items -->
-						<ul class="dropdown-menu guest-selector-dropdown">
-							<!-- Adult -->
-							<li class="d-flex justify-content-between">
-								<div>
-									<h6 class="mb-0">Adults</h6>
-									<small>Ages 13 or above</small>
-								</div>
-
-								<div class="hstack gap-1 align-items-center">
-									<button type="button" class="btn btn-link adult-remove p-0 mb-0"><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
-									<h6 class="guest-selector-count mb-0 adults">2</h6>
-									<button type="button" class="btn btn-link adult-add p-0 mb-0"><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
-								</div>
-							</li>
-
-							<!-- Divider -->
-							<li class="dropdown-divider"></li>
-
-							<!-- Child -->
-							<li class="d-flex justify-content-between">
-								<div>
-									<h6 class="mb-0">Child</h6>
-									<small>Ages 13 below</small>
-								</div>
-
-								<div class="hstack gap-1 align-items-center">
-									<button type="button" class="btn btn-link child-remove p-0 mb-0" ><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
-									<h6 class="guest-selector-count mb-0 child">0</h6>
-									<button type="button" class="btn btn-link child-add p-0 mb-0" ><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
-								</div>
-							</li>
-
-							<!-- Divider -->
-							<li class="dropdown-divider"></li>
-
-							<!-- Rooms -->
-							<li class="d-flex justify-content-between">
-								<div>
-									<h6 class="mb-0">Rooms</h6>
-									<small>Max room 8</small>
-								</div>
-
-								<div class="hstack gap-1 align-items-center">
-									<button type="button" class="btn btn-link room-remove p-0 mb-0" ><i class="bi bi-dash-circle fs-5 fa-fw"></i></button>
-									<h6 class="guest-selector-count mb-0 rooms">1</h6>
-									<button type="button" class="btn btn-link room-add p-0 mb-0" ><i class="bi bi-plus-circle fs-5 fa-fw"></i></button>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Buttons -->
-				<div class="text-center">
-					<button class="btn btn-primary-soft w-100 mb-0">Check Availability</button>
-				</div>
-			</form>
-			<!-- Form END -->
-
-			<!-- List -->
-			<div class="bg-light p-3 rounded mt-auto">
-				<h6>Why Book Direct?</h6>
-				<ul class="small ps-3">
-					<li class="mb-2">10% discount is applied</li>
-					<li class="mb-2">15% off on spa treatment</li>
-					<li class="mb-2">Best price guaranteed</li>
-					<li class="mb-2">Daily complimentary sunrise yoga</li>
-					<li class="mb-2">Early check-in and late check-out</li>
-				</ul>
-			</div>
-		</div>	
-	</div>
-	<!-- Offcanvas menu END -->
 
 <!-- Header START -->
 <header class="header-transparent">
@@ -348,21 +234,59 @@
 					<a class="nav-link" href="contact-us.php" id="pagesFacilities">Contact Us</a>
 				</li>
 
+				<li>
+				<button class="btn btn-link text-warning lh-3 p-0 mb-0" id="bd-theme" type="button"
+					aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static">
+					<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+						fill="currentColor" class="bi bi-circle-half theme-icon-active fa-fw"
+						viewBox="0 0 16 16">
+						<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+						<use href="#"></use>
+					</svg>
+				</button>
+
+				<ul class="dropdown-menu min-w-auto dropdown-menu-end dropdown-menu-toggle" aria-labelledby="bd-theme">
+					<li class="mb-1">
+						<button type="button" class="dropdown-item d-flex align-items-center"
+							data-bs-theme-value="light">
+							<svg width="16" height="16" fill="currentColor"
+								class="bi bi-brightness-high-fill fa-fw mode-switch me-1"
+								viewBox="0 0 16 16">
+								<path
+									d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+								<use href="#"></use>
+							</svg>Light
+						</button>
+					</li>
+					<li class="mb-1">
+						<button type="button" class="dropdown-item d-flex align-items-center"
+							data-bs-theme-value="dark">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+								fill="currentColor"
+								class="bi bi-moon-stars-fill fa-fw mode-switch me-1"
+								viewBox="0 0 16 16">
+								<path
+									d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+								<path
+									d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+								<use href="#"></use>
+							</svg>Dark
+						</button>
+				</li>
+
 
 			</div>
 			<!-- Main navbar END -->
 
-			<!-- Booking form dropdown START -->
+			
 			<div class="nav-item dropdown form-control-bg-light">
-				<!-- Stay button -->
+				<!-- Quote button -->
 				<a class="btn btn-sm btn-primary mb-0" href="#" role="button"
 					data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
 					Get a Free Quote Today! </i>
 				</a>
 
-				<!-- Form END -->
 			</div>
-			<!-- Booking form dropdown END -->
 
 		</div>
 	</nav>
@@ -541,7 +465,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/wildlife/rhinos.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="hotel image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -576,7 +500,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/wildlife/gazelles.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -715,7 +639,7 @@ Main Banner START -->
 		<div class="row g-4 align-items-center">				
 			<div class="col-lg-7">
 				<!-- Title -->
-				<h1 class="mb-4 display-5">Experience a Wildlife Tour of a  <span class="text-primary">Lifetime?</span></h1>
+				<h1 class="mb-4 display-5">Experience a Wildlife Tour of a  <span class="text-primary">Lifetime!</span></h1>
 				<!-- Info -->
 				<p class="mb-4">Life is all about adventure and enjoying what nature has to offer</p>
 				<!-- Button -->
@@ -945,7 +869,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/wildlife/lion.png" class="card-img" alt="">
+                                <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-warning mb-2">History</a>
@@ -968,7 +892,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/wildlife/wildebeasts.jpg" class="card-img" alt="">
+                                <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-dark mb-2">Adventure</a>
@@ -991,7 +915,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/wildlife/rhinos.jpg" class="card-img" alt="">
+                                <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-danger mb-2">Business</a>
@@ -1036,10 +960,10 @@ Gallery START -->
                         data-arrow="true" data-dots="false" data-items="6" data-items-lg="4" data-items-sm="2">
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/9.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/9.jpg" class="rounded-3" alt="">
+                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1051,10 +975,10 @@ Gallery START -->
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/wildlife/birds.png">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/wildlife/birds.png" class="rounded-3" alt="">
+                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1066,10 +990,10 @@ Gallery START -->
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/wildlife/cheetahs-2.png">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/wildlife/cheetahs-2.png" class="rounded-3" alt="">
+                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1081,10 +1005,10 @@ Gallery START -->
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/wildlife/gazelles.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/wildlife/gazelles.jpg" class="rounded-3" alt="">
+                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1096,10 +1020,10 @@ Gallery START -->
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/wildlife/lion.png">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/wildlife/lion.png" class="rounded-3" alt="">
+                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1115,7 +1039,7 @@ Gallery START -->
                                 href="https://www.youtube.com/watch?v=NhvlTGMQTZQ&pp=ygUac2hvcnQgd2lsZGxpZmUgdmlkZW8ga2VueWE%3D">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/wildlife/cheetahs.jpg" class="rounded-3" alt="">
+                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <span
@@ -1129,10 +1053,10 @@ Gallery START -->
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/wildlife/rhinos.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/wildlife/rhinos.jpg" class="rounded-3" alt="">
+                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1144,10 +1068,10 @@ Gallery START -->
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/wildlife/wildebeasts.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/wildlife/wildebeasts.jpg" class="rounded-3" alt="">
+                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
