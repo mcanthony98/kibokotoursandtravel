@@ -124,7 +124,7 @@
 
                                 <!-- Nav item Find hotel -->
 								<li class="nav-item dropdown dropdown-fullwidth">
-									<a class="nav-link dropdown-toggle" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
+									<a class="nav-link dropdown-toggle" href="destinations.php" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
 									<div class="dropdown-menu" aria-labelledby="hotelMenu">
 										<div class="container">
 											<div class="row g-4 justify-content-between p-lg-3">
@@ -332,17 +332,14 @@
                                     <span class="d-none d-sm-inline-block small">Menu</span>
                                 </button>
 
-                                <!-- Booking form dropdown START -->
                                 <div class="nav-item dropdown form-control-bg-light">
                                     <!-- Stay button -->
-                                    <a class="btn btn-sm btn-primary mb-0" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <a class="btn btn-sm btn-primary mb-0" href="contact-us.php#quote" role="button"
+                                        aria-expanded="false" data-bs-auto-close="outside">
                                         Get a Free Quote Today! </i>
                                     </a>
 
-                                    <!-- Form END -->
                                 </div>
-                                <!-- Booking form dropdown END -->
                             </div>
                         </div>
                     </div>
