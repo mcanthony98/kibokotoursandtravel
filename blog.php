@@ -44,7 +44,7 @@ Main banner START -->
                         <div class="card bg-transparent mb-4 mb-sm-0">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/wildlife/birds.png" class="card-img" alt="">
+                                <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                     <a href="#" class="badge bg-dark">Adventure</a>
@@ -79,7 +79,7 @@ Main banner START -->
                                 <div class="row g-3 g-sm-4 align-items-sm-center">
                                     <!-- Image -->
                                     <div class="col-4">
-                                        <img src="assets/images/wildlife/cheetahs-2.png" class="card-img" alt="">
+                                        <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
                                     </div>
                                     <div class="col-8">
                                         <!-- card body -->
@@ -107,7 +107,7 @@ Main banner START -->
                                 <div class="row g-3 g-sm-4 align-items-sm-center">
                                     <!-- Image -->
                                     <div class="col-4">
-                                        <img src="assets/images/wildlife/cheetahs.jpg" class="card-img" alt="">
+                                        <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
                                     </div>
                                     <div class="col-8">
                                         <!-- card body -->
@@ -135,7 +135,7 @@ Main banner START -->
                                 <div class="row g-3 g-sm-4 align-items-sm-center">
                                     <!-- Image -->
                                     <div class="col-4">
-                                        <img src="assets/images/wildlife/gazelles.jpg" class="card-img" alt="">
+                                        <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
                                     </div>
                                     <div class="col-8">
                                         <!-- card body -->
@@ -185,7 +185,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/wildlife/lion.png" class="card-img" alt="">
+                                <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-warning mb-2">History</a>
@@ -225,7 +225,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/wildlife/rhinos.jpg" class="card-img" alt="">
+                                <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-danger mb-2">Business</a>
@@ -250,7 +250,7 @@ Blog grid START -->
                             <div class="card-img-top rounded overflow-hidden position-relative hover-overlay-top">
                                 <div class="ratio ratio-4x3 bg-dark">
                                     <iframe
-                                        src="https://player.vimeo.com/video/167434033?title=0&amp;byline=0&amp;portrait=0"
+                                        src="https://www.youtube.com/embed/4W61GqRttNY"
                                         allowfullscreen=""></iframe>
                                 </div>
                             </div>
@@ -272,7 +272,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/wildlife/wildebeasts.jpg" class="card-img" alt="">
+                                <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-dark mb-2">Adventure</a>
@@ -295,7 +295,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/wildlife/birds.png" class="card-img" alt="">
+                                <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-success mb-2">Tours</a>
