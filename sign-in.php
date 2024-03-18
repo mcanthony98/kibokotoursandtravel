@@ -73,7 +73,7 @@ Main Content START -->
 											<input type="checkbox" class="form-check-input" id="rememberCheck">
 											<label class="form-check-label" for="rememberCheck">Remember me?</label>
 										</div>
-										<a href="forgot-password.html">Forgot password?</a>
+										<a href="forgot-pass.php">Forgot password?</a>
 									</div>
 									<!-- Button -->
 									<div><button type="submit" class="btn btn-primary w-100 mb-0">Login</button></div>

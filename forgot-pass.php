@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <title>Sample Page | Kiboko Tours & Travel</title>
+        <title>Forgot Password | Kiboko Tours & Travel</title>
 
         <!-- Meta Tags -->
         <meta charset="utf-8">
@@ -35,7 +35,7 @@ Main Content START -->
 						<!-- Vector Image -->
 						<div class="col-lg-6 d-md-flex align-items-center order-2 order-lg-1">
 							<div class="p-3 p-lg-5">
-								<img src="assets/images/element/forgot-pass.svg" alt="">
+								<img src="assets/images/wildlife.jpg" alt="">
 							</div>
 							<!-- Divider -->
 							<div class="vr opacity-1 d-none d-lg-block"></div>
@@ -46,22 +46,22 @@ Main Content START -->
 							<div class="p-4 p-sm-7">
 								<!-- Logo -->
 								<a href="index.html">
-									<img class="mb-4 h-50px" src="assets/images/logo-icon.svg" alt="logo">
+									<img class="mb-4 h-50px" src="assets/images/kiboko-logo.png" alt="logo">
 								</a>
 								<!-- Title -->
 								<h1 class="mb-2 h3">Forgot password?</h1>
-								<p class="mb-sm-0">Enter the email address associated with an account.</p>
+								<p class="mb-sm-0">Enter the email address associated with your account.</p>
 		
 								<!-- Form START -->
 								<form class="mt-sm-4 text-start">
 									<!-- Email -->
 									<div class="mb-3">
-										<label class="form-label">Enter email id</label>
+										<label class="form-label">Enter email address</label>
 										<input type="email" class="form-control">
 									</div>
 
                   <div class="mb-3 text-center">
-                    <p>Back to <a href="sign-in.html">Sign in</a></p>
+                    <p>Back to <a href="sign-in.php">Sign in</a></p>
                   </div>
 
 									<!-- Button -->
@@ -80,7 +80,7 @@ Main Content START -->
 									</div>
 		
 									<!-- Copyright -->
-									<div class="text-primary-hover mt-3 text-center"> Copyrights ©2023 Booking. Build by <a href="https://www.webestica.com/">Webestica</a>. </div>
+									<div class="text-primary-hover mt-3 text-center"> Copyrights ©2024 Kiboko Tours & Travel. <br> Built by <a href="https://ganiamtech.com/">Ganiam Tech</a>. </div>
 								</form>
 								<!-- Form END -->
 							</div>		
