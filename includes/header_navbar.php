@@ -147,8 +147,8 @@
 															<ul class="list-unstyled">
 																<li> <a class="dropdown-item" href="#">Nairobi National Park</a> </li>
 																<li> <a class="dropdown-item" href="#">Ol Pejeta Conservancy</a> </li>
-																<li> <a class="dropdown-item" href="#">Malaysia</a> </li>
-																<li> <a class="dropdown-item" href="#">manhattan</a> </li>
+																<li> <a class="dropdown-item" href="#">Tsavo East National Park</a> </li>
+																<li> <a class="dropdown-item" href="#">Tsavo West National Park</a> </li>
 															</ul>
 														</div>
 													</div>
