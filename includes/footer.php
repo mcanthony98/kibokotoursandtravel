@@ -97,13 +97,13 @@
                 <div class="col-sm-5 col-md-6 col-lg-3 text-sm-end">
                     <h5 class="text-white mb-2">Follow us on</h5>
                     <ul class="list-inline mb-0 mt-3">
-                        <li class="list-inline-item"> <a class="btn btn-sm px-2 bg-facebook mb-0" href="#"><i
+                        <li class="list-inline-item"> <a class="btn btn-sm px-2 bg-facebook mb-0" href="https://www.facebook.com/KibokoTours"><i
                                     class="fab fa-fw fa-facebook-f"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="#"><i
+                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/kiboko_tours"><i
                                     class="fab fa-fw fa-instagram"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="#"><i
+                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="https://twitter.com/ToursKiboko"><i
                                     class="fab fa-fw fa-twitter"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-linkedin mb-0" href="#"><i
+                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-linkedin mb-0" href="https://kibokotoursandtravel.com/about-us/inkedin.com/company/kiboko-tours-and-travel/?viewAsMember=true"><i
                                     class="fab fa-fw fa-linkedin-in"></i></a> </li>
                     </ul>
                 </div>
