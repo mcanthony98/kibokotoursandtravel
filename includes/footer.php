@@ -28,17 +28,17 @@
                     <div class="row g-4">
                         <!-- Link block -->
                         <div class="col-6 col-md-4">
-                            <h5 class="text-white mb-4 mb-md-4">Pages</h5>
+                            <h5 class="text-white mb-4 mb-md-4">Navigation</h5>
                             <ul class="nav flex-column text-primary-hover">
-                                <li class="nav-item"><a class="nav-link text-muted" href="index.html">Home</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#">Safaris</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#">Packages</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="about-us.html">About us</a>
+                                <li class="nav-item"><a class="nav-link text-muted" href="index.phh">Home</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="destinations.php">Destination</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="experience-details.php">Experiences</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="about-us.php">About us</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="contact-us.html">Contact
+                                <li class="nav-item"><a class="nav-link text-muted" href="contact-us.php">Contact
                                         us</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="blog.html">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="quote.html">Quote</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="blog.php">Blog</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="contact-us.php#quote">Quote</a></li>
                             </ul>
                         </div>
 
@@ -46,25 +46,29 @@
                         <div class="col-6 col-md-5">
                             <h5 class="text-white mb-2 mb-md-">Destinations</h5>
                             <ul class="nav flex-column text-primary-hover">
-                                <li class="nav-item"><a class="nav-link text-muted" href="login.html">Maasai Mara National Reserve</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="login.html">Amboseli National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#">Lake Naivasha National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#">Lake Nakuru National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="#">Ol Pajeta Conservancy</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="login.html">Samburu National Reserve</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Maasai Mara National Reserve</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Amboseli National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Lake Naivasha National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Lake Nakuru National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Ol Pajeta Conservancy</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Samburu National Reserve</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Tsavo East National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Tsavo West National Park</a></li>
+
+
                             </ul>
                         </div>
 
                         <!-- Link block -->
                         <div class="col-6 col-md-3">
-                            <h5 class="text-white mb-2 mb-md-4">Safaris</h5>
+                            <h5 class="text-white mb-2 mb-md-4">Safari Types</h5>
                             <ul class="nav flex-column text-primary-hover">
-                                <li class="nav-item"><a class="nav-link text-muted" href="classic-safaris.html">Classic
+                                <li class="nav-item"><a class="nav-link text-muted" href="classic-safaris.php">Classic
                                         Safaris</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted"
-                                        href="accessible-safaris.html">Accessible Safaris</a></li>
+                                        href="accessible-safaris.php">Accessible Safaris</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted"
-                                        href="family-couple-safaris.html">Family & Couple Safaris</a>
+                                        href="family-couple-safaris.php">Family & Couple Safaris</a>
                                 </li>
                             </ul>
                         </div>

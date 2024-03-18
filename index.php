@@ -774,7 +774,7 @@ Experience START -->
 		<!-- Title -->
 		<div class="row mb-4">
 			<div class="col-12 text-center">
-				<h2>Top Destinations</h2>
+				<h2>Explore our Breathtaking Destinations</h2>
 			</div>
 		</div>
 
