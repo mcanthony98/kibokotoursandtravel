@@ -141,7 +141,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +202,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -262,7 +262,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -322,7 +322,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -381,7 +381,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -442,7 +442,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -503,7 +503,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -563,7 +563,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
