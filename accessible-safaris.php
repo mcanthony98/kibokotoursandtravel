@@ -50,7 +50,7 @@ Main Banner START -->
                 <div class="alert alert-danger d-flex align-items-center mt-5 rounded-3 mb-0" role="alert">
                     <span class="h4 mb-0 alert-heading"><i class="bi bi-exclamation-octagon-fill me-2"></i> </span>
                     <div class="ms-3">
-                        <h6 class="mb-0 alert-heading">Hurry! 65% of the tours are already fully booked</h6>
+                        <h6 class="mb-0 alert-heading">Hurry! 65% off, the tours are almost fully booked</h6>
                         <p class="mb-0">Many trips to various areas have been ordered, don't miss out!</p>
                     </div>
                 </div>

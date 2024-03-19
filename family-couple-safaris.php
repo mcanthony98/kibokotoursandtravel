@@ -37,7 +37,7 @@ Main Banner START -->
                         <div class="col-md-8 mx-auto my-5">
                             <h1 class="text-center text-light">Family & Couple Safaris</h1>
                             <ul class="nav nav-divider h6 text-dark mb-0 justify-content-center">
-                            <p style="text-align: center; color: white;">Adventure awaits everyone! Experience the wonders of Kenya with our accessible safaris, designed for travelers of all abilities.</p>
+                            <p style="text-align: center; color: white;">Create unforgettable memories! Bond with loved ones on a Kenyan safari tailored for families and couples, filled with fun and cherished moments.</p>
 
                             </ul>
                         </div>
@@ -50,7 +50,7 @@ Main Banner START -->
                 <div class="alert alert-danger d-flex align-items-center mt-5 rounded-3 mb-0" role="alert">
                     <span class="h4 mb-0 alert-heading"><i class="bi bi-exclamation-octagon-fill me-2"></i> </span>
                     <div class="ms-3">
-                        <h6 class="mb-0 alert-heading">Hurry! 65% off, the tours are already fully booked</h6>
+                        <h6 class="mb-0 alert-heading">Hurry! 65% off, the tours are almost fully booked</h6>
                         <p class="mb-0">Many trips to various areas have been ordered, don't miss out!</p>
                     </div>
                 </div>

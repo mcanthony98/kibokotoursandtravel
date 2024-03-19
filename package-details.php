@@ -73,7 +73,7 @@ Main Title START -->
 						<!-- Location -->
 						<p class="fw-bold mb-0"><i class="bi bi-geo-alt me-2"></i>Amboseli National Park
 							<a href="#" class="ms-2 text-decoration-underline" data-bs-toggle="modal" data-bs-target="#mapmodal">
-								<i class="bi bi-eye-fill me-1"></i>View On Map
+								<i class="bi bi-eye-fill me-1"></i>Our HQ Location
 							</a>
 						</p>
 					</div>
@@ -118,28 +118,6 @@ Main Title START -->
 <!-- =======================
 Main Title END -->
 
-<!-- =======================
-Image gallery START -->
-<section class="card-grid pt-0">
-	<div class="container">
-		<div class="row g-2">
-			<!-- Image -->
-			<div class="col-md-12">
-				<a data-glightbox data-gallery="gallery" href="assets/images/gallery/14.jpg">
-					<div class="card card-grid-lg card-element-hover card-overlay-hover overflow-hidden" style="background-image:url(assets/images/gallery/14.jpg); background-position: center left; background-size: cover;">
-						<!-- Card hover element -->
-						<div class="hover-element position-absolute w-100 h-100">
-							<i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-						</div>
-					</div>
-				</a>
-			</div>
-
-		</div>
-	</div>
-</section>
-<!-- =======================
-Image gallery END -->
 
 <!-- =======================
 About hotel START -->
@@ -327,11 +305,11 @@ About hotel START -->
 						<div class="d-sm-flex justify-content-sm-between align-items-center mb-3">
 							<div>
 								<span>Price Start at</span>
-								<h4 class="card-title mb-0">$3,500</h4>
+								<h4 class="card-title mb-0">$1,500</h4>
 							</div>
 							<div>
-								<h6 class="fw-normal mb-0">1 room per night</h6>
-								<small>+ $285 taxes & fees</small>
+								<h6 class="fw-normal mb-0">Price applies per person</h6>
+								<small>+ $50 VAT</small>
 							</div>
 						</div>		
 
@@ -345,11 +323,14 @@ About hotel START -->
 							<li class="list-inline-item me-0 small"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
 						</ul>
 
-						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Free breakfast available</p>
+						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Free water available in the travel vehicle</p>
+						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Date: June 25th - 28th</p>
+
+
 
 						<!-- Button -->
 						<div class="d-grid">
-							<a href="#room-options" class="btn btn-lg btn-primary-soft mb-0">View 10 Rooms Options</a>
+							<a href="#room-options" class="btn btn-lg btn-primary-soft mb-0">Book this Package Now</a>
 						</div>
 					</div>
 					<!-- Book now END -->
@@ -365,25 +346,42 @@ About hotel END -->
 
 <!-- Table START -->
 <div class="table-responsive d-flex justify-content-center px-5" style="padding-left: 30%; padding-right: 30%;">
-    <table class="table table-bordered">
-        <thead class="table-primary">
+    <table class="table table-bordered" style="width: 70%; margin: 0 auto;"> <thead class="table-primary">
             <tr>
-                <th scope="col">Offer Detail</th>
-                <th scope="col">Maximum booking value</th>
-                <th scope="col">Applicable Card</th>
-                <th scope="col">Validity</th>
+                <th scope="col">Day</th>
+                <th scope="col">Location</th>
+                <th scope="col">Accomodation</th>
+                <th scope="col">Meal Plan</th>
+				<th scope="col">Activity</th>
+
             </tr>
         </thead>
         <tbody class="align-middle">
             <tr>
-                <td class="h6 mb-0">Flat 25% discount</td>
-                <td class="h6 fw-normal mb-0">$3000</td>
-                <td class="h6 fw-normal mb-0">Mbokiwik</td>
-                <td class="h6 fw-normal mb-0">19 Sep</td>
+                <td class="h6 fw-normal mb-0">1</td>
+                <td class="h6 fw-normal mb-0">Amboseli National Park</td>
+                <td class="h6 fw-normal mb-0">Aa Lodge</td>
+                <td class="h6 fw-normal mb-0">Lunch & Dinner</td>
+				<td class="h6 fw-normal mb-0">Evening Game Drive</td>
+            </tr>
+            <tr>
+                <td class="h6 fw-normal mb-0">2</td>
+                <td class="h6 fw-normal mb-0">Amboseli National Park</td>
+                <td class="h6 fw-normal mb-0">Aa Lodge</td>
+                <td class="h6 fw-normal mb-0">Breakfast, Lunch & Dinner</td>
+				<td class="h6 fw-normal mb-0">Full-Day Game Drive</td>
+            </tr>
+			<tr>
+                <td class="h6 fw-normal mb-0">3</td>
+                <td class="h6 fw-normal mb-0">Amboseli National Park</td>
+                <td class="h6 fw-normal mb-0">No Accomadation</td>
+                <td class="h6 fw-normal mb-0">Breakfast</td>
+				<td class="h6 fw-normal mb-0">Return Jouney</td>
             </tr>
         </tbody>
     </table>
-</div>  
+</div>  
+ 
 <!-- Table END -->
 
 <div class="sticky-section">
@@ -409,12 +407,12 @@ About hotel END -->
 				<div class="modal-content">
 					<!-- Title -->
 					<div class="modal-header">
-						<h5 class="modal-title" id="mapmodalLabel">View Our Hotel Location</h5>
+						<h5 class="modal-title" id="mapmodalLabel">Kiboko Tours & Travel HQ</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<!-- Map -->
 					<div class="modal-body p-0">
-						<iframe class="w-100" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076684379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sin!4v1586000412513!5m2!1sen!2sin"  style="border:0;" aria-hidden="false" tabindex="0"></iframe>	
+						<iframe class="w-100" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7857943622957!2d36.78912700000001!3d-1.3035297000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11694ca41e73%3A0x54248aec19cbbfd4!2sKiboko%20Tours%20and%20Travel!5e0!3m2!1sen!2ske!4v1710861403273!5m2!1sen!2ske"  style="border:0;" aria-hidden="false" tabindex="0"></iframe>	
 					</div>
 					<!-- Button -->
 					<div class="modal-footer">
