@@ -52,7 +52,7 @@ Main banner START -->
                             <p>We are one phone call away</p>
                             <!-- Buttons -->
                             <div class="d-grid gap-3 d-sm-block">
-                                <button class="btn btn-sm btn-primary-soft"><i class="bi bi-phone me-2"></i>+254 712 123
+                                <button class="btn btn-sm btn-primary-soft"><i href="https://api.whatsapp.com/send?phone=254712123123" class="bi bi-phone me-2"></i>+254 712 123
                                     123</button>
                                 <button class="btn btn-sm btn-light"><i class="bi bi-telephone me-2"></i>+254 712 123
                                     123</button>
@@ -71,7 +71,7 @@ Main banner START -->
                             <h5>Email us</h5>
                             <p>Our email is open 24/7</p>
                             <!-- Buttons -->
-                            <a href="#" class="btn btn-link text-decoration-underline p-0 mb-0"><i
+                            <a href="mailto:info@kibokotoursandtravel.com" class="btn btn-link text-decoration-underline p-0 mb-0"><i
                                     class="bi bi-envelope me-1"></i>info@kibokotoursandtravel.com</a>
                         </div>
                     </div>
@@ -97,13 +97,13 @@ Main banner START -->
                             <p>Send us a DM and follow us.</p>
                             <!-- Buttons -->
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item"> <a class="btn btn-sm bg-facebook px-2 mb-0" href="#"><i
+                                <li class="list-inline-item"> <a class="btn btn-sm bg-facebook px-2 mb-0" href="https://www.facebook.com/KibokoTours"><i
                                             class="fab fa-fw fa-facebook-f"></i></a> </li>
-                                <li class="list-inline-item"> <a class="btn btn-sm bg-instagram px-2 mb-0" href="#"><i
+                                <li class="list-inline-item"> <a class="btn btn-sm bg-instagram px-2 mb-0" href="https://www.instagram.com/kiboko_tours"><i
                                             class="fab fa-fw fa-instagram"></i></a> </li>
-                                <li class="list-inline-item"> <a class="btn btn-sm bg-twitter px-2 mb-0" href="#"><i
+                                <li class="list-inline-item"> <a class="btn btn-sm bg-twitter px-2 mb-0" href="https://twitter.com/ToursKiboko"><i
                                             class="fab fa-fw fa-twitter"></i></a> </li>
-                                <li class="list-inline-item"> <a class="btn btn-sm bg-linkedin px-2 mb-0" href="#"><i
+                                <li class="list-inline-item"> <a class="btn btn-sm bg-linkedin px-2 mb-0" href="https://kibokotoursandtravel.com/about-us/inkedin.com/company/kiboko-tours-and-travel/?viewAsMember=true"><i
                                             class="fab fa-fw fa-linkedin-in"></i></a> </li>
                             </ul>
                         </div>
@@ -259,7 +259,7 @@ It's Time to Discover START -->
                         </div>
                         <!-- Content and input -->
                         <div class="col-lg-4 text-lg-end">
-                            <a href="flight-list.html" class="btn btn-lg btn-dark mb-0">Book a Package Now!</a>
+                            <a href="destinations.php" class="btn btn-lg btn-dark mb-0">Book a Package Now!</a>
                         </div>
                     </div> <!-- Row END -->
                 </div>
