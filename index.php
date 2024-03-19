@@ -540,7 +540,7 @@ Featured Packages START -->
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-12 text-center">
-                        <h2 class="mb-0">Our Top 5 Packages</h2>
+                        <h2 class="mb-0">Our Top Packages</h2>
                     </div>
                 </div>
 
@@ -555,7 +555,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -623,7 +623,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/3.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -656,7 +656,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/1.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -688,7 +688,7 @@ Featured Packages END -->
 
 
 <!-- =======================
-Client START -->
+Accreitations START -->
 <section class="py-0 py-md-5">
 	<div class="container">
 
@@ -717,10 +717,30 @@ Client START -->
 				<img src="assets/images/client/TRA.png" class="grayscale" alt="">
 			</div>
 		</div>
+
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <!-- Safari Bookings Widget -->
+            <div style="display: inline-block; padding: 0 10px 5px 0;"><span class="94c5245077111">&nbsp;</span></div>
+
+            <!--TripAdvisor Widget -->
+            <div>
+                <a class="widFRRClickWrap" target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294207-d17206466-Reviews-KIBOKO_TOURS_AND_TRAVEL_LTD-Nairobi.html" onclick="ta.cds.handleTALink(11424,this);return true;"></a>
+
+                <div class="col medium-6 small-12 large-6"  ><div class="col-inner"  >
+
+                    <div id="TA_rated511" class="TA_rated">
+                        <ul id="XilmmB" class="TA_links z8ISMh6">
+                        <li id="4HFiYkWs7c7" class="ZFKcSEurPD4"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294207-d17206466-Reviews-KIBOKO_TOURS_AND_TRAVEL_LTD-Nairobi.html" rel="noopener"><img src="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 	</div>
 </section>
 <!-- =======================
-Client END -->
+Accreitations END -->
 
 <!-- =======================
 Main Banner START -->
@@ -898,97 +918,10 @@ Experience START -->
 <!-- =======================
 Experience END -->
 
-
+<br>
+<br>
 
 <!-- =======================
-Testimonials START -->
-<section class="pt-0 pt-md-5">
-	<div class="container">
-		<div class="text-center position-relative py-5" style="background-image:url(assets/images/element/map.svg); background-position: center left; background-size: cover;">
-			<!-- Avatar decoration -->
-			<div class="avatar position-absolute top-50 end-0 mt-5 me-7">
-				<img class="avatar-img rounded-circle border border-2 border-light d-none d-md-block" src="assets/images/avatar/09.jpg" alt="avatar">
-			</div>
-			<!-- Avatar decoration -->
-			<div class="avatar avatar-lg position-absolute top-0 end-0 mt-5">
-				<img class="avatar-img rounded-circle border border-2 border-light d-none d-lg-block" src="assets/images/avatar/05.jpg" alt="avatar">
-			</div>
-			<!-- Avatar decoration -->
-			<div class="avatar position-absolute top-50 start-0 ms-5">
-				<img class="avatar-img rounded-circle border border-2 border-light d-none d-md-block" src="assets/images/avatar/04.jpg" alt="avatar">
-			</div>
-			<!-- Avatar decoration -->
-			<div class="avatar avatar-sm position-absolute bottom-0 start-0 mb-5 ms-8">
-				<img class="avatar-img rounded-circle border border-2 border-light d-none d-md-block" src="assets/images/avatar/07.jpg" alt="avatar">
-			</div>
-			<!-- Avatar decoration -->
-			<div class="avatar avatar-lg position-absolute top-0 start-0 mt-5">
-				<img class="avatar-img rounded-circle border border-2 border-light d-none d-lg-block" src="assets/images/avatar/06.jpg" alt="avatar">
-			</div>
-			
-			<!-- Title -->
-			<div class="row mb-5">
-				<div class="col-12">
-					<h2>Hear From Our Happy Clients</h2>
-				</div>
-			</div>
-			
-			<!-- Testimonials -->
-			<div class="row">
-				<div class="col-md-9 col-xl-7 mx-auto">
-					<!-- Slider START -->
-					<div class="tiny-slider dots-primary">
-						<div class="tiny-slider-inner" data-autoplay="true" data-arrow="false" data-dots="true" data-edge="2" data-items="1">
-							<!-- Slider item -->
-							<div>
-								<!-- Avatar -->
-								<div class="avatar avatar-xl mb-4">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar">
-								</div>
-								<!-- Content -->
-								<p class="h5 fw-light mb-3">"Size-like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effects wish change way and any wanted."</p>
-								<ul class="list-inline small mb-3">
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
-								</ul>
-								<h5 class="mb-0">Carolyn Ortiz</h5>
-								<span>Ceo of Google</span>
-							</div>	
-
-							<!-- Slider item -->
-							<div>
-								<!-- Avatar -->
-								<div class="avatar avatar-xl mb-4">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar">
-								</div>
-								<!-- Content -->
-								<p class="h5 fw-light mb-3">"Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effects wish change way and any wanted."</p>
-								<ul class="list-inline small mb-3">
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
-								</ul>
-								<h5 class="mb-0">Louis Ferguson</h5>
-								<span>Editor in Chief</span>
-							</div>
-						</div>
-					</div>	
-					<!-- Slider END -->	
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
-<!-- =======================
-Testimonials END -->
-
-        <!-- =======================
 Blog grid START -->
 <section class="pt-0 pt-sm-5">
             <div class="container">
@@ -1040,8 +973,8 @@ Blog grid START -->
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.php">Kenya's Hidden Gems: Exploring Beyond
-                                        the Safari Mainstays</a></h5>
+                                <h5 class="card-title"><a href="blog-detail.php">Accessible Adventures: How Kiboko Tours Makes
+                                                    the Wild Welcoming for All</a></h5>
                                 <h6 class="fw-light mb-0">By <a href="blog-detail.php">John Kipchumba</a></h6>
                             </div>
                         </div>
@@ -1233,6 +1166,13 @@ Gallery END -->
         <!-- Footer START -->
             <?php include "includes/footer.php";?>
         <!-- Footer END -->
+
+        <!-- Safari Bookings Widget Script -->
+        <script type="text/javascript">(function(){var sb=document.createElement('script');sb.type='text/javascript';sb.async=true;sb.src='https://s3.amazonaws.com/z_437er23a/dca450748.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(sb,s);})();</script>
+
+
+        <!-- TripAdvisor Widget Script -->
+        <script async src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=511&amp;locationId=17206466&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
     </body>
 
 
