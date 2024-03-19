@@ -130,7 +130,7 @@
 											<div class="row g-4 justify-content-between p-lg-3">
 												<!-- Destination -->
 												<div class="col-lg-5">
-													<h6 class="mb-3"><i class="bi bi-pin-map-fill text-primary me-2"></i>Destinations</h6>
+                                                <h6 class="mb-3"><a href="destinations.php"><i class="bi bi-pin-map-fill text-primary me-2"></i>Destinations</a></h6>
 													<hr class="my-2">
 													<div class="row">
 														<div class="col-lg-6">
@@ -215,24 +215,16 @@
                                                     Classic <i class="fas fa-chevron-right align-icon-right"></i>
                                                 </a>
                                                 <ul class="dropdown-menu" data-bs-popper="none">
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">3-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">4-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">5-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">3 Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">6-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">7-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">8-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">9-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">10-Day
-                                                            Tours</a></li>
+                                                <li> <a class="dropdown-item" href="classic-safaris.php">3-Day Amboseli National Park Safari</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">6-Day Maasai Mara - L Naivasha - Amboseli Safari</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">6–Day Samburu – L Nakuru – Maasai Mara Tour</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">7 Days of Exploring Kenya’s Wilderness Parks</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">9-Day Mid-Range Safari at Leisure</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">8-Day Kenya Mid-Range Safari Experience</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">4–Day Samburu – Ol Pajeta Experience</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">5–Day L Nakuru – Maasai Mara Experience</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">7-Day Kenya Safari in Style</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">10–Day Magical Kenyan Experience</a></li>
 
 
                                                 </ul>
