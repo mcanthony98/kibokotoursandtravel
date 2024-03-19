@@ -102,26 +102,25 @@ About content START -->
 
 <div class="col-sm-6 col-lg-4">
     <div class="icon-lg bg-primary bg-opacity-10 text-primary rounded-2"><i
-            class="fa-solid fa-globe-americas fs-5"></i></div>
+            class="fa-solid fa-compass fs-5"></i></div>
     <h5 class="mt-2">Adventure Experience</h5>
-    <p class="mb-0">Classic Packages</p>
+    <p class="mb-0">Discover Kenya's wild heart! Embark on a classic safari adventure, filled with iconic wildlife encounters and breathtaking landscapes.</p>
 </div>
 
 <!-- Service item -->
 <div class="col-sm-6 col-lg-4">
     <div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-2"><i
-            class="fa-solid fa-hotel fs-5"></i></div>
+            class="fa-solid fa-wheelchair fs-5"></i></div>
     <h5 class="mt-2">Accessible Safaris</h5>
-    <p class="mb-0">Info</p>
+    <p class="mb-0">Adventure awaits everyone! Experience the wonders of Kenya with our accessible safaris, designed for travelers of all abilities.</p>
 </div>
 
 <!-- Service item -->
 <div class="col-sm-6 col-lg-4">
     <div class="icon-lg bg-success bg-opacity-10 text-success rounded-2"><i
-            class="fa-solid fa-plane fs-5"></i></div>
+            class="fa-solid fa-people-roof fs-5"></i></div>
     <h5 class="mt-2">Family & Couple Safaris</h5>
-    <p class="mb-0">Info
-    </p>
+    <p class="mb-0">Adventure awaits everyone! Experience the wonders of Kenya with our accessible safaris, designed for travelers of all abilities.</p>
 </div>
 
 </div>
@@ -225,13 +224,13 @@ Our Stats START -->
 
                             <li class="list-group-item py-3">
                                 <h6 class="mb-0 fw-normal">
-                                    <i class="bi bi-wifi fa-fw text-danger me-2"></i>WIFI Access
+                                    <i class="bi bi-briefcase fa-fw text-danger me-2"></i>Excemplary Customer Service
                                 </h6>
                             </li>
 
                             <li class="list-group-item pt-3 pb-0">
                                 <h6 class="mb-0 fw-normal">
-                                    <i class="bi bi-tags fa-fw text-orange me-2"></i>No Hidden Changes
+                                    <i class="bi bi-tags fa-fw text-orange me-2"></i>No Hidden Charges
                                 </h6>
                             </li>
                         </ul>
@@ -285,7 +284,10 @@ Team START -->
                             <!-- Card body -->
                             <div class="card-body px-2 pb-0">
                                 <h5 class="card-title"><a href="#">WILFRED VICTOR JUMA</a></h5>
-                                <span>DISABILITY TRAVEL CONSULTANT</span>
+                                <span style="text-align: center; color: black;"><strong>DISABILITY TRAVEL CONSULTANT</strong></span>
+                                <br>
+                                <br>
+                                <p>A lead occupational therapist and a psychologist with 10 years’ experience working with children with special needs. He is the one pioneering the inclusive tour environment for Children and adults with various special needs. With him comes aide therapists, special needs teacher, and a play aide.</p>                           
                             </div>
                         </div>
                     </div>
@@ -313,7 +315,11 @@ Team START -->
                             <!-- Card body -->
                             <div class="card-body px-2 pb-0">
                                 <h5 class="card-title"><a href="#">GIBSON N NJUGUNA</a></h5>
-                                <span>TRAVEL LOGISTICS AND COMMUNICATION</span>
+                                <span style="text-align: center; color: black;"><strong>TRAVEL LOGISTICS AND COMMUNICATION</strong></span>
+                                <br>
+                                <br>
+                                <p>With over 9 years of experience in planning, booking, organizing, and communicating arrangements with clients at various safari companies. You will just be amazed by his clarity and hospitality.</p>                           
+
                             </div>
                         </div>
                     </div>
@@ -341,8 +347,10 @@ Team START -->
                             <!-- Card body -->
                             <div class="card-body px-2 pb-0">
                                 <h5 class="card-title"><a href="#">MICHAEL N MWAURA</a></h5>
-                                <span>FINANCE & ACCOUNTS</span> 
-                                <span>kfbwjeqkbfewqfbwqeiofeqwi</span>                           
+                                <span style="text-align: center; color: black;"><strong>FINANCE & ACCOUNTS</strong></span>
+                                <br>
+                                <br>
+                                <p>With over 10 years of experience in Finance, Audit, Accounts, Tax, and Compliance in different industries, He brings a school of experience.</p>                           
                              </div>
                         </div>
                     </div>
@@ -370,7 +378,10 @@ Team START -->
                             <!-- Card body -->
                             <div class="card-body px-2 pb-0">
                                 <h5 class="card-title"><a href="#">SAMUEL MBUGUA</a></h5>
-                                <span>DRIVER GUIDE</span>
+                                <span style="text-align: center; color: black;"><strong>DRIVER GUIDE</strong></span>
+                                <br>
+                                <br>
+                                <p>With over 9 years of experience as a driver guide in various tour companies, he ensures guest experience when on a safari.</p>                           
                             </div>
                         </div>
                     </div>
@@ -410,7 +421,7 @@ It's Time to Discover START -->
                         </div>
                         <!-- Content and input -->
                         <div class="col-lg-4 text-lg-end">
-                            <a href="flight-list.html" class="btn btn-lg btn-dark mb-0">Book a Package Now!</a>
+                            <a href="destinations.php" class="btn btn-lg btn-dark mb-0">Book a Package Now!</a>
                         </div>
                     </div> <!-- Row END -->
                 </div>

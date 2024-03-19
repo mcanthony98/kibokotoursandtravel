@@ -45,6 +45,10 @@
 					margin-top: 10px;
 					margin-bottom: 10px; 
 				}
+
+				button:hover {
+				background-color: #FF8C00 !important;
+				}
 			</style>
 
 
@@ -73,7 +77,7 @@ Main Title START -->
 						<!-- Location -->
 						<p class="fw-bold mb-0"><i class="bi bi-geo-alt me-2"></i>Amboseli National Park
 							<a href="#" class="ms-2 text-decoration-underline" data-bs-toggle="modal" data-bs-target="#mapmodal">
-								<i class="bi bi-eye-fill me-1"></i>View On Map
+								<i class="bi bi-eye-fill me-1"></i>Our HQ Location
 							</a>
 						</p>
 					</div>
@@ -118,28 +122,6 @@ Main Title START -->
 <!-- =======================
 Main Title END -->
 
-<!-- =======================
-Image gallery START -->
-<section class="card-grid pt-0">
-	<div class="container">
-		<div class="row g-2">
-			<!-- Image -->
-			<div class="col-md-12">
-				<a data-glightbox data-gallery="gallery" href="assets/images/gallery/14.jpg">
-					<div class="card card-grid-lg card-element-hover card-overlay-hover overflow-hidden" style="background-image:url(assets/images/gallery/14.jpg); background-position: center left; background-size: cover;">
-						<!-- Card hover element -->
-						<div class="hover-element position-absolute w-100 h-100">
-							<i class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-						</div>
-					</div>
-				</a>
-			</div>
-
-		</div>
-	</div>
-</section>
-<!-- =======================
-Image gallery END -->
 
 <!-- =======================
 About hotel START -->
@@ -173,146 +155,56 @@ About hotel START -->
 								<div class="icon-lg bg-light h5 rounded-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Accomodation">
 									<i class="fa-solid fa-hotel"></i>
 								</div>
-
 							</div>
-
-							<p class="mb-3">Demesne far-hearted suppose venture excited see had has. Dependent on so extremely delivered by. Yet no jokes worse her why. <b>Bed one supposing breakfast day fulfilled off depending questions.</b></p>
-							<p class="mb-0">Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do. Water timed folly right aware if oh truth. Large above be to means. Dashwood does provide stronger is.</p>
+								
+							<h6 class="fw-light mb-2"><strong>Day 1</strong></h6>
+							<p class="mb-3">Begin your adventure with a thrilling airport pickup and a scenic drive along the Nairobi-Mombasa highway. Spot giraffes, zebras, and graceful antelopes grazing on the Kapiti plains – a taste of the wonders to come! Arrive at your lodge in time for a delicious lunch, then relax as the afternoon heat fades. Embark on an unforgettable sunset game drive, witnessing majestic elephants returning from the park's lush swamps – a breathtaking close to your first day on safari.</p>
+							
 							
 							<div class="collapse" id="collapseContent">
-								<p class="my-3">We focus a great deal on the understanding of behavioral psychology and influence triggers which are crucial for becoming a well rounded Digital Marketer. We understand that theory is important to build a solid foundation, we understand that theory alone isn't going to get the job done so that's why this rickets is packed with practical hands-on examples that you can follow step by step.</p>
-								<p class="mb-0">Behavioral psychology and influence triggers which are crucial for becoming a well rounded Digital Marketer. We understand that theory is important to build a solid foundation, we understand that theory alone isn't going to get the job done so that's why this tickets is packed with practical hands-on examples that you can follow step by step.</p>
+							
+							<h6 class="fw-light mb-2"><strong>Day 2</strong></h6>
+							<p class="mb-3">Rise with the African sun for an exhilarating early morning game drive! Track elusive lions and other majestic cats before the heat of the day sets in. Witness a breathtaking sunrise paint the landscape, sometimes revealing the mountain's distant peak. Return for a hearty breakfast and indulge in the hotel's refreshing pool.  Immerse yourself in vibrant Maasai culture – visit a traditional manyatta and discover how they thrive alongside Kenya's incredible wildlife.</p>
+							
+							<br>
+
+							<h6 class="fw-light mb-2"><strong>Day 3</strong></h6>
+							<p class="mb-3">Embark on a final early morning game drive, seeking out any elusive creatures that haven't yet graced your journey. Savor the thrill of potential surprises as you explore the awakening wilderness. Return to the hotel for a satisfying breakfast, then bid farewell to your wild haven and begin your journey back to Nairobi.  We'll ensure you reach the airport with ample time for your onward flight, carrying memories of Kenya's wonders.</p>
 							</div>
+
 							<a class="p-0 mb-4 mt-2 btn-more d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#collapseContent" role="button" aria-expanded="false" aria-controls="collapseContent">
 								See <span class="see-more ms-1">more</span><span class="see-less ms-1">less</span><i class="fa-solid fa-angle-down ms-2"></i>
 							</a>
 
-							<!-- List -->
-							<h5 class="fw-light mb-2">Advantages</h5>
+							<!-- Inclusions List -->
+							<h5 class="fw-light mb-2"><strong>What's Included</strong></h5>
 							<ul class="list-group list-group-borderless mb-0">
-								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Every hotel staff to have Proper PPT kit for COVID-19</li>
-								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Every staff member wears face masks and gloves at all service times.</li>
-								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Hotel staff ensures to maintain social distancing at all times.</li>
-								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>The hotel has In-Room Dining options available </li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Service of an English-speaking professional driver/guide.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Transport whilst on safari in a customized safari van with a pop-up roof for game viewing.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Full Board Accommodation whilst on safari.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Driver’s salary and allowances plus park fees for driver and vehicle.</li>
 							</ul>
+
+							<br>
+
+							<!-- Exclusions List -->
+							<h5 class="fw-light mb-2"><strong>What's Not Included</strong></h5>
+							<ul class="list-group list-group-borderless mb-0">
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>International flights.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Room upgrades</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Tips and Gratuities</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Items of a personal nature i.e., telephone usage, laundry etc.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Change in the itinerary.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Increase in park fees or other charges beyond our control.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Activities not mentioned in the package.</li>
+
+							</ul>
+
 						</div>
 						<!-- Card body END -->
 					</div>
 					<!-- About hotel START -->
 
-
-					<!-- Amenities START -->
-					<div class="card bg-transparent">
-						<!-- Card header -->
-						<div class="card-header border-bottom bg-transparent px-0 pt-0">
-							<h3 class="card-title mb-0">Amenities</h3>
-						</div>
-
-						<!-- Card body START -->
-						<div class="card-body pt-4 p-0">
-							<div class="row g-4">
-								<!-- Activities -->
-								<div class="col-sm-6">
-									<h6><i class="fa-solid fa-biking me-2"></i>Activities</h6>
-									<!-- List -->
-									<ul class="list-group list-group-borderless mt-2 mb-0">
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Swimming pool
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Spa
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Kids' play area
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Gym
-										</li>
-									</ul>
-								</div>
-	
-								<!-- Payment Method -->
-								<div class="col-sm-6">
-									<h6><i class="fa-solid fa-credit-card me-2"></i>Payment Method</h6>
-									<!-- List -->
-									<ul class="list-group list-group-borderless mt-2 mb-0">
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Credit card (Visa, Master card)
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Cash
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Debit Card
-										</li>
-									</ul>
-								</div>
-	
-								<!-- Services -->
-								<div class="col-sm-6">
-									<h6><i class="fa-solid fa-concierge-bell me-2"></i>Services</h6>
-									<!-- List -->
-									<ul class="list-group list-group-borderless mt-2 mb-0">
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Dry cleaning
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Room Service
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Special service
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Waiting Area
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Secrete smoking area
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Concierge
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Laundry facilities
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Ironing Service
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Lift
-										</li>
-									</ul>
-								</div>
-	
-								<!-- Safety & Security -->
-								<div class="col-sm-6">
-									<h6><i class="bi bi-shield-fill-check me-2"></i>Safety & Security</h6>
-									<!-- List -->
-									<ul class="list-group list-group-borderless mt-2 mb-4 mb-sm-5">
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Doctor on Call
-										</li>
-									</ul>
-	
-									<h6><i class="fa-solid fa-volume-up me-2"></i>Staff Language</h6>
-									<!-- List -->
-									<ul class="list-group list-group-borderless mt-2 mb-0">
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>English
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Spanish
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Hindi
-										</li>
-									</ul>
-								</div>
-	
-							</div>
-						</div>
-						<!-- Card body END -->
-					</div>
-					<!-- Amenities END -->
 				</div>	
 			</div>
 			<!-- Content END -->
@@ -327,11 +219,11 @@ About hotel START -->
 						<div class="d-sm-flex justify-content-sm-between align-items-center mb-3">
 							<div>
 								<span>Price Start at</span>
-								<h4 class="card-title mb-0">$3,500</h4>
+								<h4 class="card-title mb-0">$1,500</h4>
 							</div>
 							<div>
-								<h6 class="fw-normal mb-0">1 room per night</h6>
-								<small>+ $285 taxes & fees</small>
+								<h6 class="fw-normal mb-0">Price applies per person</h6>
+								<small>+ $50 VAT</small>
 							</div>
 						</div>		
 
@@ -345,11 +237,11 @@ About hotel START -->
 							<li class="list-inline-item me-0 small"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
 						</ul>
 
-						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Free breakfast available</p>
+						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Date: June 25th - 28th</p>
 
 						<!-- Button -->
 						<div class="d-grid">
-							<a href="#room-options" class="btn btn-lg btn-primary-soft mb-0">View 10 Rooms Options</a>
+							<a href="booking.php" class="btn btn-lg btn-primary-soft mb-0">Book this Package Now</a>
 						</div>
 					</div>
 					<!-- Book now END -->
@@ -364,31 +256,53 @@ About hotel START -->
 About hotel END -->
 
 <!-- Table START -->
+<h5 class="fw-light mb-2 text-center"><strong>Package Program</strong></h5>
 <div class="table-responsive d-flex justify-content-center px-5" style="padding-left: 30%; padding-right: 30%;">
-    <table class="table table-bordered">
-        <thead class="table-primary">
+    <table class="table table-bordered" style="width: 70%; margin: 0 auto;"> <thead class="table-primary">
             <tr>
-                <th scope="col">Offer Detail</th>
-                <th scope="col">Maximum booking value</th>
-                <th scope="col">Applicable Card</th>
-                <th scope="col">Validity</th>
+                <th scope="col">Day</th>
+                <th scope="col">Location</th>
+                <th scope="col">Accomodation</th>
+                <th scope="col">Meal Plan</th>
+				<th scope="col">Activity</th>
+
             </tr>
         </thead>
         <tbody class="align-middle">
             <tr>
-                <td class="h6 mb-0">Flat 25% discount</td>
-                <td class="h6 fw-normal mb-0">$3000</td>
-                <td class="h6 fw-normal mb-0">Mbokiwik</td>
-                <td class="h6 fw-normal mb-0">19 Sep</td>
+                <td class="h6 fw-normal mb-0">1</td>
+                <td class="h6 fw-normal mb-0">Amboseli National Park</td>
+                <td class="h6 fw-normal mb-0">Aa Lodge</td>
+                <td class="h6 fw-normal mb-0">Lunch & Dinner</td>
+				<td class="h6 fw-normal mb-0">Evening Game Drive</td>
+            </tr>
+            <tr>
+                <td class="h6 fw-normal mb-0">2</td>
+                <td class="h6 fw-normal mb-0">Amboseli National Park</td>
+                <td class="h6 fw-normal mb-0">Aa Lodge</td>
+                <td class="h6 fw-normal mb-0">Breakfast, Lunch & Dinner</td>
+				<td class="h6 fw-normal mb-0">Full-Day Game Drive</td>
+            </tr>
+			<tr>
+                <td class="h6 fw-normal mb-0">3</td>
+                <td class="h6 fw-normal mb-0">Amboseli National Park</td>
+                <td class="h6 fw-normal mb-0">No Accomadation</td>
+                <td class="h6 fw-normal mb-0">Breakfast</td>
+				<td class="h6 fw-normal mb-0">Return Jouney</td>
             </tr>
         </tbody>
     </table>
-</div>  
+</div>  
+ <br>
+ <br>
 <!-- Table END -->
 
 <div class="sticky-section">
     <h3>3-Day Amboseli Package</h3>
-    <button>Get this Package Now</button>
+<a href="booking.php" style="text-decoration: none;">
+	<button style="transition: background-color 0.3s ease; background-color: white;">Get this Package Now</button>
+</a>
+
   </div>
 
 
@@ -409,12 +323,12 @@ About hotel END -->
 				<div class="modal-content">
 					<!-- Title -->
 					<div class="modal-header">
-						<h5 class="modal-title" id="mapmodalLabel">View Our Hotel Location</h5>
+						<h5 class="modal-title" id="mapmodalLabel">Kiboko Tours & Travel HQ</h5>
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<!-- Map -->
 					<div class="modal-body p-0">
-						<iframe class="w-100" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076684379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sin!4v1586000412513!5m2!1sen!2sin"  style="border:0;" aria-hidden="false" tabindex="0"></iframe>	
+						<iframe class="w-100" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7857943622957!2d36.78912700000001!3d-1.3035297000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11694ca41e73%3A0x54248aec19cbbfd4!2sKiboko%20Tours%20and%20Travel!5e0!3m2!1sen!2ske!4v1710861403273!5m2!1sen!2ske"  style="border:0;" aria-hidden="false" tabindex="0"></iframe>	
 					</div>
 					<!-- Button -->
 					<div class="modal-footer">

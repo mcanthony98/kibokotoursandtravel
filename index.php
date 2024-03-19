@@ -24,20 +24,20 @@
 
         <!-- Top alert START -->
         <div class="alert alert-warning py-2 m-0 bg-dark border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-around w-100" role="alert">
-        <p class="text-warning m-0" style="color: orange; margin-right: 5px;">
-            <a href="mailto:info@kibokotoursandtravel.com" class="link-light"><i class="fa fa-envelope"></i>  <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+        <p class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
+            <a href="mailto:info@kibokotoursandtravel.com" class="link-light" style="color: #ff8c00;"><i class="fa fa-envelope"></i>  <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
         </p>
         <span style="margin-left: 5px;">
             <a href="https://api.whatsapp.com/send?phone=254712123123" target="_blank" class="pl-1 link-success"><i class="bi bi-whatsapp "></i> <span class="d-none d-md-inline">Whatsapp: +254 712 123 123</span></a>
         </span>
-    </div>
+        </div>
 	<!-- Logo Nav START -->
 	<nav class="navbar navbar-dark navbar-expand-xl">
 		<div class="container-fluid px-md-5">
 			<!-- Logo START -->
-			<a class="navbar-brand" href="index.html">
-				<img class="navbar-brand-item" src="assets/images/kiboko-logo.png" alt="logo">
-			</a>
+            <a class="navbar-brand" href="index.php">
+                <img class="navbar-brand-item" src="assets/images/kiboko-logo.png" alt="logo" style="width:80px; height:auto;">
+            </a>
 			<!-- Logo END -->
 
       <!-- Responsive navbar toggler -->
@@ -158,7 +158,7 @@
 											<div class="row g-4 justify-content-between p-lg-3">
 												<!-- Destination -->
 												<div class="col-lg-5">
-													<h6 class="mb-3"><i class="bi bi-pin-map-fill text-primary me-2" href="destinations.php"></i>Destinations</h6>
+                                                    <h6 class="mb-3"><a href="destinations.php"><i class="bi bi-pin-map-fill text-primary me-2"></i>Destinations</a></h6>
 													<hr class="my-2">
 													<div class="row">
 														<div class="col-lg-6">
@@ -244,25 +244,16 @@
                                                     Classic <i class="fas fa-chevron-right align-icon-right"></i>
                                                 </a>
                                                 <ul class="dropdown-menu" data-bs-popper="none">
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">3-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">4-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">5-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">3 Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">6-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">7-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">8-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">9-Day
-                                                            Tours</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">10-Day
-                                                            Tours</a></li>
-
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">3-Day Amboseli National Park Safari</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">6-Day Maasai Mara - L Naivasha - Amboseli Safari</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">6–Day Samburu – L Nakuru – Maasai Mara Tour</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">7 Days of Exploring Kenya’s Wilderness Parks</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">9-Day Mid-Range Safari at Leisure</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">8-Day Kenya Mid-Range Safari Experience</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">4–Day Samburu – Ol Pajeta Experience</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">5–Day L Nakuru – Maasai Mara Experience</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">7-Day Kenya Safari in Style</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">10–Day Magical Kenyan Experience</a></li>
 
                                                 </ul>
                                             </li>
@@ -483,7 +474,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/maasai.webp" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Cultural Immersion</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Cultural Immersion</a></h6>
 						<p>Journey into the heart of Kenya. Connect with the iconic Maasai and their vibrant traditions.</p>
 
 					</div>
@@ -495,7 +486,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/bush-walk.jpg" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Bush Walks</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Bush Walks</a></h6>
 						<p>Feel the pulse of the wild beneath your feet – immerse yourself in nature's heartbeat on a guided bush walk.</p>
 					</div>
 				</div>
@@ -506,7 +497,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/night-game-drive.jpg" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Night Game Visits</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Night Game Visits</a></h6>
 						<p>Witness the unseen world of the African night – predators on the prowl and starlight as your guide.</p>
 					</div>
 				</div>
@@ -517,7 +508,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/chopper-ride.jpg" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Scenic Flights</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Scenic Flights</a></h6>
 						<p>The ultimate bird's eye view – soar over vast landscapes and witness wildlife like never before.</p>
 					</div>
 				</div>
@@ -528,7 +519,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/sunset.webp" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Sundowners in the Wild</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Sundowners in the Wild</a></h6>
 						<p>Celebrate the day's adventure – golden hour cocktails with an unforgettable backdrop.</p>
 						
 					</div>
@@ -549,7 +540,7 @@ Featured Packages START -->
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-12 text-center">
-                        <h2 class="mb-0">Our Top 5 Packages</h2>
+                        <h2 class="mb-0">Our Top Packages</h2>
                     </div>
                 </div>
 
@@ -564,7 +555,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -632,7 +623,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/3.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -665,7 +656,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/1.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -697,7 +688,7 @@ Featured Packages END -->
 
 
 <!-- =======================
-Client START -->
+Accreitations START -->
 <section class="py-0 py-md-5">
 	<div class="container">
 
@@ -726,10 +717,30 @@ Client START -->
 				<img src="assets/images/client/TRA.png" class="grayscale" alt="">
 			</div>
 		</div>
+
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <!-- Safari Bookings Widget -->
+            <div style="display: inline-block; padding: 0 10px 5px 0;"><span class="94c5245077111">&nbsp;</span></div>
+
+            <!--TripAdvisor Widget -->
+            <div>
+                <a class="widFRRClickWrap" target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294207-d17206466-Reviews-KIBOKO_TOURS_AND_TRAVEL_LTD-Nairobi.html" onclick="ta.cds.handleTALink(11424,this);return true;"></a>
+
+                <div class="col medium-6 small-12 large-6"  ><div class="col-inner"  >
+
+                    <div id="TA_rated511" class="TA_rated">
+                        <ul id="XilmmB" class="TA_links z8ISMh6">
+                        <li id="4HFiYkWs7c7" class="ZFKcSEurPD4"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294207-d17206466-Reviews-KIBOKO_TOURS_AND_TRAVEL_LTD-Nairobi.html" rel="noopener"><img src="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor"/></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 	</div>
 </section>
 <!-- =======================
-Client END -->
+Accreitations END -->
 
 <!-- =======================
 Main Banner START -->
@@ -742,7 +753,7 @@ Main Banner START -->
 				<!-- Info -->
 				<p class="mb-4">Life is all about adventure and enjoying what nature has to offer</p>
 				<!-- Button -->
-				<a href="add-listing.html" class="btn btn-primary-soft mb-4">Book a Package Now! <i class="fa-solid fa-arrow-right-long fa-fw"></i></a>
+				<a href="destinations.php" class="btn btn-primary-soft mb-4">Book a Package Now! <i class="fa-solid fa-arrow-right-long fa-fw"></i></a>
 				<!-- List -->
 				<h6 class="fw-normal mb-1">Our Benefits</h6>
 				<ul class="list-group list-group-borderless mb-0 small">
@@ -790,7 +801,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Maasai Mara National Reserve</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Maasai Mara National Reserve</a></h4>
 									<p class="text-white mb-2">Where the Big Five roam and the Great Migration thunders across the plains.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -807,7 +818,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Amboseli National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Amboseli National Park</a></h4>
 									<p class="text-white mb-2">Elephants dwarfed by the majesty of Kilimanjaro.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -824,7 +835,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Tsavo National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Tsavo National Park</a></h4>
 									<p class="text-white mb-2">Kenya's wilderness giants, painted red by volcanic earth.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -841,7 +852,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Lake Naivasha National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Naivasha National Park</a></h4>
 									<p class="text-white mb-2">Hippos bask, and eagles soar across shimmering waters.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -858,7 +869,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Ol Pajeta Conservancy</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Ol Pajeta Conservancy</a></h4>
 									<p class="text-white mb-2">Rhino sanctuary and a beacon of conservation hope.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -875,7 +886,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Lake Nakuru National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Nakuru National Park</a></h4>
 									<p class="text-white mb-2">A vibrant spectacle of pink – flamingos in their breathtaking thousands.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -892,7 +903,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Samburu National Reserve</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Samburu National Reserve</a></h4>
 									<p class="text-white mb-2">The rugged north, where unique species and vibrant cultures thrive.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -907,97 +918,10 @@ Experience START -->
 <!-- =======================
 Experience END -->
 
-
+<br>
+<br>
 
 <!-- =======================
-Testimonials START -->
-<section class="pt-0 pt-md-5">
-	<div class="container">
-		<div class="text-center position-relative py-5" style="background-image:url(assets/images/element/map.svg); background-position: center left; background-size: cover;">
-			<!-- Avatar decoration -->
-			<div class="avatar position-absolute top-50 end-0 mt-5 me-7">
-				<img class="avatar-img rounded-circle border border-2 border-light d-none d-md-block" src="assets/images/avatar/09.jpg" alt="avatar">
-			</div>
-			<!-- Avatar decoration -->
-			<div class="avatar avatar-lg position-absolute top-0 end-0 mt-5">
-				<img class="avatar-img rounded-circle border border-2 border-light d-none d-lg-block" src="assets/images/avatar/05.jpg" alt="avatar">
-			</div>
-			<!-- Avatar decoration -->
-			<div class="avatar position-absolute top-50 start-0 ms-5">
-				<img class="avatar-img rounded-circle border border-2 border-light d-none d-md-block" src="assets/images/avatar/04.jpg" alt="avatar">
-			</div>
-			<!-- Avatar decoration -->
-			<div class="avatar avatar-sm position-absolute bottom-0 start-0 mb-5 ms-8">
-				<img class="avatar-img rounded-circle border border-2 border-light d-none d-md-block" src="assets/images/avatar/07.jpg" alt="avatar">
-			</div>
-			<!-- Avatar decoration -->
-			<div class="avatar avatar-lg position-absolute top-0 start-0 mt-5">
-				<img class="avatar-img rounded-circle border border-2 border-light d-none d-lg-block" src="assets/images/avatar/06.jpg" alt="avatar">
-			</div>
-			
-			<!-- Title -->
-			<div class="row mb-5">
-				<div class="col-12">
-					<h2>Hear From Our Happy Clients</h2>
-				</div>
-			</div>
-			
-			<!-- Testimonials -->
-			<div class="row">
-				<div class="col-md-9 col-xl-7 mx-auto">
-					<!-- Slider START -->
-					<div class="tiny-slider dots-primary">
-						<div class="tiny-slider-inner" data-autoplay="true" data-arrow="false" data-dots="true" data-edge="2" data-items="1">
-							<!-- Slider item -->
-							<div>
-								<!-- Avatar -->
-								<div class="avatar avatar-xl mb-4">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar">
-								</div>
-								<!-- Content -->
-								<p class="h5 fw-light mb-3">"Size-like body someone had. Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effects wish change way and any wanted."</p>
-								<ul class="list-inline small mb-3">
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
-								</ul>
-								<h5 class="mb-0">Carolyn Ortiz</h5>
-								<span>Ceo of Google</span>
-							</div>	
-
-							<!-- Slider item -->
-							<div>
-								<!-- Avatar -->
-								<div class="avatar avatar-xl mb-4">
-									<img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg" alt="avatar">
-								</div>
-								<!-- Content -->
-								<p class="h5 fw-light mb-3">"Are conduct viewing boy minutes warrant the expense? Tolerably behavior may admit daughters offending her ask own. Praise effects wish change way and any wanted."</p>
-								<ul class="list-inline small mb-3">
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item me-0"><i class="fa-solid fa-star text-warning"></i></li>
-									<li class="list-inline-item"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
-								</ul>
-								<h5 class="mb-0">Louis Ferguson</h5>
-								<span>Editor in Chief</span>
-							</div>
-						</div>
-					</div>	
-					<!-- Slider END -->	
-				</div>
-			</div>
-
-		</div>
-	</div>
-</section>
-<!-- =======================
-Testimonials END -->
-
-        <!-- =======================
 Blog grid START -->
 <section class="pt-0 pt-sm-5">
             <div class="container">
@@ -1019,16 +943,16 @@ Blog grid START -->
                                 <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="#" class="badge text-bg-warning mb-2">History</a>
+                                    <a href="blog.php" class="badge text-bg-warning mb-2">History</a>
                                 </div>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title mt-2"><a href="blog-detail.html">Kenya's Hidden Gems: Exploring
+                                <h5 class="card-title mt-2"><a href="blog-detail.php">Kenya's Hidden Gems: Exploring
                                         Beyond the Safari Mainstays</a></h5>
-                                <h6 class="fw-light mb-0">By <a href="#">Kevin Ocheing</a></h6>
+                                <h6 class="fw-light mb-0">By <a href="blog-detail.php">Kevin Ocheing</a></h6>
                             </div>
                         </div>
                     </div>
@@ -1042,16 +966,16 @@ Blog grid START -->
                                 <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="#" class="badge text-bg-dark mb-2">Adventure</a>
+                                    <a href="blog.php" class="badge text-bg-dark mb-2">Adventure</a>
                                 </div>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.html">Kenya's Hidden Gems: Exploring Beyond
-                                        the Safari Mainstays</a></h5>
-                                <h6 class="fw-light mb-0">By <a href="#">John Kipchumba</a></h6>
+                                <h5 class="card-title"><a href="blog-detail.php">Accessible Adventures: How Kiboko Tours Makes
+                                                    the Wild Welcoming for All</a></h5>
+                                <h6 class="fw-light mb-0">By <a href="blog-detail.php">John Kipchumba</a></h6>
                             </div>
                         </div>
                     </div>
@@ -1065,16 +989,16 @@ Blog grid START -->
                                 <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="#" class="badge text-bg-danger mb-2">Business</a>
+                                    <a href="blog-detail.php" class="badge text-bg-danger mb-2">Business</a>
                                 </div>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.html">Wildlife Encounters That Changed My
+                                <h5 class="card-title"><a href="blog-detail.php">Wildlife Encounters That Changed My
                                         Life: A Kiboko Tour Guide's Stories</a></h5>
-                                <h6 class="fw-light mb-0">By <a href="#">Ashley Mwikali</a></h6>
+                                <h6 class="fw-light mb-0">By <a href="blog-detail.php">Ashley Mwikali</a></h6>
                             </div>
                         </div>
                     </div>
@@ -1242,6 +1166,13 @@ Gallery END -->
         <!-- Footer START -->
             <?php include "includes/footer.php";?>
         <!-- Footer END -->
+
+        <!-- Safari Bookings Widget Script -->
+        <script type="text/javascript">(function(){var sb=document.createElement('script');sb.type='text/javascript';sb.async=true;sb.src='https://s3.amazonaws.com/z_437er23a/dca450748.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(sb,s);})();</script>
+
+
+        <!-- TripAdvisor Widget Script -->
+        <script async src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=511&amp;locationId=17206466&amp;lang=en_US&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
     </body>
 
 

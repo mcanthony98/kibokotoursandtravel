@@ -34,7 +34,7 @@ Main Banner START -->
                     <!-- Banner title -->
                     <div class="row">
                         <div class="col-md-8 mx-auto my-5">
-                            <h1 class="text-center text-dark">Explore Kenya's Most Exciting Tour Destinations</h1></h1>
+                            <h1 class="text-center text-dark">Places to Visit in Kenya</h1></h1>
                             <ul class="nav nav-divider h6 text-dark mb-0 justify-content-center">
                                 <li class="nav-item" style="color: white; font-weight: bold;">10 Destinations</li>
                                 <li class="nav-item" style="color: white; font-weight: bold;">50+ Packages</li>
@@ -104,7 +104,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Card overlay bottom -->
                                     <div class="w-100 mt-auto">
-                                        <span class="badge text-bg-white fs-6">6 days / 5 nights</span>
+                                        <span class="badge text-bg-white fs-6">2 days</span>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Amboseli
+                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Amboseli
                                         National Park</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
 
@@ -123,7 +123,7 @@ Tour grid START -->
                                         <i class="fa-solid fa-car text-orange me-2"></i>4-5 Hr Drive
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fas fa-list text-danger me-2"></i>2 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -141,7 +141,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +156,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c2.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -173,7 +173,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Maasai
+                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Maasai
                                         Mara
                                         National
                                         Reserve</a></h5>
@@ -185,7 +185,7 @@ Tour grid START -->
                                         <i class="fa-solid fa-car text-info me-2"></i>5-6 Hr Drive
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -202,7 +202,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c3.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -234,7 +234,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Samburu
+                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Samburu
                                         National Park</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
@@ -245,7 +245,7 @@ Tour grid START -->
                                     </li>
 
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -262,7 +262,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -277,7 +277,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c4.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -294,7 +294,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Lake
+                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Lake
                                         Naivasha National
                                         Park</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
@@ -305,7 +305,7 @@ Tour grid START -->
                                         <i class="fa-solid fa-car text-info me-2"></i>2 Hr Drive
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -322,7 +322,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -337,7 +337,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c5.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -354,7 +354,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Nairobi
+                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Nairobi
                                         National Park</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-06</span>
 
@@ -364,7 +364,7 @@ Tour grid START -->
                                         <i class="fa-solid fa-car text-orange me-2"></i>30 Min Drive
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -381,7 +381,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -396,7 +396,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c6.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -413,7 +413,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Tsavo East
+                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Tsavo East
                                         National Park</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-08</span>
 
@@ -423,7 +423,7 @@ Tour grid START -->
                                         <i class="fa-solid fa-car text-orange me-2"></i>4 Hr Drive
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -442,7 +442,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -457,7 +457,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c6.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -474,7 +474,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Tsavo West
+                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Tsavo West
                                         National Park</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-08</span>
 
@@ -484,7 +484,7 @@ Tour grid START -->
                                         <i class="fa-solid fa-car text-orange me-2"></i>4 Hr Drive
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -503,7 +503,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>
@@ -518,7 +518,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c4.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -535,7 +535,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Lake
+                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Lake
                                         Nakuru National
                                         Park</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
@@ -546,7 +546,7 @@ Tour grid START -->
                                         <i class="fa-solid fa-car text-info me-2"></i>2 Hr Drive
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -563,7 +563,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
                             </div>

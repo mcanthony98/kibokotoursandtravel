@@ -31,13 +31,13 @@ Main Banner START -->
             <div class="container">
                 <!-- Background image -->
                 <div class="p-3 p-sm-5 rounded-3"
-                    style="background-image: url(assets/images/8.png); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                    style="background-image: url(assets/images/footer-bg.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
                     <!-- Banner title -->
                     <div class="row">
                         <div class="col-md-8 mx-auto my-5">
-                            <h1 class="text-center text-dark">Accessible Safaris</h1>
+                            <h1 class="text-center text-light">Accessible Safaris</h1>
                             <ul class="nav nav-divider h6 text-dark mb-0 justify-content-center">
-                                <li class="nav-item">Adventure for All: Accessible Safaris Made Easy with Kiboko Tours.
+                            <p style="text-align: center; color: white;">Adventure awaits everyone! Experience the wonders of Kenya with our accessible safaris, designed for travelers of all abilities.</p>
                                 </li>
                             </ul>
                         </div>
@@ -50,7 +50,7 @@ Main Banner START -->
                 <div class="alert alert-danger d-flex align-items-center mt-5 rounded-3 mb-0" role="alert">
                     <span class="h4 mb-0 alert-heading"><i class="bi bi-exclamation-octagon-fill me-2"></i> </span>
                     <div class="ms-3">
-                        <h6 class="mb-0 alert-heading">Hurry! 65% off the tours are already fully booked</h6>
+                        <h6 class="mb-0 alert-heading">Hurry! 65% off, the tours are almost fully booked</h6>
                         <p class="mb-0">Many trips to various areas have been ordered, don't miss out!</p>
                     </div>
                 </div>
@@ -95,17 +95,17 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/accessible/a1.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/7.png" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
                                     <div>
-                                        <span class="badge text-bg-danger">30% Off</span>
-                                        <span class="badge text-bg-dark">Adventure</span>
+                                        <span class="badge text-bg-danger">40% Off</span>
+                                        <span class="badge text-bg-dark">Children</span>
                                     </div>
                                     <!-- Card overlay bottom -->
                                     <div class="w-100 mt-auto">
-                                        <span class="badge text-bg-white fs-6">6 days / 5 nights</span>
+                                        <span class="badge text-bg-white fs-6">1 day</span>
                                     </div>
                                 </div>
                             </div>
@@ -114,20 +114,20 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html"
-                                        class="stretched-link">Therapeutic Horseback Riding</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Therapeutic Horseback
+                                                            Riding</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
 
                                 <!-- List -->
                                 <ul class="nav nav-divider mt-3 mb-0">
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-plane text-orange me-2"></i>1 Flight
+                                        <i class="fa-solid fa-car text-orange me-2"></i>2-Hrs
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-hotel text-info me-2"></i>1 Hotel
+                                        <i class="fa-solid fa-map-pin text-info me-2"></i>1 Places
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -140,7 +140,7 @@ Tour grid START -->
                                     <!-- Price -->
                                     <div class="hstack gap-2">
                                         <h5 class="fw-normal text-success mb-0">$1500</h5>
-                                        <small>/per person</small>
+                                        <small>/per child</small>
                                         <span class="text-decoration-line-through">$1800</span>
                                     </div>
                                     <!-- Button -->
@@ -160,15 +160,15 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/accessible/a2.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/7.png" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Game Drive</span> </div>
+                                    <div> <span class="badge text-bg-dark">Children</span> </div>
                                     <!-- Card overlay bottom -->
                                     <div class="w-100 mt-auto">
                                         <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">6 days / 5 nights</span>
+                                        <span class="badge text-bg-white fs-6">3 days</span>
                                     </div>
                                 </div>
                             </div>
@@ -177,17 +177,20 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Special
-                                        Needs Buzz Tour</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Special
+                                                            Needs Buzz Tour</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
 
                                 <!-- List -->
                                 <ul class="nav nav-divider mt-3 mb-0">
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-hotel text-info me-2"></i>1 Hotel
+                                        <i class="fa-solid fa-car text-orange me-2"></i>8-Hrs
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-map-pin text-info me-2"></i>3 Places
+                                    </li>
+                                    <li class="nav-item h6 fw-normal mb-0">
+                                        <i class="fa-solid fa-list text-danger me-2"></i>5 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -199,8 +202,8 @@ Tour grid START -->
                                 <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
                                     <!-- Price -->
                                     <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$800</h5>
-                                        <small>/per person</small>
+                                        <h5 class="fw-normal text-success mb-0">$2800</h5>
+                                        <small>/per children</small>
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
@@ -219,15 +222,15 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/accessible/a3.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/7.png" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Aventure</span> </div>
+                                    <div> <span class="badge text-bg-dark">Children</span> </div>
                                     <!-- Card overlay bottom -->
                                     <div class="w-100 mt-auto">
                                         <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">5 days / 4 nights</span>
+                                        <span class="badge text-bg-white fs-6">4 days</span>
                                     </div>
                                 </div>
                             </div>
@@ -236,20 +239,21 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Game drive
-                                        & Dining Experience</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Game
+                                                            Drive & Dining
+                                                            Experience</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
                                 <!-- List -->
                                 <ul class="nav nav-divider mt-3 mb-0">
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-plane text-orange me-2"></i>1 Flight
+                                        <i class="fa-solid fa-car text-orange me-2"></i>6-Hrs
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-hotel text-info me-2"></i>1 Hotel
+                                        <i class="fa-solid fa-map-pin text-info me-2"></i>4 Places
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>7 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -261,8 +265,8 @@ Tour grid START -->
                                 <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
                                     <!-- Price -->
                                     <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$725</h5>
-                                        <small>/per person</small>
+                                        <h5 class="fw-normal text-success mb-0">$1725</h5>
+                                        <small>/per child</small>
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
@@ -281,15 +285,15 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/accessible/a4.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/7.png" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Nature</span> </div>
+                                    <div> <span class="badge text-bg-dark">Children</span> </div>
                                     <!-- Card overlay bottom -->
                                     <div class="w-100 mt-auto">
                                         <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">4 days / 3 nights</span>
+                                        <span class="badge text-bg-white fs-6">7 days</span>
                                     </div>
                                 </div>
                             </div>
@@ -298,17 +302,20 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Safari
-                                        Experience</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Safari
+                                                            Experience</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
                                 <!-- List -->
                                 <ul class="nav nav-divider mt-3 mb-0">
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-hotel text-info me-2"></i>1 Hotel
+                                        <i class="fa-solid fa-car text-orange me-2"></i>15-Hrs
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-map-pin text-info me-2"></i>4 Parks
+                                    </li>
+                                    <li class="nav-item h6 fw-normal mb-0">
+                                        <i class="fa-solid fa-list text-danger me-2"></i>9 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -320,8 +327,8 @@ Tour grid START -->
                                 <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
                                     <!-- Price -->
                                     <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$400</h5>
-                                        <small>/per person</small>
+                                        <h5 class="fw-normal text-success mb-0">$3400</h5>
+                                        <small>/per child</small>
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
@@ -340,15 +347,15 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/accessible/a5.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/7.png" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Wildlife in the City</span> </div>
+                                    <div> <span class="badge text-bg-dark">Children/Adults</span> </div>
                                     <!-- Card overlay bottom -->
                                     <div class="w-100 mt-auto">
                                         <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">5 days / 4 nights</span>
+                                        <span class="badge text-bg-white fs-6">3 days</span>
                                     </div>
                                 </div>
                             </div>
@@ -357,20 +364,20 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Group
-                                        shopping</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Countryside Road
+                                                            Experience</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-06</span>
 
                                 <!-- List -->
                                 <ul class="nav nav-divider mt-3 mb-0">
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-plane text-orange me-2"></i>1 Flight
+                                        <i class="fa-solid fa-car text-orange me-2"></i>3-Hrs
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-hotel text-info me-2"></i>1 Hotel
+                                        <i class="fa-solid fa-map-pin text-info me-2"></i>2 Places
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>3 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -382,7 +389,7 @@ Tour grid START -->
                                 <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
                                     <!-- Price -->
                                     <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$845</h5>
+                                        <h5 class="fw-normal text-success mb-0">$4845</h5>
                                         <small>/per person</small>
                                     </div>
                                     <!-- Button -->
@@ -402,15 +409,15 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/accessible/a6.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/7.png" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Heritage</span> </div>
+                                    <div> <span class="badge text-bg-dark">Children</span> </div>
                                     <!-- Card overlay bottom -->
                                     <div class="w-100 mt-auto">
                                         <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">6 days / 7 nights</span>
+                                        <span class="badge text-bg-white fs-6">4 days</span>
                                     </div>
                                 </div>
                             </div>
@@ -419,20 +426,21 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html"
-                                        class="stretched-link">Countryside Road experience</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Coast
+                                                            Experience & Dolphin
+                                                            Watching in Watamu</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-08</span>
 
                                 <!-- List -->
                                 <ul class="nav nav-divider mt-3 mb-0">
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-plane text-orange me-2"></i>1 Flight
+                                        <i class="fa-solid fa-car text-orange me-2"></i>14-Hrs
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-hotel text-info me-2"></i>1 Hotel
+                                        <i class="fa-solid fa-map-pin text-info me-2"></i>5 Places
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-person-skating text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i>9 Activities
                                     </li>
                                 </ul>
                             </div>
@@ -444,8 +452,8 @@ Tour grid START -->
                                 <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
                                     <!-- Price -->
                                     <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$1250</h5>
-                                        <small>/per person</small>
+                                        <h5 class="fw-normal text-success mb-0">$3250</h5>
+                                        <small>/per child</small>
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
