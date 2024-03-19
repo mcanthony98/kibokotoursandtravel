@@ -114,7 +114,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Exploring
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Exploring
                                         ways of growing rich together</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
 
@@ -177,7 +177,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Learn
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Learn
                                         parenting in an exciting way</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
 
@@ -236,7 +236,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Keep
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Keep
                                         discovering your spouse for healthy & enriching relationship</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
@@ -298,7 +298,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Lake
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Lake
                                         Naivasha National
                                         Park</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
@@ -358,7 +358,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Learn to
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Learn to
                                         fight in love</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-06</span>
 
@@ -420,7 +420,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Keep
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Keep
                                         dating your spouse</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-08</span>
 

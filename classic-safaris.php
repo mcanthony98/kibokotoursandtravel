@@ -113,7 +113,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Amboseli National Park Safari</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Amboseli National Park Safari</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
 
                                 <!-- List -->
@@ -175,7 +175,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Maasai Mara - L Naivasha - Amboseli Safari</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Maasai Mara - L Naivasha - Amboseli Safari</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
 
                                 <!-- List -->
@@ -236,7 +236,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Samburu – L Nakuru – Maasai Mara Tour</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Samburu – L Nakuru – Maasai Mara Tour</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
                                 <!-- List -->
@@ -297,7 +297,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Exploring Kenya’s Wilderness Parks</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Exploring Kenya’s Wilderness Parks</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
                                 <!-- List -->
@@ -358,7 +358,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Mid-Range Safari at Leisure</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Mid-Range Safari at Leisure</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-06</span>
 
                                 <!-- List -->
@@ -419,7 +419,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="tour-detail.html" class="stretched-link">Kenya Mid-Range Safari Experience</a></h5>
+                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Kenya Mid-Range Safari Experience</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-08</span>
 
                                 <!-- List -->
