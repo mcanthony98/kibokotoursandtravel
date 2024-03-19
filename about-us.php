@@ -102,26 +102,25 @@ About content START -->
 
 <div class="col-sm-6 col-lg-4">
     <div class="icon-lg bg-primary bg-opacity-10 text-primary rounded-2"><i
-            class="fa-solid fa-globe-americas fs-5"></i></div>
+            class="fa-solid fa-compass fs-5"></i></div>
     <h5 class="mt-2">Adventure Experience</h5>
-    <p class="mb-0">Classic Packages</p>
+    <p class="mb-0">Discover Kenya's wild heart! Embark on a classic safari adventure, filled with iconic wildlife encounters and breathtaking landscapes.</p>
 </div>
 
 <!-- Service item -->
 <div class="col-sm-6 col-lg-4">
     <div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-2"><i
-            class="fa-solid fa-hotel fs-5"></i></div>
+            class="fa-solid fa-accessible-icon fs-5"></i></div>
     <h5 class="mt-2">Accessible Safaris</h5>
-    <p class="mb-0">Info</p>
+    <p class="mb-0">Adventure awaits everyone! Experience the wonders of Kenya with our accessible safaris, designed for travelers of all abilities.</p>
 </div>
 
 <!-- Service item -->
 <div class="col-sm-6 col-lg-4">
     <div class="icon-lg bg-success bg-opacity-10 text-success rounded-2"><i
-            class="fa-solid fa-plane fs-5"></i></div>
+            class="fa-solid fa-people-roof fs-5"></i></div>
     <h5 class="mt-2">Family & Couple Safaris</h5>
-    <p class="mb-0">Info
-    </p>
+    <p class="mb-0">Adventure awaits everyone! Experience the wonders of Kenya with our accessible safaris, designed for travelers of all abilities.</p>
 </div>
 
 </div>
@@ -225,13 +224,13 @@ Our Stats START -->
 
                             <li class="list-group-item py-3">
                                 <h6 class="mb-0 fw-normal">
-                                    <i class="bi bi-wifi fa-fw text-danger me-2"></i>WIFI Access
+                                    <i class="bi bi-briefcase fa-fw text-danger me-2"></i>Excemplary Customer Service
                                 </h6>
                             </li>
 
                             <li class="list-group-item pt-3 pb-0">
                                 <h6 class="mb-0 fw-normal">
-                                    <i class="bi bi-tags fa-fw text-orange me-2"></i>No Hidden Changes
+                                    <i class="bi bi-tags fa-fw text-orange me-2"></i>No Hidden Charges
                                 </h6>
                             </li>
                         </ul>
