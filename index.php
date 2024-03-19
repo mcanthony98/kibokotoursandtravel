@@ -163,19 +163,20 @@
 													<div class="row">
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-																<li> <a class="dropdown-item" href="destinations.php">Amboseli National Park</a> </li>
-																<li> <a class="dropdown-item" href="destinations.php">Maasai Mara National Reserve</a> </li>
-																<li> <a class="dropdown-item" href="destinations.php">Lake Naivasha National Park</a> </li>
-																<li> <a class="dropdown-item" href="destinations.php">Lake Nakuru National Park</a> </li>
-																<li> <a class="dropdown-item" href="destinations.php">Samburu National Reserve</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Amboseli National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Maasai Mara National Reserve</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Lake Nakuru National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Samburu National Reserve</a> </li>
 															</ul>
 														</div>
 	
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-																<li> <a class="dropdown-item" href="#">Nairobi National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Ol Pejeta Conservancy</a> </li>
-																<li> <a class="dropdown-item" href="#">Tsavo National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Conservancy</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Tsavo East National Park</a> </li>
+                                                                <li> <a class="dropdown-item" href="destinations-details.php">Tsavo West National Park</a> </li>
 															</ul>
 														</div>
 													</div>
@@ -186,12 +187,12 @@
 													<h6 class="mb-3"><i class="bi bi-list-ul text-primary me-2"></i>Activities</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
-														<li> <a class="dropdown-item" href="destinations.php">Hot Air Ballon Rides</a> </li>
-														<li> <a class="dropdown-item" href="destinations.php">Cultural Immersion</a> </li>
-														<li> <a class="dropdown-item" href="destinations.php">Bush Walks</a> </li>
-														<li> <a class="dropdown-item" href="destinations.php">Night Game Visits</a> </li>
-														<li> <a class="dropdown-item" href="destinations.php">Scenic Flights</a> </li>
-                                                        <li> <a class="dropdown-item" href="destinations.php">Sundowners in the Wild</a> </li>
+														<li> <a class="dropdown-item" href="experience-details.php">Hot Air Ballon Rides</a> </li>
+														<li> <a class="dropdown-item" href="experience-details.php">Cultural Immersion</a> </li>
+														<li> <a class="dropdown-item" href="experience-details.php">Bush Walks</a> </li>
+														<li> <a class="dropdown-item" href="experience-details.php">Night Game Visits</a> </li>
+														<li> <a class="dropdown-item" href="experience-details.php">Scenic Flights</a> </li>
+                                                        <li> <a class="dropdown-item" href="experience-details.php">Sundowners in the Wild</a> </li>
 
 													</ul>
 												</div>
@@ -201,9 +202,9 @@
 													<h6 class="mb-3"><i class="bi bi-grid-3x3-gap text-primary me-2"></i>Safari Types</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
+														<li> <a class="dropdown-item" href="classic-safaris.php"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
+														<li> <a class="dropdown-item" href="accessible-safaris.php"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
+														<li> <a class="dropdown-item" href="family-couple-safaris.php"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
 													</ul>
 												</div>
 	
