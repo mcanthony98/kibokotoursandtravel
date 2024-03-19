@@ -165,132 +165,35 @@ About hotel START -->
 								See <span class="see-more ms-1">more</span><span class="see-less ms-1">less</span><i class="fa-solid fa-angle-down ms-2"></i>
 							</a>
 
-							<!-- List -->
-							<h5 class="fw-light mb-2">Advantages</h5>
+							<!-- Inclusions List -->
+							<h5 class="fw-light mb-2"><strong>What's Included</strong></h5>
 							<ul class="list-group list-group-borderless mb-0">
-								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Every hotel staff to have Proper PPT kit for COVID-19</li>
-								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Every staff member wears face masks and gloves at all service times.</li>
-								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Hotel staff ensures to maintain social distancing at all times.</li>
-								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>The hotel has In-Room Dining options available </li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Service of an English-speaking professional driver/guide.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Transport whilst on safari in a customized safari van with a pop-up roof for game viewing.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Full Board Accommodation whilst on safari.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Driver’s salary and allowances plus park fees for driver and vehicle.</li>
 							</ul>
+
+							<br>
+
+							<!-- Exclusions List -->
+							<h5 class="fw-light mb-2"><strong>What's Not Included</strong></h5>
+							<ul class="list-group list-group-borderless mb-0">
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>International flights.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Room upgrades</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Tips and Gratuities</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Items of a personal nature i.e., telephone usage, laundry etc.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Change in the itinerary.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Increase in park fees or other charges beyond our control.</li>
+								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Activities not mentioned in the package.</li>
+
+							</ul>
+
 						</div>
 						<!-- Card body END -->
 					</div>
 					<!-- About hotel START -->
 
-
-					<!-- Amenities START -->
-					<div class="card bg-transparent">
-						<!-- Card header -->
-						<div class="card-header border-bottom bg-transparent px-0 pt-0">
-							<h3 class="card-title mb-0">Amenities</h3>
-						</div>
-
-						<!-- Card body START -->
-						<div class="card-body pt-4 p-0">
-							<div class="row g-4">
-								<!-- Activities -->
-								<div class="col-sm-6">
-									<h6><i class="fa-solid fa-biking me-2"></i>Activities</h6>
-									<!-- List -->
-									<ul class="list-group list-group-borderless mt-2 mb-0">
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Swimming pool
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Spa
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Kids' play area
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Gym
-										</li>
-									</ul>
-								</div>
-	
-								<!-- Payment Method -->
-								<div class="col-sm-6">
-									<h6><i class="fa-solid fa-credit-card me-2"></i>Payment Method</h6>
-									<!-- List -->
-									<ul class="list-group list-group-borderless mt-2 mb-0">
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Credit card (Visa, Master card)
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Cash
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Debit Card
-										</li>
-									</ul>
-								</div>
-	
-								<!-- Services -->
-								<div class="col-sm-6">
-									<h6><i class="fa-solid fa-concierge-bell me-2"></i>Services</h6>
-									<!-- List -->
-									<ul class="list-group list-group-borderless mt-2 mb-0">
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Dry cleaning
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Room Service
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Special service
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Waiting Area
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Secrete smoking area
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Concierge
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Laundry facilities
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Ironing Service
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Lift
-										</li>
-									</ul>
-								</div>
-	
-								<!-- Safety & Security -->
-								<div class="col-sm-6">
-									<h6><i class="bi bi-shield-fill-check me-2"></i>Safety & Security</h6>
-									<!-- List -->
-									<ul class="list-group list-group-borderless mt-2 mb-4 mb-sm-5">
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Doctor on Call
-										</li>
-									</ul>
-	
-									<h6><i class="fa-solid fa-volume-up me-2"></i>Staff Language</h6>
-									<!-- List -->
-									<ul class="list-group list-group-borderless mt-2 mb-0">
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>English
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Spanish
-										</li>
-										<li class="list-group-item pb-0">
-											<i class="fa-solid fa-check-circle text-success me-2"></i>Hindi
-										</li>
-									</ul>
-								</div>
-	
-							</div>
-						</div>
-						<!-- Card body END -->
-					</div>
-					<!-- Amenities END -->
 				</div>	
 			</div>
 			<!-- Content END -->
@@ -323,10 +226,7 @@ About hotel START -->
 							<li class="list-inline-item me-0 small"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
 						</ul>
 
-						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Free water available in the travel vehicle</p>
 						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Date: June 25th - 28th</p>
-
-
 
 						<!-- Button -->
 						<div class="d-grid">
@@ -345,6 +245,7 @@ About hotel START -->
 About hotel END -->
 
 <!-- Table START -->
+<h5 class="fw-light mb-2 text-center"><strong>Package Program</strong></h5>
 <div class="table-responsive d-flex justify-content-center px-5" style="padding-left: 30%; padding-right: 30%;">
     <table class="table table-bordered" style="width: 70%; margin: 0 auto;"> <thead class="table-primary">
             <tr>
