@@ -32,8 +32,8 @@ Main banner START -->
                 <div class="row mb-5">
                     <div class="col-xl-10">
                         <!-- Title -->
-                        <h1>Let's connect and get to know each other</h1>
-                        <p class="lead mb-0">Feel free to reach out to us for any inquiries.
+                        <h1>Connect with us on our online spaces</h1>
+                        <p class="lead mb-0">Feel free to reach out to us for free quotes via our form below
                         </p>
                     </div>
                 </div>
@@ -178,12 +178,12 @@ Contact form and vector START -->
                             </figure>
 
                             <!-- Card header -->
-                            <div class="card-header bg-light p-0 pb-3">
-                                <h3 class="mb-0">Send us message</h3>
+                            <div id="quote" class="card-header bg-light p-0 pb-3">
+                                <h3 class="mb-0">Request a Free Quote</h3>
                             </div>
 
                             <!-- Card body START -->
-                            <div class="card-body p-0">
+                            <div card-body p-0>
                                 <form class="row g-4">
                                     <!-- First Name -->
                                     <div class="col-md-6">

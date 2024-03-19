@@ -21,6 +21,16 @@
 
 <!-- Header START -->
 <header class="header-transparent">
+
+        <!-- Top alert START -->
+        <div class="alert alert-warning py-2 m-0 bg-dark border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-around w-100" role="alert">
+        <p class="text-warning m-0" style="color: orange; margin-right: 5px;">
+            <a href="mailto:info@kibokotoursandtravel.com" class="link-light"><i class="fa fa-envelope"></i>  <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+        </p>
+        <span style="margin-left: 5px;">
+            <a href="https://api.whatsapp.com/send?phone=254712123123" target="_blank" class="pl-1 link-success"><i class="bi bi-whatsapp "></i> <span class="d-none d-md-inline">Whatsapp: +254 712 123 123</span></a>
+        </span>
+    </div>
 	<!-- Logo Nav START -->
 	<nav class="navbar navbar-dark navbar-expand-xl">
 		<div class="container-fluid px-md-5">
@@ -148,25 +158,25 @@
 											<div class="row g-4 justify-content-between p-lg-3">
 												<!-- Destination -->
 												<div class="col-lg-5">
-													<h6 class="mb-3"><i class="bi bi-pin-map-fill text-primary me-2"></i>Destinations</h6>
+													<h6 class="mb-3"><i class="bi bi-pin-map-fill text-primary me-2" href="destinations.php"></i>Destinations</h6>
 													<hr class="my-2">
 													<div class="row">
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-																<li> <a class="dropdown-item" href="#">Amboseli National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Maasai Mara National Reserve</a> </li>
-																<li> <a class="dropdown-item" href="#">Lake Naivasha National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Lake Nakuru National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Samburu National Reserve</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Amboseli National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Maasai Mara National Reserve</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Lake Nakuru National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Samburu National Reserve</a> </li>
 															</ul>
 														</div>
 	
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-																<li> <a class="dropdown-item" href="#">Nairobi National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Ol Pejeta Conservancy</a> </li>
-																<li> <a class="dropdown-item" href="#">Malaysia</a> </li>
-																<li> <a class="dropdown-item" href="#">manhattan</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Conservancy</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Tsavo East National Park</a> </li>
+                                                                <li> <a class="dropdown-item" href="destinations-details.php">Tsavo West National Park</a> </li>
 															</ul>
 														</div>
 													</div>
@@ -177,11 +187,13 @@
 													<h6 class="mb-3"><i class="bi bi-list-ul text-primary me-2"></i>Activities</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+														<li> <a class="dropdown-item" href="experience-details.php">Hot Air Ballon Rides</a> </li>
+														<li> <a class="dropdown-item" href="experience-details.php">Cultural Immersion</a> </li>
+														<li> <a class="dropdown-item" href="experience-details.php">Bush Walks</a> </li>
+														<li> <a class="dropdown-item" href="experience-details.php">Night Game Visits</a> </li>
+														<li> <a class="dropdown-item" href="experience-details.php">Scenic Flights</a> </li>
+                                                        <li> <a class="dropdown-item" href="experience-details.php">Sundowners in the Wild</a> </li>
+
 													</ul>
 												</div>
 	
@@ -190,9 +202,9 @@
 													<h6 class="mb-3"><i class="bi bi-grid-3x3-gap text-primary me-2"></i>Safari Types</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
+														<li> <a class="dropdown-item" href="classic-safaris.php"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
+														<li> <a class="dropdown-item" href="accessible-safaris.php"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
+														<li> <a class="dropdown-item" href="family-couple-safaris.php"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
 													</ul>
 												</div>
 	
@@ -211,7 +223,7 @@
 																</ul>
 															</div>
 															<!-- Button -->
-															<a href="#" class="btn btn-white mb-0">Book a Dream Package Now!</a>
+															<a href="destinations.php" class="btn btn-white mb-0">Book a Dream Package Now!</a>
 														</div>
 													</div>
 												</div>
@@ -350,17 +362,7 @@
                                     <span class="d-none d-sm-inline-block small">Menu</span>
                                 </button>
 
-                                <!-- Booking form dropdown START -->
-                                <div class="nav-item dropdown form-control-bg-light">
-                                    <!-- Stay button -->
-                                    <a class="btn btn-sm btn-primary mb-0" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                        Get a Free Quote Today! </i>
-                                    </a>
 
-                                    <!-- Form END -->
-                                </div>
-                                <!-- Booking form dropdown END -->
                             </div>
                         </div>
                     </div>
@@ -369,7 +371,13 @@
 			</div>
 			<!-- Main navbar END -->
 
-		
+            <div class="nav-item dropdown form-control-bg-light">
+                <!-- Stay button -->
+                <a class="btn btn-sm btn-primary mb-0" href="contact-us.php#quote" role="button"
+                    aria-expanded="false" data-bs-auto-close="outside">
+                    Get a Free Quote Today! </i>
+                </a>
+            </div>
 
 		</div>
 	</nav>
@@ -392,7 +400,7 @@ Main banner START -->
             <div class="col-xl-8 m-auto text-center py-xl-8">
                 <h1 class="display-4 text-white mb-3">Book your front-row seat to nature's wonders.</h1>
                 <h5 class="text-white mb-3">Experience Great Adventures in the Wild.</h5>
-                <a href="#" class="btn btn-lg btn-dark mb-0">Speak to our Expert Today!</a>
+                <a href="contact-us.php#quote" class="btn btn-lg btn-dark mb-0">Speak to our Expert Today!</a>
             </div>
         </div> </div>
 </section>
@@ -767,7 +775,7 @@ Experience START -->
 		<!-- Title -->
 		<div class="row mb-4">
 			<div class="col-12 text-center">
-				<h2>Top Destinations</h2>
+				<h2>Explore our Breathtaking Destinations</h2>
 			</div>
 		</div>
 
@@ -1075,7 +1083,7 @@ Blog grid START -->
 
                 <!-- Buttons -->
                 <div class="text-center mt-4">
-                    <a href="#" class="btn btn-primary-soft mb-0">Load more<i class="fas fa-sync ms-2"></i></a>
+                    <a href="blog.php" class="btn btn-primary-soft mb-0">Check Out Our Blogs Now<i class="fas fa-newspaper ms-2"></i></a>
                 </div>
             </div>
         </section>

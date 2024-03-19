@@ -124,7 +124,7 @@
 
                                 <!-- Nav item Find hotel -->
 								<li class="nav-item dropdown dropdown-fullwidth">
-									<a class="nav-link dropdown-toggle" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
+                                <a class="nav-link dropdown-toggle" href="/path/to/destinations.php" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
 									<div class="dropdown-menu" aria-labelledby="hotelMenu">
 										<div class="container">
 											<div class="row g-4 justify-content-between p-lg-3">
@@ -147,8 +147,8 @@
 															<ul class="list-unstyled">
 																<li> <a class="dropdown-item" href="#">Nairobi National Park</a> </li>
 																<li> <a class="dropdown-item" href="#">Ol Pejeta Conservancy</a> </li>
-																<li> <a class="dropdown-item" href="#">Malaysia</a> </li>
-																<li> <a class="dropdown-item" href="#">manhattan</a> </li>
+																<li> <a class="dropdown-item" href="#">Tsavo East National Park</a> </li>
+																<li> <a class="dropdown-item" href="#">Tsavo West National Park</a> </li>
 															</ul>
 														</div>
 													</div>
@@ -159,11 +159,12 @@
 													<h6 class="mb-3"><i class="bi bi-list-ul text-primary me-2"></i>Activities</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
-														<li> <a class="dropdown-item" href="#">Hot Air Ballon Ride</a> </li>
+                                                    <li> <a class="dropdown-item" href="#">Hot Air Ballon Rides</a> </li>
+														<li> <a class="dropdown-item" href="#">Cultural Immersion</a> </li>
+														<li> <a class="dropdown-item" href="#">Bush Walks</a> </li>
+														<li> <a class="dropdown-item" href="#">Night Game Visits</a> </li>
+														<li> <a class="dropdown-item" href="#">Scenic Flights</a> </li>
+                                                        <li> <a class="dropdown-item" href="#">Sundowners in the Wild</a> </li>
 													</ul>
 												</div>
 	
@@ -172,9 +173,9 @@
 													<h6 class="mb-3"><i class="bi bi-grid-3x3-gap text-primary me-2"></i>Safari Types</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
-														<li> <a class="dropdown-item" href="#"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
+														<li> <a class="dropdown-item" href="classic-safaris.php"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
+														<li> <a class="dropdown-item" href="accessible-safaris.php"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
+														<li> <a class="dropdown-item" href="family-couple-safaris.php"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
 													</ul>
 												</div>
 	
@@ -332,17 +333,14 @@
                                     <span class="d-none d-sm-inline-block small">Menu</span>
                                 </button>
 
-                                <!-- Booking form dropdown START -->
                                 <div class="nav-item dropdown form-control-bg-light">
                                     <!-- Stay button -->
-                                    <a class="btn btn-sm btn-primary mb-0" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                    <a class="btn btn-sm btn-primary mb-0" href="contact-us.php#quote" role="button"
+                                        aria-expanded="false" data-bs-auto-close="outside">
                                         Get a Free Quote Today! </i>
                                     </a>
 
-                                    <!-- Form END -->
                                 </div>
-                                <!-- Booking form dropdown END -->
                             </div>
                         </div>
                     </div>
