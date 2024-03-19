@@ -474,7 +474,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/maasai.webp" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Cultural Immersion</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Cultural Immersion</a></h6>
 						<p>Journey into the heart of Kenya. Connect with the iconic Maasai and their vibrant traditions.</p>
 
 					</div>
@@ -486,7 +486,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/bush-walk.jpg" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Bush Walks</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Bush Walks</a></h6>
 						<p>Feel the pulse of the wild beneath your feet – immerse yourself in nature's heartbeat on a guided bush walk.</p>
 					</div>
 				</div>
@@ -497,7 +497,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/night-game-drive.jpg" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Night Game Visits</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Night Game Visits</a></h6>
 						<p>Witness the unseen world of the African night – predators on the prowl and starlight as your guide.</p>
 					</div>
 				</div>
@@ -508,7 +508,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/chopper-ride.jpg" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Scenic Flights</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Scenic Flights</a></h6>
 						<p>The ultimate bird's eye view – soar over vast landscapes and witness wildlife like never before.</p>
 					</div>
 				</div>
@@ -519,7 +519,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/sunset.webp" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Sundowners in the Wild</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Sundowners in the Wild</a></h6>
 						<p>Celebrate the day's adventure – golden hour cocktails with an unforgettable backdrop.</p>
 						
 					</div>
@@ -733,7 +733,7 @@ Main Banner START -->
 				<!-- Info -->
 				<p class="mb-4">Life is all about adventure and enjoying what nature has to offer</p>
 				<!-- Button -->
-				<a href="add-listing.html" class="btn btn-primary-soft mb-4">Book a Package Now! <i class="fa-solid fa-arrow-right-long fa-fw"></i></a>
+				<a href="destinations.php" class="btn btn-primary-soft mb-4">Book a Package Now! <i class="fa-solid fa-arrow-right-long fa-fw"></i></a>
 				<!-- List -->
 				<h6 class="fw-normal mb-1">Our Benefits</h6>
 				<ul class="list-group list-group-borderless mb-0 small">
@@ -781,7 +781,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Maasai Mara National Reserve</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Maasai Mara National Reserve</a></h4>
 									<p class="text-white mb-2">Where the Big Five roam and the Great Migration thunders across the plains.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -798,7 +798,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Amboseli National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Amboseli National Park</a></h4>
 									<p class="text-white mb-2">Elephants dwarfed by the majesty of Kilimanjaro.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -815,7 +815,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Tsavo National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Tsavo National Park</a></h4>
 									<p class="text-white mb-2">Kenya's wilderness giants, painted red by volcanic earth.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -832,7 +832,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Lake Naivasha National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Naivasha National Park</a></h4>
 									<p class="text-white mb-2">Hippos bask, and eagles soar across shimmering waters.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -849,7 +849,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Ol Pajeta Conservancy</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Ol Pajeta Conservancy</a></h4>
 									<p class="text-white mb-2">Rhino sanctuary and a beacon of conservation hope.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -866,7 +866,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Lake Nakuru National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Nakuru National Park</a></h4>
 									<p class="text-white mb-2">A vibrant spectacle of pink – flamingos in their breathtaking thousands.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -883,7 +883,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="#" class="text-white stretched-link">Samburu National Reserve</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Samburu National Reserve</a></h4>
 									<p class="text-white mb-2">The rugged north, where unique species and vibrant cultures thrive.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -1010,16 +1010,16 @@ Blog grid START -->
                                 <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="#" class="badge text-bg-warning mb-2">History</a>
+                                    <a href="blog.php" class="badge text-bg-warning mb-2">History</a>
                                 </div>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title mt-2"><a href="blog-detail.html">Kenya's Hidden Gems: Exploring
+                                <h5 class="card-title mt-2"><a href="blog-detail.php">Kenya's Hidden Gems: Exploring
                                         Beyond the Safari Mainstays</a></h5>
-                                <h6 class="fw-light mb-0">By <a href="#">Kevin Ocheing</a></h6>
+                                <h6 class="fw-light mb-0">By <a href="blog-detail.php">Kevin Ocheing</a></h6>
                             </div>
                         </div>
                     </div>
@@ -1033,16 +1033,16 @@ Blog grid START -->
                                 <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="#" class="badge text-bg-dark mb-2">Adventure</a>
+                                    <a href="blog.php" class="badge text-bg-dark mb-2">Adventure</a>
                                 </div>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.html">Kenya's Hidden Gems: Exploring Beyond
+                                <h5 class="card-title"><a href="blog-detail.php">Kenya's Hidden Gems: Exploring Beyond
                                         the Safari Mainstays</a></h5>
-                                <h6 class="fw-light mb-0">By <a href="#">John Kipchumba</a></h6>
+                                <h6 class="fw-light mb-0">By <a href="blog-detail.php">John Kipchumba</a></h6>
                             </div>
                         </div>
                     </div>
@@ -1056,16 +1056,16 @@ Blog grid START -->
                                 <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="#" class="badge text-bg-danger mb-2">Business</a>
+                                    <a href="blog-detail.php" class="badge text-bg-danger mb-2">Business</a>
                                 </div>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.html">Wildlife Encounters That Changed My
+                                <h5 class="card-title"><a href="blog-detail.php">Wildlife Encounters That Changed My
                                         Life: A Kiboko Tour Guide's Stories</a></h5>
-                                <h6 class="fw-light mb-0">By <a href="#">Ashley Mwikali</a></h6>
+                                <h6 class="fw-light mb-0">By <a href="blog-detail.php">Ashley Mwikali</a></h6>
                             </div>
                         </div>
                     </div>
