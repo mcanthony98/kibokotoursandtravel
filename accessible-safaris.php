@@ -241,7 +241,7 @@ Tour grid START -->
                                 <!-- Title -->
                                 <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Game
                                                             Drive & Dining
-                                                            Experienc</a></h5>
+                                                            Experience</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
                                 <!-- List -->

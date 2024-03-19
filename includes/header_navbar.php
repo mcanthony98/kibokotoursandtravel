@@ -135,20 +135,20 @@
 													<div class="row">
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-																<li> <a class="dropdown-item" href="#">Amboseli National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Maasai Mara National Reserve</a> </li>
-																<li> <a class="dropdown-item" href="#">Lake Naivasha National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Lake Nakuru National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Samburu National Reserve</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Amboseli National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Maasai Mara National Reserve</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Lake Nakuru National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Samburu National Reserve</a> </li>
 															</ul>
 														</div>
 	
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-																<li> <a class="dropdown-item" href="#">Nairobi National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Ol Pejeta Conservancy</a> </li>
-																<li> <a class="dropdown-item" href="#">Tsavo East National Park</a> </li>
-																<li> <a class="dropdown-item" href="#">Tsavo West National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Conservancy</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Tsavo East National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Tsavo West National Park</a> </li>
 															</ul>
 														</div>
 													</div>

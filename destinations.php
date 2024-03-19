@@ -34,7 +34,7 @@ Main Banner START -->
                     <!-- Banner title -->
                     <div class="row">
                         <div class="col-md-8 mx-auto my-5">
-                            <h1 class="text-center text-dark">Explore Kenya's Most Exciting Tour Destinations</h1></h1>
+                            <h1 class="text-center text-dark">Places to Visit in Kenya</h1></h1>
                             <ul class="nav nav-divider h6 text-dark mb-0 justify-content-center">
                                 <li class="nav-item" style="color: white; font-weight: bold;">10 Destinations</li>
                                 <li class="nav-item" style="color: white; font-weight: bold;">50+ Packages</li>
@@ -104,7 +104,7 @@ Tour grid START -->
                                     </div>
                                     <!-- Card overlay bottom -->
                                     <div class="w-100 mt-auto">
-                                        <span class="badge text-bg-white fs-6">6 days / 5 nights</span>
+                                        <span class="badge text-bg-white fs-6">2 days</span>
                                     </div>
                                 </div>
                             </div>

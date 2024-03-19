@@ -35,7 +35,7 @@ Main Banner START -->
                     <!-- Banner title -->
                     <div class="row">
                         <div class="col-md-8 mx-auto my-5">
-                            <h1 class="text-center text-light">Family & Couple Safaris Safaris</h1>
+                            <h1 class="text-center text-light">Family & Couple Safaris</h1>
                             <ul class="nav nav-divider h6 text-dark mb-0 justify-content-center">
                             <p style="text-align: center; color: white;">Adventure awaits everyone! Experience the wonders of Kenya with our accessible safaris, designed for travelers of all abilities.</p>
 
@@ -121,7 +121,7 @@ Tour grid START -->
                                 <!-- List -->
                                 <ul class="nav nav-divider mt-3 mb-0">
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-map-pin text-info me-2"></i>1 Place
+                                        <i class="fa-solid fa-map-pin text-info me-2"></i>1 Location
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
                                         <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
