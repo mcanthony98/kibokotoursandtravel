@@ -18,11 +18,12 @@
                     <div class="col-4">
                         <!-- Logo START -->
                         <a class="navbar-brand" href="index.php">
-                            <img class="light-mode-item navbar-brand-item d-inline h-40px h-md-60px"
-                                src="assets/images/kiboko-logo.png" alt="logo">
-                            <img class="dark-mode-item navbar-brand-item d-inline h-40px h-md-60px"
-                                src="assets/images/kiboko-logo.png" alt="logo">
+                            <img class="light-mode-item navbar-brand-item d-inline h-70px h-md-120px" src="assets/images/kiboko-logo.png" alt="logo" 
+                                 style="height: 200px; width: auto;"> 
+                                 <img class="dark-mode-item navbar-brand-item d-inline h-70px h-md-120px" src="assets/images/kiboko-logo.png" alt="logo" 
+                                 style="height: 2000px; width: auto;"> 
                         </a>
+
                         <!-- Logo END -->
                     </div>
 
