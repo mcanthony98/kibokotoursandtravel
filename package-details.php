@@ -45,6 +45,10 @@
 					margin-top: 10px;
 					margin-bottom: 10px; 
 				}
+
+				button:hover {
+				background-color: #FF8C00 !important;
+				}
 			</style>
 
 
@@ -151,16 +155,23 @@ About hotel START -->
 								<div class="icon-lg bg-light h5 rounded-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Accomodation">
 									<i class="fa-solid fa-hotel"></i>
 								</div>
-
 							</div>
-
-							<p class="mb-3">Demesne far-hearted suppose venture excited see had has. Dependent on so extremely delivered by. Yet no jokes worse her why. <b>Bed one supposing breakfast day fulfilled off depending questions.</b></p>
-							<p class="mb-0">Delivered dejection necessary objection do Mr prevailed. Mr feeling does chiefly cordial in do. Water timed folly right aware if oh truth. Large above be to means. Dashwood does provide stronger is.</p>
+								
+							<h6 class="fw-light mb-2"><strong>Day 1</strong></h6>
+							<p class="mb-3">Begin your adventure with a thrilling airport pickup and a scenic drive along the Nairobi-Mombasa highway. Spot giraffes, zebras, and graceful antelopes grazing on the Kapiti plains – a taste of the wonders to come! Arrive at your lodge in time for a delicious lunch, then relax as the afternoon heat fades. Embark on an unforgettable sunset game drive, witnessing majestic elephants returning from the park's lush swamps – a breathtaking close to your first day on safari.</p>
+							
 							
 							<div class="collapse" id="collapseContent">
-								<p class="my-3">We focus a great deal on the understanding of behavioral psychology and influence triggers which are crucial for becoming a well rounded Digital Marketer. We understand that theory is important to build a solid foundation, we understand that theory alone isn't going to get the job done so that's why this rickets is packed with practical hands-on examples that you can follow step by step.</p>
-								<p class="mb-0">Behavioral psychology and influence triggers which are crucial for becoming a well rounded Digital Marketer. We understand that theory is important to build a solid foundation, we understand that theory alone isn't going to get the job done so that's why this tickets is packed with practical hands-on examples that you can follow step by step.</p>
+							
+							<h6 class="fw-light mb-2"><strong>Day 2</strong></h6>
+							<p class="mb-3">Rise with the African sun for an exhilarating early morning game drive! Track elusive lions and other majestic cats before the heat of the day sets in. Witness a breathtaking sunrise paint the landscape, sometimes revealing the mountain's distant peak. Return for a hearty breakfast and indulge in the hotel's refreshing pool.  Immerse yourself in vibrant Maasai culture – visit a traditional manyatta and discover how they thrive alongside Kenya's incredible wildlife.</p>
+							
+							<br>
+
+							<h6 class="fw-light mb-2"><strong>Day 3</strong></h6>
+							<p class="mb-3">Embark on a final early morning game drive, seeking out any elusive creatures that haven't yet graced your journey. Savor the thrill of potential surprises as you explore the awakening wilderness. Return to the hotel for a satisfying breakfast, then bid farewell to your wild haven and begin your journey back to Nairobi.  We'll ensure you reach the airport with ample time for your onward flight, carrying memories of Kenya's wonders.</p>
 							</div>
+
 							<a class="p-0 mb-4 mt-2 btn-more d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#collapseContent" role="button" aria-expanded="false" aria-controls="collapseContent">
 								See <span class="see-more ms-1">more</span><span class="see-less ms-1">less</span><i class="fa-solid fa-angle-down ms-2"></i>
 							</a>
@@ -230,7 +241,7 @@ About hotel START -->
 
 						<!-- Button -->
 						<div class="d-grid">
-							<a href="#room-options" class="btn btn-lg btn-primary-soft mb-0">Book this Package Now</a>
+							<a href="booking.php" class="btn btn-lg btn-primary-soft mb-0">Book this Package Now</a>
 						</div>
 					</div>
 					<!-- Book now END -->
@@ -282,12 +293,16 @@ About hotel END -->
         </tbody>
     </table>
 </div>  
- 
+ <br>
+ <br>
 <!-- Table END -->
 
 <div class="sticky-section">
     <h3>3-Day Amboseli Package</h3>
-    <button>Get this Package Now</button>
+<a href="booking.php" style="text-decoration: none;">
+	<button style="transition: background-color 0.3s ease; background-color: white;">Get this Package Now</button>
+</a>
+
   </div>
 
 
