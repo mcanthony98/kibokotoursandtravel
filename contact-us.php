@@ -77,38 +77,21 @@ Main banner START -->
                     </div>
                     <!-- Contact item END -->
 
-                    <!-- Contact item START -->
-                    <div class="col-xl-4 position-relative">
-                        <!-- Svg decoration -->
-                        <figure class="position-absolute top-0 end-0 z-index-1 mt-n4 ms-n7">
-                            <svg class="fill-warning" width="77px" height="77px">
-                                <path
-                                    d="M76.997,41.258 L45.173,41.258 L67.676,63.760 L63.763,67.673 L41.261,45.171 L41.261,76.994 L35.728,76.994 L35.728,45.171 L13.226,67.673 L9.313,63.760 L31.816,41.258 L-0.007,41.258 L-0.007,35.725 L31.816,35.725 L9.313,13.223 L13.226,9.311 L35.728,31.813 L35.728,-0.010 L41.261,-0.010 L41.261,31.813 L63.763,9.311 L67.676,13.223 L45.174,35.725 L76.997,35.725 L76.997,41.258 Z">
-                                </path>
-                            </svg>
-                        </figure>
-
+                   <!-- Contact item START -->
+                    <div class="col-md-6 col-xl-4">
                         <div class="card card-body shadow text-center align-items-center h-100">
-                            <!-- Icon -->
-                            <div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle mb-2"><i
-                                    class="bi bi-globe2 fs-5"></i></div>
-                            <!-- Title -->
-                            <h5>Social media</h5>
-                            <p>Send us a DM and follow us.</p>
-                            <!-- Buttons -->
-                            <ul class="list-inline mb-0">
-                                <li class="list-inline-item"> <a class="btn btn-sm bg-facebook px-2 mb-0" href="https://www.facebook.com/KibokoTours"><i
-                                            class="fab fa-fw fa-facebook-f"></i></a> </li>
-                                <li class="list-inline-item"> <a class="btn btn-sm bg-instagram px-2 mb-0" href="https://www.instagram.com/kiboko_tours"><i
-                                            class="fab fa-fw fa-instagram"></i></a> </li>
-                                <li class="list-inline-item"> <a class="btn btn-sm bg-twitter px-2 mb-0" href="https://twitter.com/ToursKiboko"><i
-                                            class="fab fa-fw fa-twitter"></i></a> </li>
-                                <li class="list-inline-item"> <a class="btn btn-sm bg-linkedin px-2 mb-0" href="https://kibokotoursandtravel.com/about-us/inkedin.com/company/kiboko-tours-and-travel/?viewAsMember=true"><i
-                                            class="fab fa-fw fa-linkedin-in"></i></a> </li>
-                            </ul>
+                            <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle mb-2"> 
+                                <i class="bi bi-wechat fs-5"></i> </div>
+                            <h5>Contact us on WeChat</h5>
+                            <p>Scan our QR code or search for our ID</p>
+                            <a href="#" class="btn btn-link text-decoration-underline p-0 mb-0">
+                                <i class="bi bi-qr-code me-1"></i> Display QR Code
+                            </a>
+                            <p class="mb-0">WeChat ID: wxid_zcpsjxnm97j422
+</p>  
                         </div>
                     </div>
-                    <!-- Contact item END -->
+
                 </div>
             </div>
         </section>
