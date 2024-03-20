@@ -33,6 +33,7 @@ About START -->
 				<h2>Maasai Mara National Reserve</h2>
 				<p>Witness the raw power of nature in the Maasai Mara – a wildlife spectacle you won't want to miss!</p>
 
+
 			</div>
 
 			<div class="col-lg-7 position-relative ms-auto">
@@ -53,14 +54,82 @@ About START -->
 							<h6 class="fw-normal">Global Rating</h6>
 						</div>
 					</div>
+					
 				</div>	
 
 			</div>
 		</div>
+
 	</div>
 </section>
 <!-- =======================
 About END -->
+
+<!-- =======================
+Offers START -->
+<section class="pt-5 pt-md-8 pb-0 d-flex justify-content-center align-items-center">
+	<div class="container-fluid px-lg-5">
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-12 text-center">
+				<h2>Available Activities</h2>
+			</div>
+		</div>
+
+		<div class="row g-4 justify-content-center align-items-center">
+			<!-- Offer item -->
+			<div class="col-6 col-md-4 col-xl-2">
+				<div class="card bg-transparent h-100">
+					<img src="assets/images/activities/hot-air-balloon.jpg" class="card-img" alt="">
+					<div class="card-body text-center p-2">
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Hot Air Balloon Rides</a></h6>
+						<p>Float above the wild – witness the epic scale of the Great Migration from the clouds.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Offer item -->
+			<div class="col-6 col-md-4 col-xl-2">
+				<div class="card bg-transparent h-100">
+					<img src="assets/images/activities/maasai.webp" class="card-img" alt="">
+					<div class="card-body text-center p-2">
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Cultural Immersion</a></h6>
+						<p>Journey into the heart of Kenya. Connect with the iconic Maasai and their vibrant traditions.</p>
+
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Offer item -->
+			<div class="col-6 col-md-4 col-xl-2">
+				<div class="card bg-transparent h-100">
+					<img src="assets/images/activities/night-game-drive.jpg" class="card-img" alt="">
+					<div class="card-body text-center p-2">
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Night Game Visits</a></h6>
+						<p>Witness the unseen world of the African night – predators on the prowl and starlight as your guide.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Offer item -->
+			<div class="col-6 col-md-4 col-xl-2">
+				<div class="card bg-transparent h-100">
+					<img src="assets/images/activities/chopper-ride.jpg" class="card-img" alt="">
+					<div class="card-body text-center p-2">
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Scenic Flights</a></h6>
+						<p>The ultimate bird's eye view – soar over vast landscapes and witness wildlife like never before.</p>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>
+</section>
+<!-- =======================
+Offers END -->
 
             <!-- =======================
 Packages START -->
