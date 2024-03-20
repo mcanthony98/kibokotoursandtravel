@@ -55,7 +55,7 @@ Main banner START -->
                                 <span><i class="bi bi-calendar2-plus me-2"></i>April 28, 2022</span>
 
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.html">Kenya's Hidden Gems: Exploring Beyond
+                                <h5 class="card-title"><a href="blog-detail.php">Kenya's Hidden Gems: Exploring Beyond
                                         the Safari Mainstays</a></h5>
                                 <p class="mb-0">Discover lesser-known Kenyan destinations with breathtaking landscapes
                                     and unique wildlife encounters.</p>
@@ -63,7 +63,7 @@ Main banner START -->
                                 <!-- Author name and button -->
                                 <div class="d-flex justify-content-between align-items-center mt-2">
                                     <h6 class="mb-0">By <a href="#">Joan Mbugua</a></h6>
-                                    <a href="blog-detail.html" class="btn btn-link p-0 mb-0">Read more <i
+                                    <a href="blog-detail.php" class="btn btn-link p-0 mb-0">Read more <i
                                             class="bi bi-arrow-up-right"></i></a>
                                 </div>
                             </div>
@@ -84,14 +84,14 @@ Main banner START -->
                                     <div class="col-8">
                                         <!-- card body -->
                                         <div class="card-body p-0">
-                                            <h5 class="card-title mb-sm-3"><a href="blog-detail.html"
+                                            <h5 class="card-title mb-sm-3"><a href="blog-detail.php"
                                                     class="stretched-link">Accessible Adventures: How Kiboko Tours Makes
                                                     the Wild Welcoming for All </a></h5>
                                             <!-- Author name and button -->
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <span class="small"><i class="bi bi-calendar2-plus me-2"></i>Sep 01,
                                                     2022</span>
-                                                <a href="blog-detail.html" class="btn btn-link p-0 mb-0">Read more <i
+                                                <a href="blog-detail.php" class="btn btn-link p-0 mb-0">Read more <i
                                                         class="bi bi-arrow-up-right"></i></a>
                                             </div>
                                         </div>
@@ -112,14 +112,14 @@ Main banner START -->
                                     <div class="col-8">
                                         <!-- card body -->
                                         <div class="card-body p-0">
-                                            <h5 class="card-title mb-sm-3"><a href="blog-detail.html"
+                                            <h5 class="card-title mb-sm-3"><a href="blog-detail.php"
                                                     class="stretched-link">Wildlife Encounters That Changed My Life: A
                                                     Kiboko Tour Guide's Stories</a></h5>
                                             <!-- Author name and button -->
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <span class="small"><i class="bi bi-calendar2-plus me-2"></i>Sep 15,
                                                     2022</span>
-                                                <a href="blog-detail.html" class="btn btn-link p-0 mb-0">Read more <i
+                                                <a href="blog-detail.php" class="btn btn-link p-0 mb-0">Read more <i
                                                         class="bi bi-arrow-up-right"></i></a>
                                             </div>
                                         </div>
@@ -140,14 +140,14 @@ Main banner START -->
                                     <div class="col-8">
                                         <!-- card body -->
                                         <div class="card-body p-0">
-                                            <h5 class="card-title mb-sm-3"><a href="blog-detail.html"
+                                            <h5 class="card-title mb-sm-3"><a href="blog-detail.php"
                                                     class="stretched-link">Pack Your Bags and Your Compassion:
                                                     Volunteering with Wildlife in Kenya</a></h5>
                                             <!-- Author name and button -->
                                             <div class="d-flex justify-content-between align-items-center">
                                                 <span class="small"><i class="bi bi-calendar2-plus me-2"></i>Sep 28,
                                                     2022</span>
-                                                <a href="blog-detail.html" class="btn btn-link p-0 mb-0">Read more <i
+                                                <a href="blog-detail.php" class="btn btn-link p-0 mb-0">Read more <i
                                                         class="bi bi-arrow-up-right"></i></a>
                                             </div>
                                         </div>
@@ -188,14 +188,14 @@ Blog grid START -->
                                 <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="#" class="badge text-bg-warning mb-2">History</a>
+                                    <a href="#" class="badge text-bg-warning mb-2">Classic</a>
                                 </div>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title mt-2"><a href="blog-detail.html">Kenya's Hidden Gems: Exploring
+                                <h5 class="card-title mt-2"><a href="blog-detail.php">Kenya's Hidden Gems: Exploring
                                         Beyond the Safari Mainstays</a></h5>
                                 <h6 class="fw-light mb-0">By <a href="#">Kevin Ocheing</a></h6>
                             </div>
@@ -208,9 +208,9 @@ Blog grid START -->
                         <div class="card bg-light p-3">
                             <div class="card-body">
                                 <!-- Badge -->
-                                <a href="#" class="badge text-white bg-primary mb-2">Research</a>
+                                <a href="#" class="badge text-white bg-primary mb-2">Stats</a>
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.html">Accessible Adventures: How Kiboko
+                                <h5 class="card-title"><a href="blog-detail.php">Accessible Adventures: How Kiboko
                                         Tours Makes the Wild Welcoming for All</a></h5>
                                 <p>Learn about how Kiboko Tours creates inclusive travel experiences designed to
                                     accommodate all abilities. </p>
@@ -228,14 +228,14 @@ Blog grid START -->
                                 <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="#" class="badge text-bg-danger mb-2">Business</a>
+                                    <a href="#" class="badge text-bg-danger mb-2">Personal</a>
                                 </div>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.html">Wildlife Encounters That Changed My
+                                <h5 class="card-title"><a href="blog-detail.php">Wildlife Encounters That Changed My
                                         Life: A Kiboko Tour Guide's Stories</a></h5>
                                 <h6 class="fw-light mb-0">By <a href="#">Ashley Mwikali</a></h6>
                             </div>
@@ -257,9 +257,9 @@ Blog grid START -->
                             <!-- Card Body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- badge -->
-                                <a href="#" class="badge text-bg-info mb-2">Wildlife</a>
+                                <a href="#" class="badge text-bg-info mb-2">Wellness</a>
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.html">The Healing Power of Travel: How a
+                                <h5 class="card-title"><a href="blog-detail.php">The Healing Power of Travel: How a
                                         Kenyan Journey Can Transform You</a></h5>
                                 <h6 class="fw-light mb-0">By <a href="#">Willis Rukaria</a></h6>
                             </div>
@@ -282,7 +282,7 @@ Blog grid START -->
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.html">Kenya's Hidden Gems: Exploring Beyond
+                                <h5 class="card-title"><a href="blog-detail.php">Kenya's Hidden Gems: Exploring Beyond
                                         the Safari Mainstays</a></h5>
                                 <h6 class="fw-light mb-0">By <a href="#">John Kipchumba</a></h6>
                             </div>
@@ -305,7 +305,7 @@ Blog grid START -->
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.html">Safari Style Guide: What to Pack for
+                                <h5 class="card-title"><a href="blog-detail.php">Safari Style Guide: What to Pack for
                                         Your Kenyan Adventure</a></h5>
                                 <h6 class="fw-light mb-0">By <a href="#">Faith Mwisa</a></h6>
                             </div>

@@ -34,13 +34,13 @@ Main banner START -->
                 <div class="row g-4">
                     <!-- Image -->
                     <div class="col-12">
-                        <img src="assets/images/wildlife/wildebeasts.jpg" class="rounded-3" alt="">
+                        <img src="assets/images/views/wildebeasts.jpg" class="rounded-3" alt="">
                     </div>
                     <!-- Title and content -->
                     <div class="col-11 col-lg-10 mx-auto position-relative mt-n5 mt-sm-n7 mt-md-n8">
                         <div class="bg-mode shadow rounded-3 p-4">
                             <!-- Badge -->
-                            <div class="badge text-bg-success mb-2">Hotel service</div>
+                            <div class="badge text-bg-success mb-2">Kiboko Blogs</div>
                             <!-- Title -->
                             <h1 class="fs-3">Kenya's Hidden Gems: Exploring Beyond the Safari Mainstays</h1>
                             <p class="mb-2">Discover lesser-known Kenyan destinations with breathtaking landscapes and
@@ -104,7 +104,7 @@ Blog content START -->
                             </div>
                             <!-- Image -->
                             <div class="col-md-6 col-lg-5">
-                                <img src="assets/images/wildlife/lion.png" class="rounded" alt="">
+                                <img src="assets/images/views/lion.png" class="rounded" alt="">
                             </div>
                         </div>
 
@@ -149,13 +149,13 @@ Blog content START -->
                                 </a>
                                 <!-- Info -->
                                 <div>
-                                    <h4 class="m-0"><a href="#">Esther Achiemg</a></h4>
+                                    <h4 class="m-0"><a href="#">Esther Achieng'</a></h4>
                                     <small>An editor at Kiboko Tours & Travel</small>
                                 </div>
                             </div>
 
                             <!-- Content -->
-                            <p class="my-3">Esther Achieng has written numerious articles on wildlife</p>
+                            <p class="my-3">She has written numerious articles on wildlife. A veteran article writer with a love for nature and its wildlife offerings.</p>
 
                             <!-- Buttons -->
                             <div class="d-flex align-items-center justify-content-between">
@@ -173,7 +173,7 @@ Blog content START -->
                                     </li>
                                 </ul>
                                 <!-- Button -->
-                                <a href="#" class="btn btn-sm btn-primary mb-0">View Articles</a>
+                                <a href="blog.php" class="btn btn-sm btn-primary mb-0">View Articles</a>
                             </div>
                         </div>
 
@@ -216,18 +216,16 @@ Blog content START -->
                                 <h6 class="d-inline-block mb-2 me-4">Popular Tags:</h6>
                                 <ul class="list-inline mb-0">
                                     <li class="list-inline-item"> <a class="btn btn-light btn-sm mb-xl-0"
-                                            href="#">blog</a>
+                                            href="#">Kiboko</a>
                                     </li>
                                     <li class="list-inline-item"> <a class="btn btn-light btn-sm mb-xl-0"
-                                            href="#">Tour</a>
+                                            href="#">Blog</a>
                                     </li>
                                     <li class="list-inline-item"> <a class="btn btn-light btn-sm mb-xl-0"
-                                            href="#">Holidays</a> </li>
+                                            href="#">Adventure</a> </li>
                                     <li class="list-inline-item"> <a class="btn btn-light btn-sm mb-xl-0"
-                                            href="#">Ticket
-                                            Booking</a> </li>
-                                    <li class="list-inline-item"> <a class="btn btn-light btn-sm mb-xl-0" href="#">deep
-                                            learning</a> </li>
+                                            href="#">Best Destinations</a> </li>
+                                    <li class="list-inline-item"> <a class="btn btn-light btn-sm mb-xl-0" href="#">Wildlife</a> </li>
                                 </ul>
                             </div>
                         </div>

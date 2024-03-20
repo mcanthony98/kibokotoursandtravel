@@ -9,9 +9,12 @@
                 <!-- Widget 1 START -->
                 <div class="col-lg-3">
                     <!-- logo -->
-                    <a href="index.html">
-                        <img class="h-60px" src="assets/images/kiboko-logo.png" alt="logo">
-                    </a>
+                    <a class="navbar-brand" href="index.php">
+                            <img class="light-mode-item navbar-brand-item d-inline h-70px h-md-120px" src="assets/images/kiboko-logo.png" alt="logo" 
+                                 style="height: 200px; width: auto;"> 
+                                 <img class="dark-mode-item navbar-brand-item d-inline h-70px h-md-120px" src="assets/images/kiboko-logo.png" alt="logo" 
+                                 style="height: 2000px; width: auto;"> 
+                        </a>
                     <p class="my-3 text-muted">Kiboko Tours & Travel.</p>
                     <p class="my-3 text-muted">We lead the path to your intended destination.</p>
 

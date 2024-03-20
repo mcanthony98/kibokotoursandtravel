@@ -82,7 +82,7 @@
                                                     src="assets/images/flags/turkey.svg" alt="">Turkish</a> </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item"> <a href="help-center.html" class="nav-link small pb-2" style="color: white; font-weight: bold"><i
+                                <li class="nav-item"> <a href="#" class="nav-link small pb-2" style="color: white; font-weight: bold"><i
                                             class="bi bi-info-circle me-2" style="color: white; font-weight: bold"></i>Help</a> </li>
                                 <li class="nav-item"> <a href="sign-in.php" class="nav-link small pb-2" style="color: white; font-weight: bold"><i
                                             class="far fa-user me-2" style="color: white; font-weight: bold"></i>B2B Login</a> </li>
@@ -463,7 +463,7 @@ Offers START -->
 				<div class="card bg-transparent h-100">
 					<img src="assets/images/activities/hot-air-balloon.jpg" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="#" class="stretched-link">Hot Air Balloon Rides</a></h6>
+						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Hot Air Balloon Rides</a></h6>
 						<p>Float above the wild – witness the epic scale of the Great Migration from the clouds.</p>
 					</div>
 				</div>
@@ -566,7 +566,7 @@ Featured Packages START -->
                             <!-- Card body -->
                             <div class="card-body px-2">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">7-Days
+                                <h5 class="card-title"><a href="package-details.php" class="stretched-link">7-Days
                                         Kenya
                                         Safari in Style</a></h5>
                                 <!-- Price and rating -->
@@ -601,7 +601,7 @@ Featured Packages START -->
                             <!-- Card body -->
                             <div class="card-body px-2">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">6-Days of
+                                <h5 class="card-title"><a href="package-details.php" class="stretched-link">6-Days of
                                         Exploring Kenya's Parks</a></h5>
                                 <!-- Price and rating -->
                                 <div class="d-flex justify-content-between align-items-center">
@@ -634,7 +634,7 @@ Featured Packages START -->
                             <!-- Card body -->
                             <div class="card-body px-2">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">Group
+                                <h5 class="card-title"><a href="package-details.php" class="stretched-link">Group
                                         Shopping</a></h5>
                                 <!-- Price and rating -->
                                 <div class="d-flex justify-content-between align-items-center">
@@ -667,7 +667,7 @@ Featured Packages START -->
                             <!-- Card body -->
                             <div class="card-body px-2">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="classic-safaris.html" class="stretched-link">Countryside
+                                <h5 class="card-title"><a href="package-details.php" class="stretched-link">Countryside
                                         Road Experience</a></h5>
                                 <!-- Price and rating -->
                                 <div class="d-flex justify-content-between align-items-center">
@@ -943,7 +943,7 @@ Blog grid START -->
                                 <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="blog.php" class="badge text-bg-warning mb-2">History</a>
+                                    <a href="blog.php" class="badge text-bg-warning mb-2">Classic</a>
                                 </div>
                             </div>
 
@@ -966,7 +966,7 @@ Blog grid START -->
                                 <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="blog.php" class="badge text-bg-dark mb-2">Adventure</a>
+                                    <a href="blog.php" class="badge text-bg-dark mb-2">Accessible</a>
                                 </div>
                             </div>
 
@@ -989,7 +989,7 @@ Blog grid START -->
                                 <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="blog-detail.php" class="badge text-bg-danger mb-2">Business</a>
+                                    <a href="blog-detail.php" class="badge text-bg-danger mb-2">Personal</a>
                                 </div>
                             </div>
 
