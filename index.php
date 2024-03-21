@@ -35,8 +35,8 @@
 	<nav class="navbar navbar-dark navbar-expand-xl">
 		<div class="container-fluid px-md-5">
 			<!-- Logo START -->
-            <a class="navbar-brand" href="index.php">
-                <img class="navbar-brand-item" src="assets/images/kiboko-logo.png" alt="logo" style="width:80px; height:auto;">
+            <a class="navbar-brand pt-2" href="index.php">
+                <img class="navbar-brand-item" src="assets/images/kiboko-logo.png" alt="logo" style="width:100px; height:auto;">
             </a>
 			<!-- Logo END -->
 
@@ -56,7 +56,7 @@
 
 				<div class="col-12">
                         <!-- Navbar top Right-->
-                        <div class="align-items-center justify-content-end d-none d-lg-flex">
+                        <div class="align-items-center justify-content-center d-none d-lg-flex">
                             <ul class="nav border-bottom">
                                 <li class="dropdown nav-item">
                                     <a class="nav-link small pb-2" style="color: white; font-weight: bold" href="#" role="button" id="languageDropdown"
@@ -364,7 +364,7 @@
 
             <div class="nav-item dropdown form-control-bg-light">
                 <!-- Stay button -->
-                <a class="btn btn-sm btn-primary mb-0" href="contact-us.php#quote" role="button"
+                <a class="btn btn-l btn-primary mb-0" href="contact-us.php#quote" role="button"
                     aria-expanded="false" data-bs-auto-close="outside">
                     Get a Free Quote Today! </i>
                 </a>
