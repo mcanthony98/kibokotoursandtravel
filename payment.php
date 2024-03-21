@@ -35,15 +35,23 @@ Main Content START -->
 				<div class="card bg-transparent p-0">
 					<!-- Card header START -->
 					<div class="card-header bg-transparent p-0">
-						<h1 class="card-title fs-2 mb-0">Enter Your Payment Details</h1>
+						<h1 class="card-title fs-2 mb-0">Choose a payment option below:</h1>
 					</div>
 					<!-- Card header END -->
+
+					<br>
+					<br>
+
+					<!-- Card header START -->
+					<div class="card-header bg-transparent p-0">
+						<h2 class="card-title fs-4 mb-0">Card Payment</h2>
+					</div>
 
 					<!-- Card body START -->
 					<div class="card-body p-0 mt-3">
 						<!-- Alert box -->
 						<div class="alert alert-success" role="alert">
-							Hey' you are saving<strong class="mx-1">$2,560</strong>discount using coupon code
+							Hey' you are saving<strong class="mx-1">$2,560</strong>discount using the appliedcoupon code
 						</div>
 
 						<form class="bg-light rounded-3 p-4">
@@ -88,7 +96,7 @@ Main Content START -->
 
 								<!-- Buttons -->
 								<div class="col-12">
-									<button class="btn btn-primary w-100 mb-0">Pay Now</button>
+									<button class="btn btn-primary w-100 mb-0">Pay with your Card</button>
 								</div>
 							</div>
 							<!-- Form END -->
@@ -96,18 +104,97 @@ Main Content START -->
 					</div>
 					<!-- Card body END -->
 				</div>
+
+				<br>
+				<br>
+
+				<!-- Card for PayPal Payment START -->
+				<div class="card bg-transparent p-0">
+					<!-- Card header START -->
+					<div class="card-header bg-transparent p-0">
+						<h2 class="card-title fs-4 mb-0">PayPal Payment</h2>
+					</div>
+					<!-- Card header END -->
+
+					<!-- Card body START -->
+					<div class="card-body p-0 mt-3">
+						<!-- Alert box -->
+						<div class="alert alert-success" role="alert">
+							You can pay using your PayPal account
+						</div>
+
+						<form class="bg-light rounded-3 p-4">
+							<!-- Form START -->
+							<div class="row g-3">
+								<!-- PayPal Email -->
+								<div class="col-12">
+									<label class="form-label"><span class="h6 fw-normal">PayPal Email *</span></label>
+									<input type="email" class="form-control" aria-label="PayPal Email" placeholder="Enter your PayPal email">
+								</div>
+
+								<!-- Buttons -->
+								<div class="col-12">
+									<a href="payment-confirmation.php" class="btn btn-primary w-100 mb-0">Pay with PayPal</a>
+								</div>
+							</div>
+							<!-- Form END -->
+						</form>
+					</div>
+					<!-- Card body END -->
+				</div>
+				<!-- Card for PayPal Payment END -->
+
+				<br>
+				<br>
+
+				<!-- Card for Mpesa Payment START -->
+				<div class="card bg-transparent p-0 mt-4">
+					<!-- Card header START -->
+					<div class="card-header bg-transparent p-0">
+						<h2 class="card-title fs-4 mb-0">Mpesa Payment</h1>
+					</div>
+					<!-- Card header END -->
+
+					<!-- Card body START -->
+					<div class="card-body p-0 mt-3">
+						<!-- Alert box -->
+						<div class="alert alert-success" role="alert">
+							You can pay using Mpesa
+						</div>
+
+						<form class="bg-light rounded-3 p-4">
+							<!-- Form START -->
+							<div class="row g-3">
+								<!-- Mpesa Phone Number -->
+								<div class="col-12">
+									<label class="form-label"><span class="h6 fw-normal">Mpesa Phone Number *</span></label>
+									<input type="tel" class="form-control" aria-label="Mpesa Phone Number" placeholder="Enter your Mpesa phone number">
+								</div>
+
+								<!-- Buttons -->
+								<div class="col-12">
+									<a href="payment-confirmation.php" class="btn btn-primary w-100 mb-0">Pay with Mpesa</a>
+								</div>
+							</div>
+							<!-- Form END -->
+						</form>
+					</div>
+					<!-- Card body END -->
+				</div>
+				<!-- Card for Mpesa Payment END -->
+
 			</div>
 			<!-- Left Content END -->
 
 			<!-- Right content START -->
 			<aside class="col-xl-4">
 				<div class="row g-4">
-					<!-- Fare summary START -->
+					<!-- Price summary START -->
 					<div class="col-md-6 col-xl-12">
 						<div class="card bg-light rounded-2">
 							<!-- card header -->
 							<div class="card-header border-bottom bg-light">
-								<h5 class="card-title mb-0">Fare Summary</h5>
+								<h5 class="card-title mb-0">Price Summary</h5>
 							</div>
 
 							<!-- Card body -->
@@ -119,11 +206,11 @@ Main Content START -->
 												<i class="bi bi-info-circle"></i>
 											</a>
 										</span>
-										<span class="fs-5">$38,660</span>
+										<span class="fs-5">$8,660</span>
 									</li>
 									<li class="list-group-item d-flex justify-content-between align-items-center">
 										<span class="h6 fw-normal mb-0">Discount</span>
-										<span class="fs-5 text-success">+$2,560</span>
+										<span class="fs-5 text-danger">-$2,560</span>
 									</li>
 									<li class="list-group-item d-flex justify-content-between align-items-center">
 										<span class="h6 fw-normal mb-0">Other Services</span>
@@ -135,55 +222,14 @@ Main Content START -->
 							<!-- Card footer -->
 							<div class="card-footer border-top bg-light">
 								<div class="d-flex justify-content-between align-items-center">
-									<span class="h5 fw-normal mb-0">Total Fare</span>
-									<span class="h5 fw-normal mb-0">$36,500</span>
+									<span class="h5 fw-normal mb-0">Total Cost</span>
+									<span class="h5 fw-normal mb-0">$6,500</span>
 								</div>
 							</div>
 						</div>
 					</div>
-					<!-- Fare summary END -->
+					<!-- Price summary END -->
 
-					<!-- Booking START -->
-					<div class="col-md-6 col-xl-12">
-						<div class="card border">
-							<!-- Card header -->
-							<div class="card-header border-bottom">
-								<h5 class="mb-0 cardt-title">Your Booking</h5>
-							</div>
-
-							<!-- Card body -->
-							<div class="card-body">
-								<!-- Flight detail -->
-								<small><i class="bi bi-ticket me-2"></i>Flight Ticket</small>
-								<div class="d-flex mt-2">
-									<img src="assets/images/element/09.svg" class="w-40px me-2" alt="">
-									<h6 class="fw-normal mb-0">Mumbai <i class="bi bi-arrow-right"></i> New York</h6>
-								</div>
-								<ul class="nav nav-divider small text-body mt-1 mb-0">
-									<li class="nav-item">25 Jan</li>
-									<li class="nav-item">1 Stop</li>
-									<li class="nav-item">05h 25m</li>
-								</ul>
-
-								<hr> <!-- Divider -->
-
-								<!-- Traveler detail -->
-								<small><i class="bi bi-person me-1"></i>Traveler detail</small>
-								<h6 class="mb-0 fw-normal mt-2">Carolyn Ortiz</h6>
-								<ul class="nav nav-divider small text-body mt-1 mb-0">
-									<li class="nav-item">Adult</li>
-									<li class="nav-item">Female</li>
-									<li class="nav-item">Dec-2-1990</li>
-								</ul>
-							</div>
-
-							<!-- Card footer -->
-							<div class="card-footer border-top text-center p-3">
-								<a href="#" class="btn btn-link mb-0 p-0">Review booking</a>
-							</div>
-						</div>
-					</div>
-					<!-- Booking END -->
 				</div>	
 			</aside>
 			<!-- Right content END -->
