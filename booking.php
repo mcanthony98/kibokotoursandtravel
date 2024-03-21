@@ -168,10 +168,17 @@
 													<label class="form-label">Nationality</label>
 													<select class="form-select js-choice">
 														<option value="">Select Nationality</option>
-														<option>Indian</option>
-														<option>Mali</option>
+														<option>USA</option>
+														<option>Canada</option>
 														<option>Japan</option>
-														<option>Jordan</option>
+														<option>Germany</option>
+														<option>Italy</option>
+														<option>Spain</option>
+														<option>China</option>
+														<option>Portugal</option>
+														<option>Norway</option>
+														<option>France</option>
+														<option>Poland</option>
 													</select>
 												</div>
 
@@ -186,10 +193,18 @@
 													<label class="form-label">Passport Issuing Country</label>
 													<select class="form-select js-choice">
 														<option value="">Select Country</option>
-														<option>India</option>
+														<option>USA</option>
 														<option>Canada</option>
 														<option>Japan</option>
+														<option>Germany</option>
+														<option>Italy</option>
+														<option>Spain</option>
 														<option>China</option>
+														<option>Portugal</option>
+														<option>Norway</option>
+														<option>France</option>
+														<option>Poland</option>
+
 													</select>
 												</div>
 
