@@ -34,7 +34,15 @@ Main content START -->
 		<div class="row">
 			<div class="col-md-10 col-xl-8 mx-auto">
 
+				<!-- Alert box -->
+				<div class="alert alert-success" role="alert">
+					An account has successfully been created for you.<strong class="mx-1">Confirm your email address</strong>to finish setting up your account.
+				</div>
+
+				<br>
+
 				<div class="card shadow">
+
 					<!-- Image -->
 					<div class="d-flex justify-content-center">
 						<img src="assets/images/kiboko-logo.png" class="rounded-top" alt="" style="width: 300px; height: 200px;">
@@ -47,7 +55,7 @@ Main content START -->
 						<p class="lead mb-3">Your trip has been booked</p>
 
 						<!-- Second title -->
-						<h5 class="text-primary mb-4">3-Day Amboseli National Park Safari</h5>
+						<h5 class="text-primary mb-4" style="color: darkorange !important;">3-Day Amboseli National Park Safari</h5>
 
 						<!-- List -->
 						<div class="row justify-content-between text-start mb-4">
