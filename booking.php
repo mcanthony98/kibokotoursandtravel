@@ -423,7 +423,7 @@
 
 							<!-- Button -->
 							<div class="d-grid mt-4">
-								<a href="flight-booking.html" class="btn btn-primary mb-0">Proceed To Payment</a>
+								<a href="payment.php" class="btn btn-primary mb-0">Proceed To Payment</a>
 							</div>
 						</div>
 						<!-- Card body END -->
