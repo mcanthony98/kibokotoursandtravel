@@ -96,7 +96,7 @@ Main Content START -->
 
 								<!-- Buttons -->
 								<div class="col-12">
-									<button class="btn btn-primary w-100 mb-0">Pay with your Card</button>
+									<a href="payment-confirmation.php" class="btn btn-primary w-100 mb-0">Pay with your Card</a>
 								</div>
 							</div>
 							<!-- Form END -->
