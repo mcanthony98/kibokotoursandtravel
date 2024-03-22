@@ -94,7 +94,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/destiantions/amboseli-np.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -156,7 +156,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/destiantions/maasai-mara.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -217,7 +217,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/destiantions/samburu-np.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -277,7 +277,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/destiantions/l-naivasha-np.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -396,7 +396,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/destiantions/tsavo-east-np.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -457,7 +457,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/destiantions/tsavo-west-np.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -518,7 +518,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/destiantions/l-nakuru-np.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
@@ -544,6 +544,64 @@ Tour grid START -->
                                 <ul class="nav nav-divider mt-3 mb-0">
                                     <li class="nav-item h6 fw-normal mb-0">
                                         <i class="fa-solid fa-car text-info me-2"></i>2 Hr Drive
+                                    </li>
+                                    <li class="nav-item h6 fw-normal mb-0">
+                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Card body END -->
+
+                            <!-- Card footer START-->
+                            <div class="card-footer pt-0">
+                                <!-- Price and Button -->
+                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
+                                    <!-- Price -->
+                                    <div class="hstack gap-2">
+                                        <h5 class="fw-normal text-success mb-0">$400</h5>
+                                        <small>/per person</small>
+                                    </div>
+                                    <!-- Button -->
+                                    <div class="mt-2 mt-sm-0">
+                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Card item END -->
+
+                                        <!-- Card item START -->
+                                        <div class="col-md-6 col-xl-4">
+                        <div class="card card-hover-shadow pb-0 h-100">
+                            <!-- Overlay item -->
+                            <div class="position-relative">
+                                <!-- Image -->
+                                <img src="assets/images/destiantions/ol-pajeta.jpg" class="card-img-top" alt="Card image">
+                                <!-- Overlay -->
+                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
+                                    <!-- Card overlay top -->
+                                    <div> <span class="badge text-bg-dark">Game Drive</span> </div>
+                                    <!-- Card overlay bottom -->
+                                    <div class="w-100 mt-auto">
+                                        <!-- Card category -->
+                                        <span class="badge text-bg-white fs-6">4 days / 3 nights</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Image -->
+
+                            <!-- Card body START -->
+                            <div class="card-body px-3">
+                                <!-- Title -->
+                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Ol Pajeta Conservancy</a></h5>
+                                <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
+
+                                <!-- List -->
+                                <ul class="nav nav-divider mt-3 mb-0">
+                                    <li class="nav-item h6 fw-normal mb-0">
+                                        <i class="fa-solid fa-car text-info me-2"></i>4 Hr Drive
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
                                         <i class="fa-solid fa-list text-danger me-2"></i>2 Activities

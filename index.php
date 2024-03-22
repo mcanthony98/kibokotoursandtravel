@@ -966,7 +966,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
+                                <img src="assets/images/blogs/lion.png" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="blog.php" class="badge text-bg-dark mb-2">Accessible</a>
@@ -989,7 +989,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
+                                <img src="assets/images/blogs/wildebeasts.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="blog-detail.php" class="badge text-bg-danger mb-2">Personal</a>
@@ -1032,12 +1032,12 @@ Gallery START -->
                 <div class="tiny-slider arrow-round arrow-blur arrow-hover rounded-3 overflow-hidden">
                     <div class="tiny-slider-inner d-flex align-items-end" data-autoplay="true" data-edge="2"
                         data-arrow="true" data-dots="false" data-items="6" data-items-lg="4" data-items-sm="2">
-                        <!-- Slider item -->
+                        <!-- Slider item 1 -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/birds.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/birds.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1047,12 +1047,12 @@ Gallery START -->
                             </a>
                         </div>
 
-                        <!-- Slider item -->
+                        <!-- Slider item 2 -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/cheetahs.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/cheetahs.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1062,12 +1062,12 @@ Gallery START -->
                             </a>
                         </div>
 
-                        <!-- Slider item -->
+                        <!-- Slider item 3 -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/gazelles.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/gazelles.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1077,12 +1077,12 @@ Gallery START -->
                             </a>
                         </div>
 
-                        <!-- Slider item -->
+                        <!-- Slider item 4 -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/cheetahs-2.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/cheetahs-2.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1092,12 +1092,12 @@ Gallery START -->
                             </a>
                         </div>
 
-                        <!-- Slider item -->
+                        <!-- Slider item 5 -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/zebras.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/zebras.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1107,30 +1107,12 @@ Gallery START -->
                             </a>
                         </div>
 
-                        <!-- Slider item -->
+                        <!-- Slider item 6 -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery"
-                                href="https://www.youtube.com/watch?v=NhvlTGMQTZQ&pp=ygUac2hvcnQgd2lsZGxpZmUgdmlkZW8ga2VueWE%3D">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/lion.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <span
-                                            class="btn text-danger btn-round btn-white position-absolute top-50 start-50 translate-middle mb-0">
-                                            <i class="fas fa-play"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/lion.png" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1140,12 +1122,27 @@ Gallery START -->
                             </a>
                         </div>
 
-                        <!-- Slider item -->
+                        <!-- Slider item 7 -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery" href="assets/images/views/birds.png">
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/rhinos.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/views/birds.png" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/rhinos.jpg" class="rounded-3" alt="">
+                                    <!-- Full screen button -->
+                                    <div class="hover-element w-100 h-100">
+                                        <i
+                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slider item 8 -->
+                        <div>
+                            <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/wildebeasts.jpg">
+                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
+                                    <!-- Image -->
+                                    <img src="assets/images/Small_400x400/wildebeasts.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
