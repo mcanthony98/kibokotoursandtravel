@@ -337,7 +337,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/classic/c1.jpg" class="card-img-top" alt="Card image">
+                                <img src="assets/images/destiantions/nrb-np.jpg" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
