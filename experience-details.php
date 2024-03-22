@@ -25,7 +25,7 @@
         <main>
 
         <div style="display: flex; justify-content: center;">
-                <div style="width: 70%;">
+                <div style="width: 60%;">
 
         <!-- Activity Details START -->
         <div class="card bg-transparent">
@@ -232,7 +232,7 @@ It's Time to Discover END -->
 
     <br>
     <br>
-    
+
     </div>
 
         </main>
