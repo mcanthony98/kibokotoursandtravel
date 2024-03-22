@@ -45,13 +45,13 @@ Main content START -->
 
 					<!-- Image -->
 					<div class="d-flex justify-content-center">
-						<img src="assets/images/kiboko-logo.png" class="rounded-top" alt="" style="width: 300px; height: 200px;">
+						<img src="assets/images/kiboko-logo.png" class="rounded-top" alt="" style="width: 200px; height: 150px;">
 					</div>
 
 					<!-- Card body -->
 					<div class="card-body text-center p-4">
 						<!-- Title -->
-						<h1 class="card-title fs-3">💯 Congratulations! 💯</h1>
+						<h1 class="card-title fs-3">Congratulations!</h1>
 						<p class="lead mb-3">Your trip has been booked</p>
 
 						<!-- Second title -->

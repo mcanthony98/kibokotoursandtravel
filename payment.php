@@ -51,7 +51,7 @@ Main Content START -->
 					<div class="card-body p-0 mt-3">
 						<!-- Alert box -->
 						<div class="alert alert-success" role="alert">
-							Hey' you are saving<strong class="mx-1">$2,560</strong>discount using the appliedcoupon code
+							Discount code for the amount<strong class="mx-1">$2,560</strong>has been applied.
 						</div>
 
 						<form class="bg-light rounded-3 p-4">
