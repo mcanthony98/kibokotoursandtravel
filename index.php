@@ -558,7 +558,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="kiboko image">
+                                <img src="assets/images/accessible/a3.jpg" class="card-img" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -593,7 +593,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="kiboko image">
+                                <img src="assets/images/accessible/a4.jpg" class="card-img" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -626,7 +626,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="kiboko image">
+                                <img src="assets/images/accessible/a5.jpg" class="card-img" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -659,7 +659,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="kiboko image">
+                                <img src="assets/images/accessible/a6.jpg" class="card-img" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
