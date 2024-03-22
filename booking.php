@@ -25,7 +25,7 @@
         <main>
 
             		<!-- Booking form START -->
-                    <form class="card border" style="width: 70%; margin: auto;">
+                    <form class="card border" style="width: 60%; margin: auto;">
 						<!-- Card header -->
 						<div class="card-header border-bottom px-4">
 							<h3 class="card-title mb-0">Customer Details</h3>
