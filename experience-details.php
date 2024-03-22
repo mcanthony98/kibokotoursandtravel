@@ -24,6 +24,8 @@
 
         <main>
 
+        <div style="display: flex; justify-content: center;">
+                <div style="width: 70%;">
 
         <!-- Activity Details START -->
         <div class="card bg-transparent">
@@ -181,6 +183,9 @@
             <!-- Card body END -->
         </div>
         <!-- Inclusion & Exclusion END -->
+    <br>
+    <br>
+    </div>
 
         </main>
 
