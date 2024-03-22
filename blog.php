@@ -44,7 +44,7 @@ Main banner START -->
                         <div class="card bg-transparent mb-4 mb-sm-0">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
+                                <img src="assets/images/blogs/birds.png" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay d-flex align-items-start flex-column p-3">
                                     <a href="#" class="badge bg-dark">Adventure</a>
@@ -79,7 +79,7 @@ Main banner START -->
                                 <div class="row g-3 g-sm-4 align-items-sm-center">
                                     <!-- Image -->
                                     <div class="col-4">
-                                        <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
+                                        <img src="assets/images/blogs/lion.png" class="card-img" alt="">
                                     </div>
                                     <div class="col-8">
                                         <!-- card body -->
@@ -107,7 +107,7 @@ Main banner START -->
                                 <div class="row g-3 g-sm-4 align-items-sm-center">
                                     <!-- Image -->
                                     <div class="col-4">
-                                        <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
+                                        <img src="assets/images/blogs/cheetahs-2.png" class="card-img" alt="">
                                     </div>
                                     <div class="col-8">
                                         <!-- card body -->
@@ -135,7 +135,7 @@ Main banner START -->
                                 <div class="row g-3 g-sm-4 align-items-sm-center">
                                     <!-- Image -->
                                     <div class="col-4">
-                                        <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
+                                        <img src="assets/images/blogs/cheetahs.jpg" class="card-img" alt="">
                                     </div>
                                     <div class="col-8">
                                         <!-- card body -->
@@ -185,7 +185,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-warning mb-2">Classic</a>
@@ -225,7 +225,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
+                                <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-danger mb-2">Personal</a>
@@ -272,7 +272,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
+                                <img src="assets/images/blogs/wildebeasts.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-dark mb-2">Adventure</a>
@@ -295,7 +295,7 @@ Blog grid START -->
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/kiboko/giraffe.jpg" class="card-img" alt="">
+                                <img src="assets/images/blogs/cheetahs.jpg" class="card-img" alt="">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
                                     <a href="#" class="badge text-bg-success mb-2">Tours</a>
