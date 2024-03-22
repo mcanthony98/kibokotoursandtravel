@@ -30,6 +30,9 @@
         <!-- Activity Details START -->
         <div class="card bg-transparent">
 
+            <br>
+            <br>
+
             <!-- Card header -->
             <div class="card-header border-bottom bg-transparent px-0 pt-0">
                 <h4 class="mb-0">Hot Air Balloon Rides</h4>
@@ -44,12 +47,14 @@
                     <li>For an unforgettable experience, we also offer a champagne breakfast upon landing. The total cost for the ride and breakfast is $250 per person.</li>
                 </ul>
 
+                <br>
+                <br>
+
                 <!-- Activity images -->
-                <h5>Hot Air Balloon Ride Images</h5>
 
                 <!-- Alert box -->
                 <div class="alert alert-warning" role="alert">
-                    Text.
+                    Important Safety Warning: Please note that hot air balloon rides are subject to weather conditions. Safety is our top priority. If weather conditions are deemed unsafe, rides may be rescheduled or cancelled. Thank you for your understanding.
                 </div>
 
                 <!-- Images -->
@@ -134,6 +139,9 @@
 
         </div>
         <!-- Activity Details END -->
+
+        <br>
+        <br>
         
         <!-- Inclusion & Exclusion START -->
         <div class="card bg-transparent">
@@ -151,16 +159,16 @@
                         <h5>Included in your price</h5>
                         <ul class="list-group list-group-borderless mb-0">
                             <li class="list-group-item mb-0 pb-0"><i class="fa-solid fa-check text-success me-1"></i>
-                                State tax
+                                Hot air balloon ride
                             </li>
                             <li class="list-group-item mb-0 pb-0"><i class="fa-solid fa-check text-success me-1"></i>
-                                Toll charge
+                                Professional guide
                             </li>
                             <li class="list-group-item mb-0 pb-0"><i class="fa-solid fa-check text-success me-1"></i>
-                                Driver Allowance
+                                Breakfast in the bush
                             </li>
                             <li class="list-group-item mb-0 pb-0"><i class="fa-solid fa-check text-success me-1"></i>
-                                Only one pickup and drop
+                                Transfer from and to your accommodation
                             </li>
                         </ul>
                     </div>
@@ -170,10 +178,10 @@
                         <h5>Extra charge</h5>
                         <ul class="list-group list-group-borderless mb-0">
                             <li class="list-group-item mb-0 pb-0"><i class="bi bi-x-lg text-danger me-1"></i>
-                                Fare beyond 600kms
+                                Personal expenses
                             </li>
                             <li class="list-group-item mb-0 pb-0"><i class="bi bi-x-lg text-danger me-1"></i>
-                                Airport entry charge
+                                Tips and gratuities
                             </li>
                         </ul>
                     </div>
@@ -185,6 +193,7 @@
         <!-- Inclusion & Exclusion END -->
     <br>
     <br>
+
     </div>
 
         </main>
