@@ -558,7 +558,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -593,7 +593,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -626,7 +626,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -659,7 +659,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="hotel image">
+                                <img src="assets/images/blogs/gazelles.jpg" class="card-img" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -799,7 +799,7 @@ Experience START -->
 					<!-- Card item START -->
 					<div>
 						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/wildebeasts.jpg" alt="">
+							<img src="assets/images/wildlife/maasai-mara.jpg" alt="">
 							<!-- Image overlay -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
@@ -816,7 +816,7 @@ Experience START -->
 					<!-- Card item START -->
 					<div>
 						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/birds.png" alt="">
+							<img src="assets/images/wildlife/amboseli-np.jpg" alt="">
 							<!-- Image overlay -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
@@ -833,12 +833,12 @@ Experience START -->
 					<!-- Card item START -->
 					<div>
 						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/wildebeasts.jpg" alt="">
+							<img src="assets/images/wildlife/tsavo-east-np.jpg" alt="">
 							<!-- Image overlay -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Tsavo National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Tsavo East National Park</a></h4>
 									<p class="text-white mb-2">Kenya's wilderness giants, painted red by volcanic earth.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -850,7 +850,7 @@ Experience START -->
 					<!-- Card item START -->
 					<div>
 						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/gazelles.jpg" alt="">
+							<img src="assets/images/wildlife/l-naivasha-np.jpg" alt="">
 							<!-- Image overlay -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
@@ -867,7 +867,7 @@ Experience START -->
 					<!-- Card item START -->
 					<div>
 						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/rhinos.jpg" alt="">
+							<img src="assets/images/wildlife/ol-pajeta.jpg" alt="">
 							<!-- Image overlay -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
@@ -884,7 +884,7 @@ Experience START -->
 					<!-- Card item START -->
 					<div>
 						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/cheetahs-2.png" alt="">
+							<img src="assets/images/wildlife/l-nakuru-np.jpg" alt="">
 							<!-- Image overlay -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
@@ -901,12 +901,29 @@ Experience START -->
 					<!-- Card item START -->
 					<div>
 						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/rhinos.jpg" alt="">
+							<img src="assets/images/wildlife/samburu-np.jpg" alt="">
 							<!-- Image overlay -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
 									<h4><a href="destinations-details.php" class="text-white stretched-link">Samburu National Reserve</a></h4>
+									<p class="text-white mb-2">The rugged north, where unique species and vibrant cultures thrive.</p>
+									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+                    f<!-- Card item START -->
+					<div>
+						<div class="card card-metro overflow-hidden">
+							<img src="assets/images/wildlife/tsavo-west-np.jpg" alt="">
+							<!-- Image overlay -->
+							<div class="card-img-overlay d-flex"> 
+								<!-- Info -->
+								<div class="card-text mt-auto">
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Tsavo West National Park</a></h4>
 									<p class="text-white mb-2">The rugged north, where unique species and vibrant cultures thrive.</p>
 									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
