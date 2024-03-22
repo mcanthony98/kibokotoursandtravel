@@ -382,7 +382,7 @@
 <!-- =======================
 Main banner START -->
 <section class="position-relative py-8 py-sm-9">
-    <video autoplay loop muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
+    <video autoplay loop muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
         <source src="assets/video/wildlife.mp4" type="video/mp4">
     </video>
     <div class="bg-overlay bg-dark opacity-2"></div>
