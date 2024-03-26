@@ -16,7 +16,7 @@
 				<style>
 				.sticky-section {
 					position: sticky;
-					bottom: 0;
+					top: 0;
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
@@ -46,9 +46,6 @@
 					margin-bottom: 10px; 
 				}
 
-				button:hover {
-				background-color: #FF8C00 !important;
-				}
 			</style>
 
 
@@ -77,7 +74,7 @@ Main Title START -->
 						<!-- Location -->
 						<p class="fw-bold mb-0"><i class="bi bi-geo-alt me-2"></i>Amboseli National Park
 							<a href="#" class="ms-2 text-decoration-underline" data-bs-toggle="modal" data-bs-target="#mapmodal">
-								<i class="bi bi-eye-fill me-1"></i>Our HQ Location
+								<i class="bi bi-eye-fill me-1"></i>View Location
 							</a>
 						</p>
 					</div>
@@ -211,12 +208,12 @@ About hotel START -->
 
 			<!-- Right side content START -->
 			<aside class="col-xl-5 order-xl-2">
-				<div data-sticky data-margin-top="100" data-sticky-for="1199">
+				<div >
 					<!-- Book now START -->
-					<div class="card card-body border">
+					<div class="card card-body border sticky-lg-top" >
 						
 						<!-- Title -->
-						<div class="d-sm-flex justify-content-sm-between align-items-center mb-3">
+						<div class="d-sm-flex justify-content-sm-between align-items-center mb-3 ">
 							<div>
 								<span>Price Start at</span>
 								<h4 class="card-title mb-0">$1,500</h4>
@@ -241,7 +238,7 @@ About hotel START -->
 
 						<!-- Button -->
 						<div class="d-grid">
-							<a href="booking.php" class="btn btn-lg btn-primary-soft mb-0">Book this Package Now</a>
+							<a href="booking.php" class="btn btn-lg btn-primary mb-0">Book this Package Now!</a>
 						</div>
 					</div>
 					<!-- Book now END -->
@@ -297,11 +294,9 @@ About hotel END -->
  <br>
 <!-- Table END -->
 
-<div class="sticky-section">
-    <h3>3-Day Amboseli Package</h3>
-<a href="booking.php" style="text-decoration: none;">
-	<button style="transition: background-color 0.3s ease; background-color: white;">Get this Package Now</button>
-</a>
+<div class="sticky-bottom bg-dark d-block d-lg-none d-flex justify-content-around py-3 px-2 z-index-4">
+    <h5 class="text-white">3-Day Amboseli Package <br> <span class="text-orange mt-2 h4">$1,500</span></h5>
+	<a href="booking.php" class="btn btn-primary">Get this Package Now	</a>
 
   </div>
 

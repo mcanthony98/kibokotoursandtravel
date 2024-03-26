@@ -23,12 +23,12 @@
 <header class="header-transparent">
 
         <!-- Top alert START -->
-        <div class="alert alert-warning py-2 m-0 bg-dark border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-around w-100" role="alert">
+        <div class="alert alert-warning py-2 m-0 border-0 bg-transparent rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-end w-100" role="alert">
         <p class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
-            <a href="mailto:info@kibokotoursandtravel.com" class="link-light" style="color: #ff8c00;"><i class="fa fa-envelope"></i>  <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+            <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i>  <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
         </p>
-        <span style="margin-left: 5px;">
-            <a href="https://api.whatsapp.com/send?phone=254712123123" target="_blank" class="pl-1 link-success"><i class="bi bi-whatsapp "></i> <span class="d-none d-md-inline">Whatsapp: +254 712 123 123</span></a>
+        <span class="ms-3">
+            <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-light text-decoration-underline"><i class="bi bi-whatsapp "></i> <span class="d-none d-md-inline">Whatsapp: +254 732 962224</span></a>
         </span>
         </div>
 	<!-- Logo Nav START -->
@@ -36,12 +36,13 @@
 		<div class="container-fluid px-md-5">
 			<!-- Logo START -->
             <a class="navbar-brand pt-2" href="index.php">
-                <img class="navbar-brand-item" src="assets/images/kiboko-logo.png" alt="logo" style="width:100px; height:auto;">
+                <img class="navbar-brand-item d-none d-md-block" src="assets/images/kiboko-logo.png" alt="logo" style="width:100px; height:auto;">
+                <img class="navbar-brand-item d-block d-md-none" src="assets/images/kiboko-logo.png" alt="logo" style="width:80px; height:auto;">
             </a>
 			<!-- Logo END -->
 
       <!-- Responsive navbar toggler -->
-			<button class="navbar-toggler ms-auto me-3 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler ms-auto me-3 p-0 order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-animation">
 					<span></span>
 					<span></span>
@@ -158,7 +159,7 @@
 											<div class="row g-4 justify-content-between p-lg-3">
 												<!-- Destination -->
 												<div class="col-lg-5">
-                                                    <h6 class="mb-3"><a href="destinations.php"><i class="bi bi-pin-map-fill text-primary me-2"></i>Destinations</a></h6>
+                                                    <h6 class="mb-3"><a href="destinations.php"><i class="bi bi-pin-map-fill text-warning me-2"></i>Destinations</a></h6>
 													<hr class="my-2">
 													<div class="row">
 														<div class="col-lg-6">
@@ -184,7 +185,7 @@
 	
 												<!-- Activities -->
 												<div class="col-lg-3">
-													<h6 class="mb-3"><i class="bi bi-list-ul text-primary me-2"></i>Activities</h6>
+													<h6 class="mb-3"><i class="bi bi-list-ul text-warning me-2"></i>Activities</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
 														<li> <a class="dropdown-item" href="experience-details.php">Hot Air Ballon Rides</a> </li>
@@ -199,7 +200,7 @@
 	
 												<!-- Safari Types -->
 												<div class="col-lg-3">
-													<h6 class="mb-3"><i class="bi bi-grid-3x3-gap text-primary me-2"></i>Safari Types</h6>
+													<h6 class="mb-3"><i class="bi bi-grid-3x3-gap text-warning me-2"></i>Safari Types</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
 														<li> <a class="dropdown-item" href="classic-safaris.php"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
@@ -210,20 +211,20 @@
 	
 												<!-- Action box -->
 												<div class="col-12">
-													<div class="card overflow-hidden" style="background-image:url(assets/images/bg/05.jpg); background-position: center left; background-size: cover;">
+													<div class="card overflow-hidden" style="background-image:url(assets/images/footer-bg.jpg); background-position: center left; background-size: cover;">
 														<div class="bg-overlay bg-dark opacity-5"></div>
 														<div class="card-body d-lg-flex justify-content-between align-items-center position-relative z-index-9">
 															<!-- Meta -->
 															<div class="mb-3 mb-lg-0">
 																<h5 class="text-white">Enjoy What Nature Offers in Kenya</h5>
 																<ul class="list-inline">
-																	<li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1"></i>Easy Online Booking</li>
-																	<li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1"></i>Fast Payment System</li>
-																	<li class="list-inline-item text-white"> <i class="bi bi-patch-check-fill me-1"></i>Variety of Destinations</li>
+																	<li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1 text-warning"></i>Easy Online Booking</li>
+																	<li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1 text-warning"></i>Fast Payment System</li>
+																	<li class="list-inline-item text-white"> <i class="bi bi-patch-check-fill me-1 text-warning"></i>Variety of Destinations</li>
 																</ul>
 															</div>
 															<!-- Button -->
-															<a href="destinations.php" class="btn btn-white mb-0">Book a Dream Package Now!</a>
+															<a href="destinations.php" class="btn btn-primary mb-0">Book a Dream Package Now!</a>
 														</div>
 													</div>
 												</div>
@@ -364,7 +365,7 @@
 
             <div class="nav-item dropdown form-control-bg-light">
                 <!-- Stay button -->
-                <a class="btn btn-l btn-primary mb-0" href="contact-us.php#quote" role="button"
+                <a class="btn btn-l btn-primary mb-0 order-12" href="contact-us.php#quote" role="button"
                     aria-expanded="false" data-bs-auto-close="outside">
                     Get a Free Quote Today! </i>
                 </a>
@@ -391,10 +392,10 @@ Main banner START -->
     <div class="bg-overlay bg-dark opacity-2"></div>
     <div class="container z-index-9 position-relative">
         <div class="row">
-            <div class="col-xl-8 m-auto text-center py-xl-8">
-                <h1 class="display-4 text-white mb-3">Book your front-row seat to nature's wonders.</h1>
-                <h5 class="text-white mb-3">Experience Great Adventures in the Wild.</h5>
-                <a href="contact-us.php#quote" class="btn btn-lg btn-dark mb-0">Speak to our Expert Today!</a>
+            <div class="col-xl-8 m-auto text-center pt-7">
+                <h1 class="display-4 text-white mb-3">Experience Kenya's Natural Wonders</h1>
+                <h5 class="text-white mb-3">Book your adventure with East Africa's Best Tour Agent!</h5>
+                <a href="contact-us.php#quote" class="btn btn-lg btn-primary mb-0">Request a Free Quote Today!</a>
             </div>
         </div> </div>
 </section>
@@ -408,8 +409,8 @@ About START -->
 	<div class="container z-index-9">
 		<div class="row">
 			<div class="col-lg-10 m-auto text-center">
-				<h2>Get the Best Tours Travel has to Offer</h2>
-				<p class="lead">Kiboko Tours and Travel is a Kenyan tour company with a unique approach to life celebration and travel services. Our main goal is to connect people from different backgrounds, life experiences, social classes, cultures, abilities, and challenges. We are particular specialists in disability travel services and we offer unique and tailored travel experiences to our customers that are spiritually nourishing, therapeutic, and often, transformational.</p>
+				<h2>Come Visit Kenya with Us!</h2>
+				<p class="lead"><span class="text-primary-kiboko fw-bold">Kiboko Tours and Travel</span> is a Kenyan company specializing in celebrating life through unique travel experiences. Our aim is to bring together individuals from diverse backgrounds, cultures, and abilities. We specialize in disability travel services, providing tailored experiences that are spiritually enriching and often transformative.</p>
 				
 				<!-- List -->
 				<ul class="list-inline hstack gap-4 flex-wrap justify-content-center mt-4">
@@ -417,7 +418,7 @@ About START -->
 						<h5 class="mb-0 fw-normal"><i class="bi bi-person fa-fw text-warning me-1"></i>Excellent Service</h5>
 					</li>
 					<li class="list-inline-item"> 
-						<h5 class="mb-0 fw-normal"><i class="bi bi-pin-map fa-fw text-primary me-1"></i>Best Destinations</h5>
+						<h5 class="mb-0 fw-normal"><i class="bi bi-pin-map fa-fw text-warning me-1"></i>Best Destinations</h5>
 					</li>
 					<li>
 					<div class="d-flex justify-content-center align-items-center text-start me-0 me-sm-4">
@@ -439,7 +440,7 @@ About START -->
 					<div class="d-flex justify-content-center align-items-center text-start me-0 me-sm-4">
 					<!-- Button -->
 					<br>
-					<div> <a href="about-us.php" class="btn btn-lg btn-dark mb-0">About Us</a> </div>
+					<div> <a href="about-us.php" class="btn btn-lg btn-outline-primary mb-0">Book your Trip Now!</a> </div>
 				</div>
 
 			</div>
@@ -456,7 +457,7 @@ Offers START -->
 		<!-- Title -->
 		<div class="row mb-4">
 			<div class="col-12 text-center">
-				<h2>Your Kenyan Journey: Our Activities</h2>
+				<h2>Activities to do in Kenya</h2>
 			</div>
 		</div>
 
@@ -550,15 +551,15 @@ Featured Packages START -->
                 <div class="row g-4">
 
 
-
+<?php for($i=3;$i<7;$i++){?>
                     <!-- Package item -->
-                    <div class="col-sm-6 col-xl-3">
+                    <div class="col-sm-6 col-xl-3 shadow">
                         <!-- Card START -->
-                        <div class="card card-img-scale overflow-hidden bg-transparent">
+                        <div class="card card-img-scale overflow-hidden bg-transparent rounded-3">
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/accessible/a3.jpg" class="card-img" alt="kiboko image">
+                                <img src="assets/images/accessible/a<?php echo "3";?>.jpg" class="card-img mt-1" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -570,118 +571,31 @@ Featured Packages START -->
                             <div class="card-body px-2">
                                 <!-- Title -->
                                 <h5 class="card-title"><a href="package-details.php" class="stretched-link">7-Days
-                                        Kenya
-                                        Safari in Style</a></h5>
+                                        Kenya Safari in Style</a></h5>
                                 <!-- Price and rating -->
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="text-success mb-0">$2058 <small class="fw-light">/starting at</small>
-                                    </h6>
+                                    <h5 class="text-success mb-0">$2,058 
+                                    </h5>
                                     <h6 class="mb-0">4.6<i class="fa-solid fa-star text-warning ms-1"></i></h6>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- Card END -->
-                    </div>
-
-
-
-
-                    <!-- Package item -->
-                    <div class="col-sm-6 col-xl-3">
-                        <!-- Card START -->
-                        <div class="card card-img-scale overflow-hidden bg-transparent">
-                            <!-- Image and overlay -->
-                            <div class="card-img-scale-wrapper rounded-3">
-                                <!-- Image -->
-                                <img src="assets/images/accessible/a4.jpg" class="card-img" alt="kiboko image">
-                                <!-- Badge -->
-                                <div class="position-absolute bottom-0 start-0 p-3">
-                                    <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                            class="bi bi-geo-alt me-2"></i>Kenya</div>
-                                </div>
-                            </div>
-
-                            <!-- Card body -->
-                            <div class="card-body px-2">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="package-details.php" class="stretched-link">6-Days of
-                                        Exploring Kenya's Parks</a></h5>
-                                <!-- Price and rating -->
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="text-success mb-0">$1874 <small class="fw-light">/starting at</small>
-                                    </h6>
-                                    <h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+                                <div class="pt-3">
+                                    <a class="btn btn-primary btn-sm">Book Now</a>
                                 </div>
                             </div>
                         </div>
                         <!-- Card END -->
                     </div>
 
+                    <?php } ?>
 
-
-                    <!-- Package item -->
-                    <div class="col-sm-6 col-xl-3">
-                        <!-- Card START -->
-                        <div class="card card-img-scale overflow-hidden bg-transparent">
-                            <!-- Image and overlay -->
-                            <div class="card-img-scale-wrapper rounded-3">
-                                <!-- Image -->
-                                <img src="assets/images/accessible/a5.jpg" class="card-img" alt="kiboko image">
-                                <!-- Badge -->
-                                <div class="position-absolute bottom-0 start-0 p-3">
-                                    <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                            class="bi bi-geo-alt me-2"></i>Kenya</div>
-                                </div>
-                            </div>
-
-                            <!-- Card body -->
-                            <div class="card-body px-2">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="package-details.php" class="stretched-link">Group
-                                        Shopping</a></h5>
-                                <!-- Price and rating -->
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="text-success mb-0">$100 <small class="fw-light">/starting at</small>
-                                    </h6>
-                                    <h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card END -->
+                    <!-- About Us Btn -->
+					<div class="d-flex justify-content-center align-items-center text-start me-0 me-sm-4">
+                        <!-- Button -->
+                        <br>
+                        <div> <a href="classic-safaris.php" class="btn btn-lg btn-outline-primary mb-0">View all Packages!</a> </div>
                     </div>
 
 
-
-                    <!-- Package item -->
-                    <div class="col-sm-6 col-xl-3">
-                        <!-- Card START -->
-                        <div class="card card-img-scale overflow-hidden bg-transparent">
-                            <!-- Image and overlay -->
-                            <div class="card-img-scale-wrapper rounded-3">
-                                <!-- Image -->
-                                <img src="assets/images/accessible/a6.jpg" class="card-img" alt="kiboko image">
-                                <!-- Badge -->
-                                <div class="position-absolute bottom-0 start-0 p-3">
-                                    <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                            class="bi bi-geo-alt me-2"></i>Kenya</div>
-                                </div>
-                            </div>
-
-                            <!-- Card body -->
-                            <div class="card-body px-2">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="package-details.php" class="stretched-link">Countryside
-                                        Road Experience</a></h5>
-                                <!-- Price and rating -->
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <h6 class="text-success mb-0">$250 <small class="fw-light">/starting at</small>
-                                    </h6>
-                                    <h6 class="mb-0">4.5<i class="fa-solid fa-star text-warning ms-1"></i></h6>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card END -->
-                    </div>
 
                 </div> <!-- Row END -->
             </div>
@@ -747,16 +661,16 @@ Accreitations END -->
 
 <!-- =======================
 Main Banner START -->
-<section class="pt-4 pt-md-5">
+<section class="pt-8 pt-md-5">
 	<div class="container">
 		<div class="row g-4 align-items-center">				
 			<div class="col-lg-7">
 				<!-- Title -->
-				<h1 class="mb-4 display-5">Experience a Wildlife Tour of a  <span class="text-primary">Lifetime!</span></h1>
+				<h1 class="mb-4 display-5">Experience a Wildlife Tour of a  <span class="text-bg-warning">Lifetime!</span></h1>
 				<!-- Info -->
-				<p class="mb-4">Life is all about adventure and enjoying what nature has to offer</p>
+				<p class="mb-4">Life is all about adventure and enjoying what nature has to offer!</p>
 				<!-- Button -->
-				<a href="destinations.php" class="btn btn-primary-soft mb-4">Book a Package Now! <i class="fa-solid fa-arrow-right-long fa-fw"></i></a>
+				<a href="classic-safaris.php" class="btn btn-primary mb-4">Book a Package Now! <i class="fa-solid fa-arrow-right-long fa-fw"></i></a>
 				<!-- List -->
 				<h6 class="fw-normal mb-1">Our Benefits</h6>
 				<ul class="list-group list-group-borderless mb-0 small">
@@ -789,7 +703,7 @@ Experience START -->
 		<!-- Title -->
 		<div class="row mb-4">
 			<div class="col-12 text-center">
-				<h2>Explore our Breathtaking Destinations</h2>
+				<h2>Explore our Best Destinations</h2>
 			</div>
 		</div>
 
@@ -806,7 +720,7 @@ Experience START -->
 								<div class="card-text mt-auto">
 									<h4><a href="destinations-details.php" class="text-white stretched-link">Maasai Mara National Reserve</a></h4>
 									<p class="text-white mb-2">Where the Big Five roam and the Great Migration thunders across the plains.</p>
-									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
 							</div>
 						</div>
@@ -823,7 +737,7 @@ Experience START -->
 								<div class="card-text mt-auto">
 									<h4><a href="destinations-details.php" class="text-white stretched-link">Amboseli National Park</a></h4>
 									<p class="text-white mb-2">Elephants dwarfed by the majesty of Kilimanjaro.</p>
-									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
 							</div>
 						</div>
@@ -840,7 +754,7 @@ Experience START -->
 								<div class="card-text mt-auto">
 									<h4><a href="destinations-details.php" class="text-white stretched-link">Tsavo East National Park</a></h4>
 									<p class="text-white mb-2">Kenya's wilderness giants, painted red by volcanic earth.</p>
-									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
 							</div>
 						</div>
@@ -857,7 +771,7 @@ Experience START -->
 								<div class="card-text mt-auto">
 									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Naivasha National Park</a></h4>
 									<p class="text-white mb-2">Hippos bask, and eagles soar across shimmering waters.</p>
-									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
 							</div>
 						</div>
@@ -874,7 +788,7 @@ Experience START -->
 								<div class="card-text mt-auto">
 									<h4><a href="destinations-details.php" class="text-white stretched-link">Ol Pajeta Conservancy</a></h4>
 									<p class="text-white mb-2">Rhino sanctuary and a beacon of conservation hope.</p>
-									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
 							</div>
 						</div>
@@ -891,7 +805,7 @@ Experience START -->
 								<div class="card-text mt-auto">
 									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Nakuru National Park</a></h4>
 									<p class="text-white mb-2">A vibrant spectacle of pink – flamingos in their breathtaking thousands.</p>
-									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
 							</div>
 						</div>
@@ -908,7 +822,7 @@ Experience START -->
 								<div class="card-text mt-auto">
 									<h4><a href="destinations-details.php" class="text-white stretched-link">Samburu National Reserve</a></h4>
 									<p class="text-white mb-2">The rugged north, where unique species and vibrant cultures thrive.</p>
-									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
 							</div>
 						</div>
@@ -925,7 +839,7 @@ Experience START -->
 								<div class="card-text mt-auto">
 									<h4><a href="destinations-details.php" class="text-white stretched-link">Tsavo West National Park</a></h4>
 									<p class="text-white mb-2">The rugged north, where unique species and vibrant cultures thrive.</p>
-									<button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
+									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
 							</div>
 						</div>
@@ -933,6 +847,12 @@ Experience START -->
 					<!-- Card item END -->
 			</div>	
 		</div>
+         <!-- About Us Btn -->
+					<div class="d-flex justify-content-center align-items-center text-start me-0 me-sm-4 mt-5">
+                        <!-- Button -->
+                        <br>
+                        <div> <a href="destinations.php" class="btn btn-lg btn-outline-primary mb-0">See all Destinations!</a> </div>
+                    </div>
 	</div>
 </section>
 <!-- =======================
@@ -949,7 +869,7 @@ Blog grid START -->
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-12 text-center">
-                        <h2 class="mb-0">A Glimpse of Our Blogs</h2>
+                        <h2 class="mb-0">Our Blogs</h2>
                     </div>
                 </div>
 
@@ -1027,7 +947,7 @@ Blog grid START -->
 
                 <!-- Buttons -->
                 <div class="text-center mt-4">
-                    <a href="blog.php" class="btn btn-primary-soft mb-0">Check Out Our Blogs Now<i class="fas fa-newspaper ms-2"></i></a>
+                    <a href="blog.php" class="btn btn-primary mb-0">Check Out Our Blogs Now<i class="fas fa-newspaper ms-2"></i></a>
                 </div>
             </div>
         </section>

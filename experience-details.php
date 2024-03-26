@@ -25,7 +25,7 @@
         <main>
 
         <div style="display: flex; justify-content: center;">
-                <div style="width: 60%;">
+                <div class="col-sm-8 col-11 mx-auto">
 
         <!-- Activity Details START -->
         <div class="card bg-transparent">
@@ -193,6 +193,133 @@
         <!-- Inclusion & Exclusion END -->
     <br>
     <br>
+
+
+    <!-- Packages START -->
+<section class="pt-0 pt-md-5" id="related-packages">
+	<div class="container">
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-12 text-center">
+				<h2 class="mb-0">Choose a Package</h2>
+			</div>
+		</div>
+
+		<div class="row g-4">
+			<!-- Package item -->
+			<div class="col-sm-6 col-xl-4">
+				<!-- Card START -->
+				<div class="card card-img-scale overflow-hidden bg-transparent">
+					<div class="card-img-scale-wrapper rounded-3">
+						<!-- Card Image -->
+						<img src="assets/images/kiboko [old]/animal-6.jpg" class="card-img" alt="">
+						<!-- Overlay -->
+						<div class="card-img-overlay d-flex flex-column z-index-1 p-4">
+							<!-- Card overlay top -->
+							<div class="d-flex justify-content-between">
+								<span class="badge text-bg-dark">3 Destinations</span>
+								<span class="badge text-bg-white"><i class="fa-solid fa-star text-warning me-2"></i>4.3</span>
+							</div>
+							<!-- Card overlay bottom -->
+							<div class="w-100 mt-auto">
+								<!-- Card category -->
+								<span class="badge text-bg-white fs-6">3 days</span>
+							</div>
+						</div>
+					</div> 
+					
+					<!-- Card body -->
+					<div class="card-body px-2">
+						<!-- Title -->
+						<h5 class="card-title"><a href="package-details.php" class="stretched-link">Amboseli
+                                        National Park Safari</a></h5>
+						<!-- Content -->
+						<div class="hstack gap-2">
+							<span class="h5 mb-0 text-success">$1385</span>
+							
+						</div>
+					</div>
+				</div>
+				<!-- Card END -->
+			</div>
+
+			
+
+			<!-- Package item -->
+			<div class="col-sm-6 col-xl-4">
+				<div class="card card-img-scale overflow-hidden bg-transparent">
+					<div class="card-img-scale-wrapper rounded-3">
+						<!-- Card Image -->
+						<img src="assets/images/kiboko [old]/animal-6.jpg" class="card-img" alt="">
+						<!-- Overlay -->
+						<div class="card-img-overlay d-flex flex-column z-index-1 p-4">
+							<!-- Card overlay top -->
+							<div class="d-flex justify-content-between">
+								<span class="badge text-bg-dark">4 Locations</span>
+								<span class="badge text-bg-white"><i class="fa-solid fa-star text-warning me-2"></i>4.2</span>
+							</div>
+							<!-- Card overlay bottom -->
+							<div class="w-100 mt-auto">
+								<!-- Card category -->
+								<span class="badge text-bg-white fs-6">7 days</span>
+							</div>
+						</div>
+					</div> 
+					
+					<!-- Card body -->
+					<div class="card-body px-2">
+						<!-- Title -->
+						<h5 class="card-title"><a href="package-details.php" class="stretched-link">Exploring Kenya’s Wilderness Parks</a></h5>
+						<!-- Content -->
+						<div class="hstack gap-2">
+							<span class="h5 mb-0 text-success">$1885</span>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Package item -->
+			<div class="col-sm-6 col-xl-4">
+				<div class="card card-img-scale overflow-hidden bg-transparent">
+					<div class="card-img-scale-wrapper rounded-3">
+						<!-- Card Image -->
+						<img src="assets/images/kiboko [old]/animal-6.jpg" class="card-img" alt="">
+						<!-- Overlay -->
+						<div class="card-img-overlay d-flex flex-column z-index-1 p-4">
+							<!-- Card overlay top -->
+							<div class="d-flex justify-content-between">
+								<span class="badge text-bg-dark">4 Destinations</span>
+								<span class="badge text-bg-white"><i class="fa-solid fa-star text-warning me-2"></i>4.6</span>
+							</div>
+							<!-- Card overlay bottom -->
+							<div class="w-100 mt-auto">
+								<!-- Card category -->
+								<span class="badge text-bg-white fs-6">7 days</span>
+							</div>
+						</div>
+					</div> 
+					
+					<!-- Card body -->
+					<div class="card-body px-2">
+						<!-- Title -->
+						<h5 class="card-title"><a href="package-details.php" class="stretched-link">Kenya Mid-Range Safari Experience</a></h5>
+						<!-- Content -->
+						<div class="hstack gap-2">
+							<span class="h5 text-success mb-0">$3585</span>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Packages END -->
+
+
+
 
                 <!-- =======================
 It's Time to Discover START -->

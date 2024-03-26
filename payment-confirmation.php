@@ -45,7 +45,7 @@ Main content START -->
 
 					<!-- Image -->
 					<div class="d-flex justify-content-center">
-						<img src="assets/images/kiboko-logo.png" class="rounded-top" alt="" style="width: 200px; height: 150px;">
+						<img src="assets/images/kiboko-logo.png" class="rounded-top" alt="" style="width: 200px; height: 200px;">
 					</div>
 
 					<!-- Card body -->

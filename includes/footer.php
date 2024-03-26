@@ -10,16 +10,14 @@
                 <div class="col-lg-3">
                     <!-- logo -->
                     <a class="navbar-brand" href="index.php">
-                            <img class="light-mode-item navbar-brand-item d-inline h-70px h-md-120px" src="assets/images/kiboko-logo.png" alt="logo" 
-                                 style="height: 200px; width: auto;"> 
-                                 <img class="dark-mode-item navbar-brand-item d-inline h-70px h-md-120px" src="assets/images/kiboko-logo.png" alt="logo" 
-                                 style="height: 2000px; width: auto;"> 
+                    <img class="navbar-brand-item d-none d-md-block" src="assets/images/kiboko-logo.png" alt="logo" style="width:100px; height:auto;">
+                <img class="navbar-brand-item d-block d-md-none" src="assets/images/kiboko-logo.png" alt="logo" style="width:80px; height:auto;"> 
                         </a>
                     <p class="my-3 text-muted">Kiboko Tours & Travel.</p>
                     <p class="my-3 text-muted">We lead the path to your intended destination.</p>
 
                     <p class="mb-2"><a href="kibokotoursandtravel.com" class="text-muted text-primary-hover"><i
-                                class="bi bi-telephone me-2"></i>+254 712 123 123</a> </p>
+                                class="bi bi-telephone me-2"></i>+254 732 962224</a> </p>
                     <p class="mb-0"><a href="mailto:info@kibokotoursandtravel.com"
                             class="text-muted text-primary-hover"><i
                                 class="bi bi-envelope me-2"></i>info@kibokotoursandtravel.com</a></p>

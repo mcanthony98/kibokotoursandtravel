@@ -25,13 +25,14 @@
         <main>
 <!-- =======================
 About START -->
-<section>
+<section class="pt-4">
 	<div class="container">
 		<div class="row g-4">
 			
 			<div class="col-lg-4 position-relative">
 				<h2>Maasai Mara National Reserve</h2>
 				<p>Witness the raw power of nature in the Maasai Mara – a wildlife spectacle you won't want to miss!</p>
+				<a href="#related-packages" class="btn btn-outline-primary">Choose a package</a>
 
 
 			</div>
@@ -50,7 +51,7 @@ About START -->
 					<!-- Manager -->
 					<div class="position-absolute bottom-0 start-0 ms-n3 ms-lg-n6 mb-2 z-index-1">
 						<div class="bg-mode shadow d-inline-block text-center rounded-3 position-relative p-4">
-							<span class="h3 text-primary mb-2">4.9</span>
+							<span class="h3 text-primary-kiboko mb-2">4.9</span>
 							<h6 class="fw-normal">Global Rating</h6>
 						</div>
 					</div>
@@ -67,8 +68,8 @@ About END -->
 
 <!-- =======================
 Offers START -->
-<section class="pt-5 pt-md-8 pb-0 d-flex justify-content-center align-items-center">
-	<div class="container-fluid px-lg-5">
+<section class="pt-5 pt-md-5 pb-0 d-flex justify-content-center align-items-center">
+	<div class="container-fluid ">
 		<!-- Title -->
 		<div class="row mb-4">
 			<div class="col-12 text-center">
@@ -133,18 +134,18 @@ Offers END -->
 
             <!-- =======================
 Packages START -->
-<section class="pt-0 pt-md-5">
+<section class="pt-0 pt-md-5" id="related-packages">
 	<div class="container">
 		<!-- Title -->
 		<div class="row mb-4">
 			<div class="col-12 text-center">
-				<h2 class="mb-0">Check Out our Packages to Travel to Amboseli</h2>
+				<h2 class="mb-0">Choose a Package</h2>
 			</div>
 		</div>
 
 		<div class="row g-4">
 			<!-- Package item -->
-			<div class="col-sm-6 col-xl-3">
+			<div class="col-sm-6 col-xl-4">
 				<!-- Card START -->
 				<div class="card card-img-scale overflow-hidden bg-transparent">
 					<div class="card-img-scale-wrapper rounded-3">
@@ -173,51 +174,17 @@ Packages START -->
 						<!-- Content -->
 						<div class="hstack gap-2">
 							<span class="h5 mb-0 text-success">$1385</span>
-							<small>Starting price</small>
+							
 						</div>
 					</div>
 				</div>
 				<!-- Card END -->
 			</div>
 
-			<!-- Package item -->
-			<div class="col-sm-6 col-xl-3">
-				<!-- Card START -->
-				<div class="card card-img-scale overflow-hidden bg-transparent">
-					<div class="card-img-scale-wrapper rounded-3">
-						<!-- Card Image -->
-						<img src="assets/images/kiboko [old]/animal-6.jpg" class="card-img" alt="">
-						<!-- Overlay -->
-						<div class="card-img-overlay d-flex flex-column z-index-1 p-4">
-							<!-- Card overlay top -->
-							<div class="d-flex justify-content-between">
-								<span class="badge text-bg-dark">3 Destinations</span>
-								<span class="badge text-bg-white"><i class="fa-solid fa-star text-warning me-2"></i>4.5</span>
-							</div>
-							<!-- Card overlay bottom -->
-							<div class="w-100 mt-auto">
-								<!-- Card category -->
-								<span class="badge text-bg-white fs-6">6 days</span>
-							</div>
-						</div>
-					</div> 
-					
-					<!-- Card body -->
-					<div class="card-body px-2">
-						<!-- Title -->
-						<h5 class="card-title"><a href="package-details.php" class="stretched-link">Maasai Mara - L Naivasha - Amboseli Safari</a></h5>
-						<!-- Content -->
-						<div class="hstack gap-2">
-							<span class="h5 mb-0 text-success">$2569</span>
-							<small>Starting price</small>
-						</div>
-					</div>
-				</div>
-				<!-- Card END -->
-			</div>
+			
 
 			<!-- Package item -->
-			<div class="col-sm-6 col-xl-3">
+			<div class="col-sm-6 col-xl-4">
 				<div class="card card-img-scale overflow-hidden bg-transparent">
 					<div class="card-img-scale-wrapper rounded-3">
 						<!-- Card Image -->
@@ -244,14 +211,14 @@ Packages START -->
 						<!-- Content -->
 						<div class="hstack gap-2">
 							<span class="h5 mb-0 text-success">$1885</span>
-							<small>Starting price</small>
+							
 						</div>
 					</div>
 				</div>
 			</div>
 
 			<!-- Package item -->
-			<div class="col-sm-6 col-xl-3">
+			<div class="col-sm-6 col-xl-4">
 				<div class="card card-img-scale overflow-hidden bg-transparent">
 					<div class="card-img-scale-wrapper rounded-3">
 						<!-- Card Image -->
@@ -278,7 +245,7 @@ Packages START -->
 						<!-- Content -->
 						<div class="hstack gap-2">
 							<span class="h5 text-success mb-0">$3585</span>
-							<small>Starting price</small>
+							
 						</div>
 					</div>
 				</div>

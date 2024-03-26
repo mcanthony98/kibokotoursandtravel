@@ -101,10 +101,11 @@ About content START -->
 <h3 class="col-lg-12 mb-4">What We Offer</h3>
 
 <div class="col-sm-6 col-lg-4">
-    <div class="icon-lg bg-primary bg-opacity-10 text-primary rounded-2"><i
+    <div class="icon-lg bg-warning bg-opacity-10 text-warning rounded-2"><i
             class="fa-solid fa-compass fs-5"></i></div>
     <h5 class="mt-2">Adventure Experience</h5>
-    <p class="mb-0">Discover Kenya's wild heart! Embark on a classic safari adventure, filled with iconic wildlife encounters and breathtaking landscapes.</p>
+    <p class="mb-0">Discover Kenya's wild heart! Embark on a safari adventure, filled with iconic wildlife encounters and breathtaking landscapes.</p>
+    <a href="classic-safaris.php" class="btn btn-sm btn-outline-primary mt-2">View Packages</a>
 </div>
 
 <!-- Service item -->
@@ -113,6 +114,7 @@ About content START -->
             class="fa-solid fa-wheelchair fs-5"></i></div>
     <h5 class="mt-2">Accessible Safaris</h5>
     <p class="mb-0">Adventure awaits everyone! Experience the wonders of Kenya with our accessible safaris, designed for travelers of all abilities.</p>
+    <a href="accessible-safaris.php" class="btn btn-sm btn-outline-primary mt-2">View Packages</a>
 </div>
 
 <!-- Service item -->
@@ -121,6 +123,7 @@ About content START -->
             class="fa-solid fa-people-roof fs-5"></i></div>
     <h5 class="mt-2">Family & Couple Safaris</h5>
     <p class="mb-0">Adventure awaits everyone! Experience the wonders of Kenya with our accessible safaris, designed for travelers of all abilities.</p>
+    <a href="family-couple-safaris.php" class="btn btn-sm btn-outline-primary mt-2">View Packages</a>
 </div>
 
 </div>
@@ -143,51 +146,51 @@ Our Stats START -->
                     <!-- Counter -->
                     <div class="col-xl-5">
                         <div
-                            class="card card-body bg-primary bg-opacity-10 vstack gap-4 justify-content-center h-100 p-4">
+                            class="card card-body bg-orange bg-opacity-10 vstack gap-4 justify-content-center h-100 p-4">
 
                             <!-- Counter item -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-center me-3">
-                                        <h3 class="purecounter text-primary mb-0" data-purecounter-end="9" data-purecounter-delay="300">0</h3>
-                                    <span class="h3 text-primary mb-0">+</span>
+                                        <h3 class="purecounter text-orange mb-0" data-purecounter-end="9" data-purecounter-delay="300">0</h3>
+                                    <span class="h3 text-orange mb-0">+</span>
                                 </div>
-                                <h6 class="fw-normal mb-0">Years of Experience</h6>
+                                <h5 class="fw-normal mb-0">Years of Experience</h5>
                             </div>
 
                             <!-- Counter item -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-center me-3">
-                                    <h3 class="purecounter text-primary mb-0" data-purecounter-start="0"
+                                    <h3 class="purecounter text-orange mb-0" data-purecounter-start="0"
                                         data-purecounter-end="100" data-purecounter-delay="300">0</h3>
-                                    <span class="h3 text-primary mb-0">+</span>
+                                    <span class="h3 text-orange mb-0">+</span>
                                 </div>
-                                <h6 class="fw-normal mb-0">Happy Clients</h6>
+                                <h5 class="fw-normal mb-0">Happy Clients</h5>
                             </div>
 
                             <!-- Counter item -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-center me-3">
-                                    <h3 class="purecounter text-primary mb-0" data-purecounter-start="0"
+                                    <h3 class="purecounter text-orange mb-0" data-purecounter-start="0"
                                         data-purecounter-end="5" data-purecounter-delay="300">0</h3>
-                                    <span class="h3 text-primary mb-0">+</span>
+                                    <span class="h3 text-orange mb-0">+</span>
                                 </div>
-                                <h6 class="fw-normal mb-0">Awards</h6>
+                                <h5 class="fw-normal mb-0">Awards</h5>
                             </div>
 
                             <!-- Counter item -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-center me-3">
                                         <div class="d-flex justify-content-center me-3">
-                                            <h3 class="purecounter text-primary mb-0" data-purecounter-start="0"
+                                            <h3 class="purecounter text-orange mb-0" data-purecounter-start="0"
                                                 data-purecounter-end="4" data-purecounter-delay="300">0</h3>
-                                            <span class="h3 text-primary mb-0">.</span>
-                                            <h3 class="purecounter text-primary mb-0" data-purecounter-start="0"
+                                            <span class="h3 text-orange mb-0">.</span>
+                                            <h3 class="purecounter text-orange mb-0" data-purecounter-start="0"
                                                 data-purecounter-end="8" data-purecounter-delay="300">0</h3>
                                         </div>
-                                        <span class="h3 text-primary mb-0"><i class="bi bi-star-fill"></i></span>
-                                    <span class="h3 text-primary mb-0"></span>
+                                        <span class="h3 text-orange mb-0"><i class="bi bi-star-fill"></i></span>
+                                    <span class="h3 text-orange mb-0"></span>
                                 </div>
-                                <h6 class="fw-normal mb-0">Rating</h6>
+                                <h5 class="fw-normal mb-0">Rating</h5>
                             </div>
 
                         </div>
@@ -284,7 +287,7 @@ Team START -->
                             <!-- Card body -->
                             <div class="card-body px-2 pb-0">
                                 <h5 class="card-title"><a href="#">WILFRED VICTOR JUMA</a></h5>
-                                <span style="text-align: center; color: black;"><strong>DISABILITY TRAVEL CONSULTANT</strong></span>
+                                <span style="text-align: center;"><strong>DISABILITY TRAVEL CONSULTANT</strong></span>
                                 <br>
                                 <br>
                                 <p>A lead occupational therapist and a psychologist with 10 years’ experience working with children with special needs. He is the one pioneering the inclusive tour environment for Children and adults with various special needs. With him comes aide therapists, special needs teacher, and a play aide.</p>                           
@@ -315,7 +318,7 @@ Team START -->
                             <!-- Card body -->
                             <div class="card-body px-2 pb-0">
                                 <h5 class="card-title"><a href="#">GIBSON N NJUGUNA</a></h5>
-                                <span style="text-align: center; color: black;"><strong>TRAVEL LOGISTICS AND COMMUNICATION</strong></span>
+                                <span style="text-align: center;"><strong>TRAVEL LOGISTICS AND COMMUNICATION</strong></span>
                                 <br>
                                 <br>
                                 <p>With over 9 years of experience in planning, booking, organizing, and communicating arrangements with clients at various safari companies. You will just be amazed by his clarity and hospitality.</p>                           
@@ -347,7 +350,7 @@ Team START -->
                             <!-- Card body -->
                             <div class="card-body px-2 pb-0">
                                 <h5 class="card-title"><a href="#">MICHAEL N MWAURA</a></h5>
-                                <span style="text-align: center; color: black;"><strong>FINANCE & ACCOUNTS</strong></span>
+                                <span style="text-align: center;"><strong>FINANCE & ACCOUNTS</strong></span>
                                 <br>
                                 <br>
                                 <p>With over 10 years of experience in Finance, Audit, Accounts, Tax, and Compliance in different industries, He brings a school of experience.</p>                           
@@ -378,7 +381,7 @@ Team START -->
                             <!-- Card body -->
                             <div class="card-body px-2 pb-0">
                                 <h5 class="card-title"><a href="#">SAMUEL MBUGUA</a></h5>
-                                <span style="text-align: center; color: black;"><strong>DRIVER GUIDE</strong></span>
+                                <span style="text-align: center;"><strong>DRIVER GUIDE</strong></span>
                                 <br>
                                 <br>
                                 <p>With over 9 years of experience as a driver guide in various tour companies, he ensures guest experience when on a safari.</p>                           
@@ -399,7 +402,7 @@ Team END -->
 It's Time to Discover START -->
 <section class="py-0">
             <div class="container position-relative">
-                <div class="bg-light rounded-3 position-relative p-4 p-sm-5">
+                <div class="bg-warning rounded-3 position-relative p-4 p-sm-5">
 
                     <!-- Svg decoration -->
                     <figure class="position-absolute top-50 start-50 d-none d-lg-block mt-n4 ms-9">
@@ -416,12 +419,12 @@ It's Time to Discover START -->
                                 <h3>It's time to discover nature's best</h3>
                                 <img src="assets/images/element/view.svg" class="h-100px w-100px ms-3" alt="">
                             </div>
-                            <p class="mb-3 mb-lg-0">Witness the unseen: Book your once-in-a-lifetime wildlife journey.
+                            <p class="mb-3 mb-lg-0 text-grey">Witness the unseen: Book your once-in-a-lifetime wildlife journey.
                             </p>
                         </div>
                         <!-- Content and input -->
                         <div class="col-lg-4 text-lg-end">
-                            <a href="destinations.php" class="btn btn-lg btn-dark mb-0">Book a Package Now!</a>
+                            <a href="classic-safaris.php" class="btn btn-lg btn-dark mb-0">Book a Package Now!</a>
                         </div>
                     </div> <!-- Row END -->
                 </div>
