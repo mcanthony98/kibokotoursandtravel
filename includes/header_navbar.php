@@ -39,30 +39,10 @@
                             <!-- Navbar top Right-->
                             <div class="align-items-center justify-content-center d-none d-lg-flex">
                                 <ul class="nav border-bottom">
-                                    <li class="dropdown nav-item">
-                                        <a class="nav-link small pb-2" style="font-weight: bold" href="#" role="button" id="languageDropdown"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
-                                                class="bi bi-globe fa-fw me-2" style="font-weight: bold"></i>Language</a>
-                                        <ul class="dropdown-menu dropdown-animation dropdown-menu-end min-w-auto"
-                                            aria-labelledby="languageDropdown">
-                                            <li> <a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
-                                                        src="assets/images/flags/uk.svg" alt="">English</a> </li>
-                                            <li> <a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
-                                                        src="assets/images/flags/sp.svg" alt="">Español</a> </li>
-                                            <li> <a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
-                                                        src="assets/images/flags/fr.svg" alt="">Français</a> </li>
-                                            <li> <a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
-                                                        src="assets/images/flags/gr.svg" alt="">Deutsch</a> </li>
-                                            <li> <a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
-                                                        src="assets/images/flags/russia.svg" alt="">Russian</a> </li>
-                                            <li> <a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
-                                                        src="assets/images/flags/china.svg" alt="">Chinese</a> </li>
-                                            <li> <a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
-                                                        src="assets/images/flags/italy.svg" alt="">Italian</a> </li>
-                                            <li> <a class="dropdown-item me-4" href="#"><img class="fa-fw me-2"
-                                                        src="assets/images/flags/turkey.svg" alt="">Turkish</a> </li>
-                                        </ul>
-                                    </li>
+                                    
+                                <!-- Google Translate Functionality -->
+                                <div id="google_translate_element"></div> 
+
                                     <li class="nav-item"> <a href="#" class="nav-link small pb-2" style="font-weight: bold"><i
                                                 class="bi bi-info-circle me-2" style="font-weight: bold"></i>Help</a> </li>
                                     <li class="nav-item"> <a href="sign-in.php" class="nav-link small pb-2" style="font-weight: bold"><i
