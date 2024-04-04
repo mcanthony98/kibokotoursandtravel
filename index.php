@@ -39,7 +39,7 @@
         <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-light" style="color: green;"><i class="bi bi-whatsapp"></i> <span class="d-none d-md-inline">WhatsApp: +254 732 962224</span></a>
     </span>
     <span class="ms-3">
-        <a href="https://t.me/your_telegram_username" target="_blank" class="link-light" style="color: #0088cc;"><i class="bi bi-telegram"></i> <span class="d-none d-md-inline">Telegram: +254 732 962224</span></a>
+        <a href="https://t.me/KibokoTours" target="_blank" class="link-light" style="color: #0088cc;"><i class="bi bi-telegram"></i> <span class="d-none d-md-inline">Telegram: +254 732 962224</span></a>
     </span>
     <style>
         .link-light:hover {
