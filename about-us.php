@@ -42,14 +42,14 @@ Main banner START -->
                 <div class="row g-4 align-items-center">
                     <!-- Image -->
                     <div class="col-md-6">
-                        <img src="assets/images/10.jpg" class="rounded-3" alt="">
+                        <img src="assets/images/about-1.jpg" class="rounded-3" alt="">
                     </div>
 
                     <div class="col-md-6">
                         <div class="row g-4">
                             <!-- Image -->
                             <div class="col-md-8">
-                                <img src="assets/images/5.png" class="rounded-3" alt="">
+                                <img src="assets/images/about-2.JPG" class="rounded-3" alt="">
                             </div>
 
                             <!-- Image -->
