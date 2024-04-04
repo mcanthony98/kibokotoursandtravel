@@ -87,7 +87,7 @@
                 <div class="col-sm-7 col-md-6 col-lg-4">
                     <h5 class="text-white mb-2">Payment & Security</h5>
                     <ul class="list-inline mb-0 mt-3">
-                        <li class="list-inline-item"> <a href="#"><img src="assets/images/element/paypal.svg"
+                        <li class="list-inline-item"> <a href="#"><img src="assets/images/element/pesapal.png"
                                     class="h-30px" alt=""></a></li>
                         <li class="list-inline-item"> <a href="#"><img src="assets/images/element/visa.svg"
                                     class="h-30px" alt=""></a></li>
