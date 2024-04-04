@@ -144,7 +144,7 @@ Our Stats START -->
                             <!-- Counter item -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-center me-3">
-                                        <h3 class="purecounter text-orange mb-0" data-purecounter-end="9" data-purecounter-delay="300">0</h3>
+                                        <h3 class="purecounter text-orange mb-0" data-purecounter-end="20" data-purecounter-delay="300">0</h3>
                                     <span class="h3 text-orange mb-0">+</span>
                                 </div>
                                 <h5 class="fw-normal mb-0">Years of Experience</h5>
@@ -154,21 +154,12 @@ Our Stats START -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-center me-3">
                                     <h3 class="purecounter text-orange mb-0" data-purecounter-start="0"
-                                        data-purecounter-end="100" data-purecounter-delay="300">0</h3>
+                                        data-purecounter-end="500" data-purecounter-delay="300">0</h3>
                                     <span class="h3 text-orange mb-0">+</span>
                                 </div>
                                 <h5 class="fw-normal mb-0">Happy Clients</h5>
                             </div>
 
-                            <!-- Counter item -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-center me-3">
-                                    <h3 class="purecounter text-orange mb-0" data-purecounter-start="0"
-                                        data-purecounter-end="5" data-purecounter-delay="300">0</h3>
-                                    <span class="h3 text-orange mb-0">+</span>
-                                </div>
-                                <h5 class="fw-normal mb-0">Awards</h5>
-                            </div>
 
                             <!-- Counter item -->
                             <div class="d-flex justify-content-between align-items-center">
