@@ -90,7 +90,7 @@
                 <div class="col-sm-7 col-md-6 col-lg-4">
                     <h5 class="text-white mb-2">Payment & Security</h5>
                     <ul class="list-inline mb-0 mt-3">
-                        <li class="list-inline-item"> <a href="#"><img src="assets/images/element/pesapal.png"
+                        <li class="list-inline-item"> <a href="#"><img src="assets/images/element/pesapal-2.png"
                                     class="h-30px" alt=""></a></li>
                         <li class="list-inline-item"> <a href="#"><img src="assets/images/element/visa.svg"
                                     class="h-30px" alt=""></a></li>
@@ -146,10 +146,11 @@
                     <!-- copyright links-->
                     <div class="nav mt-2 mt-lg-0">
                         <ul class="list-inline text-primary-hover mx-auto mb-0">
-                            <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted" href="#">Download our Terms and
-                                    Conditions</a></li>
+                            <li class="list-inline-item me-0">
+                                <a class="nav-link py-1 text-muted" href="assets/docs/kiboko-terms-and-conditions.pdf" download>Download our Terms and Conditions</a>
+                            </li>
                             <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted pe-0"
-                                    href="#">Help</a></li>
+                                    href="faq.php">Help</a></li>
                         </ul>
                     </div>
 
