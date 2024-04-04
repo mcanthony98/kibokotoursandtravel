@@ -77,23 +77,44 @@ Main banner START -->
                     </div>
                     <!-- Contact item END -->
 
-                   <!-- Contact item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-body shadow text-center align-items-center h-100">
-                            <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle mb-2"> 
-                                <i class="bi bi-wechat fs-5"></i> </div>
-                            <h5>Contact us on WeChat</h5>
-                            <p>Scan our QR code or search for our ID</p>
-                            <a href="#" class="btn btn-link text-decoration-underline p-0 mb-0">
-                                <i class="bi bi-qr-code me-1"></i> Display QR Code
-                            </a>
-                            <p class="mb-0">WeChat ID: wxid_zcpsjxnm97j422
-</p>  
+                <!-- Contact item START -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="card card-body shadow text-center align-items-center h-100">
+                        <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle mb-2"> 
+                            <i class="bi bi-wechat fs-5"></i> 
                         </div>
+                        <h5>Contact us on WeChat</h5>
+                        <p class="mb-3">Our WeChat Number is:</p>
+                        <a href="mailto:info@kibokotoursandtravel.com" class="btn btn-link text-decoration-underline p-0 mb-0">
+                            <i class="bi bi-envelope me-1"></i>+254 788 050 783
+                        </a> 
                     </div>
 
                 </div>
             </div>
+            <br>
+            <br>
+
+                <!-- Contact info Row 2 -->
+                <div class="row g-4">
+
+
+                <!-- Contact item START -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="card card-body shadow text-center align-items-center h-100">
+                        <div class="icon-lg bg-success bg-opacity-10 text-success rounded-circle mb-2"> 
+                            <i class="bi bi-whatsapp fs-5"></i> 
+                        </div>
+                        <h5>Contact us on WhatsApp</h5>
+                        <p class="mb-3">Our WhatsApp Number is:</p>
+                        <a href="mailto:info@kibokotoursandtravel.com" class="btn btn-link text-decoration-underline p-0 mb-0">
+                            <i class="bi bi-phone me-1"></i>+254 788 050 783
+                        </a> 
+                    </div>
+
+                </div>
+            </div>    
+
         </section>
         <!-- =======================
 Main banner START -->
