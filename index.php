@@ -30,15 +30,24 @@
 <!-- Header START -->
 <header class="header-transparent">
 
-        <!-- Top alert START -->
-        <div class="alert alert-warning py-2 m-0 border-0 bg-transparent rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-end w-100" role="alert">
-        <p class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
-            <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i>  <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
-        </p>
-        <span class="ms-3">
-            <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-light text-decoration-underline"><i class="bi bi-whatsapp "></i> <span class="d-none d-md-inline">Whatsapp: +254 732 962224</span></a>
-        </span>
-        </div>
+    <!-- Top alert START -->
+    <div class="alert alert-warning py-2 m-0 border-0 bg-transparent rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-end w-100" role="alert">
+    <p class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
+        <a href="mailto:info@kibokotoursandtravel.com" class="link-light" style="color: #ff8c00;"><i class="fa fa-envelope"></i> <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+    </p>
+    <span class="ms-3">
+        <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-light" style="color: green;"><i class="bi bi-whatsapp"></i> <span class="d-none d-md-inline">WhatsApp: +254 732 962224</span></a>
+    </span>
+    <span class="ms-3">
+        <a href="https://t.me/your_telegram_username" target="_blank" class="link-light" style="color: #0088cc;"><i class="bi bi-telegram"></i> <span class="d-none d-md-inline">Telegram: +254 732 962224</span></a>
+    </span>
+    <style>
+        .link-light:hover {
+        color: black !important;
+        text-decoration: none;
+        }
+    </style>
+    </div>
 	<!-- Logo Nav START -->
 	<nav class="navbar navbar-dark navbar-expand-xl">
 		<div class="container-fluid px-md-5">
