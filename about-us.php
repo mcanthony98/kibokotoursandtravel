@@ -73,13 +73,6 @@ About content START -->
                 <div class="row mb-4 mb-md-5">
                     <div class="col-md-10 mx-auto">
                         <h3 class="mb-4">Our Story</h3>
-                        <p class="fw-bold">Kiboko Tours and Travel is a Kenyan tour company with a unique approach to
-                            life
-                            celebration and travel services. Our main goal is to connect people from different
-                            backgrounds, life experiences, social classes, cultures, abilities, and challenges. We are
-                            particular specialists in disability travel services and we offer unique and tailored travel
-                            experiences to our customers that are spiritually nourishing, therapeutic, and often,
-                            transformational.</p>
                         <p class="mb-0">At Kiboko Tours and Travel, we believe travel is a celebration of life! We're a
                             Kenyan tour company with a unique mission: to connect people from all walks of life. Whether
                             your background, experience, ability, or social class is different, we welcome you. We are
