@@ -613,6 +613,10 @@ Accreitations START -->
 			<div class="col-5 col-sm-3 col-xl-2">
 				<img src="assets/images/client/TRA.png" class="grayscale" alt="">
 			</div>
+            <!-- Image -->
+			<div class="col-5 col-sm-3 col-xl-2">
+				<img src="assets/images/client/tosk-cert.jpg" class="grayscale" alt="">
+			</div>
 		</div>
 
         <div style="display: flex; justify-content: center; gap: 20px;">
