@@ -14,7 +14,7 @@
                 <img class="navbar-brand-item d-block d-md-none" src="assets/images/kiboko-logo.png" alt="logo" style="width:80px; height:auto;"> 
                         </a>
                     <p class="my-3 text-muted">Kiboko Tours & Travel.</p>
-                    <p class="my-3 text-muted">We lead the path to your intended destination.</p>
+                    <br>
 
                     <p class="mb-2"><a href="kibokotoursandtravel.com" class="text-muted text-primary-hover"><i
                                 class="bi bi-telephone me-2"></i>+254 732 962224</a> </p>
@@ -96,6 +96,12 @@
                         <li class="list-inline-item"> <a href="#"><img src="assets/images/element/expresscard.svg"
                                     class="h-30px" alt=""></a></li>
                     </ul>
+                </div>
+
+                <!-- Tagline -->
+                <div class="col-3">
+                    <br>
+                    <p class="text-muted text-center">We lead the path to your intended destination.</p>
                 </div>
 
                 <!-- Social media icon -->
