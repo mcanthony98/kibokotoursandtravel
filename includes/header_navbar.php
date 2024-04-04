@@ -43,7 +43,7 @@
                                 <!-- Google Translate Functionality -->
                                 <div id="google_translate_element"></div> 
 
-                                    <li class="nav-item"> <a href="#" class="nav-link small pb-2" style="font-weight: bold"><i
+                                    <li class="nav-item"> <a href="faq.php" class="nav-link small pb-2" style="font-weight: bold"><i
                                                 class="bi bi-info-circle me-2" style="font-weight: bold"></i>Help</a> </li>
                                     <li class="nav-item"> <a href="sign-in.php" class="nav-link small pb-2" style="font-weight: bold"><i
                                                 class="far fa-user me-2" style="font-weight: bold"></i>B2B Login</a> </li>
@@ -126,18 +126,21 @@
                                                                 <ul class="list-unstyled">
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Amboseli National Park</a> </li>
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Maasai Mara National Reserve</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha National Park</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha</a> </li>
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Lake Nakuru National Park</a> </li>
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Samburu National Reserve</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Meru National Park</a> </li>
                                                                 </ul>
                                                             </div>
         
                                                             <div class="col-lg-6">
                                                                 <ul class="list-unstyled">
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Conservancy</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Wildlife Conservancy</a> </li>
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Tsavo East National Park</a> </li>
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Tsavo West National Park</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Taita Hills Wildlife Sanctuary</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
+
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -211,7 +214,7 @@
                                                         <li> <a class="dropdown-item" href="classic-safaris.php">7 Days of Exploring Kenya’s Wilderness Parks</a></li>
                                                         <li> <a class="dropdown-item" href="classic-safaris.php">9-Day Mid-Range Safari at Leisure</a></li>
                                                         <li> <a class="dropdown-item" href="classic-safaris.php">8-Day Kenya Mid-Range Safari Experience</a></li>
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">4–Day Samburu – Ol Pajeta Experience</a></li>
+                                                        <li> <a class="dropdown-item" href="classic-safaris.php">4–Day Samburu – Ol Pejeta Experience</a></li>
                                                         <li> <a class="dropdown-item" href="classic-safaris.php">5–Day L Nakuru – Maasai Mara Experience</a></li>
                                                         <li> <a class="dropdown-item" href="classic-safaris.php">7-Day Kenya Safari in Style</a></li>
                                                         <li> <a class="dropdown-item" href="classic-safaris.php">10–Day Magical Kenyan Experience</a></li>

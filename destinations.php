@@ -295,8 +295,7 @@ Tour grid START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
                                 <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Lake
-                                        Naivasha National
-                                        Park</a></h5>
+                                        Naivasha</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
                                 <!-- List -->
@@ -595,7 +594,7 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Ol Pajeta Conservancy</a></h5>
+                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Ol Pejeta Wildlife Conservancy</a></h5>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
 
                                 <!-- List -->

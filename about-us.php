@@ -33,7 +33,7 @@ Main banner START -->
                     <div class="col-xl-10 mx-auto text-center">
                         <!-- Title -->
                         <h1>Transform your travel dreams into reality.</h1>
-                        <p class="lead">Kiboko Tours &Travel is a Kenyan Tour firm registered in 2015 and licensed by Tourism Regulatory Authority to operate in Kenya. In approach,  Kiboko Tours has a unique outlook on tour and travel services as it aims to impact humane existence by ensuring that all individuals can travel, interact and enjoy environment in an enriching and therapeutic way.</p>
+                        <p class="lead">Kiboko Tours and Travel is close on a decade old tour company run by a team of travel professionals who collectively have over 20 years of experience in the tourism industry, we are a recommended team in disability travel services too.</p>
                         </p>
                     </div>
                 </div> <!-- Row END -->
@@ -42,14 +42,14 @@ Main banner START -->
                 <div class="row g-4 align-items-center">
                     <!-- Image -->
                     <div class="col-md-6">
-                        <img src="assets/images/10.jpg" class="rounded-3" alt="">
+                        <img src="assets/images/about-1.jpg" class="rounded-3" alt="">
                     </div>
 
                     <div class="col-md-6">
                         <div class="row g-4">
                             <!-- Image -->
                             <div class="col-md-8">
-                                <img src="assets/images/5.png" class="rounded-3" alt="">
+                                <img src="assets/images/about-2.JPG" class="rounded-3" alt="">
                             </div>
 
                             <!-- Image -->
@@ -73,13 +73,6 @@ About content START -->
                 <div class="row mb-4 mb-md-5">
                     <div class="col-md-10 mx-auto">
                         <h3 class="mb-4">Our Story</h3>
-                        <p class="fw-bold">Kiboko Tours and Travel is a Kenyan tour company with a unique approach to
-                            life
-                            celebration and travel services. Our main goal is to connect people from different
-                            backgrounds, life experiences, social classes, cultures, abilities, and challenges. We are
-                            particular specialists in disability travel services and we offer unique and tailored travel
-                            experiences to our customers that are spiritually nourishing, therapeutic, and often,
-                            transformational.</p>
                         <p class="mb-0">At Kiboko Tours and Travel, we believe travel is a celebration of life! We're a
                             Kenyan tour company with a unique mission: to connect people from all walks of life. Whether
                             your background, experience, ability, or social class is different, we welcome you. We are
@@ -151,7 +144,7 @@ Our Stats START -->
                             <!-- Counter item -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-center me-3">
-                                        <h3 class="purecounter text-orange mb-0" data-purecounter-end="9" data-purecounter-delay="300">0</h3>
+                                        <h3 class="purecounter text-orange mb-0" data-purecounter-end="20" data-purecounter-delay="300">0</h3>
                                     <span class="h3 text-orange mb-0">+</span>
                                 </div>
                                 <h5 class="fw-normal mb-0">Years of Experience</h5>
@@ -161,21 +154,12 @@ Our Stats START -->
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-center me-3">
                                     <h3 class="purecounter text-orange mb-0" data-purecounter-start="0"
-                                        data-purecounter-end="100" data-purecounter-delay="300">0</h3>
+                                        data-purecounter-end="500" data-purecounter-delay="300">0</h3>
                                     <span class="h3 text-orange mb-0">+</span>
                                 </div>
                                 <h5 class="fw-normal mb-0">Happy Clients</h5>
                             </div>
 
-                            <!-- Counter item -->
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex justify-content-center me-3">
-                                    <h3 class="purecounter text-orange mb-0" data-purecounter-start="0"
-                                        data-purecounter-end="5" data-purecounter-delay="300">0</h3>
-                                    <span class="h3 text-orange mb-0">+</span>
-                                </div>
-                                <h5 class="fw-normal mb-0">Awards</h5>
-                            </div>
 
                             <!-- Counter item -->
                             <div class="d-flex justify-content-between align-items-center">

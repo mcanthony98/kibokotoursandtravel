@@ -74,7 +74,7 @@ Main Title START -->
 						<!-- Location -->
 						<p class="fw-bold mb-0"><i class="bi bi-geo-alt me-2"></i>Amboseli National Park
 							<a href="#" class="ms-2 text-decoration-underline" data-bs-toggle="modal" data-bs-target="#mapmodal">
-								<i class="bi bi-eye-fill me-1"></i>View Location
+								<i class="bi bi-eye-fill me-1"></i>Get our HQ Location
 							</a>
 						</p>
 					</div>
@@ -109,7 +109,7 @@ Main Title START -->
 		<div class="alert alert-danger alert-dismissible d-flex justify-content-between align-items-center fade show mb-4 rounded-3 pe-2" role="alert">
 			<div class="d-flex">
 				<span class="alert-heading h5 mb-0 me-2"><i class="bi bi-exclamation-octagon-fill"></i></span>
-				<span><strong class="alert-heading me-2">Covid Policy:</strong>You may require to present an RT-PCR negative test report at the pickup location</span>
+				<span><strong class="alert-heading me-2">ETA Policy</strong>ETA (Electronic Travel Authorization) Policy is required for travel to Kenya. <a href="http://www.etakenya.go.ke/" target="_blank" class="ms-2 text-decoration-underline">Apply for the ETA</a></span>
 			</div>
 				<button type="button" class="btn btn-link text-primary-hover pb-0 text-end" data-bs-dismiss="alert" aria-label="Close"><i class="bi bi-x-lg"></i></button>
 		</div>

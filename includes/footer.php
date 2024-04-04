@@ -10,11 +10,11 @@
                 <div class="col-lg-3">
                     <!-- logo -->
                     <a class="navbar-brand" href="index.php">
-                    <img class="navbar-brand-item d-none d-md-block" src="assets/images/kiboko-logo.png" alt="logo" style="width:100px; height:auto;">
+                    <img class="navbar-brand-item d-none d-md-block" src="assets/images/logo/kiboko-logo-white-bg.jpg" alt="logo" style="width:100px; height:auto;">
                 <img class="navbar-brand-item d-block d-md-none" src="assets/images/kiboko-logo.png" alt="logo" style="width:80px; height:auto;"> 
                         </a>
                     <p class="my-3 text-muted">Kiboko Tours & Travel.</p>
-                    <p class="my-3 text-muted">We lead the path to your intended destination.</p>
+                    <br>
 
                     <p class="mb-2"><a href="kibokotoursandtravel.com" class="text-muted text-primary-hover"><i
                                 class="bi bi-telephone me-2"></i>+254 732 962224</a> </p>
@@ -49,12 +49,15 @@
                             <ul class="nav flex-column text-primary-hover">
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Maasai Mara National Reserve</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Amboseli National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Lake Naivasha National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Lake Naivasha</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Lake Nakuru National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Ol Pajeta Conservancy</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Ol Pejeta Wildlife Conservancy</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Samburu National Reserve</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Tsavo East National Park</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Tsavo West National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Taita Hills Wildlife Sanctuary</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Meru National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Nairobi National Park</a></li>
 
 
                             </ul>
@@ -87,7 +90,7 @@
                 <div class="col-sm-7 col-md-6 col-lg-4">
                     <h5 class="text-white mb-2">Payment & Security</h5>
                     <ul class="list-inline mb-0 mt-3">
-                        <li class="list-inline-item"> <a href="#"><img src="assets/images/element/paypal.svg"
+                        <li class="list-inline-item"> <a href="#"><img src="assets/images/element/pesapal-2.png"
                                     class="h-30px" alt=""></a></li>
                         <li class="list-inline-item"> <a href="#"><img src="assets/images/element/visa.svg"
                                     class="h-30px" alt=""></a></li>
@@ -98,19 +101,34 @@
                     </ul>
                 </div>
 
+                <!-- Tagline -->
+                <div class="col-3">
+                    <br>
+                    <p class="text-muted text-center">We lead the path to your intended destination.</p>
+                </div>
+
                 <!-- Social media icon -->
                 <div class="col-sm-5 col-md-6 col-lg-3 text-sm-end">
                     <h5 class="text-white mb-2">Follow us on</h5>
                     <ul class="list-inline mb-0 mt-3">
-                        <li class="list-inline-item"> <a class="btn btn-sm px-2 bg-facebook mb-0" href="https://www.facebook.com/KibokoTours"><i
+                        <li class="list-inline-item"> <a class="btn btn-sm px-2 bg-facebook mb-0" href="https://www.facebook.com/KibokoTours" target="_blank"><i
                                     class="fab fa-fw fa-facebook-f"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/kiboko_tours"><i
+                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/kiboko_tours" target="_blank"><i
                                     class="fab fa-fw fa-instagram"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="https://twitter.com/ToursKiboko"><i
-                                    class="fab fa-fw fa-twitter"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-linkedin mb-0" href="https://kibokotoursandtravel.com/about-us/inkedin.com/company/kiboko-tours-and-travel/?viewAsMember=true"><i
-                                    class="fab fa-fw fa-linkedin-in"></i></a> </li>
-                    </ul>
+                            <li class="list-inline-item"> 
+                                <a class="btn btn-sm shadow px-2  mb-0" href="https://twitter.com/ToursKiboko" target="_blank">
+                                    <img src="assets/images/element/x-logo.jpg" alt="X logo" class="icon-size" width="40" height="50">
+                                </a> 
+                            </li>
+                            <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-linkedin mb-0" href="https://www.linkedin.com/company/kiboko-tours-and-travel/" target="_blank"><i
+                                        class="fab fa-fw fa-linkedin-in"></i></a> </li>
+
+                            <li class="list-inline-item"> 
+                                <a class="btn btn-sm shadow px-2  mb-0" href="https://www.xiaohongshu.com/user/profile/6523fa87000000002a0357c6" target="_blank">
+                                    <img src="assets/images/element/xiao-logo.png" alt="Xiaohongshu logo" class="icon-size" width="40" height="50">
+                                </a> 
+                            </li>
+                        </ul>
                 </div>
             </div>
 
@@ -124,18 +142,21 @@
                         <!-- copyright text -->
                         <div class="text-muted text-primary-hover"> Copyrights ©2024 Kiboko Tours & Travel. Built by <a
                                 href="https://www.ganiamtech.com/index.php" class="text-muted">Ganiam Tech</a>. </div>
-                        <!-- copyright links-->
-                        <div class="nav mt-2 mt-lg-0">
-                            <ul class="list-inline text-primary-hover mx-auto mb-0">
-                                <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted" href="#">Privacy
-                                        policy</a></li>
-                                <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted" href="#">Terms and
-                                        conditions</a></li>
-                                <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted pe-0"
-                                        href="#">Refund policy</a></li>
-                            </ul>
-                        </div>
+                    
+                    <!-- copyright links-->
+                    <div class="nav mt-2 mt-lg-0">
+                        <ul class="list-inline text-primary-hover mx-auto mb-0">
+                            <li class="list-inline-item me-0">
+                                <a class="nav-link py-1 text-muted" href="assets/docs/kiboko-terms-and-conditions.pdf" download>Download our Terms and Conditions</a>
+                            </li>
+                            <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted pe-0"
+                                    href="faq.php">Help</a></li>
+                        </ul>
                     </div>
+
+                    </div>
+
+
                 </div>
             </div>
         </div>

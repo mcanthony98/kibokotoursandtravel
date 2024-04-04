@@ -13,6 +13,14 @@
         <!-- Libraries, Favicon & CSS -->
         <?php include "includes/libs_fav.php";?>
 
+        <style>
+            /* Custom CSS for the Our Benefits Accordion */
+            .accordion-button:not(.collapsed) {
+            background-color: #fd7e14;
+            color: #fff;
+            }
+        </style>
+
 
 
     </head>
@@ -22,15 +30,24 @@
 <!-- Header START -->
 <header class="header-transparent">
 
-        <!-- Top alert START -->
-        <div class="alert alert-warning py-2 m-0 border-0 bg-transparent rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-end w-100" role="alert">
-        <p class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
-            <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i>  <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
-        </p>
-        <span class="ms-3">
-            <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-light text-decoration-underline"><i class="bi bi-whatsapp "></i> <span class="d-none d-md-inline">Whatsapp: +254 732 962224</span></a>
-        </span>
-        </div>
+    <!-- Top alert START -->
+    <div class="alert alert-warning py-2 m-0 border-0 bg-transparent rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-end w-100" role="alert">
+    <p class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
+        <a href="mailto:info@kibokotoursandtravel.com" class="link-light" style="color: #ff8c00;"><i class="fa fa-envelope"></i> <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+    </p>
+    <span class="ms-3">
+        <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-light" style="color: green;"><i class="bi bi-whatsapp"></i> <span class="d-none d-md-inline">WhatsApp: +254 732 962224</span></a>
+    </span>
+    <span class="ms-3">
+        <a href="https://t.me/KibokoTours" target="_blank" class="link-light" style="color: #0088cc;"><i class="bi bi-telegram"></i> <span class="d-none d-md-inline">Telegram: +254 732 962224</span></a>
+    </span>
+    <style>
+        .link-light:hover {
+        color: black !important;
+        text-decoration: none;
+        }
+    </style>
+    </div>
 	<!-- Logo Nav START -->
 	<nav class="navbar navbar-dark navbar-expand-xl">
 		<div class="container-fluid px-md-5">
@@ -63,7 +80,7 @@
                                 <!-- Google Translate Functionality -->
                                 <div id="google_translate_element"></div> 
 
-                                <li class="nav-item"> <a href="#" class="nav-link small pb-2" style="color: white; font-weight: bold"><i
+                                <li class="nav-item"> <a href="faq.php" class="nav-link small pb-2" style="color: white; font-weight: bold"><i
                                             class="bi bi-info-circle me-2" style="color: white; font-weight: bold"></i>Help</a> </li>
                                 <li class="nav-item"> <a href="sign-in.php" class="nav-link small pb-2" style="color: white; font-weight: bold"><i
                                             class="far fa-user me-2" style="color: white; font-weight: bold"></i>B2B Login</a> </li>
@@ -144,20 +161,22 @@
 													<div class="row">
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-																<li> <a class="dropdown-item" href="destinations-details.php">Amboseli National Park</a> </li>
-																<li> <a class="dropdown-item" href="destinations-details.php">Maasai Mara National Reserve</a> </li>
-																<li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha National Park</a> </li>
-																<li> <a class="dropdown-item" href="destinations-details.php">Lake Nakuru National Park</a> </li>
-																<li> <a class="dropdown-item" href="destinations-details.php">Samburu National Reserve</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Amboseli National Park</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Maasai Mara National Reserve</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Lake Nakuru National Park</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Samburu National Reserve</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Meru National Park</a> </li>
 															</ul>
 														</div>
 	
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-																<li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
-																<li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Conservancy</a> </li>
-																<li> <a class="dropdown-item" href="destinations-details.php">Tsavo East National Park</a> </li>
-                                                                <li> <a class="dropdown-item" href="destinations-details.php">Tsavo West National Park</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Wildlife Conservancy</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Tsavo East National Park</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Tsavo West National Park</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Taita Hills Wildlife Sanctuary</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
 															</ul>
 														</div>
 													</div>
@@ -231,7 +250,7 @@
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">7 Days of Exploring Kenya’s Wilderness Parks</a></li>
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">9-Day Mid-Range Safari at Leisure</a></li>
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">8-Day Kenya Mid-Range Safari Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">4–Day Samburu – Ol Pajeta Experience</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">4–Day Samburu – Ol Pejeta Experience</a></li>
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">5–Day L Nakuru – Maasai Mara Experience</a></li>
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">7-Day Kenya Safari in Style</a></li>
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">10–Day Magical Kenyan Experience</a></li>
@@ -587,40 +606,44 @@ Featured Packages END -->
 <!-- =======================
 Accreitations START -->
 <section class="py-0 py-md-5">
-	<div class="container">
+    <div class="container">
 
-		<!-- Title -->
-		<div class="row mb-4">
-			<div class="col-12 text-center">
-				<h2 class="mb-0">Memberships & Accreditations</h2>
-			</div>
-		</div>
+        <!-- Title -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2 class="mb-0">Memberships & Accreditations</h2>
+            </div>
+        </div>
 
-		<div class="row g-4 g-lg-7 justify-content-center align-items-center">
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/ECO.jpg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/KAT.jpg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/MK.jpeg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/TRA.png" class="grayscale" alt="">
-			</div>
-		</div>
+        <div class="row g-4 g-lg-7 justify-content-center align-items-center">
+            <!-- Image -->
+            <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/ECO.jpg" class="grayscale" alt="">
+            </div>
+            <!-- Image -->
+            <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/KAT.jpg" class="grayscale" alt="">
+            </div>
+            <!-- Image -->
+            <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/MK.jpeg" class="grayscale" alt="">
+            </div>
+            <!-- Image -->
+            <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/TRA.png" class="grayscale" alt="">
+            </div>
+            <!-- Image -->
+            <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/tosk-cert.jpg" class="grayscale" alt="">
+            </div>
+        </div>
 
         <div style="display: flex; justify-content: center; gap: 20px;">
             <!-- Safari Bookings Widget -->
-            <div style="display: inline-block; padding: 0 10px 5px 0;"><span class="94c5245077111">&nbsp;</span></div>
+            <div style="display: inline-block; padding: 0 10px 5px 0;" class="grayscale"><span class="94c5245077111">&nbsp;</span></div>
 
             <!--TripAdvisor Widget -->
-            <div>
+            <div class="grayscale">
                 <a class="widFRRClickWrap" target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294207-d17206466-Reviews-KIBOKO_TOURS_AND_TRAVEL_LTD-Nairobi.html" onclick="ta.cds.handleTALink(11424,this);return true;"></a>
 
                 <div class="col medium-6 small-12 large-6"  ><div class="col-inner"  >
@@ -634,7 +657,7 @@ Accreitations START -->
                 </div>
             </div>
         </div>
-	</div>
+    </div>
 </section>
 <!-- =======================
 Accreitations END -->
@@ -651,19 +674,6 @@ Main Banner START -->
 				<p class="mb-4">Life is all about adventure and enjoying what nature has to offer!</p>
 				<!-- Button -->
 				<a href="classic-safaris.php" class="btn btn-primary mb-4">Book a Package Now! <i class="fa-solid fa-arrow-right-long fa-fw"></i></a>
-				<!-- List -->
-				<h6 class="fw-normal mb-1">Our Benefits</h6>
-				<ul class="list-group list-group-borderless mb-0 small">
-					<li class="list-group-item d-flex mb-0">
-						<i class="fa-solid fa-check-circle text-success me-2 mt-1"></i>A variety of the best destinations in Kenya 
-					</li>
-					<li class="list-group-item d-flex mb-0">
-						<i class="fa-solid fa-check-circle text-success me-2 mt-1"></i>Accessible Safaris to cater for everyone
-					</li>
-					<li class="list-group-item d-flex mb-0">
-						<i class="fa-solid fa-check-circle text-success me-2 mt-1"></i>Family & Couple Packages are available; enjoy with your loved ones.
-					</li>
-				</ul>
 			</div>
 			<!-- Image -->
 			<div class="col-lg-5 text-center">
@@ -674,6 +684,92 @@ Main Banner START -->
 </section>
 <!-- =======================
 Main Banner END -->
+
+
+<!-- =======================
+Our Benefits START -->
+
+<section class="pt-8 pt-md-5">
+
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2>Our Benefits</h2>
+            </div>
+        </div> 
+
+        <!-- Accordion -->
+        <div class="accordion" id="accordionOurBenefits">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <b>1.	Our tours are tailored specifically to our guests’ requirements</b>
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionOurBenefits">
+                    <div class="accordion-body" style="color: black;">
+                    All tours and packages are custom-made to meet the specific travel needs of each of our guests to make travel as easy, practical, and enjoyable as possible. We cover everything from custom food options to individualized activities, amending our inclusions and programs accordingly.                </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <b>2.	We are a team of specialists</b>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionOurBenefits">
+                <div class="accordion-body" style="color: black;">
+                Our team is made up of passionate and experienced professionals. We are skilled and knowledgeable in therapeutic travel and are experts in our fields. As well as offering tours, we are committed to educating our local communities on disability to make travel more accessible for all.                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <b>3.	We provide ongoing support</b>
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionOurBenefits">
+                <div class="accordion-body" style="color: black;">
+                We provide our guests with all the support they could need from the point of inquiry, through to their travel home. All group tours are accompanied by a trained Therapist or Special Assistant for assistance, help, and leadership.                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                <b>4.	We have medical attention on hand</b>
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionOurBenefits">
+                <div class="accordion-body" style="color: black;">
+                All tours include air & ground emergency medical evacuation in the unlikely event additional medical attention is required at any point during the tour. You can travel safely in the knowledge that you will always be looked after.                </div>
+            </div>
+            </div>
+
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                <b>5.	We handpick our partners</b>
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionOurBenefits">
+                <div class="accordion-body" style="color: black;">
+                All accommodation facilities are pre-selected and audited for accessibility. We never take our guests anywhere we haven’t been ourselves to check its suitability and we work with our partners in advance to ensure they understand what adjustments may be required.                </div>
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =======================
+Our Benefits END -->
 
 
 <!-- =======================
@@ -749,7 +845,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Naivasha National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Naivasha</a></h4>
 									<p class="text-white mb-2">Hippos bask, and eagles soar across shimmering waters.</p>
 									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -766,7 +862,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Ol Pajeta Conservancy</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Ol Pejeta Wildlife Conservancy</a></h4>
 									<p class="text-white mb-2">Rhino sanctuary and a beacon of conservation hope.</p>
 									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
