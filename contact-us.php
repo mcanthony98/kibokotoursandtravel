@@ -85,7 +85,7 @@ Main banner START -->
                         </div>
                         <h5>Contact us on WeChat</h5>
                         <p class="mb-3">Our WeChat Number is:</p>
-                        <a href="mailto:info@kibokotoursandtravel.com" class="btn btn-link text-decoration-underline p-0 mb-0">
+                        <a href="#" class="btn btn-link text-decoration-underline p-0 mb-0">
                             <i class="bi bi-envelope me-1"></i>+254 788 050 783
                         </a> 
                     </div>
