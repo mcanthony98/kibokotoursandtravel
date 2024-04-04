@@ -13,6 +13,14 @@
         <!-- Libraries, Favicon & CSS -->
         <?php include "includes/libs_fav.php";?>
 
+        <style>
+            /* Custom CSS for the Our Benefits Accordion */
+            .accordion-button:not(.collapsed) {
+            background-color: #fd7e14;
+            color: #fff;
+            }
+        </style>
+
 
 
     </head>
@@ -655,19 +663,6 @@ Main Banner START -->
 				<p class="mb-4">Life is all about adventure and enjoying what nature has to offer!</p>
 				<!-- Button -->
 				<a href="classic-safaris.php" class="btn btn-primary mb-4">Book a Package Now! <i class="fa-solid fa-arrow-right-long fa-fw"></i></a>
-				<!-- List -->
-				<h6 class="fw-normal mb-1">Our Benefits</h6>
-				<ul class="list-group list-group-borderless mb-0 small">
-					<li class="list-group-item d-flex mb-0">
-						<i class="fa-solid fa-check-circle text-success me-2 mt-1"></i>A variety of the best destinations in Kenya 
-					</li>
-					<li class="list-group-item d-flex mb-0">
-						<i class="fa-solid fa-check-circle text-success me-2 mt-1"></i>Accessible Safaris to cater for everyone
-					</li>
-					<li class="list-group-item d-flex mb-0">
-						<i class="fa-solid fa-check-circle text-success me-2 mt-1"></i>Family & Couple Packages are available; enjoy with your loved ones.
-					</li>
-				</ul>
 			</div>
 			<!-- Image -->
 			<div class="col-lg-5 text-center">
@@ -678,6 +673,68 @@ Main Banner START -->
 </section>
 <!-- =======================
 Main Banner END -->
+
+
+<!-- =======================
+Our Benefits START -->
+
+<section class="pt-8 pt-md-5">
+
+    <div class="container">
+
+        <!-- Title -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2>Our Benefits</h2>
+            </div>
+        </div> 
+
+        <!-- Accordion -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                A variety of the best destinations in Kenya
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <!-- Content goes here -->
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Accessible Safaris to cater for everyone
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <!-- Content goes here -->
+                </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Family & Couple Packages are available; enjoy with your loved ones.
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                <!-- Content goes here -->
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =======================
+Our Benefits START -->
 
 
 <!-- =======================
