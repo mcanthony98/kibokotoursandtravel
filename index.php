@@ -587,44 +587,44 @@ Featured Packages END -->
 <!-- =======================
 Accreitations START -->
 <section class="py-0 py-md-5">
-	<div class="container">
+    <div class="container">
 
-		<!-- Title -->
-		<div class="row mb-4">
-			<div class="col-12 text-center">
-				<h2 class="mb-0">Memberships & Accreditations</h2>
-			</div>
-		</div>
+        <!-- Title -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h2 class="mb-0">Memberships & Accreditations</h2>
+            </div>
+        </div>
 
-		<div class="row g-4 g-lg-7 justify-content-center align-items-center">
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/ECO.jpg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/KAT.jpg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/MK.jpeg" class="grayscale" alt="">
-			</div>
-			<!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/TRA.png" class="grayscale" alt="">
-			</div>
+        <div class="row g-4 g-lg-7 justify-content-center align-items-center">
             <!-- Image -->
-			<div class="col-5 col-sm-3 col-xl-2">
-				<img src="assets/images/client/tosk-cert.jpg" class="grayscale" alt="">
-			</div>
-		</div>
+            <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/ECO.jpg" class="grayscale" alt="">
+            </div>
+            <!-- Image -->
+            <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/KAT.jpg" class="grayscale" alt="">
+            </div>
+            <!-- Image -->
+            <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/MK.jpeg" class="grayscale" alt="">
+            </div>
+            <!-- Image -->
+            <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/TRA.png" class="grayscale" alt="">
+            </div>
+            <!-- Image -->
+            <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/tosk-cert.jpg" class="grayscale" alt="">
+            </div>
+        </div>
 
         <div style="display: flex; justify-content: center; gap: 20px;">
             <!-- Safari Bookings Widget -->
-            <div style="display: inline-block; padding: 0 10px 5px 0;"><span class="94c5245077111">&nbsp;</span></div>
+            <div style="display: inline-block; padding: 0 10px 5px 0;" class="grayscale"><span class="94c5245077111">&nbsp;</span></div>
 
             <!--TripAdvisor Widget -->
-            <div>
+            <div class="grayscale">
                 <a class="widFRRClickWrap" target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294207-d17206466-Reviews-KIBOKO_TOURS_AND_TRAVEL_LTD-Nairobi.html" onclick="ta.cds.handleTALink(11424,this);return true;"></a>
 
                 <div class="col medium-6 small-12 large-6"  ><div class="col-inner"  >
@@ -638,7 +638,7 @@ Accreitations START -->
                 </div>
             </div>
         </div>
-	</div>
+    </div>
 </section>
 <!-- =======================
 Accreitations END -->
