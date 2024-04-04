@@ -106,11 +106,14 @@
                                     class="fab fa-fw fa-facebook-f"></i></a> </li>
                         <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/kiboko_tours" target="_blank"><i
                                     class="fab fa-fw fa-instagram"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="https://twitter.com/ToursKiboko" target="_blank"><i
-                                    class="fab fa-fw fa-twitter"></i></a> </li>
-                        <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-linkedin mb-0" href="https://www.linkedin.com/company/kiboko-tours-and-travel/" target="_blank"><i
-                                    class="fab fa-fw fa-linkedin-in"></i></a> </li>
-                    </ul>
+                            <li class="list-inline-item"> 
+                                <a class="btn btn-sm shadow px-2 bg-black mb-0" href="https://twitter.com/ToursKiboko" target="_blank">
+                                    <img src="assets/images/element/x-logo.jpg" alt="X logo" class="icon-size" width="24" height="24">
+                                </a> 
+                            </li>
+                            <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-linkedin mb-0" href="https://www.linkedin.com/company/kiboko-tours-and-travel/" target="_blank"><i
+                                        class="fab fa-fw fa-linkedin-in"></i></a> </li>
+                        </ul>
                 </div>
             </div>
 
