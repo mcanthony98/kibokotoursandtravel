@@ -10,7 +10,7 @@
                 <div class="col-lg-3">
                     <!-- logo -->
                     <a class="navbar-brand" href="index.php">
-                    <img class="navbar-brand-item d-none d-md-block" src="assets/images/kiboko-logo.png" alt="logo" style="width:100px; height:auto;">
+                    <img class="navbar-brand-item d-none d-md-block" src="assets/images/logo/kiboko-logo-white-bg.jpg" alt="logo" style="width:100px; height:auto;">
                 <img class="navbar-brand-item d-block d-md-none" src="assets/images/kiboko-logo.png" alt="logo" style="width:80px; height:auto;"> 
                         </a>
                     <p class="my-3 text-muted">Kiboko Tours & Travel.</p>
