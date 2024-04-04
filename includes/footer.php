@@ -116,12 +116,18 @@
                         <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/kiboko_tours" target="_blank"><i
                                     class="fab fa-fw fa-instagram"></i></a> </li>
                             <li class="list-inline-item"> 
-                                <a class="btn btn-sm shadow px-2 bg-black mb-0" href="https://twitter.com/ToursKiboko" target="_blank">
-                                    <img src="assets/images/element/x-logo.jpg" alt="X logo" class="icon-size" width="24" height="24">
+                                <a class="btn btn-sm shadow px-2  mb-0" href="https://twitter.com/ToursKiboko" target="_blank">
+                                    <img src="assets/images/element/x-logo.jpg" alt="X logo" class="icon-size" width="40" height="50">
                                 </a> 
                             </li>
                             <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-linkedin mb-0" href="https://www.linkedin.com/company/kiboko-tours-and-travel/" target="_blank"><i
                                         class="fab fa-fw fa-linkedin-in"></i></a> </li>
+
+                            <li class="list-inline-item"> 
+                                <a class="btn btn-sm shadow px-2  mb-0" href="https://www.xiaohongshu.com/user/profile/6523fa87000000002a0357c6" target="_blank">
+                                    <img src="assets/images/element/xiao-logo.png" alt="Xiaohongshu logo" class="icon-size" width="40" height="50">
+                                </a> 
+                            </li>
                         </ul>
                 </div>
             </div>
@@ -136,17 +142,6 @@
                         <!-- copyright text -->
                         <div class="text-muted text-primary-hover"> Copyrights ©2024 Kiboko Tours & Travel. Built by <a
                                 href="https://www.ganiamtech.com/index.php" class="text-muted">Ganiam Tech</a>. </div>
-                        <!-- copyright links-->
-                        <div class="nav mt-2 mt-lg-0">
-                            <ul class="list-inline text-primary-hover mx-auto mb-0">
-                                <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted" href="#">Privacy
-                                        policy</a></li>
-                                <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted" href="#">Terms and
-                                        conditions</a></li>
-                                <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted pe-0"
-                                        href="#">Refund policy</a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
