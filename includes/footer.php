@@ -142,7 +142,20 @@
                         <!-- copyright text -->
                         <div class="text-muted text-primary-hover"> Copyrights ©2024 Kiboko Tours & Travel. Built by <a
                                 href="https://www.ganiamtech.com/index.php" class="text-muted">Ganiam Tech</a>. </div>
+                    
+                    <!-- copyright links-->
+                    <div class="nav mt-2 mt-lg-0">
+                        <ul class="list-inline text-primary-hover mx-auto mb-0">
+                            <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted" href="#">Download our Terms and
+                                    Conditions</a></li>
+                            <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted pe-0"
+                                    href="#">Help</a></li>
+                        </ul>
                     </div>
+
+                    </div>
+
+
                 </div>
             </div>
         </div>
