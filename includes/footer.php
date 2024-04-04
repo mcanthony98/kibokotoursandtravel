@@ -49,9 +49,9 @@
                             <ul class="nav flex-column text-primary-hover">
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Maasai Mara National Reserve</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Amboseli National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Lake Naivasha National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Lake Naivasha</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Lake Nakuru National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Ol Pajeta Conservancy</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Ol Pejeta Wildlife Conservancy</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Samburu National Reserve</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Tsavo East National Park</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Tsavo West National Park</a></li>

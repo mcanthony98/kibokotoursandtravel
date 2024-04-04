@@ -154,7 +154,7 @@
 															<ul class="list-unstyled">
 																<li> <a class="dropdown-item" href="destinations-details.php">Amboseli National Park</a> </li>
 																<li> <a class="dropdown-item" href="destinations-details.php">Maasai Mara National Reserve</a> </li>
-																<li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha National Park</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha</a> </li>
 																<li> <a class="dropdown-item" href="destinations-details.php">Lake Nakuru National Park</a> </li>
 																<li> <a class="dropdown-item" href="destinations-details.php">Samburu National Reserve</a> </li>
 															</ul>
@@ -163,7 +163,7 @@
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
 																<li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
-																<li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Conservancy</a> </li>
+																<li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Wildlife Conservancy</a> </li>
 																<li> <a class="dropdown-item" href="destinations-details.php">Tsavo East National Park</a> </li>
                                                                 <li> <a class="dropdown-item" href="destinations-details.php">Tsavo West National Park</a> </li>
 															</ul>
@@ -239,7 +239,7 @@
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">7 Days of Exploring Kenya’s Wilderness Parks</a></li>
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">9-Day Mid-Range Safari at Leisure</a></li>
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">8-Day Kenya Mid-Range Safari Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">4–Day Samburu – Ol Pajeta Experience</a></li>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php">4–Day Samburu – Ol Pejeta Experience</a></li>
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">5–Day L Nakuru – Maasai Mara Experience</a></li>
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">7-Day Kenya Safari in Style</a></li>
                                                     <li> <a class="dropdown-item" href="classic-safaris.php">10–Day Magical Kenyan Experience</a></li>
@@ -834,7 +834,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Naivasha National Park</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Naivasha</a></h4>
 									<p class="text-white mb-2">Hippos bask, and eagles soar across shimmering waters.</p>
 									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
@@ -851,7 +851,7 @@ Experience START -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Ol Pajeta Conservancy</a></h4>
+									<h4><a href="destinations-details.php" class="text-white stretched-link">Ol Pejeta Wildlife Conservancy</a></h4>
 									<p class="text-white mb-2">Rhino sanctuary and a beacon of conservation hope.</p>
 									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
