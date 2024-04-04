@@ -52,7 +52,7 @@ Main banner START -->
                             <p>We are one phone call away</p>
                             <!-- Buttons -->
                             <div class="d-grid gap-3 d-sm-block">
-                                <button class="btn btn-sm btn-primary-soft"><i href="https://api.whatsapp.com/send?phone=254712123123" class="bi bi-phone me-2"></i>+254 712 123
+                                <button class="btn btn-sm btn-primary-soft"><i  class="bi bi-phone me-2"></i>+254 712 123
                                     123</button>
                                 <button class="btn btn-sm btn-light"><i class="bi bi-telephone me-2"></i>+254 712 123
                                     123</button>
@@ -96,8 +96,7 @@ Main banner START -->
             <br>
 
                 <!-- Contact info Row 2 -->
-                <div class="row g-4">
-
+                <div class="row g-4 justify-content-center">
 
                 <!-- Contact item START -->
                 <div class="col-md-6 col-xl-4">
@@ -107,12 +106,29 @@ Main banner START -->
                         </div>
                         <h5>Contact us on WhatsApp</h5>
                         <p class="mb-3">Our WhatsApp Number is:</p>
-                        <a href="mailto:info@kibokotoursandtravel.com" class="btn btn-link text-decoration-underline p-0 mb-0">
+                        <a href="https://api.whatsapp.com/send?phone=254712123123" class="btn btn-link text-decoration-underline p-0 mb-0">
                             <i class="bi bi-phone me-1"></i>+254 788 050 783
                         </a> 
                     </div>
 
                 </div>
+
+                <!-- Contact item START -->
+                    <div class="col-md-6 col-xl-4">
+                    <div class="card card-body shadow text-center align-items-center h-100">
+                        <div class="icon-lg bg-primary bg-opacity-10 text-primary rounded-circle mb-2"> 
+                            <i class="bi bi-telegram fs-5"></i> 
+                        </div>
+                        <h5>Contact us on Telegram</h5>
+                        <p class="mb-3">Our Telegram Number is:</p>
+                        <a href="https://t.me/kibokotoursandtravel" class="btn btn-link text-decoration-underline p-0 mb-0">
+                            <i class="bi bi-phone me-1"></i>+254 788 050 783
+                        </a> 
+                    </div>
+
+                </div>
+                    <!-- Contact item END -->
+
             </div>    
 
         </section>
