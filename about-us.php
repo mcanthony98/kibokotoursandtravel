@@ -33,7 +33,7 @@ Main banner START -->
                     <div class="col-xl-10 mx-auto text-center">
                         <!-- Title -->
                         <h1>Transform your travel dreams into reality.</h1>
-                        <p class="lead">Kiboko Tours &Travel is a Kenyan Tour firm registered in 2015 and licensed by Tourism Regulatory Authority to operate in Kenya. In approach,  Kiboko Tours has a unique outlook on tour and travel services as it aims to impact humane existence by ensuring that all individuals can travel, interact and enjoy environment in an enriching and therapeutic way.</p>
+                        <p class="lead">Kiboko Tours and Travel is close on a decade old tour company run by a team of travel professionals who collectively have over 20 years of experience in the tourism industry, we are a recommended team in disability travel services too.</p>
                         </p>
                     </div>
                 </div> <!-- Row END -->
