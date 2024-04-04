@@ -129,15 +129,18 @@
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha</a> </li>
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Lake Nakuru National Park</a> </li>
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Samburu National Reserve</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Meru National Park</a> </li>
                                                                 </ul>
                                                             </div>
         
                                                             <div class="col-lg-6">
                                                                 <ul class="list-unstyled">
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Wildlife Conservancy</a> </li>
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Tsavo East National Park</a> </li>
                                                                     <li> <a class="dropdown-item" href="destinations-details.php">Tsavo West National Park</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Taita Hills Wildlife Sanctuary</a> </li>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
+
                                                                 </ul>
                                                             </div>
                                                         </div>

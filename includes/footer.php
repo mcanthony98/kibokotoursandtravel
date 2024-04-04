@@ -55,6 +55,9 @@
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Samburu National Reserve</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Tsavo East National Park</a></li>
                                 <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Tsavo West National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Taita Hills Wildlife Sanctuary</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Meru National Park</a></li>
+                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Nairobi National Park</a></li>
 
 
                             </ul>
