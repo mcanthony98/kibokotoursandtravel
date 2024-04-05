@@ -1,3 +1,22 @@
+<?php 
+require "includes/connect.php";
+
+if(!isset($_GET['id'])){
+	header('location: index.php');
+}
+$pkgid = $_GET['id'];
+
+$pkgres = $conn->query("SELECT * FROM package WHERE package_id='$pkgid'");
+$pkgrow = $pkgres->fetch_assoc();
+
+$pkgdaysres = $conn->query("SELECT * FROM package_day pd WHERE pd.package_id='$pkgid'");
+
+$pkgexpres = $conn->query("SELECT * FROM package_day_experience pde JOIN package_day pd ON pd.package_day_id=pde.package_day_id JOIN experience e ON e.experience_id=pde.experience_id WHERE pd.package_id=$pkgid");
+
+$pkgdestres = $conn->query("SELECT * FROM package_day_destination pdd JOIN package_day pd ON pd.package_day_id=pdd.package_day_id JOIN destination d ON d.destination_id=pdd.destination_id WHERE pd.package_id=$pkgid GROUP BY pdd.destination_id");
+
+$pkgdayres = $conn->query("SELECT * FROM package_day pd WHERE pd.package_id=$pkgid ORDER BY pd.day ASC");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,14 +88,9 @@ Main Title START -->
 				<!-- Meta -->
 				<div class="d-lg-flex justify-content-lg-between mb-1">
 					<!-- Title -->
-					<div class="mb-2 mb-lg-0">
-						<h1 class="fs-2">3-Day Amboseli Package </h1>
-						<!-- Location -->
-						<p class="fw-bold mb-0"><i class="bi bi-geo-alt me-2"></i>Amboseli National Park
-							<a href="#" class="ms-2 text-decoration-underline" data-bs-toggle="modal" data-bs-target="#mapmodal">
-								<i class="bi bi-eye-fill me-1"></i>Get our HQ Location
-							</a>
-						</p>
+					<div class="mb-2 mb-lg-3">
+						<h1 class="fs-2"><?php echo $pkgrow['title'];?> </h1>
+						
 					</div>
 
 					<!-- Buttons -->
@@ -139,42 +153,45 @@ About hotel START -->
 
 						<!-- Card body START -->
 						<div class="card-body pt-4 p-0">
-							<h5 class="fw-light mb-4">Main Highlights</h5>
+							<h5 class="fw-light mb-2">Main Highlights</h5>
 
 							<!-- Highlights Icons -->
-							<div class="hstack gap-3 mb-3">
-								<div class="icon-lg bg-light h5 rounded-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Travel">
-									<i class="fa-solid fa-car"></i>
-								</div>
-								<div class="icon-lg bg-light h5 rounded-2" data-bs-toggle="tooltip" data-bs-placement="top" title="View">
-									<i class="fa-solid fa-binoculars"></i>
-								</div>
-								<div class="icon-lg bg-light h5 rounded-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Accomodation">
-									<i class="fa-solid fa-hotel"></i>
-								</div>
+							<div class="hstack gap-4 mb-4">
+							<span><i class="bi bi-clock fa-fw text-info me-1"></i><?php echo $pkgdaysres->num_rows;?> Days</span>
+							<span><i class="bi bi-map fa-fw text-warning me-1"></i><?php echo $pkgdestres->num_rows;?> Major Destinations</span>
+							<span><i class="bi bi-list fa-fw text-success me-1"></i><?php echo $pkgexpres->num_rows;?> Activities</span>
+								
 							</div>
 								
-							<h6 class="fw-light mb-2"><strong>Day 1</strong></h6>
-							<p class="mb-3">Begin your adventure with a thrilling airport pickup and a scenic drive along the Nairobi-Mombasa highway. Spot giraffes, zebras, and graceful antelopes grazing on the Kapiti plains – a taste of the wonders to come! Arrive at your lodge in time for a delicious lunch, then relax as the afternoon heat fades. Embark on an unforgettable sunset game drive, witnessing majestic elephants returning from the park's lush swamps – a breathtaking close to your first day on safari.</p>
-							
-							
-							<div class="collapse" id="collapseContent">
-							
-							<h6 class="fw-light mb-2"><strong>Day 2</strong></h6>
-							<p class="mb-3">Rise with the African sun for an exhilarating early morning game drive! Track elusive lions and other majestic cats before the heat of the day sets in. Witness a breathtaking sunrise paint the landscape, sometimes revealing the mountain's distant peak. Return for a hearty breakfast and indulge in the hotel's refreshing pool.  Immerse yourself in vibrant Maasai culture – visit a traditional manyatta and discover how they thrive alongside Kenya's incredible wildlife.</p>
-							
-							<br>
+							<?php 
+							$daycount = 1;
+							while($pkgdayrow = $pkgdayres->fetch_assoc()){
+								$pkgdaydestres = $conn->query("SELECT * FROM package_day_destination pdd JOIN destination d ON d.destination_id=pdd.destination_id WHERE pdd.package_day_id=".$pkgdayrow['package_day_id']);
 
-							<h6 class="fw-light mb-2"><strong>Day 3</strong></h6>
-							<p class="mb-3">Embark on a final early morning game drive, seeking out any elusive creatures that haven't yet graced your journey. Savor the thrill of potential surprises as you explore the awakening wilderness. Return to the hotel for a satisfying breakfast, then bid farewell to your wild haven and begin your journey back to Nairobi.  We'll ensure you reach the airport with ample time for your onward flight, carrying memories of Kenya's wonders.</p>
+								$pkgdayexpres = $conn->query("SELECT * FROM package_day_experience pde JOIN experience e ON e.experience_id=pde.experience_id WHERE pde.package_day_id=".$pkgdayrow['package_day_id']);
+								?>
+							<h6 class="fw-light mb-2"><strong>Day <?php echo $pkgdayrow['day'];?></strong></h6>
+							<p class="mb-3"><?php echo $pkgdayrow['long_itinerary'];?></p>
+
+
+							<?php if($daycount == 1){?>
+								<div class="collapse" id="collapseContent">
+									
+							<?php }?>
+							<?php $daycount++; ?>
+							<br>
+							<?php }?>
+							
+						
 							</div>
 
 							<a class="p-0 mb-4 mt-2 btn-more d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#collapseContent" role="button" aria-expanded="false" aria-controls="collapseContent">
 								See <span class="see-more ms-1">more</span><span class="see-less ms-1">less</span><i class="fa-solid fa-angle-down ms-2"></i>
 							</a>
 
+							<p><?php echo $pkgrow['package_description'];?></p>
 							<!-- Inclusions List -->
-							<h5 class="fw-light mb-2"><strong>What's Included</strong></h5>
+							<!--<h5 class="fw-light mb-2"><strong>What's Included</strong></h5>
 							<ul class="list-group list-group-borderless mb-0">
 								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Service of an English-speaking professional driver/guide.</li>
 								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-patch-check-fill text-success me-2"></i>Transport whilst on safari in a customized safari van with a pop-up roof for game viewing.</li>
@@ -185,7 +202,7 @@ About hotel START -->
 							<br>
 
 							<!-- Exclusions List -->
-							<h5 class="fw-light mb-2"><strong>What's Not Included</strong></h5>
+							<!-- <h5 class="fw-light mb-2"><strong>What's Not Included</strong></h5>
 							<ul class="list-group list-group-borderless mb-0">
 								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>International flights.</li>
 								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Room upgrades</li>
@@ -195,7 +212,7 @@ About hotel START -->
 								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Increase in park fees or other charges beyond our control.</li>
 								<li class="list-group-item h6 fw-light d-flex mb-0"><i class="bi bi-x-circle-fill text-danger me-2"></i>Activities not mentioned in the package.</li>
 
-							</ul>
+							</ul>-->
 
 						</div>
 						<!-- Card body END -->
@@ -216,17 +233,17 @@ About hotel START -->
 						<div class="d-sm-flex justify-content-sm-between align-items-center mb-3 ">
 							<div>
 								<span>Price Start at</span>
-								<h4 class="card-title mb-0">$1,500</h4>
+								<h4 class="card-title mb-0">$<?php echo number_format($pkgrow['price']);?></h4>
 							</div>
 							<div>
 								<h6 class="fw-normal mb-0">Price applies per person</h6>
-								<small>+ $50 VAT</small>
+								<small></small>
 							</div>
 						</div>		
 
 						<!-- Rating -->
 						<ul class="list-inline mb-2">
-							<li class="list-inline-item me-1 h6 fw-light mb-0"><i class="bi bi-arrow-right me-2"></i>4.5</li>
+							<li class="list-inline-item me-1 h6 fw-light mb-0"><i class="bi bi-arrow-right me-2"></i>4.8</li>
 							<li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i></li>
 							<li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i></li>
 							<li class="list-inline-item me-0 small"><i class="fa-solid fa-star text-warning"></i></li>
@@ -234,11 +251,11 @@ About hotel START -->
 							<li class="list-inline-item me-0 small"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
 						</ul>
 
-						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Date: June 25th - 28th</p>
+						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Date: <?php echo $pkgrow['travel_dates'];?></p>
 
 						<!-- Button -->
 						<div class="d-grid">
-							<a href="booking.php" class="btn btn-lg btn-primary mb-0">Book this Package Now!</a>
+							<a href="booking.php?id=<?php echo $pkgid;?>" class="btn btn-lg btn-primary mb-0">Book this Package Now!</a>
 						</div>
 					</div>
 					<!-- Book now END -->
@@ -253,6 +270,7 @@ About hotel START -->
 About hotel END -->
 
 <!-- Table START -->
+<!-- 
 <h5 class="fw-light mb-2 text-center"><strong>Package Program</strong></h5>
 <div class="table-responsive d-flex justify-content-center px-5" style="padding-left: 30%; padding-right: 30%;">
     <table class="table table-bordered" style="width: 70%; margin: 0 auto;"> <thead class="table-primary">
@@ -294,11 +312,11 @@ About hotel END -->
  <br>
 <!-- Table END -->
 
-<div class="sticky-bottom bg-dark d-block d-lg-none d-flex justify-content-around py-3 px-2 z-index-4">
+<!--<div class="sticky-bottom bg-dark d-block d-lg-none d-flex justify-content-around py-3 px-2 z-index-4">
     <h5 class="text-white">3-Day Amboseli Package <br> <span class="text-orange mt-2 h4">$1,500</span></h5>
 	<a href="booking.php" class="btn btn-primary">Get this Package Now	</a>
 
-  </div>
+  </div>-->
 
 
 	<!-- Back to top -->

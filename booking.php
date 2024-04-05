@@ -1,3 +1,13 @@
+<?php 
+require "includes/connect.php";
+
+if(!isset($_GET['id'])){
+	header('location: index.php');
+}
+$pkgid = $_GET['id'];
+$pkgres = $conn->query("SELECT * FROM package WHERE package_id='$pkgid'");
+$pkgrow = $pkgres->fetch_assoc();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,8 +44,8 @@
 						<!-- Card body START -->
 						<div class="card-body py-4">
 							<!-- Badge with content -->
-							<div class="bg-danger bg-opacity-10 rounded-2 p-3 mb-3">
-								<p class="h6 fw-light small mb-0"><span class="badge bg-danger me-2">New</span>Please make sure you enter the Name as per your passport</p>
+							<div class="bg-primary bg-opacity-10 rounded-2 p-3 mb-3">
+								<p class="h6 fw-light small mb-0"><span class="badge bg-orange me-2">Booking for:</span><?php echo $pkgrow['title'];?> ($<?php echo number_format($pkgrow['price']);?>)</p>
 							</div>
 
 							<!-- Form START -->

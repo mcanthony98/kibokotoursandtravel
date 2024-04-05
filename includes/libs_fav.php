@@ -90,3 +90,15 @@
             color: #f15a24;
         }
     </style>
+
+<?php
+$navdestsres = $conn->query("SELECT * FROM destination ORDER BY destination_views DESC LIMIT 12");
+$navcounter = 0;
+
+$navactres = $conn->query("SELECT * FROM experience ORDER BY experience_views DESC LIMIT 6");
+
+$navclaspack = $conn->query("SELECT * FROM package WHERE category_id = 3 ORDER BY package_id DESC LIMIT 10");
+$navaccpack = $conn->query("SELECT * FROM package WHERE category_id = 4 ORDER BY package_id DESC LIMIT 10");
+$navfampack = $conn->query("SELECT * FROM package WHERE category_id = 5 ORDER BY package_id DESC LIMIT 10");
+
+?>

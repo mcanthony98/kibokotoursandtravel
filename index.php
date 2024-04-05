@@ -1,3 +1,12 @@
+<?php 
+require "includes/connect.php";
+
+$actres = $conn->query("SELECT * FROM experience ORDER BY experience_views DESC LIMIT 6");
+
+$packres = $conn->query("SELECT * FROM package WHERE category_id = 3 ORDER BY package_id DESC LIMIT 4");
+
+$destsres = $conn->query("SELECT * FROM destination ORDER BY destination_views DESC LIMIT 8");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,17 +42,17 @@
     <!-- Top alert START -->
     <div class="alert alert-warning py-2 m-0 border-0 bg-transparent rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-end w-100" role="alert">
     <p class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
-        <a href="mailto:info@kibokotoursandtravel.com" class="link-light" style="color: #ff8c00;"><i class="fa fa-envelope"></i> <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+        <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i> <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
     </p>
     <span class="ms-3">
-        <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-light" style="color: green;"><i class="bi bi-whatsapp"></i> <span class="d-none d-md-inline">WhatsApp: +254 732 962224</span></a>
+        <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-light text-decoration-underline" style="color: green;"><i class="bi bi-whatsapp"></i> <span class="d-none d-md-inline">WhatsApp: +254 732 962224</span></a>
     </span>
     <span class="ms-3">
-        <a href="https://t.me/KibokoTours" target="_blank" class="link-light" style="color: #0088cc;"><i class="bi bi-telegram"></i> <span class="d-none d-md-inline">Telegram: +254 732 962224</span></a>
+        <a href="https://t.me/KibokoTours" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-telegram"></i> <span class="d-none d-md-inline">Telegram: +254 732 962224</span></a>
     </span>
     <style>
         .link-light:hover {
-        color: black !important;
+        color: #fbb03b !important;
         text-decoration: none;
         }
     </style>
@@ -150,7 +159,7 @@
 
                                 <!-- Nav item Find hotel -->
 								<li class="nav-item dropdown dropdown-fullwidth">
-									<a class="nav-link dropdown-toggle" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
+									<a class="nav-link dropdown-toggle fw-bold" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
 									<div class="dropdown-menu" aria-labelledby="hotelMenu">
 										<div class="container">
 											<div class="row g-4 justify-content-between p-lg-3">
@@ -161,22 +170,19 @@
 													<div class="row">
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Amboseli National Park</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Maasai Mara National Reserve</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Lake Nakuru National Park</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Samburu National Reserve</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Meru National Park</a> </li>
+                                                                    <?php while($navdestsrow = $navdestsres->fetch_assoc()){?>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php?id=<?php echo $navdestsrow['destination_id'];?>&<?php echo $navdestsrow['destination_slag'];?>"><?php echo $navdestsrow['destination_name'];?></a> </li>
+
+                                                                 <?php if($navcounter == 5){?>   
 															</ul>
 														</div>
 	
 														<div class="col-lg-6">
 															<ul class="list-unstyled">
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Wildlife Conservancy</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Tsavo East National Park</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Tsavo West National Park</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Taita Hills Wildlife Sanctuary</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
+                                                                <?php }?>
+
+                                                            <?php $navcounter++;    }?>
+                                                                    
 															</ul>
 														</div>
 													</div>
@@ -187,12 +193,9 @@
 													<h6 class="mb-3"><i class="bi bi-list-ul text-warning me-2"></i>Activities</h6>
 													<hr class="my-2">
 													<ul class="list-unstyled">
-														<li> <a class="dropdown-item" href="experience-details.php">Hot Air Ballon Rides</a> </li>
-														<li> <a class="dropdown-item" href="experience-details.php">Cultural Immersion</a> </li>
-														<li> <a class="dropdown-item" href="experience-details.php">Bush Walks</a> </li>
-														<li> <a class="dropdown-item" href="experience-details.php">Night Game Visits</a> </li>
-														<li> <a class="dropdown-item" href="experience-details.php">Scenic Flights</a> </li>
-                                                        <li> <a class="dropdown-item" href="experience-details.php">Sundowners in the Wild</a> </li>
+                                                    <?php while($navactsrow = $navactres->fetch_assoc()){?>
+														<li> <a class="dropdown-item" href="experience-details.php?id=<?php echo $navactsrow['experience_id'];?>&<?php echo $navactsrow['experience_slag'];?>"><?php echo $navactsrow['experience_name'];?></a> </li>
+                                                        <?php }?>
 
 													</ul>
 												</div>
@@ -241,19 +244,12 @@
                                         <ul class="dropdown-menu" aria-labelledby="pagesFacilities">
                                             <li class="dropdown-submenu dropend">
                                                 <a class="dropdown-item" href="classic-safaris.php">
-                                                    Classic <i class="fas fa-chevron-right align-icon-right"></i>
+                                                    Classic Safaris<i class="fas fa-chevron-right align-icon-right"></i>
                                                 </a>
                                                 <ul class="dropdown-menu" data-bs-popper="none">
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">3-Day Amboseli National Park Safari</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">6-Day Maasai Mara - L Naivasha - Amboseli Safari</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">6–Day Samburu – L Nakuru – Maasai Mara Tour</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">7 Days of Exploring Kenya’s Wilderness Parks</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">9-Day Mid-Range Safari at Leisure</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">8-Day Kenya Mid-Range Safari Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">4–Day Samburu – Ol Pejeta Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">5–Day L Nakuru – Maasai Mara Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">7-Day Kenya Safari in Style</a></li>
-                                                    <li> <a class="dropdown-item" href="classic-safaris.php">10–Day Magical Kenyan Experience</a></li>
+                                                    <?php while($row = $navclaspack->fetch_assoc()){?>
+                                                    <li> <a class="dropdown-item" href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>"><?php echo $row['title'];?></a></li>
+                                                    <?php } ?>
 
                                                 </ul>
                                             </li>
@@ -264,28 +260,9 @@
                                                         class="fas fa-chevron-right align-icon-right"></i>
                                                 </a>
                                                 <ul class="dropdown-menu" data-bs-popper="none">
-                                                    <li> <a class="dropdown-item"
-                                                            href="accessible-safaris.php">Therapeutic Horseback
-                                                            Riding</a></li>
-                                                    <li> <a class="dropdown-item" href="accessible-safaris.php">Special
-                                                            Needs Buzz Tour</a>
-                                                    </li>
-                                                    <li> <a class="dropdown-item" href="accessible-safaris.php">Game
-                                                            Drive & Dining
-                                                            Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="accessible-safaris.php">Safari
-                                                            Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="accessible-safaris.php">Group
-                                                            Shopping</a></li>
-                                                    <li> <a class="dropdown-item"
-                                                            href="accessible-safaris.php">Countryside Road
-                                                            Experience</a></li>
-                                                    <li> <a class="dropdown-item" href="accessible-safaris.php">Coast
-                                                            Experience & Dolphin
-                                                            Watching in Watamu</a></li>
-                                                    <li> <a class="dropdown-item"
-                                                            href="accessible-safaris.php">Agricultural Farm Visit</a>
-                                                    </li>
+                                                <?php while($row = $navaccpack->fetch_assoc()){?>
+                                                    <li> <a class="dropdown-item" href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>"><?php echo $row['title'];?></a></li>
+                                                    <?php } ?>
                                                 </ul>
                                             </li>
 
@@ -295,25 +272,9 @@
                                                         class="fas fa-chevron-right align-icon-right"></i>
                                                 </a>
                                                 <ul class="dropdown-menu" data-bs-popper="none">
-                                                    <li> <a class="dropdown-item"
-                                                            href="family-couple-safaris.php">Exploring Ways of Growing
-                                                            Rich Together</a></li>
-                                                    <li> <a class="dropdown-item"
-                                                            href="family-couple-safaris.php">Learn Parenting in an
-                                                            Exciting Way</a></li>
-                                                    <li> <a class="dropdown-item" href="family-couple-safaris.php">Keep
-                                                            Discovering your Spouse
-                                                            for Healthy & Enriching Relationship</a></li>
-                                                    <li> <a class="dropdown-item"
-                                                            href="family-couple-safaris.php">Learn to Fight in Love</a>
-                                                    </li>
-                                                    <li> <a class="dropdown-item" href="family-couple-safaris.php">Keep
-                                                            Dating your Spouse</a>
-                                                    </li>
-                                                    <li> <a class="dropdown-item"
-                                                            href="family-couple-safaris.php">Enriching Communication
-                                                            for
-                                                            Better Days</a></li>
+                                                <?php while($row = $navfampack->fetch_assoc()){?>
+                                                    <li> <a class="dropdown-item" href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>"><?php echo $row['title'];?></a></li>
+                                                    <?php } ?>
 
                                                 </ul>
                                             </li>
@@ -439,7 +400,7 @@ About START -->
 					<div class="d-flex justify-content-center align-items-center text-start me-0 me-sm-4">
 					<!-- Button -->
 					<br>
-					<div> <a href="about-us.php" class="btn btn-lg btn-outline-primary mb-0">Book your Trip Now!</a> </div>
+					<div> <a href="classic-safaris.php" class="btn btn-lg btn-outline-primary mb-0">Book your Trip Now!</a> </div>
 				</div>
 
 			</div>
@@ -462,72 +423,19 @@ Offers START -->
 
 		<div class="row g-4">
 			<!-- Offer item -->
+            <?php while($actrow = $actres->fetch_assoc()){?>
 			<div class="col-6 col-md-4 col-xl-2">
 				<div class="card bg-transparent h-100">
-					<img src="assets/images/activities/hot-air-balloon.jpg" class="card-img" alt="">
+					<img src="uploads/<?php echo $actrow['experience_image'];?>" class="card-img" alt="">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Hot Air Balloon Rides</a></h6>
-						<p>Float above the wild – witness the epic scale of the Great Migration from the clouds.</p>
+						<h6 class="mb-0"><a href="experience-details.php?id=<?php echo $actrow['experience_id'];?>&<?php echo $actrow['experience_slag'];?>" class="stretched-link"><?php echo $actrow['experience_name'];?></a></h6>
+						<p><?php echo substr($actrow['description'], 0, 35);?>...</p>
 					</div>
 				</div>
 			</div>
+            <?php } ?>
 
-			<!-- Offer item -->
-			<div class="col-6 col-md-4 col-xl-2">
-				<div class="card bg-transparent h-100">
-					<img src="assets/images/activities/maasai.webp" class="card-img" alt="">
-					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Cultural Immersion</a></h6>
-						<p>Journey into the heart of Kenya. Connect with the iconic Maasai and their vibrant traditions.</p>
-
-					</div>
-				</div>
-			</div>
-
-			<!-- Offer item -->
-			<div class="col-6 col-md-4 col-xl-2">
-				<div class="card bg-transparent h-100">
-					<img src="assets/images/activities/bush-walk.jpg" class="card-img" alt="">
-					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Bush Walks</a></h6>
-						<p>Feel the pulse of the wild beneath your feet – immerse yourself in nature's heartbeat on a guided bush walk.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Offer item -->
-			<div class="col-6 col-md-4 col-xl-2">
-				<div class="card bg-transparent h-100">
-					<img src="assets/images/activities/night-game-drive.jpg" class="card-img" alt="">
-					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Night Game Visits</a></h6>
-						<p>Witness the unseen world of the African night – predators on the prowl and starlight as your guide.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Offer item -->
-			<div class="col-6 col-md-4 col-xl-2">
-				<div class="card bg-transparent h-100">
-					<img src="assets/images/activities/chopper-ride.jpg" class="card-img" alt="">
-					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Scenic Flights</a></h6>
-						<p>The ultimate bird's eye view – soar over vast landscapes and witness wildlife like never before.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Offer item -->
-			<div class="col-6 col-md-4 col-xl-2">
-				<div class="card bg-transparent h-100">
-					<img src="assets/images/activities/sunset.webp" class="card-img" alt="">
-					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Sundowners in the Wild</a></h6>
-						<p>Celebrate the day's adventure – golden hour cocktails with an unforgettable backdrop.</p>
-						
-					</div>
-				</div>
-			</div>
+			
 
 		</div>
 	</div>
@@ -550,7 +458,7 @@ Featured Packages START -->
                 <div class="row g-4">
 
 
-<?php for($i=3;$i<7;$i++){?>
+<?php while($row = $packres->fetch_assoc()){?>
                     <!-- Package item -->
                     <div class="col-sm-6 col-xl-3 shadow">
                         <!-- Card START -->
@@ -558,7 +466,7 @@ Featured Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="assets/images/accessible/a<?php echo "3";?>.jpg" class="card-img mt-1" alt="kiboko image">
+                                <img src="uploads/<?php echo $row['package_image'];?>" class="card-img mt-1" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -569,13 +477,12 @@ Featured Packages START -->
                             <!-- Card body -->
                             <div class="card-body px-2">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="package-details.php" class="stretched-link">7-Days
-                                        Kenya Safari in Style</a></h5>
+                                <h5 class="card-title"><a href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>" class="stretched-link"><?php echo $row['title'];?></a></h5>
                                 <!-- Price and rating -->
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="text-success mb-0">$2,058 
+                                    <h5 class="text-success mb-0">$<?php echo number_format($row['price']);?> 
                                     </h5>
-                                    <h6 class="mb-0">4.6<i class="fa-solid fa-star text-warning ms-1"></i></h6>
+                                    <h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
                                 </div>
                                 <div class="pt-3">
                                     <a class="btn btn-primary btn-sm">Book Now</a>
@@ -695,13 +602,13 @@ Our Benefits START -->
 
         <!-- Title -->
         <div class="row mb-4">
-            <div class="col-12 text-center">
+            <div class="col-sm-8 text-center mx-auto">
                 <h2>Our Benefits</h2>
             </div>
         </div> 
 
         <!-- Accordion -->
-        <div class="accordion" id="accordionOurBenefits">
+        <div class="accordion col-sm-8 mx-auto" id="accordionOurBenefits">
             <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -786,141 +693,26 @@ Experience START -->
 		<!-- Slider START -->
 		<div class="tiny-slider arrow-round arrow-blur rounded-3 overflow-hidden">
 			<div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" data-dots="false" data-items-xl="4" data-items-lg="3" data-items-md="2" data-items-xs="1">
+                <?php while($row = $destsres->fetch_assoc()){?>
 					<!-- Card item START -->
 					<div>
 						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/maasai-mara.jpg" alt="">
+							<img src="uploads/<?php echo $row['destination_image'];?>" alt="">
 							<!-- Image overlay -->
 							<div class="card-img-overlay d-flex"> 
 								<!-- Info -->
 								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Maasai Mara National Reserve</a></h4>
-									<p class="text-white mb-2">Where the Big Five roam and the Great Migration thunders across the plains.</p>
+									<h4><a href="destinations-details.php?id=<?php echo $row['destination_id'];?>&<?php echo $row['destination_slag'];?>" class="text-white stretched-link"><?php echo $row['destination_name'];?></a></h4>
+									<p class="text-white mb-2"><?php echo $row['catchy_title'];?></p>
 									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
 								</div>
 							</div>
 						</div>
 					</div>
 					<!-- Card item END -->
+                <?php } ?>
 
-					<!-- Card item START -->
-					<div>
-						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/amboseli-np.jpg" alt="">
-							<!-- Image overlay -->
-							<div class="card-img-overlay d-flex"> 
-								<!-- Info -->
-								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Amboseli National Park</a></h4>
-									<p class="text-white mb-2">Elephants dwarfed by the majesty of Kilimanjaro.</p>
-									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Card item END -->
-
-					<!-- Card item START -->
-					<div>
-						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/tsavo-east-np.jpg" alt="">
-							<!-- Image overlay -->
-							<div class="card-img-overlay d-flex"> 
-								<!-- Info -->
-								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Tsavo East National Park</a></h4>
-									<p class="text-white mb-2">Kenya's wilderness giants, painted red by volcanic earth.</p>
-									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Card item END -->
-
-					<!-- Card item START -->
-					<div>
-						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/l-naivasha-np.jpg" alt="">
-							<!-- Image overlay -->
-							<div class="card-img-overlay d-flex"> 
-								<!-- Info -->
-								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Naivasha</a></h4>
-									<p class="text-white mb-2">Hippos bask, and eagles soar across shimmering waters.</p>
-									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Card item END -->
-
-					<!-- Card item START -->
-					<div>
-						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/ol-pajeta.jpg" alt="">
-							<!-- Image overlay -->
-							<div class="card-img-overlay d-flex"> 
-								<!-- Info -->
-								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Ol Pejeta Wildlife Conservancy</a></h4>
-									<p class="text-white mb-2">Rhino sanctuary and a beacon of conservation hope.</p>
-									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Card item END -->
-
-					<!-- Card item START -->
-					<div>
-						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/l-nakuru-np.jpg" alt="">
-							<!-- Image overlay -->
-							<div class="card-img-overlay d-flex"> 
-								<!-- Info -->
-								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Lake Nakuru National Park</a></h4>
-									<p class="text-white mb-2">A vibrant spectacle of pink – flamingos in their breathtaking thousands.</p>
-									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Card item END -->
-
-					<!-- Card item START -->
-					<div>
-						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/samburu-np.jpg" alt="">
-							<!-- Image overlay -->
-							<div class="card-img-overlay d-flex"> 
-								<!-- Info -->
-								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Samburu National Reserve</a></h4>
-									<p class="text-white mb-2">The rugged north, where unique species and vibrant cultures thrive.</p>
-									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Card item END -->
-
-                    f<!-- Card item START -->
-					<div>
-						<div class="card card-metro overflow-hidden">
-							<img src="assets/images/wildlife/tsavo-west-np.jpg" alt="">
-							<!-- Image overlay -->
-							<div class="card-img-overlay d-flex"> 
-								<!-- Info -->
-								<div class="card-text mt-auto">
-									<h4><a href="destinations-details.php" class="text-white stretched-link">Tsavo West National Park</a></h4>
-									<p class="text-white mb-2">The rugged north, where unique species and vibrant cultures thrive.</p>
-									<button class="btn btn-link link-primary p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Card item END -->
+					
 			</div>	
 		</div>
          <!-- About Us Btn -->

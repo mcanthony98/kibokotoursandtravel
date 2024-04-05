@@ -113,7 +113,7 @@
     
                                     <!-- Nav item Find hotel -->
                                     <li class="nav-item dropdown dropdown-fullwidth">
-                                        <a class="nav-link dropdown-toggle" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
+                                        <a class="nav-link dropdown-toggle active fw-bold" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
                                         <div class="dropdown-menu" aria-labelledby="hotelMenu">
                                             <div class="container">
                                                 <div class="row g-4 justify-content-between p-lg-3">
@@ -123,25 +123,21 @@
                                                         <hr class="my-2">
                                                         <div class="row">
                                                             <div class="col-lg-6">
-                                                                <ul class="list-unstyled">
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Amboseli National Park</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Maasai Mara National Reserve</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Lake Naivasha</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Lake Nakuru National Park</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Samburu National Reserve</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Meru National Park</a> </li>
-                                                                </ul>
-                                                            </div>
-        
-                                                            <div class="col-lg-6">
-                                                                <ul class="list-unstyled">
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Ol Pejeta Wildlife Conservancy</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Tsavo East National Park</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Tsavo West National Park</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Taita Hills Wildlife Sanctuary</a> </li>
-                                                                    <li> <a class="dropdown-item" href="destinations-details.php">Nairobi National Park</a> </li>
+                                                            <ul class="list-unstyled">
+                                                                    <?php while($navdestsrow = $navdestsres->fetch_assoc()){?>
+                                                                    <li> <a class="dropdown-item" href="destinations-details.php?id=<?php echo $navdestsrow['destination_id'];?>&<?php echo $navdestsrow['destination_slag'];?>"><?php echo $navdestsrow['destination_name'];?></a> </li>
 
-                                                                </ul>
+                                                                 <?php if($navcounter == 5){?>   
+															</ul>
+														</div>
+	
+														<div class="col-lg-6">
+															<ul class="list-unstyled">
+                                                                <?php }?>
+
+                                                            <?php $navcounter++;    }?>
+                                                                    
+															</ul>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -150,14 +146,11 @@
                                                     <div class="col-lg-3">
                                                         <h6 class="mb-3"><i class="bi bi-list-ul text-warning me-2"></i>Activities</h6>
                                                         <hr class="my-2">
-                                                        <ul class="list-unstyled">
-                                                            <li> <a class="dropdown-item" href="experience-details.php">Hot Air Ballon Rides</a> </li>
-                                                            <li> <a class="dropdown-item" href="experience-details.php">Cultural Immersion</a> </li>
-                                                            <li> <a class="dropdown-item" href="experience-details.php">Bush Walks</a> </li>
-                                                            <li> <a class="dropdown-item" href="experience-details.php">Night Game Visits</a> </li>
-                                                            <li> <a class="dropdown-item" href="experience-details.php">Scenic Flights</a> </li>
-                                                            <li> <a class="dropdown-item" href="experience-details.php">Sundowners in the Wild</a> </li>
-    
+                                                            <ul class="list-unstyled">
+                                                        <?php while($navactsrow = $navactres->fetch_assoc()){?>
+                                                            <li> <a class="dropdown-item" href="experience-details.php?id=<?php echo $navactsrow['experience_id'];?>&<?php echo $navactsrow['experience_slag'];?>"><?php echo $navactsrow['experience_name'];?></a> </li>
+                                                            <?php }?>
+
                                                         </ul>
                                                     </div>
         
@@ -205,19 +198,12 @@
                                             <ul class="dropdown-menu" aria-labelledby="pagesFacilities">
                                                 <li class="dropdown-submenu dropend">
                                                     <a class="dropdown-item" href="classic-safaris.php">
-                                                        Classic <i class="fas fa-chevron-right align-icon-right"></i>
+                                                        Classic Safaris<i class="fas fa-chevron-right align-icon-right"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" data-bs-popper="none">
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">3-Day Amboseli National Park Safari</a></li>
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">6-Day Maasai Mara - L Naivasha - Amboseli Safari</a></li>
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">6–Day Samburu – L Nakuru – Maasai Mara Tour</a></li>
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">7 Days of Exploring Kenya’s Wilderness Parks</a></li>
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">9-Day Mid-Range Safari at Leisure</a></li>
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">8-Day Kenya Mid-Range Safari Experience</a></li>
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">4–Day Samburu – Ol Pejeta Experience</a></li>
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">5–Day L Nakuru – Maasai Mara Experience</a></li>
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">7-Day Kenya Safari in Style</a></li>
-                                                        <li> <a class="dropdown-item" href="classic-safaris.php">10–Day Magical Kenyan Experience</a></li>
+                                                    <?php while($row = $navclaspack->fetch_assoc()){?>
+                                                    <li> <a class="dropdown-item" href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>"><?php echo $row['title'];?></a></li>
+                                                    <?php } ?>
     
                                                     </ul>
                                                 </li>
@@ -228,28 +214,9 @@
                                                             class="fas fa-chevron-right align-icon-right"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" data-bs-popper="none">
-                                                        <li> <a class="dropdown-item"
-                                                                href="accessible-safaris.php">Therapeutic Horseback
-                                                                Riding</a></li>
-                                                        <li> <a class="dropdown-item" href="accessible-safaris.php">Special
-                                                                Needs Buzz Tour</a>
-                                                        </li>
-                                                        <li> <a class="dropdown-item" href="accessible-safaris.php">Game
-                                                                Drive & Dining
-                                                                Experience</a></li>
-                                                        <li> <a class="dropdown-item" href="accessible-safaris.php">Safari
-                                                                Experience</a></li>
-                                                        <li> <a class="dropdown-item" href="accessible-safaris.php">Group
-                                                                Shopping</a></li>
-                                                        <li> <a class="dropdown-item"
-                                                                href="accessible-safaris.php">Countryside Road
-                                                                Experience</a></li>
-                                                        <li> <a class="dropdown-item" href="accessible-safaris.php">Coast
-                                                                Experience & Dolphin
-                                                                Watching in Watamu</a></li>
-                                                        <li> <a class="dropdown-item"
-                                                                href="accessible-safaris.php">Agricultural Farm Visit</a>
-                                                        </li>
+                                                    <?php while($row = $navclaspack->fetch_assoc()){?>
+                                                    <li> <a class="dropdown-item" href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>"><?php echo $row['title'];?></a></li>
+                                                    <?php } ?>
                                                     </ul>
                                                 </li>
     
@@ -259,25 +226,9 @@
                                                             class="fas fa-chevron-right align-icon-right"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" data-bs-popper="none">
-                                                        <li> <a class="dropdown-item"
-                                                                href="family-couple-safaris.php">Exploring Ways of Growing
-                                                                Rich Together</a></li>
-                                                        <li> <a class="dropdown-item"
-                                                                href="family-couple-safaris.php">Learn Parenting in an
-                                                                Exciting Way</a></li>
-                                                        <li> <a class="dropdown-item" href="family-couple-safaris.php">Keep
-                                                                Discovering your Spouse
-                                                                for Healthy & Enriching Relationship</a></li>
-                                                        <li> <a class="dropdown-item"
-                                                                href="family-couple-safaris.php">Learn to Fight in Love</a>
-                                                        </li>
-                                                        <li> <a class="dropdown-item" href="family-couple-safaris.php">Keep
-                                                                Dating your Spouse</a>
-                                                        </li>
-                                                        <li> <a class="dropdown-item"
-                                                                href="family-couple-safaris.php">Enriching Communication
-                                                                for
-                                                                Better Days</a></li>
+                                                    <?php while($row = $navclaspack->fetch_assoc()){?>
+                                                    <li> <a class="dropdown-item" href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>"><?php echo $row['title'];?></a></li>
+                                                    <?php } ?>
     
                                                     </ul>
                                                 </li>

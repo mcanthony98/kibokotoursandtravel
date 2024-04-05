@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+<?php 
+require "includes/connect.php";
+$cat = 5;
+$catres = $conn->query("SELECT * FROM category WHERE category_id='$cat'");
+$catrow = $catres->fetch_assoc();
+$packres = $conn->query("SELECT * FROM package WHERE category_id = '$cat' ORDER BY package_id DESC");
+?><!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -16,6 +22,7 @@
 
 </head>
 
+
 <body>
 
     <!-- Header START -->
@@ -31,14 +38,13 @@ Main Banner START -->
             <div class="container">
                 <!-- Background image -->
                 <div class="p-3 p-sm-5 rounded-3"
-                    style="background-image: url(assets/images/wildebeasts.jpg); background-position: center center; background-repeat: no-repeat; background-size: cover;">
+                    style="background-image: url(uploads/<?php echo $catrow['category_image'];?>); background-position: center center; background-repeat: no-repeat; background-size: cover; ">
                     <!-- Banner title -->
                     <div class="row">
                         <div class="col-md-8 mx-auto my-5">
-                            <h1 class="text-center text-light">Family & Couple Safaris</h1>
+                            <h1 class="text-center text-light">Family and Couple Safaris</h1>
                             <ul class="nav nav-divider h6 text-dark mb-0 justify-content-center">
-                            <p style="text-align: center; color: white;">Create unforgettable memories! Bond with loved ones on a Kenyan safari tailored for families and couples, filled with fun and cherished moments.</p>
-
+                                <p style="text-align: center; color: white;"><?php echo $catrow['description'];?></p>
                             </ul>
                         </div>
                     </div>
@@ -70,7 +76,7 @@ Tour grid START -->
                 <div class="row g-4 align-items-center justify-content-between mb-4">
                     <!-- Content -->
                     <div class="col-12 col-xl-8">
-                        <h5 class="mb-0">Showing 1-7 of 32 result</h5>
+                        <h5 class="mb-0">Showing 1-<?php echo $packres->num_rows;?> of <?php echo $packres->num_rows;?> result</h5>
                     </div>
 
                     <!-- Select option -->
@@ -88,24 +94,24 @@ Tour grid START -->
                 <!-- Filter and content END -->
 
                 <div class="row g-4">
-
+<?php while($row = $packres->fetch_assoc()){
+    $packid = $row['package_id'];
+    $pdayres = $conn->query("SELECT * FROM package_day WHERE package_id = '$packid'");
+    $pkgexpres = $conn->query("SELECT * FROM package_day_experience pde JOIN package_day pd ON pd.package_day_id=pde.package_day_id JOIN experience e ON e.experience_id=pde.experience_id WHERE pd.package_id=$packid");
+    $pkgdestres = $conn->query("SELECT * FROM package_day_destination pdd JOIN package_day pd ON pd.package_day_id=pdd.package_day_id JOIN destination d ON d.destination_id=pdd.destination_id WHERE pd.package_id=$packid GROUP BY pdd.destination_id");
+    ?>
                     <!-- Card item START -->
                     <div class="col-md-6 col-xl-4">
                         <div class="card card-hover-shadow pb-0 h-100">
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/fc/f2.jpg" class="card-img-top" alt="Card image">
+                                <img src="uploads/<?php echo $row['package_image'];?>" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div>
-                                        <span class="badge text-bg-danger">15% Off</span>
-                                        <span class="badge text-bg-dark">Couple</span>
-                                    </div>
-                                    <!-- Card overlay bottom -->
+                                    
                                     <div class="w-100 mt-auto">
-                                        <span class="badge text-bg-white fs-6">2 days</span>
+                                        <span class="badge text-bg-white fs-6"><?php echo $pdayres->num_rows;?> days</span>
                                     </div>
                                 </div>
                             </div>
@@ -114,17 +120,16 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Exploring
-                                        ways of growing rich together</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
+                                <h5 class="card-title mb-0"><a href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>" class="stretched-link"><?php echo $row['title'];?></a></h5>
+                                <span class="small"><i class="far fa-calendar-alt me-2"></i><?php echo $row['travel_dates'];?></span>
 
                                 <!-- List -->
                                 <ul class="nav nav-divider mt-3 mb-0">
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-map-pin text-info me-2"></i>1 Location
+                                        <i class="fa-solid fa-map-pin text-info me-2"></i><?php echo $pkgdestres->num_rows;?> Parks
                                     </li>
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i><?php echo $pkgexpres->num_rows;?> Activities
                                     </li>
                                 </ul>
                             </div>
@@ -136,67 +141,7 @@ Tour grid START -->
                                 <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
                                     <!-- Price -->
                                     <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$1500</h5>
-                                        <small>/per person</small>
-                                        <span class="text-decoration-line-through">$1800</span>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/fc/f2.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Family</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">3 days</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Learn
-                                        parenting in an exciting way</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-map-pin text-info me-2"></i>1 Location
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>4 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$800</h5>
+                                        <h5 class="fw-normal text-success mb-0">$<?php echo number_format($row['price']);?></h5>
                                         <small>/per person</small>
                                     </div>
                                     <!-- Button -->
@@ -209,241 +154,7 @@ Tour grid START -->
                         </div>
                     </div>
                     <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/fc/f2.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Couple</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">2 days</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Keep
-                                        discovering your spouse for healthy & enriching relationship</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-map-pin text-info me-2"></i>1 Location
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$725</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/fc/f2.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Couple</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">2 days</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Learn to
-                                        fight in love</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-06</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-map-pin text-info me-2"></i>1 Location
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$845</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/fc/f2.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Couple</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">3 days</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Keep
-                                        dating your spouse</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-08</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-map-pin text-info me-2"></i>1 Location
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$1250</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/fc/f2.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Family</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">3 days</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="package-details.php" class="stretched-link">Enriching Communication for Better Days</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-08</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-map-pin text-info me-2"></i>1 Location
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$2250</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
+<?php } ?>
 
                 </div> <!-- Row END -->
 

@@ -1,3 +1,29 @@
+<?php 
+require "includes/connect.php";
+
+if(!isset($_GET['id'])){
+	header('location: index.php');
+}
+$destid = $_GET['id'];
+$destres = $conn->query("SELECT *, d.seo_title AS tit, d.seo_description AS descr, d.seo_keywords AS kw FROM destination d JOIN country c ON d.country_id=c.country_id WHERE d.destination_id=$destid");
+$destrow = $destres->fetch_assoc();
+
+$destcatres = $conn->query("SELECT * FROM destination_category dc JOIN category c ON dc.category_id=c.category_id WHERE dc.destination_id='$destid'");
+$destcatrow = $destcatres->fetch_assoc();
+
+
+$destexpres = $conn->query("SELECT * FROM destination_experience de JOIN experience e ON de.experience_id=e.experience_id WHERE de.destination_id='$destid'");
+if($destexpres->num_rows < 5){
+	$expcounts = 5 - $destexpres->num_rows;
+}else{
+	$expcounts = 0;
+}
+
+$destexpotherres = $conn->query("SELECT * FROM experience LIMIT $expcounts");
+
+$destpkgres = $conn->query("SELECT * FROM package p JOIN package_day pd ON p.package_id=pd.package_id JOIN package_day_destination pdd ON pdd.package_day_id=pd.package_day_id WHERE pdd.destination_id=$destid AND p.package_status=1 GROUP BY pd.package_id");
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,15 +55,15 @@ About START -->
 	<div class="container">
 		<div class="row g-4">
 			
-			<div class="col-lg-4 position-relative">
-				<h2>Maasai Mara National Reserve</h2>
-				<p>Witness the raw power of nature in the Maasai Mara – a wildlife spectacle you won't want to miss!</p>
+			<div class="col-lg-6 position-relative">
+				<h2><?php echo $destrow['destination_name'];?></h2>
+				<p><?php echo $destrow['description'];?></p>
 				<a href="#related-packages" class="btn btn-outline-primary">Choose a package</a>
 
 
 			</div>
 
-			<div class="col-lg-7 position-relative ms-auto">
+			<div class="col-lg-5 position-relative ms-auto">
 				<!-- Svg decoration -->
 				<figure class="position-absolute top-0 start-0 translate-middle mt-8 ms-n4 z-index-9 d-none d-xl-block">
 					<svg class="fill-orange" width="153.6px" height="71.4px" viewBox="0 0 153.6 71.4" style="enable-background:new 0 0 153.6 71.4;" xml:space="preserve">
@@ -47,7 +73,7 @@ About START -->
 				<!-- Image -->
 				<div class="position-relative mb-5">
 					<!-- Image -->
-					<img src="assets/images/views/wildebeasts.jpg" class="rounded-3" alt="">
+					<img src="uploads/<?php echo $destrow['destination_image'];?>" class="rounded-3 w-100"  alt="">
 					<!-- Manager -->
 					<div class="position-absolute bottom-0 start-0 ms-n3 ms-lg-n6 mb-2 z-index-1">
 						<div class="bg-mode shadow d-inline-block text-center rounded-3 position-relative p-4">
@@ -78,51 +104,23 @@ Offers START -->
 		</div>
 
 		<div class="row g-4 justify-content-center align-items-center">
+
+		<?php 
+			while($destexprow = $destexpres->fetch_assoc()){
+				?>
 			<!-- Offer item -->
 			<div class="col-6 col-md-4 col-xl-2">
 				<div class="card bg-transparent h-100">
-					<img src="assets/images/activities/hot-air-balloon.jpg" class="card-img" alt="">
+					<img src="uploads/<?php echo $destexprow['experience_image'];?>" class="card-img" alt="<?php echo $destexprow['experience_name'];?> with Kiboko Tours and Travel">
 					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Hot Air Balloon Rides</a></h6>
-						<p>Float above the wild – witness the epic scale of the Great Migration from the clouds.</p>
+						<h6 class="mb-0"><a href="experience-details.php?id=<?php echo $destexprow['experience_id'];?>&<?php echo $destexprow['experience_slag'];?>" class="stretched-link"><?php echo $destexprow['experience_name'];?></a></h6>
+						<p><?php echo substr($destexprow['description'], 0, 35);?>...</p>
 					</div>
 				</div>
 			</div>
+			<?php } ?>
 
-			<!-- Offer item -->
-			<div class="col-6 col-md-4 col-xl-2">
-				<div class="card bg-transparent h-100">
-					<img src="assets/images/activities/maasai.webp" class="card-img" alt="">
-					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Cultural Immersion</a></h6>
-						<p>Journey into the heart of Kenya. Connect with the iconic Maasai and their vibrant traditions.</p>
-
-					</div>
-				</div>
-			</div>
-
-
-			<!-- Offer item -->
-			<div class="col-6 col-md-4 col-xl-2">
-				<div class="card bg-transparent h-100">
-					<img src="assets/images/activities/night-game-drive.jpg" class="card-img" alt="">
-					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Night Game Visits</a></h6>
-						<p>Witness the unseen world of the African night – predators on the prowl and starlight as your guide.</p>
-					</div>
-				</div>
-			</div>
-
-			<!-- Offer item -->
-			<div class="col-6 col-md-4 col-xl-2">
-				<div class="card bg-transparent h-100">
-					<img src="assets/images/activities/chopper-ride.jpg" class="card-img" alt="">
-					<div class="card-body text-center p-2">
-						<h6 class="mb-0"><a href="experience-details.php" class="stretched-link">Scenic Flights</a></h6>
-						<p>The ultimate bird's eye view – soar over vast landscapes and witness wildlife like never before.</p>
-					</div>
-				</div>
-			</div>
+			
 
 
 
@@ -144,24 +142,27 @@ Packages START -->
 		</div>
 
 		<div class="row g-4">
+
+		<?php while($destpkgrow = $destpkgres->fetch_assoc()){
+			$daysnightscountres = $conn->query("SELECT * FROM package_day WHERE package_id=".$destpkgrow['package_id']);
+			?>
 			<!-- Package item -->
 			<div class="col-sm-6 col-xl-4">
 				<!-- Card START -->
 				<div class="card card-img-scale overflow-hidden bg-transparent">
 					<div class="card-img-scale-wrapper rounded-3">
 						<!-- Card Image -->
-						<img src="assets/images/kiboko [old]/animal-6.jpg" class="card-img" alt="">
+						<img src="uploads/<?php echo $destpkgrow['package_image'];?>" class="card-img" alt="<?php echo $destpkgrow['title'];?>">
 						<!-- Overlay -->
 						<div class="card-img-overlay d-flex flex-column z-index-1 p-4">
 							<!-- Card overlay top -->
 							<div class="d-flex justify-content-between">
-								<span class="badge text-bg-dark">3 Destinations</span>
-								<span class="badge text-bg-white"><i class="fa-solid fa-star text-warning me-2"></i>4.3</span>
+								<span class="badge text-bg-white"><i class="fa-solid fa-star text-warning me-2"></i>4.8</span>
 							</div>
 							<!-- Card overlay bottom -->
 							<div class="w-100 mt-auto">
 								<!-- Card category -->
-								<span class="badge text-bg-white fs-6">3 days</span>
+								<span class="badge text-bg-dark fs-6"><?php echo $daysnightscountres->num_rows;?> days</span>
 							</div>
 						</div>
 					</div> 
@@ -169,87 +170,19 @@ Packages START -->
 					<!-- Card body -->
 					<div class="card-body px-2">
 						<!-- Title -->
-						<h5 class="card-title"><a href="package-details.php" class="stretched-link">Amboseli
-                                        National Park Safari</a></h5>
+						<h5 class="card-title"><a href="package-details.php?id=<?php echo $destpkgrow['package_id'];?>&<?php echo $destpkgrow['title_slag'];?>" class="stretched-link"><?php echo $destpkgrow['title'];?></a></h5>
 						<!-- Content -->
 						<div class="hstack gap-2">
-							<span class="h5 mb-0 text-success">$1385</span>
+							<span class="h5 mb-0 text-success">$<?php echo $destpkgrow['price'];?></span>
 							
 						</div>
 					</div>
 				</div>
 				<!-- Card END -->
 			</div>
-
+		<?php } ?>
 			
 
-			<!-- Package item -->
-			<div class="col-sm-6 col-xl-4">
-				<div class="card card-img-scale overflow-hidden bg-transparent">
-					<div class="card-img-scale-wrapper rounded-3">
-						<!-- Card Image -->
-						<img src="assets/images/kiboko [old]/animal-6.jpg" class="card-img" alt="">
-						<!-- Overlay -->
-						<div class="card-img-overlay d-flex flex-column z-index-1 p-4">
-							<!-- Card overlay top -->
-							<div class="d-flex justify-content-between">
-								<span class="badge text-bg-dark">4 Locations</span>
-								<span class="badge text-bg-white"><i class="fa-solid fa-star text-warning me-2"></i>4.2</span>
-							</div>
-							<!-- Card overlay bottom -->
-							<div class="w-100 mt-auto">
-								<!-- Card category -->
-								<span class="badge text-bg-white fs-6">7 days</span>
-							</div>
-						</div>
-					</div> 
-					
-					<!-- Card body -->
-					<div class="card-body px-2">
-						<!-- Title -->
-						<h5 class="card-title"><a href="package-details.php" class="stretched-link">Exploring Kenya’s Wilderness Parks</a></h5>
-						<!-- Content -->
-						<div class="hstack gap-2">
-							<span class="h5 mb-0 text-success">$1885</span>
-							
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!-- Package item -->
-			<div class="col-sm-6 col-xl-4">
-				<div class="card card-img-scale overflow-hidden bg-transparent">
-					<div class="card-img-scale-wrapper rounded-3">
-						<!-- Card Image -->
-						<img src="assets/images/kiboko [old]/animal-6.jpg" class="card-img" alt="">
-						<!-- Overlay -->
-						<div class="card-img-overlay d-flex flex-column z-index-1 p-4">
-							<!-- Card overlay top -->
-							<div class="d-flex justify-content-between">
-								<span class="badge text-bg-dark">4 Destinations</span>
-								<span class="badge text-bg-white"><i class="fa-solid fa-star text-warning me-2"></i>4.6</span>
-							</div>
-							<!-- Card overlay bottom -->
-							<div class="w-100 mt-auto">
-								<!-- Card category -->
-								<span class="badge text-bg-white fs-6">7 days</span>
-							</div>
-						</div>
-					</div> 
-					
-					<!-- Card body -->
-					<div class="card-body px-2">
-						<!-- Title -->
-						<h5 class="card-title"><a href="package-details.php" class="stretched-link">Kenya Mid-Range Safari Experience</a></h5>
-						<!-- Content -->
-						<div class="hstack gap-2">
-							<span class="h5 text-success mb-0">$3585</span>
-							
-						</div>
-					</div>
-				</div>
-			</div>
 		</div> <!-- Row END -->
 	</div>
 </section>

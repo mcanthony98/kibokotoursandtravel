@@ -1,3 +1,9 @@
+<?php 
+require "includes/connect.php";
+
+$destres = $conn->query("SELECT * FROM destination");
+$pkgres = $conn->query("SELECT * FROM package");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,8 +42,8 @@ Main Banner START -->
                         <div class="col-md-8 mx-auto my-5">
                             <h1 class="text-center text-dark">Places to Visit in Kenya</h1></h1>
                             <ul class="nav nav-divider h6 text-dark mb-0 justify-content-center">
-                                <li class="nav-item" style="color: white; font-weight: bold;">10 Destinations</li>
-                                <li class="nav-item" style="color: white; font-weight: bold;">50+ Packages</li>
+                                <li class="nav-item" style="color: white; font-weight: bold;"><?php echo $destres->num_rows;?> Destinations</li>
+                                <li class="nav-item" style="color: white; font-weight: bold;"><?php echo $pkgres->num_rows;?> Packages</li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +75,7 @@ Tour grid START -->
                 <div class="row g-4 align-items-center justify-content-between mb-4">
                     <!-- Content -->
                     <div class="col-12 col-xl-8">
-                        <h5 class="mb-0">Showing 1-7 of 32 result</h5>
+                        <h5 class="mb-0">Showing 1-<?php echo $destres->num_rows;?> of <?php echo $destres->num_rows;?> result</h5>
                     </div>
 
                     <!-- Select option -->
@@ -88,23 +94,24 @@ Tour grid START -->
 
                 <div class="row g-4">
 
+                <?php while($row = $destres->fetch_assoc()){
+                    $destid = $row['destination_id'];
+                    $destexpres = $conn->query("SELECT * FROM destination_experience de JOIN experience e ON de.experience_id=e.experience_id WHERE de.destination_id='$destid'");
+                    ?>
                     <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
+                    <div class="col-md-6 col-xl-3">
                         <div class="card card-hover-shadow pb-0 h-100">
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/destiantions/amboseli-np.jpg" class="card-img-top" alt="Card image">
+                                <img src="uploads/<?php echo $row['destination_image'];?>" class="card-img-top" alt="Card image">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
-                                    <div>
-                                        <span class="badge text-bg-danger">30% Off</span>
-                                        <span class="badge text-bg-dark">Game Drive</span>
-                                    </div>
+                                    
                                     <!-- Card overlay bottom -->
                                     <div class="w-100 mt-auto">
-                                        <span class="badge text-bg-white fs-6">2 days</span>
+                                        <span class="badge text-bg-white fs-6">Kenya</span>
                                     </div>
                                 </div>
                             </div>
@@ -113,19 +120,16 @@ Tour grid START -->
                             <!-- Card body START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Amboseli
-                                        National Park</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
+                                <h5 class="card-title mb-0"><a href="destinations-details.php?id=<?php echo $row['destination_id'];?>&<?php echo $row['destination_slag'];?>" class="stretched-link"><?php echo $row['destination_name'];?></a></h5>
+                                <p class="mt-2"><?php echo $row['catchy_title'];?></p>
 
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
+                                 <!-- List -->
+                                 <ul class="nav nav-divider mt-3 mb-0">
                                     <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-car text-orange me-2"></i>4-5 Hr Drive
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fas fa-list text-danger me-2"></i>2 Activities
+                                        <i class="fa-solid fa-list text-danger me-2"></i><?php echo $destexpres->num_rows;?> Activities
                                     </li>
                                 </ul>
+
                             </div>
                             <!-- Card body END -->
 
@@ -133,14 +137,9 @@ Tour grid START -->
                             <div class="card-footer pt-0">
                                 <!-- Price and Button -->
                                 <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$1500</h5>
-                                        <small>/per person</small>
-                                        <span class="text-decoration-line-through">$1800</span>
-                                    </div>
+                                    
                                     <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
+                                    <div class="mt-0 mt-sm-0">
                                         <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
                                     </div>
                                 </div>
@@ -150,484 +149,9 @@ Tour grid START -->
                     </div>
                     <!-- Card item END -->
 
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/destiantions/maasai-mara.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Game Drive</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">6 days / 5 nights</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
+                   <?php } ?>
 
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Maasai
-                                        Mara
-                                        National
-                                        Reserve</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>April 12-17</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-car text-info me-2"></i>5-6 Hr Drive
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$800</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/destiantions/samburu-np.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Game Drive</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">5 days / 4 nights</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Samburu
-                                        National Park</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-car text-orange me-2"></i>6-7 Hr Drive
-                                    </li>
-
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$725</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/destiantions/l-naivasha-np.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Game Drive</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">4 days / 3 nights</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Lake
-                                        Naivasha</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-car text-info me-2"></i>2 Hr Drive
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$400</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/destiantions/nrb-np.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Wildlife in the City</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">1 day</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Nairobi
-                                        National Park</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-06</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-car text-orange me-2"></i>30 Min Drive
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$845</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/destiantions/tsavo-east-np.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Game Drive</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">6 days / 7 nights</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Tsavo East
-                                        National Park</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-08</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-car text-orange me-2"></i>4 Hr Drive
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                        
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$1250</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                                        <!-- Card item START -->
-                                        <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/destiantions/tsavo-west-np.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Game Drive</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">6 days / 7 nights</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Tsavo West
-                                        National Park</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>May 02-08</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-car text-orange me-2"></i>4 Hr Drive
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                        
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$1250</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/destiantions/l-nakuru-np.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Game Drive</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">4 days / 3 nights</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Lake
-                                        Nakuru National
-                                        Park</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-car text-info me-2"></i>2 Hr Drive
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$400</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                                        <!-- Card item START -->
-                                        <div class="col-md-6 col-xl-4">
-                        <div class="card card-hover-shadow pb-0 h-100">
-                            <!-- Overlay item -->
-                            <div class="position-relative">
-                                <!-- Image -->
-                                <img src="assets/images/destiantions/ol-pajeta.jpg" class="card-img-top" alt="Card image">
-                                <!-- Overlay -->
-                                <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
-                                    <!-- Card overlay top -->
-                                    <div> <span class="badge text-bg-dark">Game Drive</span> </div>
-                                    <!-- Card overlay bottom -->
-                                    <div class="w-100 mt-auto">
-                                        <!-- Card category -->
-                                        <span class="badge text-bg-white fs-6">4 days / 3 nights</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Image -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3">
-                                <!-- Title -->
-                                <h5 class="card-title mb-0"><a href="destinations-details.php" class="stretched-link">Ol Pejeta Wildlife Conservancy</a></h5>
-                                <span class="small"><i class="far fa-calendar-alt me-2"></i>April 22-28</span>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mt-3 mb-0">
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-car text-info me-2"></i>4 Hr Drive
-                                    </li>
-                                    <li class="nav-item h6 fw-normal mb-0">
-                                        <i class="fa-solid fa-list text-danger me-2"></i>2 Activities
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
-                                    <!-- Price -->
-                                    <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$400</h5>
-                                        <small>/per person</small>
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Packages</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!-- Card item END -->
+                    
 
                 </div> <!-- Row END -->
 
