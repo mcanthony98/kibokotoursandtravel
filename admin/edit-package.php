@@ -97,8 +97,20 @@ $packdayres = $conn->query("SELECT * FROM package_day WHERE package_id = '$pack_
 									<input type="text" class="form-control flatpickr" data-mode="range" name="dates" placeholder="Select date" value="<?php echo $row['travel_dates'];?>" required>
 								</div>
 
+                                <div class="col-md-6">
+                                    <label class="form-label">Package Category</label>
+                                    <select class="form-select js-choice border-0 z-index-9 bg-transparent" name="cat_id" required>
+                                        <?php 
+											$catres = $conn->query("SELECT * FROM category");
+											while($catrow = $catres->fetch_assoc()){
+										?>
+											<option <?php if($catrow['category_id'] == $row['category_id']){ echo "selected";}?>  value="<?php echo $catrow['category_id'];?>"><?php echo $catrow['category_name'];?></option>
+										<?php }?>
+                                    </select>
+                                </div>
+
                                 <!-- Car name -->
-								<div class="col-12">
+								<div class="col-md-6">
 									<label class="form-label">Package Visibility</label>
 									<select class="form-control" name="status">
                                         <option <?php if($row['package_status'] == 0){ echo "selected";}?> value="0">Not Visible</option>
@@ -143,8 +155,12 @@ $packdayres = $conn->query("SELECT * FROM package_day WHERE package_id = '$pack_
 
                          <!-- Cab Detail START -->
                     <div class="card shadow mt-3" >
-						<div class="card-header h5 text-center">
-                            Day <?php echo $packdayrow['day'];?>
+						<div class="card-header  text-center">
+                            <span class="h5">Day <?php echo $packdayrow['day'];?></span>
+
+                            
+                                <a href="processes/processes.php?delete-pack-day=<?php echo $pack_day_id;?>&pack_id=<?php echo $pack_id;?>" class="btn btn-danger-soft float-end deleteBtn"><i class="fas fa-times"></i> Remove</a>
+                   
                             
                         </div>
 						<!-- Card body -->

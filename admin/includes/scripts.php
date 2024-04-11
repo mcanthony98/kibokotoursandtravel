@@ -68,3 +68,22 @@ if(isset($_SESSION['error'])){
 unset($_SESSION['error']);} 
 ?>
 
+<script>
+$(document).ready(function(){
+    // Function to handle delete button click
+    $(".deleteBtn").click(function(){
+        // Show confirmation dialog
+        var confirmation = confirm("Are you sure you want to delete?");
+        
+        // If user confirms deletion
+        if (confirmation) {
+            // Perform deletion process here
+            // For now, let's just show a message
+        } else {
+            // If user cancels deletion, do nothing
+            event.preventDefault();
+            return;
+        }
+    });
+});
+</script>

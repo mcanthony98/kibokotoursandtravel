@@ -466,6 +466,7 @@ elseif(isset($_POST["edit-package"])){
     $status = mysqli_real_escape_string($conn, $_POST["status"]);
     $pack_id = mysqli_real_escape_string($conn, $_POST["pack_id"]);
     $dates = mysqli_real_escape_string($conn, $_POST["dates"]);
+    $cat_id = mysqli_real_escape_string($conn, $_POST["cat_id"]);
     $dates = $dates." ".date("Y");
 
     $slag = str_replace(' ', '-', $tit);
@@ -474,7 +475,7 @@ elseif(isset($_POST["edit-package"])){
    
 
    
-    $cat_insert = "UPDATE package SET title='$tit', title_slag='$slag', subtitle='$stit', package_description='$desc', price='$price', package_status='$status', last_modified='$date', travel_dates='$dates' WHERE package_id  = '$pack_id'";
+    $cat_insert = "UPDATE package SET title='$tit', title_slag='$slag', subtitle='$stit', package_description='$desc', price='$price', package_status='$status', last_modified='$date', travel_dates='$dates', category_id='$cat_id' WHERE package_id  = '$pack_id'";
     
     if ($conn->query($cat_insert)===TRUE){
 
@@ -802,6 +803,26 @@ elseif(isset($_POST["seo-package"])){
       }
     
 }
+
+elseif(isset($_GET["delete-pack-day"])){
+    $day_id = mysqli_real_escape_string($conn, $_GET["delete-pack-day"]);
+    $pack_id = mysqli_real_escape_string($conn, $_GET["pack_id"]);
+
+    $qry = "DELETE FROM `package_day` WHERE package_day_id='$day_id'";
+
+    if ($conn->query($qry)===TRUE){
+
+          
+        $_SESSION["success"] = "Package Day Deleted Sucessfully.";
+        header("location: ../edit-package.php?pack=$pack_id");
+        
+    }else{
+        $_SESSION["error"] = "Error Occured. Please Try Again". $conn->error;
+        header("location: ../edit-package.php?pack=$pack_id");
+    }
+  
+}
+
 // Add new Blog
 if(isset($_POST["add-blog"])){
     $tit = mysqli_real_escape_string($conn, $_POST["tit"]);
