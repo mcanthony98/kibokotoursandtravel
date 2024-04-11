@@ -65,12 +65,20 @@ $countryres = $conn->query("SELECT * FROM country");
 									<textarea class="form-control" rows="7" name="desc" id="summernote2" placeholder="Enter Description" required></textarea>
 								</div>
 
-                                
+                                <div class="col-md-6">
+                                    <label class="form-label">Currency</label>
+                                    <select class="form-select js-choice border-0 z-index-9 bg-transparent" name="currency" required>
+                                        <option value="$">USD</option>
+                                        <option value="KES">KES</option>
+                                       
+                                    </select>
+                                </div>
+
+
                                 <!-- Car name -->
 								<div class="col-sm-6">
 									<label class="form-label">Package Price</label>
 									<div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon1">$</span>
                                         <input type="number" class="form-control" placeholder="" name="price" required>
                                     </div>
 								</div>
@@ -95,6 +103,8 @@ $countryres = $conn->query("SELECT * FROM country");
 										<?php }?>
                                     </select>
                                 </div>
+
+								
 
 
                                 

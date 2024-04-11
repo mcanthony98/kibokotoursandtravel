@@ -6,6 +6,10 @@
         <span class="ms-3">
             <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-success text-decoration-underline"><i class="bi bi-whatsapp"></i> <span class="d-none d-md-inline">Whatsapp: +254 732 962224</span></a>
         </span>
+        
+    <span class="ms-3">
+        <a href="#" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-wechat"></i> <span class="d-none d-md-inline">WeChat: wxid_zcpsjxnm97j422</span></a>
+    </span>
         </div>
 
     

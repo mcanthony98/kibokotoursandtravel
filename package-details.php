@@ -162,6 +162,7 @@ About hotel START -->
 							<span><i class="bi bi-list fa-fw text-success me-1"></i><?php echo $pkgexpres->num_rows;?> Activities</span>
 								
 							</div>
+							<p><?php echo $pkgrow['subtitle'];?></p>
 								
 							<?php 
 							$daycount = 1;
@@ -233,7 +234,7 @@ About hotel START -->
 						<div class="d-sm-flex justify-content-sm-between align-items-center mb-3 ">
 							<div>
 								<span>Price Start at</span>
-								<h4 class="card-title mb-0">$<?php echo number_format($pkgrow['price']);?></h4>
+								<h4 class="card-title mb-0"><?php echo $pkgrow['currency'];?> <?php echo number_format($pkgrow['price']);?></h4>
 							</div>
 							<div>
 								<h6 class="fw-normal mb-0">Price applies per person</h6>
@@ -251,7 +252,7 @@ About hotel START -->
 							<li class="list-inline-item me-0 small"><i class="fa-solid fa-star-half-alt text-warning"></i></li>
 						</ul>
 
-						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Date: <?php echo $pkgrow['travel_dates'];?></p>
+						<p class="h6 fw-light mb-4"><i class="bi bi-arrow-right me-2"></i>Date: <span class="fw-bold"><?php echo $pkgrow['travel_dates'];?></span></p>
 
 						<!-- Button -->
 						<div class="d-grid">

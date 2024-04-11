@@ -171,9 +171,11 @@ Packages START -->
 					<div class="card-body px-2">
 						<!-- Title -->
 						<h5 class="card-title"><a href="package-details.php?id=<?php echo $destpkgrow['package_id'];?>&<?php echo $destpkgrow['title_slag'];?>" class="stretched-link"><?php echo $destpkgrow['title'];?></a></h5>
+						
+						<p><small><?php echo $destpkgrow['subtitle'];?></small></p>
 						<!-- Content -->
 						<div class="hstack gap-2">
-							<span class="h5 mb-0 text-success">$<?php echo $destpkgrow['price'];?></span>
+							<span class="h5 mb-0 text-success"><?php echo $destpkgrow['currency'];?> <?php echo $destpkgrow['price'];?></span>
 							
 						</div>
 					</div>

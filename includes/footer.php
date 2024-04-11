@@ -9,10 +9,12 @@
                 <!-- Widget 1 START -->
                 <div class="col-lg-3">
                     <!-- logo -->
+                    <div class="bg-white d-inline-block rounded-circle p-1">
                     <a class="navbar-brand" href="index.php">
-                    <img class="navbar-brand-item d-none d-md-block" src="assets/images/logo/kiboko-logo-white-bg.jpg" alt="logo" style="width:100px; height:auto;">
+                    <img class="navbar-brand-item d-none d-md-block" src="assets/images/logo/kiboko-logo.png" alt="logo" style="width:100px; height:auto;">
                 <img class="navbar-brand-item d-block d-md-none" src="assets/images/kiboko-logo.png" alt="logo" style="width:80px; height:auto;"> 
                         </a>
+</div>
                     <p class="my-3 text-muted">Kiboko Tours & Travel.</p>
                     <br>
 
@@ -84,10 +86,10 @@
 
 
             <!-- Payment and card -->
-            <div class="row g-4 justify-content-between mt-0 mt-md-2">
+            <div class="row g-4 justify-content-between mt-0 mt-md-2 ">
 
                 <!-- Payment card -->
-                <div class="col-sm-7 col-md-6 col-lg-4">
+                <div class="col-sm-7 col-md-6 col-lg-4 order-2">
                     <h5 class="text-white mb-2">Payment & Security</h5>
                     <ul class="list-inline mb-0 mt-3">
                         <li class="list-inline-item"> <a href="#"><img src="assets/images/element/pesapal-2.png"
@@ -102,13 +104,13 @@
                 </div>
 
                 <!-- Tagline -->
-                <div class="col-3">
+                <div class="col-12 order-1">
                     <br>
-                    <p class="text-muted text-center">We lead the path to your intended destination.</p>
+                    <p class="text-muted text-center h4">We lead the path to your intended destination.</p>
                 </div>
 
                 <!-- Social media icon -->
-                <div class="col-sm-5 col-md-6 col-lg-3 text-sm-end">
+                <div class="col-sm-5 col-md-6 col-lg-3 text-sm-end order-3">
                     <h5 class="text-white mb-2">Follow us on</h5>
                     <ul class="list-inline mb-0 mt-3">
                         <li class="list-inline-item"> <a class="btn btn-sm px-2 bg-facebook mb-0" href="https://www.facebook.com/KibokoTours" target="_blank"><i

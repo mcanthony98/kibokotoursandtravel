@@ -48,7 +48,7 @@ $destsres = $conn->query("SELECT * FROM destination ORDER BY destination_views D
         <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-light text-decoration-underline" style="color: green;"><i class="bi bi-whatsapp"></i> <span class="d-none d-md-inline">WhatsApp: +254 732 962224</span></a>
     </span>
     <span class="ms-3">
-        <a href="https://t.me/KibokoTours" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-telegram"></i> <span class="d-none d-md-inline">Telegram: +254 732 962224</span></a>
+        <a href="#" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-wechat"></i> <span class="d-none d-md-inline">WeChat: wxid_zcpsjxnm97j422</span></a>
     </span>
     <style>
         .link-light:hover {
@@ -477,10 +477,11 @@ Featured Packages START -->
                             <!-- Card body -->
                             <div class="card-body px-2">
                                 <!-- Title -->
-                                <h5 class="card-title"><a href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>" class="stretched-link"><?php echo $row['title'];?></a></h5>
+                                <h6 class="card-title"><a href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>" class="stretched-link"><?php echo $row['title'];?></a></h6>
                                 <!-- Price and rating -->
+                                <p><small><?php echo $row['subtitle'];?></small></p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <h5 class="text-success mb-0">$<?php echo number_format($row['price']);?> 
+                                    <h5 class="text-success mb-0"><?php echo $row['currency'];?> <?php echo number_format($row['price']);?> 
                                     </h5>
                                     <h6 class="mb-0">4.8<i class="fa-solid fa-star text-warning ms-1"></i></h6>
                                 </div>
@@ -526,6 +527,10 @@ Accreitations START -->
             <!-- Image -->
             <div class="col-5 col-sm-3 col-xl-2">
                 <img src="assets/images/client/ECO.jpg" class="grayscale" alt="">
+            </div>
+             <!-- Image -->
+             <div class="col-5 col-sm-3 col-xl-2">
+                <img src="assets/images/client/ECO2.jpg" class="grayscale" alt="">
             </div>
             <!-- Image -->
             <div class="col-5 col-sm-3 col-xl-2">

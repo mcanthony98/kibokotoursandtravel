@@ -45,7 +45,7 @@ $pkgrow = $pkgres->fetch_assoc();
 						<div class="card-body py-4">
 							<!-- Badge with content -->
 							<div class="bg-primary bg-opacity-10 rounded-2 p-3 mb-3">
-								<p class="h6 fw-light small mb-0"><span class="badge bg-orange me-2">Booking for:</span><?php echo $pkgrow['title'];?> ($<?php echo number_format($pkgrow['price']);?>)</p>
+								<p class="h6 fw-light small mb-0"><span class="badge bg-orange me-2">Booking for:</span><?php echo $pkgrow['title'];?> (<?php echo $pkgrow['currency'];?> <?php echo number_format($pkgrow['price']);?>)</p>
 							</div>
 
 							<!-- Form START -->

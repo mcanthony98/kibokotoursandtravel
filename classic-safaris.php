@@ -121,6 +121,7 @@ Tour grid START -->
                             <div class="card-body px-3">
                                 <!-- Title -->
                                 <h5 class="card-title mb-0"><a href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>" class="stretched-link"><?php echo $row['title'];?></a></h5>
+                                <p><small><?php echo $row['subtitle'];?></small></p>
                                 <span class="small"><i class="far fa-calendar-alt me-2"></i><?php echo $row['travel_dates'];?></span>
 
                                 <!-- List -->
@@ -141,12 +142,12 @@ Tour grid START -->
                                 <div class="d-sm-flex justify-content-sm-between align-items-center flex-wrap">
                                     <!-- Price -->
                                     <div class="hstack gap-2">
-                                        <h5 class="fw-normal text-success mb-0">$<?php echo number_format($row['price']);?></h5>
+                                        <h5 class="fw-normal text-success mb-0"><?php echo $row['currency'];?> <?php echo number_format($row['price']);?></h5>
                                         <small>/per person</small>
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary mb-0">View Details</a>
+                                        <a href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>" class="btn btn-sm btn-primary mb-0">View Details</a>
                                     </div>
                                 </div>
                             </div>

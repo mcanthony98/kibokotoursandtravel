@@ -56,10 +56,7 @@ Main banner START -->
                             <p>We are one phone call away</p>
                             <!-- Buttons -->
                             <div class="d-grid gap-3 d-sm-block">
-                                <button class="btn btn-sm btn-primary-soft"><i  class="bi bi-phone me-2"></i>+254 712 123
-                                    123</button>
-                                <button class="btn btn-sm btn-light"><i class="bi bi-telephone me-2"></i>+254 712 123
-                                    123</button>
+                                <button class="btn btn-sm btn-primary-soft"><i  class="bi bi-phone me-2"></i>+254 732 962224</button>
                             </div>
                         </div>
                     </div>
@@ -88,9 +85,9 @@ Main banner START -->
                             <i class="bi bi-wechat fs-5"></i> 
                         </div>
                         <h5>Contact us on WeChat</h5>
-                        <p class="mb-3">Our WeChat Number is:</p>
+                        <p class="mb-3">Our WeChat ID is:</p>
                         <a href="#" class="btn btn-link text-decoration-underline p-0 mb-0">
-                            <i class="bi bi-envelope me-1"></i>+254 788 050 783
+                           wxid_zcpsjxnm97j422
                         </a> 
                     </div>
 
