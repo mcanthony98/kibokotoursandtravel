@@ -8,7 +8,7 @@
         </span>
         
     <span class="ms-3">
-        <a href="#" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-wechat"></i> <span class="d-none d-md-inline">WeChat: wxid_zcpsjxnm97j422</span></a>
+        <a href="#" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-wechat"></i> <span class="d-none d-md-inline">WeChat: +254788050783</span></a>
     </span>
         </div>
 

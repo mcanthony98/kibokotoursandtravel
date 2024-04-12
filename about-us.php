@@ -351,7 +351,7 @@ Team START -->
                         <div class="card card-element-hover bg-transparent">
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/team/person-4.jpg" class="card-img" alt="">
+                                <img src="assets/images/team/person-5.jpg" class="card-img" alt="">
 
                                 <div class="card-img-overlay hover-element d-flex p-3">
                                     <!-- Category -->
