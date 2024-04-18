@@ -524,10 +524,6 @@ Accreitations START -->
         </div>
 
         <div class="row g-4 g-lg-7 justify-content-center align-items-center">
-            <!-- Image -->
-            <div class="col-5 col-sm-3 col-xl-2">
-                <img src="assets/images/client/ECO.jpg" class="grayscale" alt="">
-            </div>
              <!-- Image -->
              <div class="col-5 col-sm-3 col-xl-2">
                 <img src="assets/images/client/ECO2.jpg" class="grayscale" alt="">

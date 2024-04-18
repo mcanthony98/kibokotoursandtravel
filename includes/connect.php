@@ -16,6 +16,13 @@ $conn = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 
 
 /*
+define('DB_SERVER', 'localhost');
+define('DB_USERNAME', 'kibokot1_kibokotours');
+define('DB_PASSWORD', 't4cPhX-08.6HtP');
+define('DB_DATABASE', 'kibokot1_kibokoGNM');
+$conn = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+
+
 
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'u640333703_writtela');

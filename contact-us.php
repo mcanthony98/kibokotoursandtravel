@@ -36,7 +36,7 @@ Main banner START -->
                 <div class="row mb-5">
                     <div class="col-xl-10">
                         <!-- Title -->
-                        <h1>Connect with us on our online spaces</h1>
+                        <h1>Connect with us</h1>
                         <p class="lead mb-0">Feel free to reach out to us for free quotes via our form below
                         </p>
                     </div>
@@ -85,10 +85,10 @@ Main banner START -->
                             <i class="bi bi-wechat fs-5"></i> 
                         </div>
                         <h5>Contact us on WeChat</h5>
-                        <p class="mb-3">Our WeChat ID is:</p>
+                        <p class="mb-3">Our WeChat Number is:</p>
                         <a href="#" class="btn btn-link text-decoration-underline p-0 mb-0">
-                           wxid_zcpsjxnm97j422
-                        </a> 
+                        +254 788 050783
+                                            </a> 
                     </div>
 
                 </div>
@@ -107,8 +107,8 @@ Main banner START -->
                         </div>
                         <h5>Contact us on WhatsApp</h5>
                         <p class="mb-3">Our WhatsApp Number is:</p>
-                        <a href="https://api.whatsapp.com/send?phone=254712123123" class="btn btn-link text-decoration-underline p-0 mb-0">
-                            <i class="bi bi-phone me-1"></i>+254 788 050 783
+                        <a href="https://api.whatsapp.com/send?phone=254732962224" class="btn btn-link text-decoration-underline p-0 mb-0">
+                            <i class="bi bi-phone me-1"></i>+254 732 962 224
                         </a> 
                     </div>
 
@@ -122,8 +122,8 @@ Main banner START -->
                         </div>
                         <h5>Contact us on Telegram</h5>
                         <p class="mb-3">Our Telegram Number is:</p>
-                        <a href="https://t.me/kibokotoursandtravel" class="btn btn-link text-decoration-underline p-0 mb-0">
-                            <i class="bi bi-phone me-1"></i>+254 788 050 783
+                        <a href="https://t.me/Kiboko_Tours" class="btn btn-link text-decoration-underline p-0 mb-0">
+                            <i class="bi bi-phone me-1"></i>+254 732 962 224
                         </a> 
                     </div>
 
@@ -150,53 +150,7 @@ Contact form and vector START -->
                     <!-- Contact form START -->
                     <div class="col-lg-6">
                         <div class="card bg-light p-4">
-                            <!-- Svg decoration -->
-                            <figure class="position-absolute end-0 bottom-0 mb-n4 me-n2">
-                                <svg class="fill-orange" width="104.2px" height="95.2px">
-                                    <circle cx="2.6" cy="92.6" r="2.6" />
-                                    <circle cx="2.6" cy="77.6" r="2.6" />
-                                    <circle cx="2.6" cy="62.6" r="2.6" />
-                                    <circle cx="2.6" cy="47.6" r="2.6" />
-                                    <circle cx="2.6" cy="32.6" r="2.6" />
-                                    <circle cx="2.6" cy="17.6" r="2.6" />
-                                    <circle cx="2.6" cy="2.6" r="2.6" />
-                                    <circle cx="22.4" cy="92.6" r="2.6" />
-                                    <circle cx="22.4" cy="77.6" r="2.6" />
-                                    <circle cx="22.4" cy="62.6" r="2.6" />
-                                    <circle cx="22.4" cy="47.6" r="2.6" />
-                                    <circle cx="22.4" cy="32.6" r="2.6" />
-                                    <circle cx="22.4" cy="17.6" r="2.6" />
-                                    <circle cx="22.4" cy="2.6" r="2.6" />
-                                    <circle cx="42.2" cy="92.6" r="2.6" />
-                                    <circle cx="42.2" cy="77.6" r="2.6" />
-                                    <circle cx="42.2" cy="62.6" r="2.6" />
-                                    <circle cx="42.2" cy="47.6" r="2.6" />
-                                    <circle cx="42.2" cy="32.6" r="2.6" />
-                                    <circle cx="42.2" cy="17.6" r="2.6" />
-                                    <circle cx="42.2" cy="2.6" r="2.6" />
-                                    <circle cx="62" cy="92.6" r="2.6" />
-                                    <circle cx="62" cy="77.6" r="2.6" />
-                                    <circle cx="62" cy="62.6" r="2.6" />
-                                    <circle cx="62" cy="47.6" r="2.6" />
-                                    <circle cx="62" cy="32.6" r="2.6" />
-                                    <circle cx="62" cy="17.6" r="2.6" />
-                                    <circle cx="62" cy="2.6" r="2.6" />
-                                    <circle cx="81.8" cy="92.6" r="2.6" />
-                                    <circle cx="81.8" cy="77.6" r="2.6" />
-                                    <circle cx="81.8" cy="62.6" r="2.6" />
-                                    <circle cx="81.8" cy="47.6" r="2.6" />
-                                    <circle cx="81.8" cy="32.6" r="2.6" />
-                                    <circle cx="81.8" cy="17.6" r="2.6" />
-                                    <circle cx="81.8" cy="2.6" r="2.6" />
-                                    <circle cx="101.7" cy="92.6" r="2.6" />
-                                    <circle cx="101.7" cy="77.6" r="2.6" />
-                                    <circle cx="101.7" cy="62.6" r="2.6" />
-                                    <circle cx="101.7" cy="47.6" r="2.6" />
-                                    <circle cx="101.7" cy="32.6" r="2.6" />
-                                    <circle cx="101.7" cy="17.6" r="2.6" />
-                                    <circle cx="101.7" cy="2.6" r="2.6" />
-                                </svg>
-                            </figure>
+                            
 
                             <!-- Card header -->
                             <div id="quote" class="card-header bg-light p-0 pb-3">
@@ -205,42 +159,259 @@ Contact form and vector START -->
 
                             <!-- Card body START -->
                             <div card-body p-0>
-                                <form class="row g-4">
+                                <form class="row g-4" method="post" action="processes.php">
                                     <!-- First Name -->
                                     <div class="col-md-6">
                                         <label class="form-label">First Name *</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" name="fname" required>
                                     </div>
                                     <!-- Last Name -->
                                     <div class="col-md-6">
                                         <label class="form-label">Last Name *</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" name="lname" required>
                                     </div>
                                     <!-- Email -->
                                     <div class="col-12">
                                         <label class="form-label">Email address *</label>
-                                        <input type="email" class="form-control">
+                                        <input type="email" class="form-control" name="email" required>
                                     </div>
+
+                                    <!-- Country -->
+                                    <div class="col-md-5">
+                                        <label class="form-label">Country of Residence *</label>
+                                        <select class="form-select js-choice" data-search-enabled="true" name="country" required>
+                                            <option value="">Choose..</option>
+                                            <option value="Afghanistan">Afghanistan</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="Andorra">Andorra</option>
+<option value="Angola">Angola</option>
+<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Botswana">Botswana</option>
+<option value="Brazil">Brazil</option>
+<option value="Brunei">Brunei</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cabo Verde">Cabo Verde</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada">Canada</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Chad">Chad</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Colombia">Colombia</option>
+<option value="Comoros">Comoros</option>
+<option value="Congo, Democratic Republic of the">Congo, Democratic Republic of the</option>
+<option value="Congo, Republic of the">Congo, Republic of the</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Croatia">Croatia</option>
+<option value="Cuba">Cuba</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="East Timor (Timor-Leste)">East Timor (Timor-Leste)</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Eswatini">Eswatini</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Greece">Greece</option>
+<option value="Grenada">Grenada</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guinea">Guinea</option>
+<option value="Guinea-Bissau">Guinea-Bissau</option>
+<option value="Guyana">Guyana</option>
+<option value="Haiti">Haiti</option>
+<option value="Honduras">Honduras</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran">Iran</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="Korea, North">Korea, North</option>
+<option value="Korea, South">Korea, South</option>
+<option value="Kosovo">Kosovo</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Laos">Laos</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libya">Libya</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Marshall Islands">Marshall Islands</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mexico">Mexico</option>
+<option value="Micronesia">Micronesia</option>
+<option value="Moldova">Moldova</option>
+<option value="Monaco">Monaco</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montenegro">Montenegro</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Namibia">Namibia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="North Macedonia">North Macedonia</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau">Palau</option>
+<option value="Palestine">Palestine</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Qatar">Qatar</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russia</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+<option value="Saint Lucia">Saint Lucia</option>
+<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+<option value="Samoa">Samoa</option>
+<option value="San Marino">San Marino</option>
+<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Serbia">Serbia</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Solomon Islands">Solomon Islands</option>
+<option value="Somalia">Somalia</option>
+<option value="South Africa">South Africa</option>
+<option value="South Sudan">South Sudan</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Sudan">Sudan</option>
+<option value="Suriname">Suriname</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syria">Syria</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania">Tanzania</option>
+<option value="Thailand">Thailand</option>
+<option value="Togo">Togo</option>
+<option value="Tonga">Tonga</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="Uruguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Vatican City">Vatican City</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Vietnam">Vietnam</option>
+<option value="Yemen">Yemen</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option>
+</select>
+
+                                    </div>
+
                                     <!-- Mobile number -->
-                                    <div class="col-12">
+                                    <div class="col-md-7">
                                         <label class="form-label">Mobile number *</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" name="phone" required>
                                     </div>
+
+                                    <!-- Input item -->
+                                    <div class="col-12">
+                                        <label class="form-label">Number of People Travelling *</label>
+                                        <div class="input-group">
+                                            <input type="number" class="form-control" name="adults" placeholder="Adults">
+                                            <input type="number" class="form-control" name="children" placeholder="Children">
+                                        </div>
+                                    </div>
+
+
                                     <!-- Message -->
                                     <div class="col-12">
-                                        <label class="form-label">Message *</label>
-                                        <textarea class="form-control" rows="3"></textarea>
+                                        <label class="form-label">More info </label>
+                                        <textarea class="form-control" rows="3" name="desc"></textarea>
                                     </div>
                                     <!-- Checkbox -->
                                     <div class="col-12 form-check ms-2">
-                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                                         <label class="form-check-label" for="exampleCheck1">
-                                            By submitting this form you agree to our terms and conditions.
+                                            By submitting this form you agree to our <a class="link-orange" target="_blank" href="assets/docs/kiboko-terms-and-conditions.pdf" download> Terms and Conditions</a>.
                                         </label>
                                     </div>
                                     <!-- Button -->
                                     <div class="col-12">
-                                        <button class="btn btn-dark mb-0" type="button">Send Message</button>
+                                        <button class="btn btn-dark mb-0" name="sendsms" type="submit">Send Message</button>
                                     </div>
                                 </form>
                             </div>

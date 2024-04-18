@@ -1,6 +1,20 @@
 <?php 
+session_start();
 require "includes/connect.php";
 
+if(!isset($_GET['id'])){
+	header('location: index.php');
+}
+$bkid = $_GET['id'];
+$bkres = $conn->query("SELECT * FROM package_booking WHERE booking_id='$bkid'");
+$bkrow = $bkres->fetch_assoc();
+
+$pkgid = $bkrow['package_id'];
+$pkgres = $conn->query("SELECT * FROM package WHERE package_id='$pkgid'");
+$pkgrow = $pkgres->fetch_assoc();
+
+$txres = $conn->query("SELECT * FROM transaction WHERE booking_id = '$bkid'");
+$txrow = $txres->fetch_assoc();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +73,7 @@ Main content START -->
 						<p class="lead mb-3">Your trip has been booked</p>
 
 						<!-- Second title -->
-						<h5 class="text-primary mb-4" style="color: darkorange !important;">3-Day Amboseli National Park Safari</h5>
+						<h5 class="text-primary mb-4" style="color: darkorange !important;"><?php echo $pkgrow['title'];?></h5>
 
 						<!-- List -->
 						<div class="row justify-content-between text-start mb-4">
@@ -67,19 +81,19 @@ Main content START -->
 								<ul class="list-group list-group-borderless">
 									<li class="list-group-item d-sm-flex justify-content-between align-items-center">
 										<span class="mb-0"><i class="bi bi-vr fa-fw me-2"></i>Email:</span>
-										<span class="h6 fw-normal mb-0">robertg@gmail.com</span>
+										<span class="h6 fw-normal mb-0"><?php echo $bkrow['email'];?></span>
 									</li>
 									<li class="list-group-item d-sm-flex justify-content-between align-items-center">
 										<span class="mb-0"><i class="bi bi-person fa-fw me-2"></i>Booked by:</span>
-										<span class="h6 fw-normal mb-0">Robert Greene</span>
+										<span class="h6 fw-normal mb-0"><?php echo $bkrow['title'].". ".$bkrow['firstname']." ".$bkrow['lastname'];?></span>
 									</li>
 									<li class="list-group-item d-sm-flex justify-content-between align-items-center">
 										<span class="mb-0"><i class="bi bi-wallet2 fa-fw me-2"></i>Payment Method:</span>
-										<span class="h6 fw-normal mb-0">Credit Card</span>
+										<span class="h6 fw-normal mb-0"><?php echo $txrow['payment_method'];?> </span>
 									</li>
 									<li class="list-group-item d-sm-flex justify-content-between align-items-center">
 										<span class="mb-0"><i class="bi bi-currency-dollar fa-fw me-2"></i>Total Price:</span>
-										<span class="h6 fw-normal mb-0">$6500</span>
+										<span class="h6 fw-normal mb-0"><?php echo $txrow['currency'];?> <?php echo $txrow['amount'];?></span>
 									</li>
 								</ul>
 							</div>
@@ -87,16 +101,16 @@ Main content START -->
 							<div class="col-lg-5">
 								<ul class="list-group list-group-borderless">
 									<li class="list-group-item d-sm-flex justify-content-between align-items-center">
-										<span class="mb-0"><i class="bi bi-calendar fa-fw me-2"></i>Date:</span>
-										<span class="h6 fw-normal mb-0">29 July 2024</span>
+										<span class="mb-0"><i class="bi bi-calendar fa-fw me-2"></i>Date Booked:</span>
+										<span class="h6 fw-normal mb-0"><?php echo date('d M Y', strtotime($txrow['date_paid']));?></span>
 									</li>
 									<li class="list-group-item d-sm-flex justify-content-between align-items-center">
 										<span class="mb-0"><i class="bi bi-calendar fa-fw me-2"></i>Tour Date:</span>
-										<span class="h6 fw-normal mb-0">15 - 18 Aug 2024</span>
+										<span class="h6 fw-normal mb-0"> <?php echo $pkgrow['travel_dates'];?></span>
 									</li>
 									<li class="list-group-item d-sm-flex justify-content-between align-items-center">
 										<span class="mb-0"><i class="bi bi-people fa-fw me-2"></i>Guests:</span>
-										<span class="h6 fw-normal mb-0">3</span>
+										<span class="h6 fw-normal mb-0"><?php echo $bkrow['adults'] + $bkrow['children'];?></span>
 									</li>
 								</ul>
 							</div>

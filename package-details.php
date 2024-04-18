@@ -175,7 +175,7 @@ About hotel START -->
 							<p class="mb-3"><?php echo $pkgdayrow['long_itinerary'];?></p>
 
 
-							<?php if($daycount == 1){?>
+							<?php if($daycount == 1 && $pkgdayres->num_rows > 1){?>
 								<div class="collapse" id="collapseContent">
 									
 							<?php }?>

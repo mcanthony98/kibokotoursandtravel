@@ -149,7 +149,7 @@
                     <div class="nav mt-2 mt-lg-0">
                         <ul class="list-inline text-primary-hover mx-auto mb-0">
                             <li class="list-inline-item me-0">
-                                <a class="nav-link py-1 text-muted" href="assets/docs/kiboko-terms-and-conditions.pdf" download>Download our Terms and Conditions</a>
+                                <a class="nav-link py-1 text-muted" target="_blank" href="assets/docs/kiboko-terms-and-conditions.pdf" download>Download our Terms and Conditions</a>
                             </li>
                             <li class="list-inline-item me-0"><a class="nav-link py-1 text-muted pe-0"
                                     href="faq.php">Help</a></li>
