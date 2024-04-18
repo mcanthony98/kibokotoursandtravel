@@ -1,7 +1,6 @@
 <?php
 session_start();
 require "../includes/connect.php";
-include "../includes/mailer.php";
 //https://12eb-41-81-142-80.ngrok-free.app/pesapal/callback.php
 //?OrderTrackingId=1c298d87-ef37-4e7c-ab33-de3dfccce94d
 //&OrderMerchantReference=92582762768768274
@@ -50,26 +49,6 @@ if($status != 1){
   $conn->query($pkqry);
 
 
-  $bkres = $conn->query("SELECT * FROM package_booking WHERE booking_id='$bkid'");
-  $bkrow = $bkres->fetch_assoc();
-
-    //email to kiboko
-    $emsubject = "New Booking from the Website";
-    $embody = "
-        <p>Hello,</p>
-        <p>You have a new Booking from the website (Kibokotoursandtravel.com) <br/> Here is the message:</p>
-        <br/>
-        <p>
-        <b>Name:</b> ".$bkrow['firstname']." ".$bkrow['lastname']." <br/>
-        <b>Email:</b> ".$bkrow['email']." <br/>
-        <b>Phone:</b> ".$bkrow['phone']." <br/>
-        <b>Status:</b> PAID <br/>
-        </p> 
-
-        <p> Check Administrator Portal for more details!
-    ";
-
-    maillinge('info@kibokotoursandtravel.com', $emsubject, $embody);
 
   $_SESSION['paysuccess'] = "Your payment was made successfully!";
   echo "<script>window.location.href='https://kibokotoursandtravel.com/payment-confirmation.php?id=$bkid'</script>";

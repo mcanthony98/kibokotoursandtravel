@@ -1,6 +1,7 @@
 <?php 
 session_start();
 require "includes/connect.php";
+include "includes/mailer.php";
 
 if(!isset($_GET['id'])){
 	header('location: index.php');
@@ -15,6 +16,27 @@ $pkgrow = $pkgres->fetch_assoc();
 
 $txres = $conn->query("SELECT * FROM transaction WHERE booking_id = '$bkid'");
 $txrow = $txres->fetch_assoc();
+
+
+
+
+  //email to kiboko
+  $emsubject = "New Booking from the Website";
+  $embody = "
+	  <p>Hello,</p>
+	  <p>You have a new Booking from the website (Kibokotoursandtravel.com) <br/> Here is the message:</p>
+	  <br/>
+	  <p>
+	  <b>Name:</b> ".$bkrow['firstname']." ".$bkrow['lastname']." <br/>
+	  <b>Email:</b> ".$bkrow['email']." <br/>
+	  <b>Phone:</b> ".$bkrow['phone']." <br/>
+	  <b>Status:</b> PAID <br/>
+	  </p> 
+
+	  <p> Check Administrator Portal for more details!
+  ";
+
+  maillinge('info@kibokotoursandtravel.com', $emsubject, $embody);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,7 +76,8 @@ Main content START -->
 
 				<!-- Alert box -->
 				<div class="alert alert-success" role="alert">
-					An account has successfully been created for you.<strong class="mx-1">Confirm your email address</strong>to finish setting up your account.
+				<h5 class="text-center">You Payment has been Received Successfully !</h5>	
+				An account has been created for you.<strong class="mx-1">Confirm your email address</strong>to finish setting up your account.
 				</div>
 
 				<br>
