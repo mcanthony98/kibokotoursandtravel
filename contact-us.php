@@ -402,6 +402,7 @@ Contact form and vector START -->
                                         <label class="form-label">More info </label>
                                         <textarea class="form-control" rows="3" name="desc"></textarea>
                                     </div>
+                                    <div class="col-12" id="google-recaptcha-checkbox"></div>
                                     <!-- Checkbox -->
                                     <div class="col-12 form-check ms-2">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
@@ -468,6 +469,18 @@ It's Time to Discover END -->
         <!-- Footer START -->
         <?php include "includes/footer.php";?>
         <!-- Footer END -->
+
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+            async defer>
+        </script>
+
+        <script type="text/javascript">
+            var onloadCallback = function() {
+                grecaptcha.render('google-recaptcha-checkbox', {
+                    'sitekey' : '6Ldm68IpAAAAAOWn8REuugOiRF3Tv6ydezAD2Ui9'
+                });
+            };
+        </script>
 
 </body>
 

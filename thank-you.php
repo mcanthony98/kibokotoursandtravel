@@ -23,7 +23,7 @@ require "includes/connect.php";
 
 <body>
 
-    <?php include "includes/navbar.php";?>
+    <?php include "includes/header_navbar.php";?>
 
 <!-- **************** MAIN CONTENT START **************** -->
 <main>
@@ -63,7 +63,7 @@ Main content START -->
 								</ul>
 							</div>
 							<!-- Download button -->
-							<a href="packages.php" class="btn btn-warning mb-0"><i class="me-2"></i>Browse our Deals</a>
+							<a href="classic-safaris.php" class="btn btn-warning mb-0"><i class="me-2"></i>Browse our Deals</a>
 						</div>
 					</div>
 				</div>

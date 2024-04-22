@@ -1,6 +1,7 @@
 <?php
 session_start();
 require "../includes/connect.php";
+include 'RegisterIPN.php';
 
 if(!isset($_GET['booking_id'])){
 	header('location: ../index.php');
@@ -30,11 +31,12 @@ if($pkgrow['currency'] == '$'){
 $cost = $pkgrow['price']*($bkrow['adults'] + $bkrow['children']);
 $amount = number_format($cost,2);
 
+$_SESSION["pay_booking_id"] = $bkid;
+
 
 
 $callbackurl = "https://kibokotoursandtravel.com/pesapal/response-page.php";
 
-include 'RegisterIPN.php';
 $merchantreference = rand(1, 1000000000000000000);
 
 

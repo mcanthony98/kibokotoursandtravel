@@ -71,7 +71,7 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
 						<!-- Data item -->
 						<div class="col d-none d-lg-block">
 							<small class="d-block d-lg-none">Price</small>
-							<h6 class="mb-0 fw-normal">$ <?php echo number_format($row['price'], 2) ;?></h6>
+							<h6 class="mb-0 fw-normal"><?php echo $row['currency'];?> <?php echo number_format($row['price'], 2) ;?></h6>
 						</div>
 
 						

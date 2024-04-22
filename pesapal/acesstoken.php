@@ -6,8 +6,10 @@ if(APP_ENVIROMENT == 'sandbox'){
     $consumerSecret = "osGQ364R49cXKeOYSpaOnT++rHs=";
 }elseif(APP_ENVIROMENT == 'live'){
     $apiUrl = "https://pay.pesapal.com/v3/api/Auth/RequestToken"; // Live URL
-    $consumerKey = "sh/6WUMRHNTpdctEt4Es2zooh0Wc/1EI";
-    $consumerSecret = "Wj5HaqaHcPJi6sZKGTWy+KFVZm0=";
+    //$consumerKey = "sh/6WUMRHNTpdctEt4Es2zooh0Wc/1EI";
+    //$consumerSecret = "Wj5HaqaHcPJi6sZKGTWy+KFVZm0="; GNM
+    $consumerKey = "FIqLNmbjs1b9CqvA/ZynLChIF08vry8O";
+    $consumerSecret = "3lPvT58PyFFmqfi9844DDpwMpsw=";
 }else{
     echo "Invalid APP_ENVIROMENT";
     exit;

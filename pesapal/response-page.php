@@ -36,6 +36,8 @@ $tx_code = $data->confirmation_code;
 $payer_account = $data->payment_account;
 $date = $data->created_date;
 $status = $data->status_code;
+$bkid = $_SESSION["pay_booking_id"];
+unset($_SESSION["pay_booking_id"]);
 
 if($status != 1){
   $_SESSION['error'] = "There was a problem with your payment. Please try again!";

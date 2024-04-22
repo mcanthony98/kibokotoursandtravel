@@ -9,42 +9,63 @@ $snapshot_self_email = "info@kibokotoursandtravel.com";
 
 
 if(isset($_POST['sendsms'])){
-    $fname = mysqli_real_escape_string($conn, $_POST["fname"]);
-    $lname = mysqli_real_escape_string($conn, $_POST["lname"]);
-    $email = mysqli_real_escape_string($conn, $_POST["email"]);
-    $country = mysqli_real_escape_string($conn, $_POST["country"]);
-    $phone = mysqli_real_escape_string($conn, $_POST["phone"]);
-    $child = mysqli_real_escape_string($conn, $_POST["children"]);
-    $adult = mysqli_real_escape_string($conn, $_POST["adults"]);
-    $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
 
-    $qry = "INSERT INTO customer (firstname, lastname, email, country, phone, children, adults, description, date_created) VALUES ('$fname', '$lname', '$email', '$country', '$phone', '$child', '$adult', '$desc', '$date')";
-    $conn->query($qry);
+    $captcha = isset($_POST['g-recaptcha-response']) ? $_POST['g-recaptcha-response'] : null;
 
-    $emsubject = "New Enquiry from the Website by ".$fname;
-    $embody = "
-        <p>Hello,</p>
-        <p>You have a new Enquiry from the website (Kibokotoursandtravel.com) <br/> Here is the message:</p>
-        <br/>
-        <p>
-        <b>Name:</b> ".$fname." ".$lname." <br/>
-        <b>Email:</b> ".$email." <br/>
-        <b>Country:</b> ".$country." <br/>
-        <b>Phone:</b> ".$phone." <br/>
-        <b>No. of Travelers:</b><br/>
-        <b>Adults:</b> ".$adult." <br/>
-        <b>Children:</b> ".$child." <br/><br/>
-        <b>Additional info:</b> ".$desc." <br/>
-        </p> 
-    ";
-    $_SESSION['thankyou_name'] = $name;
-    $_SESSION['access_ty'] = "thank you";
+	// ultimately these could be constants in a "secrets" file
+	// 	aka stored as environment variables
+	#$captchaPublic = constant('CAPTCHA_PUBLIC');
+	#$captchaSecret = constant('CAPTCHA_SECRET');
+	$captchaPublic = "6Ldm68IpAAAAAOWn8REuugOiRF3Tv6ydezAD2Ui9";
+	$captchaSecret = "6Ldm68IpAAAAADmkyMcZ8mudq9LKjxhPTtBmLW_s";
 
-    maillinge($snapshot_self_email, $emsubject, $embody);
-    maillinge('ganiamtech@gmail.com', $emsubject, $embody);
+	$res = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$captchaSecret ."&response=".$captcha));
 
-    header('location: thank-you.php');
-    exit();
+	if($res->success === true){
+        $fname = mysqli_real_escape_string($conn, $_POST["fname"]);
+        $lname = mysqli_real_escape_string($conn, $_POST["lname"]);
+        $email = mysqli_real_escape_string($conn, $_POST["email"]);
+        $country = mysqli_real_escape_string($conn, $_POST["country"]);
+        $phone = mysqli_real_escape_string($conn, $_POST["phone"]);
+        $child = mysqli_real_escape_string($conn, $_POST["children"]);
+        $adult = mysqli_real_escape_string($conn, $_POST["adults"]);
+        $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
+    
+        $qry = "INSERT INTO customer (firstname, lastname, email, country, phone, children, adults, description, date_created) VALUES ('$fname', '$lname', '$email', '$country', '$phone', '$child', '$adult', '$desc', '$date')";
+        $conn->query($qry);
+    
+        $emsubject = "New Enquiry from the Website by ".$fname;
+        $embody = "
+            <p>Hello,</p>
+            <p>You have a new Enquiry from the website (Kibokotoursandtravel.com) <br/> Here is the message:</p>
+            <br/>
+            <p>
+            <b>Name:</b> ".$fname." ".$lname." <br/>
+            <b>Email:</b> ".$email." <br/>
+            <b>Country:</b> ".$country." <br/>
+            <b>Phone:</b> ".$phone." <br/>
+            <b>No. of Travelers:</b><br/>
+            <b>Adults:</b> ".$adult." <br/>
+            <b>Children:</b> ".$child." <br/><br/>
+            <b>Additional info:</b> ".$desc." <br/>
+            </p> 
+        ";
+        $_SESSION['thankyou_name'] = $name;
+        $_SESSION['access_ty'] = "thank you";
+    
+        maillinge($snapshot_self_email, $emsubject, $embody);
+        maillinge('ganiamtech@gmail.com', $emsubject, $embody);
+    
+        header('location: thank-you.php');
+        exit();
+	} else{
+        $_SESSION['error'] = 'Error: Human check failed!';
+		exit();
+	}
+
+
+
+
 }
 elseif(isset($_POST['booking'])){
     $title = mysqli_real_escape_string($conn, $_POST["title"]);
