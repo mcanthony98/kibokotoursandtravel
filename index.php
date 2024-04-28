@@ -357,7 +357,13 @@ Main banner START -->
                 <h5 class="text-white mb-3">Book your adventure with East Africa's Best Tour Agent!</h5>
                 <a href="contact-us.php#quote" class="btn btn-lg btn-primary mb-0">Request a Free Quote Today!</a>
             </div>
-        </div> </div>
+        </div>
+    </div>
+    <div class="row">
+            <div class="col-xl-12 text-end" style="position: absolute; bottom: 0; right: 0;">
+                <p class="text-white mb-0">Video by <a href="https://youtu.be/kjLwGjSd4qQ" target="_blank" rel="noopener noreferrer" style="color: orange;">Flysabunch</a></p>
+            </div>
+    </div>
 </section>
 <!-- =======================
 Main banner END -->
