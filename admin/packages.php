@@ -44,6 +44,8 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
 						<div class="row row-cols-7 g-4">
 							<div class="col"><h6 class="mb-0">Package</h6></div>
 							<div class="col"><h6 class="mb-0">Price</h6></div>
+							<div class="col"><h6 class="mb-0">Dates</h6></div>
+							<div class="col"><h6 class="mb-0">Status</h6></div>
 							<div class="col"><h6 class="mb-0">Action</h6></div>
 						</div>
 					</div>
@@ -52,7 +54,7 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
                     while($row = $qry->fetch_assoc()){
                     ?>
 					<!-- Table data -->
-					<div class="row row-cols-xl-7 align-items-lg-center border-bottom g-4 px-2 py-4">
+					<div class="row row-cols-xl-5 align-items-lg-center border-bottom g-4 px-2 py-4">
 						<!-- Data item -->
 						<div class="col">
 							<small class="d-block d-lg-none">Package</small>
@@ -74,7 +76,20 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
 							<h6 class="mb-0 fw-normal"><?php echo $row['currency'];?> <?php echo number_format($row['price'], 2) ;?></h6>
 						</div>
 
-						
+
+						<!-- Data item -->
+						<div class="col d-none d-lg-block">
+							<small class="d-block d-lg-none">Dates</small>
+							<h6 class="mb-0 fw-normal"><?php echo $row['travel_dates'] ;?></h6>
+						</div>
+
+						<!-- Data item -->
+						<div class="col d-none d-lg-block">
+							<small class="d-block d-lg-none">Status</small>
+							<?php echo packageStatus($row['package_status']);?>
+						</div>
+
+												
 
 						<!-- Data item -->
 						<div class="col"><a href="edit-package.php?pack=<?php echo $row['package_id'];?>" class="btn btn-sm btn-primary mb-0"><i class="fa-solid fa-edit"></i> Edit</a></div>
@@ -101,7 +116,18 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
 <!-- **************** MAIN CONTENT END **************** -->
 
 <?php include "includes/scripts.php";?>
-
+<?php 
+	function packageStatus($status){
+		if($status == 1){
+			$output = '<div class="badge bg-success bg-opacity-10 text-success">Visible</div>';
+		}elseif($status == 0){
+			$output = '<div class="badge bg-orange bg-opacity-10 text-orange">Not Visible</div>';
+		}else{
+			$output = "";
+		}
+		return $output;
+	}
+	?>
 </body>
 
 

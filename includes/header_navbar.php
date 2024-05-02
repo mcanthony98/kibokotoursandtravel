@@ -1,15 +1,19 @@
     <!-- Top alert START -->
-    <div class="alert alert-warning py-2 m-0 bg-dark border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-end w-100" role="alert">
-        <p class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
-            <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i>  <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
-        </p>
+    <div class="alert alert-warning py-2 m-0 bg-dark border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-md-end justify-content-between w-100" role="alert">
+        <!-- Google Translate Functionality -->
+        <div class="d-block d-md-none" id="google_translate_element2"></div> 
+        <span>
+        <span class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
+            <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i><span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+        </span>
         <span class="ms-3">
-            <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-success text-decoration-underline"><i class="bi bi-whatsapp"></i> <span class="d-none d-md-inline">Whatsapp: +254 732 962224</span></a>
+            <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-success text-decoration-underline"><i class="bi bi-whatsapp"></i><span class="d-none d-md-inline">Whatsapp: +254 732 962224</span></a>
         </span>
         
-    <span class="ms-3">
-        <a href="#" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-wechat"></i> <span class="d-none d-md-inline">WeChat: +254788050783</span></a>
-    </span>
+        <span class="ms-3">
+            <a href="#" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-wechat"></i><span class="d-none d-md-inline">WeChat: +254788050783</span></a>
+        </span>
+        </span>
         </div>
 
     
@@ -218,7 +222,7 @@
                                                             class="fas fa-chevron-right align-icon-right"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" data-bs-popper="none">
-                                                    <?php while($row = $navclaspack->fetch_assoc()){?>
+                                                    <?php while($row = $navaccpack->fetch_assoc()){?>
                                                     <li> <a class="dropdown-item" href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>"><?php echo $row['title'];?></a></li>
                                                     <?php } ?>
                                                     </ul>
@@ -230,7 +234,7 @@
                                                             class="fas fa-chevron-right align-icon-right"></i>
                                                     </a>
                                                     <ul class="dropdown-menu" data-bs-popper="none">
-                                                    <?php while($row = $navclaspack->fetch_assoc()){?>
+                                                    <?php while($row = $navfampack->fetch_assoc()){?>
                                                     <li> <a class="dropdown-item" href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>"><?php echo $row['title'];?></a></li>
                                                     <?php } ?>
     

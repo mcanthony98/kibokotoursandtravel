@@ -6,6 +6,8 @@ $actres = $conn->query("SELECT * FROM experience ORDER BY experience_views DESC 
 $packres = $conn->query("SELECT * FROM package WHERE category_id = 3 ORDER BY package_id DESC LIMIT 4");
 
 $destsres = $conn->query("SELECT * FROM destination ORDER BY destination_views DESC LIMIT 8");
+
+$blogres = $conn->query("SELECT * FROM blog WHERE blog_status='1' ORDER BY blog_id DESC");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,7 +30,12 @@ $destsres = $conn->query("SELECT * FROM destination ORDER BY destination_views D
             background-color: #fd7e14;
             color: #fff;
             }
+            .link-light:hover {
+                color: #fbb03b !important;
+                text-decoration: none;
+                }
         </style>
+    
 
 
 
@@ -39,24 +46,25 @@ $destsres = $conn->query("SELECT * FROM destination ORDER BY destination_views D
 <!-- Header START -->
 <header class="header-transparent">
 
-    <!-- Top alert START -->
-    <div class="alert alert-warning py-2 m-0 border-0 bg-transparent rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-end w-100" role="alert">
-    <p class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
-        <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i> <span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
-    </p>
-    <span class="ms-3">
-        <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-light text-decoration-underline" style="color: green;"><i class="bi bi-whatsapp"></i> <span class="d-none d-md-inline">WhatsApp: +254 732 962224</span></a>
-    </span>
-    <span class="ms-3">
-        <a href="#" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-wechat"></i> <span class="d-none d-md-inline">WeChat: +254788050783</span></a>
-    </span>
-    <style>
-        .link-light:hover {
-        color: #fbb03b !important;
-        text-decoration: none;
-        }
-    </style>
-    </div>
+     <!-- Top alert START -->
+     <div class="alert alert-warning py-2 m-0 bg-dark border-0 rounded-0 alert-dismissible fade show text-center overflow-hidden d-inline-flex justify-content-md-end justify-content-between w-100" role="alert">
+        <!-- Google Translate Functionality -->
+        <div class="d-block d-md-none" id="google_translate_element2"></div> 
+        <span>
+        <span class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
+            <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i><span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+        </span>
+        <span class="ms-3">
+            <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-success text-decoration-underline"><i class="bi bi-whatsapp"></i><span class="d-none d-md-inline">Whatsapp: +254 732 962224</span></a>
+        </span>
+        
+        <span class="ms-3">
+            <a href="#" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-wechat"></i><span class="d-none d-md-inline">WeChat: +254788050783</span></a>
+        </span>
+        </span>
+        </div>
+
+        
 	<!-- Logo Nav START -->
 	<nav class="navbar navbar-dark navbar-expand-xl">
 		<div class="container-fluid px-md-5">
@@ -744,74 +752,31 @@ Blog grid START -->
 
                 <!-- Blog grid -->
                 <div class="row g-4">
+
+                <?php while($blogrow = $blogres->fetch_assoc()){?>
                     <!-- Blog item START -->
                     <div class="col-md-6 col-lg-4">
                         <div class="card bg-transparent">
                             <!-- Image -->
                             <div class="position-relative">
-                                <img src="assets/images/blogs/rhinos.jpg" class="card-img" alt="">
+                                <img src="uploads/<?php echo $blogrow['blog_image'];?>" class="card-img" alt="<?php echo $blogrow['blog_title'];?>">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="blog.php" class="badge text-bg-warning mb-2">Classic</a>
+                                    <a href="blog-detail.php?id=<?php echo $blogrow['blog_id'];?>&name=<?php echo $blogrow['blog_slag'];?>" class="badge text-bg-<?php echo $blogrow['blog_category_color'];?> mb-2"><?php echo $blogrow['blog_category'];?></a>
                                 </div>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title mt-2"><a href="blog-detail.php">Kenya's Hidden Gems: Exploring
-                                        Beyond the Safari Mainstays</a></h5>
-                                <h6 class="fw-light mb-0">By <a href="blog-detail.php">Kevin Ocheing</a></h6>
+                                <h5 class="card-title mt-2"><a href="blog-detail.php?id=<?php echo $blogrow['blog_id'];?>&name=<?php echo $blogrow['blog_slag'];?>"><?php echo $blogrow['blog_title'];?></a></h5>
+                                <h6 class="fw-light mb-0"><?php echo date('M d Y ', strtotime($blogrow['date_created']));?></h6>
                             </div>
                         </div>
                     </div>
                     <!-- Blog item END -->
+                    <?php }?>
 
-                    <!-- Blog item START -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card bg-transparent">
-                            <!-- Image -->
-                            <div class="position-relative">
-                                <img src="assets/images/blogs/lion.png" class="card-img" alt="">
-                                <!-- Badge -->
-                                <div class="card-img-overlay p-3">
-                                    <a href="blog.php" class="badge text-bg-dark mb-2">Accessible</a>
-                                </div>
-                            </div>
-
-                            <!-- Card body -->
-                            <div class="card-body p-3 pb-0">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.php">Accessible Adventures: How Kiboko Tours Makes
-                                                    the Wild Welcoming for All</a></h5>
-                                <h6 class="fw-light mb-0">By <a href="blog-detail.php">John Kipchumba</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Blog item END -->
-
-                    <!-- Blog item START -->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="card bg-transparent">
-                            <!-- Image -->
-                            <div class="position-relative">
-                                <img src="assets/images/blogs/wildebeasts.jpg" class="card-img" alt="">
-                                <!-- Badge -->
-                                <div class="card-img-overlay p-3">
-                                    <a href="blog-detail.php" class="badge text-bg-danger mb-2">Personal</a>
-                                </div>
-                            </div>
-
-                            <!-- Card body -->
-                            <div class="card-body p-3 pb-0">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="blog-detail.php">Wildlife Encounters That Changed My
-                                        Life: A Kiboko Tour Guide's Stories</a></h5>
-                                <h6 class="fw-light mb-0">By <a href="blog-detail.php">Ashley Mwikali</a></h6>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Blog item END -->
                 </div>
 
                 <!-- Buttons -->
