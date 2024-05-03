@@ -52,14 +52,14 @@ $blogres = $conn->query("SELECT * FROM blog WHERE blog_status='1' ORDER BY blog_
         <div class="d-block d-md-none" id="google_translate_element2"></div> 
         <span>
         <span class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
-            <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i><span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+            <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i><span class="d-none d-md-inline"> info@kibokotoursandtravel.com</span></a>
         </span>
         <span class="ms-3">
-            <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-success text-decoration-underline"><i class="bi bi-whatsapp"></i><span class="d-none d-md-inline">Whatsapp: +254 732 962224</span></a>
+            <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-success text-decoration-underline"><i class="bi bi-whatsapp"></i><span class="d-none d-md-inline"> Whatsapp: +254 732 962224</span></a>
         </span>
         
         <span class="ms-3">
-            <a href="#" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-wechat"></i><span class="d-none d-md-inline">WeChat: +254788050783</span></a>
+            <a href="#" target="_blank" class="link-light text-decoration-underline" style="color: #0088cc;"><i class="bi bi-wechat"></i><span class="d-none d-md-inline"> WeChat: +254788050783</span></a>
         </span>
         </span>
         </div>
@@ -768,14 +768,14 @@ Blog grid START -->
                                 <img src="uploads/<?php echo $blogrow['blog_image'];?>" class="card-img" alt="<?php echo $blogrow['blog_title'];?>">
                                 <!-- Badge -->
                                 <div class="card-img-overlay p-3">
-                                    <a href="blog-detail.php?id=<?php echo $blogrow['blog_id'];?>&name=<?php echo $blogrow['blog_slag'];?>" class="badge text-bg-<?php echo $blogrow['blog_category_color'];?> mb-2"><?php echo $blogrow['blog_category'];?></a>
+                                    <a href="blog-detail.php?id=<?php echo $blogrow['blog_id'];?>&<?php echo $blogrow['blog_slag'];?>" class="badge text-bg-<?php echo $blogrow['blog_category_color'];?> mb-2"><?php echo $blogrow['blog_category'];?></a>
                                 </div>
                             </div>
 
                             <!-- Card body -->
                             <div class="card-body p-3 pb-0">
                                 <!-- Title -->
-                                <h5 class="card-title mt-2"><a href="blog-detail.php?id=<?php echo $blogrow['blog_id'];?>&name=<?php echo $blogrow['blog_slag'];?>"><?php echo $blogrow['blog_title'];?></a></h5>
+                                <h5 class="card-title mt-2"><a href="blog-detail.php?id=<?php echo $blogrow['blog_id'];?>&<?php echo $blogrow['blog_slag'];?>"><?php echo $blogrow['blog_title'];?></a></h5>
                                 <h6 class="fw-light mb-0"><?php echo date('M d Y ', strtotime($blogrow['date_created']));?></h6>
                             </div>
                         </div>

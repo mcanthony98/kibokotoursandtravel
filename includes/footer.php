@@ -190,7 +190,7 @@
         function googleTranslateElementInit() {
             new google.translate.TranslateElement(
                 {pageLanguage: 'en'},
-                'google_translate_element2'
+                'google_translate_element'
             );
            
         } 

@@ -63,7 +63,7 @@ Blog grid START -->
 			<div class="col-md-6 col-lg-4">
 				<div class="card bg-transparent">
 					<!-- Image -->
-					<a href="blog-detail.php?id=<?php echo $row['blog_id'];?>&name=<?php echo $row['blog_slag'];?>">
+					<a href="blog-detail.php?id=<?php echo $row['blog_id'];?>&<?php echo $row['blog_slag'];?>">
 					<div class="position-relative w-100">
 						<img src="uploads/<?php echo $row['blog_image'];?>" class="card-img" alt="<?php echo $row['blog_title'];?>" loading="lazy" style="min-height:250px">
 						<!-- Badge -->
@@ -76,7 +76,7 @@ Blog grid START -->
 					<!-- Card body -->
 					<div class="card-body p-3 pb-0">
 						<!-- Title -->
-						<h5 class="card-title mt-2"><a href="blog-detail.php?id=<?php echo $row['blog_id'];?>&name=<?php echo $row['blog_slag'];?>"><?php echo $row['blog_title'];?></a></h5>
+						<h5 class="card-title mt-2"><a href="blog-detail.php?id=<?php echo $row['blog_id'];?>&<?php echo $row['blog_slag'];?>"><?php echo $row['blog_title'];?></a></h5>
 						<h6 class="fw-light mb-0"><?php echo date('M d Y ', strtotime($row['date_created']));?></h6>
 					</div>
 				</div>
