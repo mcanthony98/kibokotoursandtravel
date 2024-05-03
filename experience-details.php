@@ -9,7 +9,7 @@ $blogres = $conn->query("SELECT * FROM experience WHERE experience_id='$blogid' 
 
 $blogrow = $blogres->fetch_assoc();
 
-$packres = $conn->query("SELECT * FROM package p JOIN package_day pd ON p.package_id=pd.package_id JOIN package_day_experience pde ON pd.package_day_id=pde.package_day_id WHERE pde.experience_id = '$blogid'");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -95,7 +95,10 @@ $packres = $conn->query("SELECT * FROM package p JOIN package_day pd ON p.packag
 		</div>
 
 		<div class="row g-4">
-            <?php while($row = $packres->fetch_assoc()){
+            <?php 
+            $packres = $conn->query("SELECT * FROM package p JOIN package_day pd ON p.package_id=pd.package_id JOIN package_day_experience pde ON pd.package_day_id=pde.package_day_id WHERE pde.experience_id = '$blogid' AND p.package_status=1");
+            
+            while($row = $packres->fetch_assoc()){
                 $packid = $row['package_id'];
                 $pdayres = $conn->query("SELECT * FROM package_day WHERE package_id = '$packid'");
                 $pkgexpres = $conn->query("SELECT * FROM package_day_experience pde JOIN package_day pd ON pd.package_day_id=pde.package_day_id JOIN experience e ON e.experience_id=pde.experience_id WHERE pd.package_id=$packid");
