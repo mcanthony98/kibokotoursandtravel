@@ -183,12 +183,15 @@ About hotel START -->
 							<br>
 							<?php }?>
 							
-						
+							<?php if($pkgdayres->num_rows > 1){?>
 							</div>
+							<?php }?>
 
+							<?php if($pkgdayres->num_rows > 1){?>
 							<a class="p-0 mb-4 mt-2 btn-more d-flex align-items-center collapsed" data-bs-toggle="collapse" href="#collapseContent" role="button" aria-expanded="false" aria-controls="collapseContent">
 								See <span class="see-more ms-1">more</span><span class="see-less ms-1">less</span><i class="fa-solid fa-angle-down ms-2"></i>
 							</a>
+							<?php }?>
 
 							<p><?php echo $pkgrow['package_description'];?></p>
 							<!-- Inclusions List -->

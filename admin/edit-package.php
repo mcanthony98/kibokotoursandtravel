@@ -40,7 +40,8 @@ $packdayres = $conn->query("SELECT * FROM package_day WHERE package_id = '$pack_
 			<div class="row">
 				<div class="col-12 mb-2 mb-sm-2">
 					<div class="d-sm-flex justify-content-between align-items-center">
-						<h1 class="h3 mb-2 mb-sm-0">Edit Package</h1>		
+						<h1 class="h3 mb-2 mb-sm-0">Edit Package</h1>
+                        <a href="processes/processes.php?duplicate_package=<?php echo $pack_id;?>" class="btn btn-primary">Duplicate</a>		
 					</div>
 				</div>
 			</div>

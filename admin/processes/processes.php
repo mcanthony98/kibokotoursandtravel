@@ -943,175 +943,30 @@ elseif(isset($_POST["seo-blog"])){
       }
     
 }
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-elseif(isset($_POST["add-product"])){
-    $name = mysqli_real_escape_string($conn, $_POST["name"]);
-    $price = mysqli_real_escape_string($conn, $_POST["price"]);
-    $sku = "X".mt_rand(100000, 999999);
-    $slag = str_replace(' ', '-', $name);
+elseif(isset($_GET["duplicate_package"])){
+    $pack_id = mysqli_real_escape_string($conn, $_GET["duplicate_package"]);
 
-    $name = ucwords($name);
-    $slag = strtolower($slag);
-    
-    $cat_insert = "INSERT INTO product (name, new_price, sku, slag, date_added, date_modified) VALUES ('$name', '$price', '$sku', '$slag', '$date', '$date')";
-    
-    if ($conn->query($cat_insert)===TRUE){
-          $product_id = $conn->insert_id;
 
-          $metains = "INSERT INTO product_meta (product_id, date_modified) VALUES ('$product_id', '$date')";
-          $conn->query($metains);
+    //Fetch current package
+    //Insert new package
+    //Fetch last insert id
+    //Fetch + Insert package days
+    //Fetch + insert package exps
+    //Fetch + insert package dests
+
+    
+
+    if ($conn->query($qry)===TRUE){
+
           
-          $_SESSION['init_prod'] = "initial";
-          $_SESSION["success"] = "New Product Added Sucessfully.";
-          header("location: ../add-product.php?product_id=$product_id");
-          
-      }else{
-          $_SESSION["error"] = "Error Occured. Please Try Again". $conn->error;
-          header('location: ../products.php');
-      }
-    
-}
-elseif(isset($_POST["new-prod"])){
-    $name = mysqli_real_escape_string($conn, $_POST["name"]);
-    $slag = str_replace(' ', '-', $name);
-
-    $name = ucwords($name);
-    $slag = strtolower($slag);
-
-    $prod_id = mysqli_real_escape_string($conn, $_POST["prod_id"]);
-    $oprice = mysqli_real_escape_string($conn, $_POST["oprice"]);
-    $nprice = mysqli_real_escape_string($conn, $_POST["nprice"]);
-    $qty = mysqli_real_escape_string($conn, $_POST["qty"]);
-    $pfor = mysqli_real_escape_string($conn, $_POST["pfor"]);
-    $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
-    $mtit = mysqli_real_escape_string($conn, $_POST["mtit"]);
-    $mdesc = mysqli_real_escape_string($conn, $_POST["mdesc"]);
-    $mkw = mysqli_real_escape_string($conn, $_POST["mkw"]);
-    $cat = $_POST["cats"];
-    $tag = $_POST["tags"];
-
-    //update product 
-    $produpdqry = "UPDATE product SET name='$name', slag='$slag', old_price='$oprice', new_price='$nprice', description='$desc', product_qty='$qty', product_for_id='$pfor', date_modified='$date' WHERE product_id='$prod_id'";
-    $conn->query($produpdqry);
-
-
-    //delete existing cats
-    $delcats = "DELETE FROM product_category WHERE product_id='$prod_id'";
-    $conn->query($delcats);
-
-
-    //insert all new cats
-    foreach($cat AS $category){
-        $cat_ins_qry = "INSERT INTO product_category(category_id, product_id) VALUES ('$category', '$prod_id')";
-        $cat_ins_res = $conn->query($cat_ins_qry);
-    }
-
-    //delete existing tags
-    $deltags = "DELETE FROM product_tags WHERE product_id='$prod_id'";
-    $conn->query($deltags);
-
-    //insert all new tags
-    foreach($tag AS $tag){
-        $tag_ins_qry = "INSERT INTO product_tags (product_id, tag) VALUES ('$prod_id', '$tag')";
-        $tag_ins_res = $conn->query($tag_ins_qry);
-    }
-
-    //update seo
-    $metaupdqry = "UPDATE product_meta SET description='$mdesc', keywords='$mkw', title='$mtit' WHERE product_id='$prod_id'";
-    $conn->query($metaupdqry);
-
-    $_SESSION["success"] = "Product Details Saved Sucessfully.";
-
-    if(isset($_SESSION['init_prod'])){
-        unset($_SESSION['init_prod']);
-        header("location: ../prod-images.php?product_id=$prod_id");
+        $_SESSION["success"] = "Package Day Deleted Sucessfully.";
+        header("location: ../edit-package.php?pack=$pack_id");
+        
     }else{
-        header("location: ../add-product.php?product_id=$prod_id");
+        $_SESSION["error"] = "Error Occured. Please Try Again". $conn->error;
+        header("location: ../edit-package.php?pack=$pack_id");
     }
-}
-elseif(isset($_POST['prod_id_img'])){
-    $pid = mysqli_real_escape_string($conn, $_POST["prod_id_img"]);
-    $image = $_FILES['photos']['tmp_name'];
-    $imgContent = addslashes(file_get_contents($image));
-    
-    date_default_timezone_set("Africa/Nairobi");
-    $ddate = date("H_i_s");	
-    $thisdate = date("Y-m-d H:i:s");
-    
-    $file_name = $_FILES["photos"]["name"];
-    $_FILES["photos"]["type"];
-    $tmp_file = $_FILES["photos"]["tmp_name"];
-    
-    $destination = "../../products/" . $file_name;
-    
-    move_uploaded_file($tmp_file, $destination);
-    $new = $ddate.$file_name;
-    $new_name = rename('../../products/'.$file_name , '../../products/'.$new);
-    
-    if($new_name === TRUE){
-        $chkqry = "SELECT * FROM product_image WHERE product_id='$pid' AND type=1";
-        $chkres = $conn->query($chkqry);
-        if($chkres->num_rows == 0){
-            $type = 1;
-        }else{
-            $type = 2;
-        }
-
-        $insqry = "INSERT INTO product_image (image, type, product_id, date_added) VALUES ('$new', '$type', '$pid', '$date')";
-        $conn->query($insqry);
-    }
-
-    $_SESSION["success"] = "Image Saved Sucessfully.";
-    header('location: ../prod-images.php?product_id='.$pid);
-
+  
 }
 
-elseif(isset($_GET['delimg'])){
-    $pid = mysqli_real_escape_string($conn, $_GET["prod"]);
-    $imgid = mysqli_real_escape_string($conn, $_GET["delimg"]);
-
-    $qry = "DELETE * FROM product_image WHERE product_image_id = '$imgid'";
-    $conn->query($qry);
-
-    $_SESSION["success"] = "Image Deleted Sucessfully.";
-    header('location: ../prod-images.php?product_id='.$pid);
-
-}
-
-
-elseif(isset($_GET['makecover'])){
-    $pid = mysqli_real_escape_string($conn, $_GET["prod"]);
-    $imgid = mysqli_real_escape_string($conn, $_GET["makecover"]);
-
-    //update existing cover type to 2
-    $updqry = "UPDATE product_image SET type='2' WHERE product_id='$pid'";
-    $conn->query($updqry);
-
-    //update this img type to 1
-    $updqryimg = "UPDATE product_image SET type = '1' WHERE product_image_id = '$imgid'";
-    $conn->query($updqryimg);
-
-    $_SESSION["success"] = "Image Made-to-Cover Sucessfully.";
-    header('location: ../prod-images.php?product_id='.$pid);
-
-}elseif(isset($_GET['activateprod'])){
-    $pid = mysqli_real_escape_string($conn, $_GET["activateprod"]);
-
-    $qry = "UPDATE product SET product_status='1' WHERE product_id='$pid'";
-    $conn->query($qry);
-
-    $_SESSION["success"] = "Product Status Updated Sucessfully.";
-    header('location: ../add-product.php?product_id='.$pid);
-
-}
-elseif(isset($_GET['disableprod'])){
-    $pid = mysqli_real_escape_string($conn, $_GET["disableprod"]);
-
-    $qry = "UPDATE product SET product_status='2' WHERE product_id='$pid'";
-    $conn->query($qry);
-
-    $_SESSION["success"] = "Product Status Updated Sucessfully.";
-    header('location: ../add-product.php?product_id='.$pid);
-
-}
 ?>
