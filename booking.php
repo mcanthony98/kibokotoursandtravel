@@ -338,8 +338,8 @@ $pkgrow = $pkgres->fetch_assoc();
 												<div class="col-md-9">
 													<label class="form-label">Number of People Travelling (<span id="totaltravellers"></span>)</label>
 													<div class="input-group">
-														<input type="number" min="1" class="form-control" name="adults" id="adults" placeholder="Adults" required>
-														<input type="number" min="0" class="form-control" name="children" id="children" placeholder="Children" required>
+														<input type="number" min="1" class="form-control" name="adults" id="adults" placeholder="Adults (12yrs and above)" required>
+														<input type="number" min="0" class="form-control" name="children" id="children" placeholder="Children (3yrs - 11yrs)" required>
 
 													</div>
 												</div>
@@ -383,7 +383,7 @@ $pkgrow = $pkgres->fetch_assoc();
 					var children = parseInt($('#children').val()) || 0;
 					var pprice = parseInt($('#pprice').val()) || 0;
 					var total = adults + children;
-					var totalp = total*pprice;
+					var totalp = (adults + (children*0.5))*pprice;
 					$('#total').val(totalp);
 					$('#totaltravellers').html(total);
 				}

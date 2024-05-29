@@ -27,7 +27,7 @@ $qry = $conn->query("SELECT * FROM category ORDER BY category_name ASC");
 				<div class="col-12 mb-4 mb-sm-5">
 					<div class="d-sm-flex justify-content-between align-items-center">
 						<h1 class="h3 mb-2 mb-sm-0">Categories</h1>
-						<div class="d-grid"><a href="add-category.php" class="btn btn-primary-soft mb-0"><i class="bi bi-plus-lg fa-fw"></i> New Category</a></div>				
+						<div class="d-grid"><a href="add-category.php" class="btn btn-primary mb-0"><i class="bi bi-plus-lg fa-fw"></i>Add New Category</a></div>				
 					</div>
 				</div>
 			</div>

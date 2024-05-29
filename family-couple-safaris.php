@@ -3,7 +3,7 @@ require "includes/connect.php";
 $cat = 5;
 $catres = $conn->query("SELECT * FROM category WHERE category_id='$cat'");
 $catrow = $catres->fetch_assoc();
-$packres = $conn->query("SELECT * FROM package WHERE category_id = '$cat' ORDER BY package_id DESC");
+$packres = $conn->query("SELECT * FROM package WHERE category_id = '$cat' AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, package_id DESC");
 ?><!DOCTYPE html>
 <html lang="en">
 

@@ -1,8 +1,8 @@
 <?php 
 require "includes/connect.php";
 
-$destres = $conn->query("SELECT * FROM destination");
-$pkgres = $conn->query("SELECT * FROM package");
+$destres = $conn->query("SELECT * FROM destination ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, destination_id DESC");
+$pkgres = $conn->query("SELECT * FROM package  WHERE package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, package_id DESC");
 ?>
 <!DOCTYPE html>
 <html lang="en">

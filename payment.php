@@ -148,7 +148,7 @@ Main Content START -->
 							<div class="card-footer border-top bg-light">
 								<div class="d-flex justify-content-between align-items-center">
 									<span class="h5 fw-normal mb-0">Total Cost</span>
-									<span class="h5 fw-normal mb-0"><?php echo $pkgrow['currency'];?><?php echo number_format($pkgrow['price']*($bkrow['adults'] + $bkrow['children']));?></span>
+									<span class="h5 fw-normal mb-0"><?php echo $pkgrow['currency'];?><?php echo number_format($pkgrow['price']*($bkrow['adults'] + (0.5*$bkrow['children'])));?></span>
 								</div>
 							</div>
 						</div>
@@ -175,7 +175,7 @@ Main Content START -->
 							<div class="row g-3">
 							<!-- Buttons -->
 								<div class="col-12">
-									<a href="pesapal/SubmitOrderRequest.php?booking_id=<?php echo $bkid;?>"" class="btn btn-primary w-100 mb-0">Proceed to Payment</a>
+									<a href="pesapal/SubmitOrderRequest.php?booking_id=<?php echo $bkid;?>" class="btn btn-primary w-100 mb-0">Proceed to Payment</a>
 								</div>
 							</div>
 							<!-- Form END -->

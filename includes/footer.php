@@ -47,20 +47,11 @@
 
                         <!-- Link block -->
                         <div class="col-6 col-md-5">
-                            <h5 class="text-white mb-2 mb-md-">Destinations</h5>
+                            <h5 class="text-white mb-2 mb-md-">Top Destinations</h5>
                             <ul class="nav flex-column text-primary-hover">
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Maasai Mara National Reserve</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Amboseli National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Lake Naivasha</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Lake Nakuru National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Ol Pejeta Wildlife Conservancy</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Samburu National Reserve</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Tsavo East National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Tsavo West National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Taita Hills Wildlife Sanctuary</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Meru National Park</a></li>
-                                <li class="nav-item"><a class="nav-link text-muted" href="package-details.php">Nairobi National Park</a></li>
-
+                            <?php while($navdestsrow = $footdestsres->fetch_assoc()){?>
+                                <li class="nav-item"><a class="nav-link text-muted" href="destinations-details.php?id=<?php echo $navdestsrow['destination_id'];?>&<?php echo $navdestsrow['destination_slag'];?>"><?php echo $navdestsrow['destination_name'];?></a></li>
+                                <?php     }?>
 
                             </ul>
                         </div>

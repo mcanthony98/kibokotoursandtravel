@@ -810,7 +810,7 @@ elseif(isset($_GET["delete-pack-day"])){
     $day_id = mysqli_real_escape_string($conn, $_GET["delete-pack-day"]);
     $pack_id = mysqli_real_escape_string($conn, $_GET["pack_id"]);
 
-    $qry = "DELETE FROM `package_day` WHERE package_day_id='$day_id'";
+    $qry = "DELETE FROM package_day WHERE package_day_id='$day_id'";
 
     if ($conn->query($qry)===TRUE){
 
@@ -947,26 +947,82 @@ elseif(isset($_GET["duplicate_package"])){
     $pack_id = mysqli_real_escape_string($conn, $_GET["duplicate_package"]);
 
 
-    //Fetch current package
-    //Insert new package
-    //Fetch last insert id
-    //Fetch + Insert package days
-    //Fetch + insert package exps
-    //Fetch + insert package dests
+    //Duplicate current package
+    $packqry = "INSERT INTO package (title, title_slag, subtitle, package_description, currency, price, travel_dates, package_image, category_id, package_status, last_modified, seo_title, seo_description, seo_keywords) SELECT  CONCAT(title, ' [DUPLICATE]') as title, title_slag, subtitle, package_description, currency, price, travel_dates, package_image, category_id, 0 as package_status, '$date' as last_modified, seo_title, seo_description, seo_keywords FROM package WHERE package_id = $pack_id";
+
+    $packres = $conn->query($packqry);
+    
+    //Fetch id of new package
+    $newpackid = $conn->insert_id;
+
+    //Fetch package days
+    $packdaysres = $conn->query("SELECT * FROM package_day WHERE package_id='$pack_id'");
+    while($packdayrow = $packdaysres->fetch_assoc()){
+
+        $pack_day_id = $packdayrow['package_day_id'];
+
+        //Insert package_day
+        $packdayins = "INSERT INTO package_day (package_id, day, short_itinerary, long_itinerary) SELECT $newpackid as package_id, day, short_itinerary, long_itinerary FROM package_day WHERE package_day_id=$pack_day_id";
+        $packdayinsres = $conn->query($packdayins);
+        $newpackdayid = $conn->insert_id;
+
+        //Duplicate package exps
+        $packdayexpins = "INSERT INTO package_day_experience (package_day_id, experience_id) SELECT $newpackdayid as package_day_id, experience_id FROM package_day_experience WHERE package_day_id=$pack_day_id";
+        $packdayexpinsres = $conn->query($packdayexpins);
+
+        //Duplicate package dests
+        $packdaydestins = "INSERT INTO package_day_destination (package_day_id, destination_id) SELECT $newpackdayid as package_day_id, destination_id FROM package_day_destination WHERE package_day_id=$pack_day_id";
+        $packdaydestinsres = $conn->query($packdaydestins);
+    }
+
+        
 
     
-
-    if ($conn->query($qry)===TRUE){
-
-          
-        $_SESSION["success"] = "Package Day Deleted Sucessfully.";
-        header("location: ../edit-package.php?pack=$pack_id");
+         
+        $_SESSION["success"] = "Package Duplicated Sucessfully.";
+        header("location: ../edit-package.php?pack=$newpackid");
         
-    }else{
-        $_SESSION["error"] = "Error Occured. Please Try Again". $conn->error;
-        header("location: ../edit-package.php?pack=$pack_id");
-    }
-  
+   
 }
 
+elseif(isset($_POST["exp_priority"])){
+    $id = mysqli_real_escape_string($conn, $_POST["exp_priority"]);
+    $priority = mysqli_real_escape_string($conn, $_POST["value"]);
+
+    $qry = "UPDATE experience SET priority = $priority WHERE experience_id='$id'";
+
+    if($conn->query($qry) === TRUE){
+        echo 1;
+    }else{
+        echo 0;
+    }
+}
+
+
+elseif(isset($_POST["dest_priority"])){
+    $id = mysqli_real_escape_string($conn, $_POST["dest_priority"]);
+    $priority = mysqli_real_escape_string($conn, $_POST["value"]);
+
+    $qry = "UPDATE destination SET priority = $priority WHERE destination_id='$id'";
+
+    if($conn->query($qry) === TRUE){
+        echo 1;
+    }else{
+        echo 0;
+    }
+}
+
+
+elseif(isset($_POST["pack_priority"])){
+    $id = mysqli_real_escape_string($conn, $_POST["pack_priority"]);
+    $priority = mysqli_real_escape_string($conn, $_POST["value"]);
+
+    $qry = "UPDATE package SET priority = $priority WHERE package_id='$id'";
+
+    if($conn->query($qry) === TRUE){
+        echo 1;
+    }else{
+        echo 0;
+    }
+}
 ?>

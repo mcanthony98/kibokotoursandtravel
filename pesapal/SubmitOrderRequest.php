@@ -28,7 +28,7 @@ if($pkgrow['currency'] == '$'){
   $currency = 'USD';
 }
 
-$cost = $pkgrow['price']*($bkrow['adults'] + $bkrow['children']);
+$cost = $pkgrow['price']*($bkrow['adults'] + (0.5*$bkrow['children']));
 $amount = number_format($cost,2);
 
 $_SESSION["pay_booking_id"] = $bkid;

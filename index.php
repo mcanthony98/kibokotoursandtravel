@@ -1,11 +1,11 @@
 <?php 
 require "includes/connect.php";
 
-$actres = $conn->query("SELECT * FROM experience ORDER BY experience_views DESC LIMIT 6");
+$actres = $conn->query("SELECT * FROM experience ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 6");
 
-$packres = $conn->query("SELECT * FROM package WHERE category_id = 3 ORDER BY package_id DESC LIMIT 4");
+$packres = $conn->query("SELECT * FROM package WHERE category_id = 3  AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, package_id DESC LIMIT 4");
 
-$destsres = $conn->query("SELECT * FROM destination ORDER BY destination_views DESC LIMIT 8");
+$destsres = $conn->query("SELECT * FROM destination ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, destination_views DESC LIMIT 8");
 
 $blogres = $conn->query("SELECT * FROM blog WHERE blog_status='1' ORDER BY blog_id DESC");
 ?>

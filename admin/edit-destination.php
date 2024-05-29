@@ -266,14 +266,14 @@ $expres = $conn->query("SELECT * FROM destination_experience JOIN experience ON 
 							<div class="row g-3">
 								<!-- Car name -->
 								<div class="col-12">
-									<label class="form-label">SEO Page Title</label>
-									<input class="form-control" type="text" name="tit" value="<?php echo $row['seo_tit'];?>" placeholder="Enter title" >
+									<label class="form-label">SEO Page Title (Max 70 characters)</label>
+									<input class="form-control" maxlength="70" type="text" name="tit" value="<?php echo $row['seo_tit'];?>" placeholder="Enter title" >
 								</div>
 
 								<!-- Desc -->
 								<div class="col-12">
-									<label class="form-label">SEO Page Description (30 - 50 Words)</label>
-									<textarea class="form-control" rows="4" name="desc" placeholder="Enter Description"><?php echo $row['seo_desc'];?></textarea>
+									<label class="form-label">SEO Page Description (Max 150 characters)</label>
+									<textarea class="form-control" rows="4" maxlength="150" name="desc" placeholder="Enter Description"><?php echo $row['seo_desc'];?></textarea>
 								</div>
 
                                 <!-- Desc -->
