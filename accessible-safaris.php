@@ -14,7 +14,7 @@ $packres = $conn->query("SELECT * FROM package  WHERE category_id = '$cat' AND p
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="GNM">
+    <meta name="author" content="Ganiam Tech">
     <meta name="description" content="Kiboko Tours & Travel">
 
     <!-- Libraries, Favicon & CSS -->

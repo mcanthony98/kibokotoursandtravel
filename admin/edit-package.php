@@ -107,6 +107,20 @@ $packdayres = $conn->query("SELECT * FROM package_day WHERE package_id = '$pack_
 								</div>
 
                                 <div class="col-md-6">
+                                    <label class="form-label">Year Valid</label>
+                                    <select class="form-select js-choice border-0 z-index-9 bg-transparent" name="year" required>
+                                        <option value="<?php echo $row['year'];?>"><?php echo $row['year'];?></option>
+                                        <?php 
+											$yrnow = date('Y');
+											for($i=$yrnow-1; $i<$yrnow+5; $i++){
+										?>
+											<option value="<?php echo $i;?>"><?php echo $i;?></option>
+										<?php }?>
+                                    </select>
+                                </div>
+
+
+                                <div class="col-md-6">
                                     <label class="form-label">Package Category</label>
                                     <select class="form-select js-choice border-0 z-index-9 bg-transparent" name="cat_id" required>
                                         <?php 

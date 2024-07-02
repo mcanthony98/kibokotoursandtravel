@@ -3,7 +3,13 @@ require "includes/connect.php";
 $cat = 3;
 $catres = $conn->query("SELECT * FROM category WHERE category_id='$cat'");
 $catrow = $catres->fetch_assoc();
-$packres = $conn->query("SELECT * FROM package WHERE category_id = '$cat'  AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, package_id DESC");
+if(isset($_GET['year'])){
+    $yr = $_GET['year'];
+    $packres = $conn->query("SELECT * FROM package WHERE category_id = '$cat'  AND package_status = 1 AND year='$yr' ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, package_id DESC");
+}else{
+    $yr = "All";
+    $packres = $conn->query("SELECT * FROM package WHERE category_id = '$cat'  AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, package_id DESC");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +59,7 @@ Main Banner START -->
 
 
                 <!-- Alert box START -->
-                <div class="alert alert-danger d-flex align-items-center mt-5 rounded-3 mb-0" role="alert">
+                <div class="alert alert-danger d-flex align-items-center mt-5 rounded-3 mb-0" role="alert" id="safaris">
                     <span class="h4 mb-0 alert-heading"><i class="bi bi-exclamation-octagon-fill me-2"></i> </span>
                     <div class="ms-3">
                         <h6 class="mb-0 alert-heading">Hurry! 65% off, the tours are almost fully booked</h6>
@@ -81,14 +87,28 @@ Tour grid START -->
 
                     <!-- Select option -->
                     <div class="col-xl-2">
-                        <form class="form-control-bg-light">
-                            <select class="form-select js-choice">
-                                <option value="">Most Viewed</option>
-                                <option>Recently search</option>
-                                <option>Most popular</option>
-                                <option>Top rated</option>
-                            </select>
-                        </form>
+                    <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <?php echo $yr;?> Safaris
+  </button>
+  <ul class="dropdown-menu">
+  <li><a class="dropdown-item" href="classic-safaris.php#safaris">All Safaris</a></li>
+        <?php  
+            $yrnow = date('Y');
+            $yearsofpack = $conn->query("SELECT year FROM package WHERE category_id = 3 AND package_status = 1 GROUP BY year ORDER BY year DESC");
+            while($row = $yearsofpack->fetch_assoc()){
+                                
+            if($yrnow > $row['year']){
+                continue;
+            }
+        ?>
+    <li><a class="dropdown-item" href="classic-safaris.php?year=<?php echo $row['year'];?>&<?php echo $row['year'];?>-Safaris#safaris"><?php echo $row['year'];?> Safaris</a></li>
+    <?php } ?>
+  </ul>
+</div>
+
+
+                        
                     </div>
                 </div>
                 <!-- Filter and content END -->

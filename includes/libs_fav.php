@@ -101,5 +101,5 @@ $navactres = $conn->query("SELECT * FROM experience ORDER BY CASE WHEN priority 
 $navclaspack = $conn->query("SELECT * FROM package WHERE category_id = 3 AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 10");
 $navaccpack = $conn->query("SELECT * FROM package WHERE category_id = 4 AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 10");
 $navfampack = $conn->query("SELECT * FROM package WHERE category_id = 5 AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 10");
-
+$yearsofpack = $conn->query("SELECT year FROM package WHERE category_id = 3 AND package_status = 1 GROUP BY year ORDER BY year DESC")
 ?>

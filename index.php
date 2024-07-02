@@ -255,11 +255,17 @@ $blogres = $conn->query("SELECT * FROM blog WHERE blog_status='1' ORDER BY blog_
                                                     Classic Safaris<i class="fas fa-chevron-right align-icon-right"></i>
                                                 </a>
                                                 <ul class="dropdown-menu" data-bs-popper="none">
-                                                    <?php while($row = $navclaspack->fetch_assoc()){?>
-                                                    <li> <a class="dropdown-item" href="package-details.php?id=<?php echo $row['package_id'];?>&<?php echo $row['title_slag'];?>"><?php echo $row['title'];?></a></li>
+                                                    <?php
+                                                    $yrnow = date('Y');
+                                                    while($row = $yearsofpack->fetch_assoc()){
+                                                        
+                                                        if($yrnow > $row['year']){
+                                                            continue;
+                                                        }
+                                                        ?>
+                                                    <li> <a class="dropdown-item" href="classic-safaris.php?year=<?php echo $row['year'];?>&<?php echo $row['year'];?>-Safaris"><?php echo $row['year'];?> Safaris</a></li>
                                                     <?php } ?>
-
-                                                </ul>
+                                                    </ul>
                                             </li>
 
                                             <li class="dropdown-submenu dropend">

@@ -90,6 +90,22 @@ $countryres = $conn->query("SELECT * FROM country");
 									<input type="text" class="form-control flatpickr" data-mode="range" name="dates" placeholder="Select date" required>
 								</div>
 
+
+
+								<div class="col-md-6">
+                                    <label class="form-label">Year Valid</label>
+                                    <select class="form-select js-choice border-0 z-index-9 bg-transparent" name="year" required>
+                                        <option>Choose validity</option>
+                                        <?php 
+											$yrnow = date('Y');
+											for($i=$yrnow-1; $i<$yrnow+5; $i++){
+										?>
+											<option value="<?php echo $i;?>"><?php echo $i;?></option>
+										<?php }?>
+                                    </select>
+                                </div>
+
+
 								
 								<div class="col-md-6">
                                     <label class="form-label">Package Category</label>
