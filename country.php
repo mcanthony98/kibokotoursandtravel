@@ -83,13 +83,116 @@ About Kenya START -->
                     </div>
                     <!-- Image -->
                     <div class="col-lg-5 text-center">
-                        <img src="assets/images/element/join-us.svg" alt="Kenya">
+                        <img src="assets/images/flags/kenya.svg" alt="Kenya">
                     </div>
                 </div>
             </div>
         </section>
         <!-- =======================
 About Kenya END -->
+
+
+        <!-- =======================
+Experiences You'll Get START -->
+        <section>
+            <div class="container">
+                <!-- Title -->
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0">Exciting Experiences You'll Get</h2>
+                    </div>
+                </div>
+
+                <!-- Slider START -->
+                <div class="tiny-slider arrow-round arrow-blur arrow-hover">
+                    <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-edge="2" data-dots="false" data-items-xl="3" data-items-lg="2" data-items-sm="1">
+
+                        <!-- Slider item -->
+                        <div class="h-100">
+                            <div class="card border rounded-3 overflow-hidden h-100">
+                                <div class="row g-0 align-items-center">
+                                    <!-- Image -->
+                                    <div class="col-sm-6">
+                                        <img src="assets/images/activities/bush-walk.jpg" class="card-img rounded-0" alt="Bungee Jumping">
+                                    </div>
+
+                                    <!-- Title and content -->
+                                    <div class="col-sm-6">
+                                        <div class="card-body px-3">
+                                            <h6 class="card-title"><a href="experience-details.php" class="stretched-link">Bungee Jumping</a></h6>
+                                            <p class="mb-0">Feel the adrenaline rush at the Tana River.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slider item -->
+                        <div class="h-100">
+                            <div class="card border rounded-3 overflow-hidden h-100">
+                                <div class="row g-0 align-items-center">
+                                    <!-- Image -->
+                                    <div class="col-sm-6">
+                                        <img src="assets/images/activities/bush-walk.jpg" class="card-img rounded-0" alt="Hot Air Balloon Safari">
+                                    </div>
+
+                                    <!-- Title and content -->
+                                    <div class="col-sm-6">
+                                        <div class="card-body px-3">
+                                            <h6 class="card-title"><a href="experience-details.php" class="stretched-link">Hot Air Balloon</a></h6>
+                                            <p class="mb-0">Soar over the Maasai Mara at sunrise.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slider item -->
+                        <div class="h-100">
+                            <div class="card border rounded-3 overflow-hidden h-100">
+                                <div class="row g-0 align-items-center">
+                                    <!-- Image -->
+                                    <div class="col-sm-6">
+                                        <img src="assets/images/activities/bush-walk.jpg" class="card-img rounded-0" alt="Scuba Diving">
+                                    </div>
+
+                                    <!-- Title and content -->
+                                    <div class="col-sm-6">
+                                        <div class="card-body px-3">
+                                            <h6 class="card-title"><a href="experience-details.php" class="stretched-link">Scuba Diving</a></h6>
+                                            <p class="mb-0">Explore the underwater wonders.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slider item -->
+                        <div class="h-100">
+                            <div class="card border rounded-3 overflow-hidden h-100">
+                                <div class="row g-0 align-items-center">
+                                    <!-- Image -->
+                                    <div class="col-sm-6">
+                                        <img src="assets/images/activities/bush-walk.jpg" class="card-img rounded-0" alt="Mountain Climbing">
+                                    </div>
+
+                                    <!-- Title and content -->
+                                    <div class="col-sm-6">
+                                        <div class="card-body px-3">
+                                            <h6 class="card-title"><a href="experience-details.php" class="stretched-link">Mountain Climbing</a></h6>
+                                            <p class="mb-0">Conquer the peaks of Mount Kenya.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slider END -->
+            </div>
+        </section>
+        <!-- =======================
+Experiences You'll Get END -->
 
         <!-- =======================
 Country Destinations START -->
@@ -98,7 +201,7 @@ Country Destinations START -->
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-12 text-center">
-                        <h2>Top Destinations in Kenya</h2>
+                        <h2>Top Packages in Kenya</h2>
                     </div>
                 </div>
 
@@ -113,7 +216,7 @@ Country Destinations START -->
                                 <div class="card-img-overlay d-flex">
                                     <!-- Info -->
                                     <div class="card-text mt-auto">
-                                        <h4><a href="destination-details.php?id=1" class="text-white stretched-link">Maasai Mara</a></h4>
+                                        <h4><a href="destinations-details.php" class="text-white stretched-link">Maasai Mara</a></h4>
                                         <p class="text-white mb-2">Witness the Great Migration and explore Kenya's premier safari destination.</p>
                                         <button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
                                     </div>
@@ -130,7 +233,7 @@ Country Destinations START -->
                                 <div class="card-img-overlay d-flex">
                                     <!-- Info -->
                                     <div class="card-text mt-auto">
-                                        <h4><a href="destination-details.php?id=2" class="text-white stretched-link">Amboseli National Park</a></h4>
+                                        <h4><a href="destinations-details.php" class="text-white stretched-link">Amboseli National Park</a></h4>
                                         <p class="text-white mb-2">Capture stunning views of Mount Kilimanjaro and large elephant herds.</p>
                                         <button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
                                     </div>
@@ -147,7 +250,7 @@ Country Destinations START -->
                                 <div class="card-img-overlay d-flex">
                                     <!-- Info -->
                                     <div class="card-text mt-auto">
-                                        <h4><a href="destination-details.php?id=3" class="text-white stretched-link">Nairobi</a></h4>
+                                        <h4><a href="destinations-details.php" class="text-white stretched-link">Nairobi</a></h4>
                                         <p class="text-white mb-2">Explore the vibrant capital city with national parks and cultural attractions.</p>
                                         <button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
                                     </div>
@@ -164,7 +267,7 @@ Country Destinations START -->
                                 <div class="card-img-overlay d-flex">
                                     <!-- Info -->
                                     <div class="card-text mt-auto">
-                                        <h4><a href="destination-details.php?id=4" class="text-white stretched-link">Diani Beach</a></h4>
+                                        <h4><a href="destinations-details.php" class="text-white stretched-link">Diani Beach</a></h4>
                                         <p class="text-white mb-2">Relax on pristine white sands and enjoy the warm Indian Ocean waters.</p>
                                         <button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
                                     </div>
@@ -180,125 +283,23 @@ Country Destinations START -->
 Country Destinations END -->
 
         <!-- =======================
-Experiences You'll Get START -->
-        <section>
-            <div class="container">
-                <!-- Title -->
-                <div class="row mb-5">
-                    <div class="col-12 text-center">
-                        <h2 class="mb-0">Exciting Experiences in Kenya</h2>
-                    </div>
-                </div>
-
-                <!-- Slider START -->
-                <div class="tiny-slider arrow-round arrow-blur arrow-hover">
-                    <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-edge="2" data-dots="false" data-items-xl="3" data-items-lg="2" data-items-sm="1">
-
-                        <!-- Slider item -->
-                        <div class="h-100">
-                            <div class="card border rounded-3 overflow-hidden h-100">
-                                <div class="row g-0 align-items-center">
-                                    <!-- Image -->
-                                    <div class="col-sm-6">
-                                        <img src="assets/images/Small_400x400/cheetahs-2.png" class="card-img rounded-0" alt="Bungee Jumping">
-                                    </div>
-
-                                    <!-- Title and content -->
-                                    <div class="col-sm-6">
-                                        <div class="card-body px-3">
-                                            <h6 class="card-title"><a href="#" class="stretched-link">Bungee Jumping</a></h6>
-                                            <p class="mb-0">Feel the adrenaline rush at the Tana River.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div class="h-100">
-                            <div class="card border rounded-3 overflow-hidden h-100">
-                                <div class="row g-0 align-items-center">
-                                    <!-- Image -->
-                                    <div class="col-sm-6">
-                                        <img src="assets/images/Small_400x400/zebras.jpg" class="card-img rounded-0" alt="Hot Air Balloon Safari">
-                                    </div>
-
-                                    <!-- Title and content -->
-                                    <div class="col-sm-6">
-                                        <div class="card-body px-3">
-                                            <h6 class="card-title"><a href="#" class="stretched-link">Hot Air Balloon Safari</a></h6>
-                                            <p class="mb-0">Soar over the Maasai Mara at sunrise.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div class="h-100">
-                            <div class="card border rounded-3 overflow-hidden h-100">
-                                <div class="row g-0 align-items-center">
-                                    <!-- Image -->
-                                    <div class="col-sm-6">
-                                        <img src="assets/images/Small_400x400/lion.png" class="card-img rounded-0" alt="Scuba Diving">
-                                    </div>
-
-                                    <!-- Title and content -->
-                                    <div class="col-sm-6">
-                                        <div class="card-body px-3">
-                                            <h6 class="card-title"><a href="#" class="stretched-link">Scuba Diving</a></h6>
-                                            <p class="mb-0">Explore the underwater wonders of the Indian Ocean.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div class="h-100">
-                            <div class="card border rounded-3 overflow-hidden h-100">
-                                <div class="row g-0 align-items-center">
-                                    <!-- Image -->
-                                    <div class="col-sm-6">
-                                        <img src="assets/images/Small_400x400/wildebeasts.jpg" class="card-img rounded-0" alt="Mountain Climbing">
-                                    </div>
-
-                                    <!-- Title and content -->
-                                    <div class="col-sm-6">
-                                        <div class="card-body px-3">
-                                            <h6 class="card-title"><a href="#" class="stretched-link">Mountain Climbing</a></h6>
-                                            <p class="mb-0">Conquer the peaks of Mount Kenya.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slider END -->
-            </div>
-        </section>
-        <!-- =======================
-Experiences You'll Get END -->
-
-        <!-- =======================
 About Kenya More Info START -->
-        <section class="pt-2 pb-4">
+        <section class="pt-4 pb-4">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="bg-light rounded-3 position-relative overflow-hidden p-4 p-xl-5">
                             <div class="row g-4 align-items-center">
                                 <!-- Content -->
-                                <div class="col-lg-6">
+                                <div class="col-lg-8">
                                     <!-- Title -->
                                     <h1 class="mb-3 fs-2">Why Visit Kenya?</h1>
-                                    <p class="mb-3">Kenya offers a unique blend of adventure, culture, and relaxation. Whether you’re seeking thrilling safaris or peaceful beach escapes, Kenya has it all.</p>
+                                    <p class="mb-3">Kenya offers a unique blend of adventure, culture, and relaxation. Whether you’re seeking thrilling safaris, exploring vibrant cities, or unwinding on pristine beaches, Kenya has it all. Immerse yourself in the breathtaking landscapes of Maasai Mara, witness the majestic Mount Kilimanjaro in Amboseli National Park, experience the vibrant energy of Nairobi, or indulge in the tranquility of Diani Beach. Discover the wonders of Kenya and create unforgettable memories that will last a lifetime.</p>
                                 </div>
 
                                 <!-- Image -->
-                                <div class="col-lg-6">
-                                    <img src="assets/images/element/compare.svg" alt="Why Visit Kenya">
+                                <div class="col-lg-4">
+                                    <img src="assets/images/hippo.png" style="height: 250px;" alt="Why Visit Kenya">
                                 </div>
                             </div> <!-- Row END -->
                         </div>
@@ -327,7 +328,7 @@ Top Destinations in Kenya START -->
                             <!-- Image -->
                             <img src="assets/images/Small_400x400/cheetahs.jpg" class="rounded-circle" alt="Maasai Mara">
                             <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="destination-details.php?id=1" class="stretched-link">Maasai Mara</a></h5>
+                                <h5 class="card-title"><a href="destinations-details.php" class="stretched-link">Maasai Mara</a></h5>
                             </div>
                         </div>
                     </div>
@@ -339,7 +340,7 @@ Top Destinations in Kenya START -->
                             <!-- Image -->
                             <img src="assets/images/Small_400x400/gazelles.jpg" class="rounded-circle" alt="Amboseli National Park">
                             <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="destination-details.php?id=2" class="stretched-link">Amboseli</a></h5>
+                                <h5 class="card-title"><a href="destinations-details.php" class="stretched-link">Amboseli</a></h5>
                             </div>
                         </div>
                     </div>
@@ -351,7 +352,7 @@ Top Destinations in Kenya START -->
                             <!-- Image -->
                             <img src="assets/images/Small_400x400/lion.png" class="rounded-circle" alt="Nairobi">
                             <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="destination-details.php?id=3" class="stretched-link">Nairobi</a></h5>
+                                <h5 class="card-title"><a href="destinations-details.php" class="stretched-link">Nairobi</a></h5>
                             </div>
                         </div>
                     </div>
@@ -363,11 +364,39 @@ Top Destinations in Kenya START -->
                             <!-- Image -->
                             <img src="assets/images/Small_400x400/wildebeasts.jpg" class="rounded-circle" alt="Diani Beach">
                             <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="destination-details.php?id=4" class="stretched-link">Diani Beach</a></h5>
+                                <h5 class="card-title"><a href="destinations-details.php" class="stretched-link">Diani Beach</a></h5>
                             </div>
                         </div>
                     </div>
                     <!-- Card item END -->
+
+
+                    <!-- Card item START -->
+                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                        <div class="card bg-transparent text-center p-1 h-100">
+                            <!-- Image -->
+                            <img src="assets/images/Small_400x400/gazelles.jpg" class="rounded-circle" alt="Amboseli National Park">
+                            <div class="card-body p-0 pt-3">
+                                <h5 class="card-title"><a href="destinations-details.php" class="stretched-link">Amboseli</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card item END -->
+
+
+                    <!-- Card item START -->
+                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                        <div class="card bg-transparent text-center p-1 h-100">
+                            <!-- Image -->
+                            <img src="assets/images/Small_400x400/gazelles.jpg" class="rounded-circle" alt="Amboseli National Park">
+                            <div class="card-body p-0 pt-3">
+                                <h5 class="card-title"><a href="destinations-details.php" class="stretched-link">Amboseli</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card item END -->
+
+
                 </div> <!-- Row END -->
             </div>
         </section>
@@ -396,7 +425,7 @@ CTA START -->
 
                                 <!-- Button -->
                                 <div class="col-lg-3 col-xxl-2 d-grid">
-                                    <a href="contact-us.php#quote" class="btn btn-primary mb-0">Start Your Journey</a>
+                                    <a href="destinations.php" class="btn btn-primary mb-0">Start Your Journey</a>
                                 </div>
                             </div>
                         </div>
