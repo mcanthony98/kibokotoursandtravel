@@ -10,6 +10,7 @@ if(!isset($_GET['exp'])){
 }
 $exp_id = $_GET['exp'];
 
+$countryres = $conn->query("SELECT * FROM country");
 $res = $conn->query("SELECT * FROM experience WHERE experience_id='$exp_id'");
 $row = $res->fetch_assoc();
 ?>
@@ -66,6 +67,26 @@ $row = $res->fetch_assoc();
 									<label class="form-label">Description</label>
 									<textarea class="form-control" rows="5" name="desc" placeholder="Enter Description" required><?php echo $row['description'];?></textarea>
 								</div>
+
+                                <!-- State -->
+                                <div class="col-md-6">
+                                    <label class="form-label">Country</label>
+                                    <select class="form-select js-choice" name="country" data-search-enabled="true">
+                                        <option value="">Select Country</option>
+                                        <?php 
+                                        while ($countryrow = $countryres->fetch_assoc()) {
+                                            // Check if the current country is the one selected in the package data
+                                            $selected = ($countryrow['country_id'] == $row['country_id']) ? 'selected' : '';
+                                        ?>
+                                            <option value="<?php echo htmlspecialchars($countryrow['country_id']); ?>" <?php echo $selected; ?>>
+                                                <?php echo htmlspecialchars($countryrow['country_name']); ?>
+                                            </option>
+                                        <?php 
+                                        } 
+                                        ?>
+                                    </select>
+
+                                </div>
 								<input type="hidden" name="exp_id" value="<?php echo $exp_id;?>">
 																
 							</div>

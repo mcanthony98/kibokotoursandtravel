@@ -111,6 +111,7 @@ elseif(isset($_GET["deletexx"])){
 elseif(isset($_POST["add-experience"])){
     $cat = mysqli_real_escape_string($conn, $_POST["cat"]);
     $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
+    $country = mysqli_real_escape_string($conn, $_POST["country"]);
     $slag = str_replace(' ', '-', $cat);
     $cat = ucwords($cat);
     $slag = strtolower($slag);
@@ -128,7 +129,7 @@ elseif(isset($_POST["add-experience"])){
     $new = $filedate.$file_name;
     $new_name = rename('../../uploads/'.$file_name , '../../uploads/'.$new);
     
-    $cat_insert = "INSERT INTO experience (experience_name, experience_slag, experience_image, description, short_description) VALUES ('$cat',  '$slag', '$new', '$desc', '$desc')";
+    $cat_insert = "INSERT INTO experience (country_id, experience_name, experience_slag, experience_image, description, short_description) VALUES ('$country', '$cat',  '$slag', '$new', '$desc', '$desc')";
     
     if ($conn->query($cat_insert)===TRUE){
           
@@ -143,13 +144,14 @@ elseif(isset($_POST["add-experience"])){
 }elseif(isset($_POST["edit-experience"])){
     $cat_id = mysqli_real_escape_string($conn, $_POST["exp_id"]);
     $cat = mysqli_real_escape_string($conn, $_POST["cat"]);
+    $country = mysqli_real_escape_string($conn, $_POST["country"]);
     $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
     $slag = str_replace(' ', '-', $cat);
     $slag = strtolower($slag);
     $cat = ucwords($cat);
 
     
-    $updqry = "UPDATE experience SET experience_name='$cat', experience_slag='$slag', description='$desc', short_description='$desc'  WHERE experience_id = '$cat_id'";
+    $updqry = "UPDATE experience SET country_id='$country', experience_name='$cat', experience_slag='$slag', description='$desc', short_description='$desc'  WHERE experience_id = '$cat_id'";
     
     if ($conn->query($updqry)===TRUE){
           
@@ -360,17 +362,83 @@ elseif(isset($_POST["edit-destination"])){
     
 }
 
-//Country
+//Add Country
+if (isset($_POST["add-country"])) {
+    $countryName = mysqli_real_escape_string($conn, $_POST["cat"]);
+    $shortDesc = mysqli_real_escape_string($conn, $_POST["short_desc"]);
+    $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
+    $initials = mysqli_real_escape_string($conn, $_POST["initials"]);
+
+    // Slug generation
+    $slug = str_replace(' ', '-', $countryName);
+    $slug = strtolower($slug);
+    $countryName = ucwords($countryName);
+
+    // Handle photo upload
+    $photoUploaded = false;
+    if (isset($_FILES['photos']) && $_FILES['photos']['error'] == 0) {
+        $fileName = $_FILES["photos"]["name"];
+        $fileTmpName = $_FILES["photos"]["tmp_name"];
+        $fileDestination = "../../uploads/" . $fileName;
+
+        if (move_uploaded_file($fileTmpName, $fileDestination)) {
+            $newFileName = time() . "_" . $fileName;
+            rename('../../uploads/' . $fileName, '../../uploads/' . $newFileName);
+            $photoUploaded = true;
+        } else {
+            $_SESSION["error"] = "Failed to upload the photo. Please try again.";
+            header("location: ../add-country.php");
+            exit();
+        }
+    }
+
+    // Handle flag upload
+    $flagUploaded = false;
+    if (isset($_FILES['flag']) && $_FILES['flag']['error'] == 0) {
+        $flagName = $_FILES["flag"]["name"];
+        $flagTmpName = $_FILES["flag"]["tmp_name"];
+        $flagDestination = "../../uploads/" . $flagName;
+
+        if (move_uploaded_file($flagTmpName, $flagDestination)) {
+            $newFlagName = time() . "_" . $flagName;
+            rename('../../uploads/' . $flagName, '../../uploads/' . $newFlagName);
+            $flagUploaded = true;
+        } else {
+            $_SESSION["error"] = "Failed to upload the flag. Please try again.";
+            header("location: ../add-country.php");
+            exit();
+        }
+    }
+
+    // Only proceed with database insertion if both files were uploaded successfully
+    if ($photoUploaded && $flagUploaded) {
+        $insertQuery = "INSERT INTO country (country_name, country_slag, country_short_description, country_description, country_image, country_flag, country_initials) VALUES ('$countryName', '$slug', '$shortDesc', '$desc', '$newFileName', '$newFlagName', '$initials')";
+
+        if ($conn->query($insertQuery) === TRUE) {
+            $_SESSION["success"] = "Country Added Successfully.";
+            header("location: ../add-country.php");
+        } else {
+            $_SESSION["error"] = "Error Occurred. Please Try Again. " . $conn->error;
+            header("location: ../add-country.php");
+        }
+    }
+}
+
+
+
+//Edit Country
 elseif(isset($_POST["edit-country"])){
     $cat_id = mysqli_real_escape_string($conn, $_POST["cou_id"]);
     $cat = mysqli_real_escape_string($conn, $_POST["cat"]);
+    $initials = mysqli_real_escape_string($conn, $_POST["initials"]);
+    $short_desc = mysqli_real_escape_string($conn, $_POST["short_desc"]);
     $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
     $slag = str_replace(' ', '-', $cat);
     $slag = strtolower($slag);
     $cat = ucwords($cat);
 
     
-    $updqry = "UPDATE country SET country_name='$cat', country_slag='$slag', country_description='$desc'  WHERE country_id  = '$cat_id'";
+    $updqry = "UPDATE country SET country_name='$cat', country_initials='$initials', country_slag='$slag', country_short_description='$short_desc', country_description='$desc'  WHERE country_id  = '$cat_id'";
     
     if ($conn->query($updqry)===TRUE){
           
@@ -382,6 +450,25 @@ elseif(isset($_POST["edit-country"])){
           header("location: ../edit-country.php?cat=$cat_id");
       }
 }
+
+//Delete Country
+elseif ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['country_id'])) {
+    $country_id = mysqli_real_escape_string($conn, $_POST['country_id']);
+
+    // Delete the country record from the database
+    $deleteQuery = "DELETE FROM country WHERE country_id = '$country_id'";
+
+    if ($conn->query($deleteQuery) === TRUE) {
+        $_SESSION["success"] = "Country deleted successfully.";
+    } else {
+        $_SESSION["error"] = "Error occurred while deleting the country: " . $conn->error;
+    }
+
+    header("Location: ../countries.php");
+}
+
+
+//Edit Country Image
 elseif(isset($_POST["edit-cou-img"])){
     $cat_id = mysqli_real_escape_string($conn, $_POST["edit-cou-img"]);
 
@@ -413,12 +500,46 @@ elseif(isset($_POST["edit-cou-img"])){
 
 
 }
+//Edit Country Flag
+elseif (isset($_POST["edit-cou-flag"])) {
+    $cat_id = mysqli_real_escape_string($conn, $_POST["edit-cou-flag"]);
+
+    if (isset($_FILES['flag']) && $_FILES['flag']['error'] == 0) {
+        $flagName = $_FILES["flag"]["name"];
+        $flagTmpName = $_FILES["flag"]["tmp_name"];
+
+        // Move the uploaded flag to the desired location
+        $flagDestination = "../../uploads/" . $flagName;
+
+        if (move_uploaded_file($flagTmpName, $flagDestination)) {
+            $newFlagName = time() . "_" . $flagName;
+            rename('../../uploads/' . $flagName, '../../uploads/' . $newFlagName);
+
+            $updqry = "UPDATE country SET country_flag ='$newFlagName' WHERE country_id = '$cat_id'";
+
+            if ($conn->query($updqry) === TRUE) {
+                $_SESSION["success"] = "Country Flag Updated Successfully.";
+                header("location: ../edit-country.php?cat=$cat_id");
+            } else {
+                $_SESSION["error"] = "Error Occurred. Please Try Again. " . $conn->error;
+                header("location: ../edit-country.php?cat=$cat_id");
+            }
+        } else {
+            $_SESSION["error"] = "Failed to upload the flag. Please try again.";
+            header("location: ../edit-country.php?cat=$cat_id");
+        }
+    } else {
+        $_SESSION["error"] = "No flag uploaded or an error occurred during the upload.";
+        header("location: ../edit-country.php?cat=$cat_id");
+    }
+}
 
 
 // Add new destination
 elseif(isset($_POST["add-package"])){
     $tit = mysqli_real_escape_string($conn, $_POST["tit"]);
     $stit = mysqli_real_escape_string($conn, $_POST["stit"]);
+    $country = mysqli_real_escape_string($conn, $_POST["country"]);
     $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
     $price = mysqli_real_escape_string($conn, $_POST["price"]);
     $dates = mysqli_real_escape_string($conn, $_POST["dates"]);
@@ -444,7 +565,7 @@ elseif(isset($_POST["add-package"])){
     $new = $filedate.$file_name;
     $new_name = rename('../../uploads/'.$file_name , '../../uploads/'.$new);
 
-    $cat_insert = "INSERT INTO package (title, title_slag, subtitle, package_description, currency, price, package_image, last_modified, travel_dates, category_id, year) VALUES ('$tit',  '$slag', '$stit', '$desc', '$curr','$price', '$new', '$date', '$dates', '$cat','$year')";
+    $cat_insert = "INSERT INTO package (title, title_slag, subtitle, country_id, package_description, currency, price, package_image, last_modified, travel_dates, category_id, year) VALUES ('$tit',  '$slag', '$stit', '$country', '$desc', '$curr','$price', '$new', '$date', '$dates', '$cat','$year')";
     
     if ($conn->query($cat_insert)===TRUE){
 
@@ -463,6 +584,7 @@ elseif(isset($_POST["add-package"])){
 elseif(isset($_POST["edit-package"])){
     $tit = mysqli_real_escape_string($conn, $_POST["tit"]);
     $stit = mysqli_real_escape_string($conn, $_POST["stit"]);
+    $country = mysqli_real_escape_string($conn, $_POST["country"]);
     $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
     $price = mysqli_real_escape_string($conn, $_POST["price"]);
     $status = mysqli_real_escape_string($conn, $_POST["status"]);
@@ -479,7 +601,7 @@ elseif(isset($_POST["edit-package"])){
    
 
    
-    $cat_insert = "UPDATE package SET title='$tit', title_slag='$slag', subtitle='$stit', package_description='$desc', currency='$curr', price='$price', package_status='$status', last_modified='$date', travel_dates='$dates', category_id='$cat_id', year='$year' WHERE package_id  = '$pack_id'";
+    $cat_insert = "UPDATE package SET title='$tit', title_slag='$slag', subtitle='$stit', country_id='$country', package_description='$desc', currency='$curr', price='$price', package_status='$status', last_modified='$date', travel_dates='$dates', category_id='$cat_id', year='$year' WHERE package_id  = '$pack_id'";
     
     if ($conn->query($cat_insert)===TRUE){
 

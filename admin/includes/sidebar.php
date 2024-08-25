@@ -24,7 +24,17 @@
 					<li class="nav-item ms-2 my-2">Website Manager</li>
 
 					<!-- Menu item -->
-					<li class="nav-item"> <a class="nav-link" href="countries.php">Countries</a></li>
+					<li class="nav-item"> 
+						<a class="nav-link" data-bs-toggle="collapse" href="#countries" role="button" aria-expanded="false" aria-controls="countries">
+							Countries
+						</a>
+
+						<!-- Submenu -->
+						<ul class="nav collapse flex-column" id="countries" data-bs-parent="#navbar-sidebar">
+							<li class="nav-item"> <a class="nav-link" href="countries.php">View Countries</a></li>
+							<li class="nav-item"> <a class="nav-link" href="add-country.php">Add Country</a></li>
+						</ul>
+					</li>
 
 					<!-- Menu item -->
 					<li class="nav-item">

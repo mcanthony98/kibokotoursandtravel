@@ -2,8 +2,6 @@
 include "includes/includes.php";
 include "includes/header.php";
 
-
-
 if(!isset($_GET['cat'])){
     header("location: countries.php");
     exit();
@@ -39,8 +37,7 @@ $row = $res->fetch_assoc();
 				</div>
 			</div>
 
-	<!--Page Conteeeeeeeeeeeeeeeeent-->		
-
+	<!--Page Content-->		
 
 	<!--Main content START -->
 <section>
@@ -49,25 +46,36 @@ $row = $res->fetch_assoc();
 			<div class="col-lg-10 mx-auto">
 				<form class="vstack gap-4" enctype="multipart/form-data" method="post" action="processes/processes.php">
 
-					<!-- Cab Detail START -->
+					<!-- Country Detail START -->
 					<div class="card shadow">
 						
 						<!-- Card body -->
 						<div class="card-body">
 							<div class="row g-3">
-								<!-- Car name -->
+								<!-- Country Name -->
 								<div class="col-12">
 									<label class="form-label">Country Name</label>
-									<input class="form-control" type="text" name="cat" value="<?php echo $row['country_name'];?>" placeholder="Enter Country Name" readonly>
+									<input class="form-control" type="text" name="cat" value="<?php echo $row['country_name'];?>" placeholder="Enter Country Name">
 								</div>
 
-								<!-- Desc -->
+								<!-- Country Initials -->
+								<div class="col-12">
+									<label class="form-label">Country Initials</label>
+									<input class="form-control" type="text" name="initials" value="<?php echo $row['country_initials'];?>" placeholder="Enter Country Initials">
+								</div>
+
+								<!-- Short Desc -->
+								<div class="col-12">
+									<label class="form-label">Short Description</label>
+									<input class="form-control" type="text" name="short_desc" value="<?php echo $row['country_short_description'];?>" placeholder="Enter Short Description"/>
+								</div>
+
+								<!-- Description -->
 								<div class="col-12">
 									<label class="form-label">Description (30 - 50 Words)</label>
 									<textarea class="form-control" rows="3" name="desc" placeholder="Enter Description"><?php echo $row['country_description'];?></textarea>
 								</div>
 								<input type="hidden" name="cou_id" value="<?php echo $cou_id;?>">
-																
 							</div>
 						</div>
                         <div class="card-footer text-end">
@@ -75,16 +83,11 @@ $row = $res->fetch_assoc();
                             </form>
                         </div>
 					</div>
-					<!-- Cab Detail END -->
-
-
-
-
-
+					<!-- Country Detail END -->
 
                     <form class="vstack gap-4" enctype="multipart/form-data" method="post" action="processes/processes.php">
                     
-					<!-- Cab Detail START -->
+					<!-- Country Image Detail START -->
 					<div class="card shadow mt-3">
 						<div class="card-header">
                             Country Image
@@ -92,24 +95,52 @@ $row = $res->fetch_assoc();
 						<!-- Card body -->
 						<div class="card-body">
 							<div class="row g-3">
-								<!-- Car name -->
-								<div class="col-8 mx-auto" class="max-width:400px">
+								<!-- Country Image -->
+								<div class="col-8 mx-auto">
 									<img src="../uploads/<?php echo $row['country_image'];?>">
 								</div>
 
-								<!-- Desc -->
+								<!-- Change Photo -->
 								<div class="col-12">
 									<label class="form-label">Change Photo</label>
 									<input class="form-control" type="file" accept="image/*" name="photos" oninput="this.form.submit();" placeholder="Choose Photo">
                                     <input type="hidden" name="edit-cou-img" value="<?php echo $cou_id;?>">
 								</div>
-								
-																
 							</div>
 						</div>
 					</div>
-					<!-- Cab Detail END -->
+					<!-- Country Image Detail END -->
                     </form>
+
+					<!-- Country Flag Detail START -->
+					<form class="vstack gap-4" enctype="multipart/form-data" method="post" action="processes/processes.php">
+						<div class="card shadow mt-3">
+							<div class="card-header">
+								Country Flag
+							</div>
+							<!-- Card body -->
+							<div class="card-body">
+								<div class="row g-3">
+									<!-- Country Flag -->
+									<div class="col-8 mx-auto">
+										<?php if (!empty($row['country_flag'])): ?>
+											<img src="../uploads/<?php echo $row['country_flag']; ?>" alt="Country Flag">
+										<?php else: ?>
+											<p>No photo available</p>
+										<?php endif; ?>
+									</div>
+
+									<!-- Change Flag -->
+									<div class="col-12">
+										<label class="form-label">Change Flag</label>
+										<input class="form-control" type="file" accept="image/*" name="flag" oninput="this.form.submit();" placeholder="Choose Flag">
+										<input type="hidden" name="edit-cou-flag" value="<?php echo $cou_id; ?>">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Country Flag Detail END -->
+					</form>
 
 
 					<div class="text-center mt-5 mb-3">
@@ -118,31 +149,30 @@ $row = $res->fetch_assoc();
 
 					<form class="vstack gap-4" enctype="multipart/form-data" method="post" action="processes/processes.php">
 
-					<!-- Cab Detail START -->
+					<!-- SEO Detail START -->
 					<div class="card shadow">
 						
 						<!-- Card body -->
 						<div class="card-body">
 							<div class="row g-3">
-								<!-- Car name -->
+								<!-- SEO Page Title -->
 								<div class="col-12">
 									<label class="form-label">SEO Page Title (Max 70 characters)</label>
 									<input class="form-control" maxlength="70" type="text" name="tit" value="<?php echo $row['seo_title'];?>" placeholder="Enter title" >
 								</div>
 
-								<!-- Desc -->
+								<!-- SEO Page Description -->
 								<div class="col-12">
 									<label class="form-label">SEO Page Description (Max 150 characters)</label>
 									<textarea class="form-control" rows="4" maxlength="150" name="desc" placeholder="Enter Description"><?php echo $row['seo_description'];?></textarea>
 								</div>
 
-                                <!-- Desc -->
+                                <!-- SEO Keywords -->
 								<div class="col-12">
 									<label class="form-label">SEO Keywords</label>
 									<textarea class="form-control" rows="4" name="kw" placeholder="Enter Keywords"><?php echo $row['seo_keywords'];?></textarea>
 								</div>
-								<input type="hidden" name="elemid" value="<?php echo $cou_id;?>">
-																
+								<input type="hidden" name="elemid" value="<?php echo $cou_id;?>">						
 							</div>
 						</div>
                         <div class="card-footer text-end">
@@ -150,23 +180,17 @@ $row = $res->fetch_assoc();
                             </form>
                         </div>
 					</div>
-					<!-- Cab Detail END -->
+					<!-- SEO Detail END -->
 
 			</div>
 		</div>
 	</div>
 </section>
 
-
-
-	
-	</main>
+</main>
 <!-- **************** MAIN CONTENT END **************** -->
 
 <?php include "includes/scripts.php";?>
 
-
 </body>
-
-
 </html>

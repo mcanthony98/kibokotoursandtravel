@@ -13,6 +13,7 @@ $res = $conn->query("SELECT * FROM package WHERE package_id='$pack_id'");
 $row = $res->fetch_assoc();
 
 $packdayres = $conn->query("SELECT * FROM package_day WHERE package_id = '$pack_id' ORDER BY day ASC");
+$countryres = $conn->query("SELECT * FROM country");
 
 //$countryres = $conn->query("SELECT * FROM country");
 
@@ -75,6 +76,26 @@ $packdayres = $conn->query("SELECT * FROM package_day WHERE package_id = '$pack_
 									<label class="form-label">Subtitle</label>
 									<input class="form-control" type="text" name="stit" value="<?php echo $row['subtitle'];?>" placeholder="Eg: 3 day beach Holiday">
 								</div>
+
+                                <!-- State -->
+                                <div class="col-md-6">
+                                    <label class="form-label">Country</label>
+                                    <select class="form-select js-choice" name="country" data-search-enabled="true">
+                                        <option value="">Select Country</option>
+                                        <?php 
+                                        while ($countryrow = $countryres->fetch_assoc()) {
+                                            // Check if the current country is the one selected in the package data
+                                            $selected = ($countryrow['country_id'] == $row['country_id']) ? 'selected' : '';
+                                        ?>
+                                            <option value="<?php echo htmlspecialchars($countryrow['country_id']); ?>" <?php echo $selected; ?>>
+                                                <?php echo htmlspecialchars($countryrow['country_name']); ?>
+                                            </option>
+                                        <?php 
+                                        } 
+                                        ?>
+                                    </select>
+
+                                </div>
 
 								<!-- Desc -->
 								<div class="col-12">

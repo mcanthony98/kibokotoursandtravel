@@ -2,7 +2,8 @@
 include "includes/includes.php";
 include "includes/header.php";
 
-$qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
+// Modified query with LEFT JOIN to include packages even if there's no matching country
+$qry = $conn->query("SELECT package.*, country.country_name FROM package LEFT JOIN country ON package.country_id = country.country_id ORDER BY title ASC");
 
 ?>
 </head>
@@ -34,9 +35,6 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
 				</div>
 			</div>
 
-	<!--Page Conteeeeeeeeeeeeeeeeent-->		
-
-
             <!-- Guest list START -->
 			<div class="card shadow mt-5">
 				<!-- Card body START -->
@@ -45,6 +43,7 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
 					<div class="bg-light rounded p-3 d-none d-lg-block">
 						<div class="row row-cols-7 g-4">
 							<div class="col"><h6 class="mb-0">Package</h6></div>
+							<div class="col"><h6 class="mb-0">Country</h6></div>
 							<div class="col"><h6 class="mb-0">Price</h6></div>
 							<div class="col"><h6 class="mb-0">Dates</h6></div>
 							<div class="col"><h6 class="mb-0">Status</h6></div>
@@ -53,10 +52,13 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
 					</div>
 
                     <?php 
-                    while($row = $qry->fetch_assoc()){
+                    if ($qry->num_rows > 0) {
+                        while ($row = $qry->fetch_assoc()) {
+                            // If country_name is null, set it to 'N/A'
+                            $countryName = !empty($row['country_name']) ? $row['country_name'] : 'N/A';
                     ?>
 					<!-- Table data -->
-					<div class="row row-cols-xl-5 align-items-lg-center border-bottom g-4 px-2 py-4">
+					<div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
 						<!-- Data item -->
 						<div class="col">
 							<small class="d-block d-lg-none">Package</small>
@@ -70,48 +72,52 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
 									<h6 class="mb-0 fw-light"><?php echo $row['title'];?> <br> <span class="fs-sm"><?php echo $row['subtitle'];?> </span></h6>
 								</div>
 							</div>
-						</div>	
-
-						<!-- Data item -->
-						<div class="col d-none d-lg-block">
-							<small class="d-block d-lg-none">Price</small>
-							<h6 class="mb-0 fw-normal"><?php echo $row['currency'];?> <?php echo number_format($row['price'], 2) ;?></h6>
 						</div>
 
+						<!-- Country Data -->
+						<div class="col d-none d-lg-block">
+							<small class="d-block d-lg-none">Country</small>
+							<h6 class="mb-0 fw-normal"><?php echo $countryName; ?></h6>
+						</div>
 
-						<!-- Data item -->
+						<!-- Price Data -->
+						<div class="col d-none d-lg-block">
+							<small class="d-block d-lg-none">Price</small>
+							<h6 class="mb-0 fw-normal"><?php echo $row['currency'];?> <?php echo number_format($row['price'], 2);?></h6>
+						</div>
+
+						<!-- Dates Data -->
 						<div class="col d-none d-lg-block">
 							<small class="d-block d-lg-none">Dates</small>
 							<h6 class="mb-0 fw-normal"><?php echo $row['travel_dates'] ;?></h6>
 						</div>
 
-						<!-- Data item -->
+						<!-- Status Data -->
 						<div class="col d-none d-lg-block">
 							<small class="d-block d-lg-none">Status</small>
 							<?php echo packageStatus($row['package_status']);?>
 						</div>
 
-												
-
-						<!-- Data item -->
+						<!-- Action Data -->
 						<div class="col">
 							<a href="edit-package.php?pack=<?php echo $row['package_id'];?>" class="btn btn-sm btn-primary mb-0"><i class="fa-solid fa-edit"></i> Edit</a>
 							<a class="btn btn-sm btn-warning mb-0" href="processes/processes.php?duplicate_package=<?php echo $row['package_id'];?>"><i class="fa-solid fa-clone"></i> Duplicate</a>
 						</div>
 					</div>
 
-					<?php } ?>
+					<?php 
+                        }
+                    } else {
+                        echo "<p>No packages found.</p>";
+                    }
+                    ?>
 
 				</div>
 				<!-- Card body END -->
-
 				
 			</div>
 			<!-- Guest list END -->
 
-
-
-	
 		</div>
 		<!-- Page main content END -->
 	</div>
@@ -121,6 +127,7 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
 <!-- **************** MAIN CONTENT END **************** -->
 
 <?php include "includes/scripts.php";?>
+
 <?php 
 	function packageStatus($status){
 		if($status == 1){
@@ -132,8 +139,7 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
 		}
 		return $output;
 	}
-	?>
+?>
 </body>
-
 
 </html>

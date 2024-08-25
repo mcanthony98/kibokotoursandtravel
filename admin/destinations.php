@@ -70,7 +70,7 @@ $qry = $conn->query("SELECT * FROM destination JOIN country ON destination.count
 
 						<!-- Data item -->
 						<div class="col d-none d-lg-block">
-							<small class="d-block d-lg-none">Description</small>
+							<small class="d-block d-lg-none">Country</small>
 							<h6 class="mb-0 fw-normal"><?php echo $row['country_name'];?></h6>
 						</div>
 
