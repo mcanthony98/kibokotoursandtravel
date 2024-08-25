@@ -2,7 +2,8 @@
 include "includes/includes.php";
 include "includes/header.php";
 
-$qry = $conn->query("SELECT * FROM experience ORDER BY experience_name ASC");
+// Modified query with LEFT JOIN to include experiences even if there's no matching country
+$qry = $conn->query("SELECT * FROM experience LEFT JOIN country ON experience.country_id = country.country_id ORDER BY experience_name ASC");
 
 ?>
 </head>
@@ -35,9 +36,6 @@ $qry = $conn->query("SELECT * FROM experience ORDER BY experience_name ASC");
 				</div>
 			</div>
 
-	<!--Page Conteeeeeeeeeeeeeeeeent-->		
-
-
             <!-- Guest list START -->
 			<div class="card shadow mt-5">
 				<!-- Card body START -->
@@ -46,23 +44,27 @@ $qry = $conn->query("SELECT * FROM experience ORDER BY experience_name ASC");
 					<div class="bg-light rounded p-3 d-none d-lg-block">
 						<div class="row row-cols-7 g-4">
 							<div class="col"><h6 class="mb-0">Experience</h6></div>
+							<div class="col"><h6 class="mb-0">Country</h6></div>
 							<div class="col"><h6 class="mb-0">Description</h6></div>
 							<div class="col"><h6 class="mb-0">Action</h6></div>
 						</div>
 					</div>
 
                     <?php 
-                    while($row = $qry->fetch_assoc()){
+                    if ($qry->num_rows > 0) {
+                        while ($row = $qry->fetch_assoc()) {
+                            // If country_name is null, set it to 'N/A'
+                            $countryName = !empty($row['country_name']) ? $row['country_name'] : 'N/A';
                     ?>
 					<!-- Table data -->
 					<div class="row row-cols-xl-7 align-items-lg-center border-bottom g-4 px-2 py-4">
-						<!-- Data item -->
+						<!-- Experience Data -->
 						<div class="col">
 							<small class="d-block d-lg-none">Experience</small>
 							<div class="d-flex align-items-center">
 								<!-- Avatar -->
 								<div class="avatar avatar-xl flex-shrink-0">
-									<img class="avatar-img " src="../uploads/<?php echo $row['experience_image'];?>" alt="avatar">
+									<img class="avatar-img" src="../uploads/<?php echo $row['experience_image'];?>" alt="avatar">
 								</div>
 								<!-- Info -->
 								<div class="ms-2">
@@ -71,30 +73,39 @@ $qry = $conn->query("SELECT * FROM experience ORDER BY experience_name ASC");
 							</div>
 						</div>	
 
-						<!-- Data item -->
+						<!-- Country Data -->
+						<div class="col d-none d-lg-block">
+							<small class="d-block d-lg-none">Country</small>
+							<h6 class="mb-0 fw-normal"><?php echo $countryName; ?></h6>
+						</div>	
+
+						<!-- Description -->
 						<div class="col d-none d-lg-block">
 							<small class="d-block d-lg-none">Description</small>
 							<h6 class="mb-0 fw-normal"><?php echo $row['description'];?></h6>
+						</div>	
+
+						<!-- Action -->
+						<div class="col">
+							<a href="edit-experience.php?exp=<?php echo $row['experience_id'];?>" class="btn btn-sm btn-primary mb-0">
+								<i class="fa-solid fa-edit"></i> Edit
+							</a>
 						</div>
-
-						
-
-						<!-- Data item -->
-						<div class="col"><a href="edit-experience.php?exp=<?php echo $row['experience_id'];?>" class="btn btn-sm btn-primary mb-0"><i class="fa-solid fa-edit"></i> Edit</a></div>
 					</div>
 
-					<?php } ?>
+					<?php 
+                        }
+                    } else {
+                        echo "<p>No experiences found.</p>";
+                    }
+                    ?>
 
 				</div>
 				<!-- Card body END -->
-
 				
 			</div>
 			<!-- Guest list END -->
 
-
-
-	
 		</div>
 		<!-- Page main content END -->
 	</div>
@@ -106,6 +117,4 @@ $qry = $conn->query("SELECT * FROM experience ORDER BY experience_name ASC");
 <?php include "includes/scripts.php";?>
 
 </body>
-
-
 </html>

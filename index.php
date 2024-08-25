@@ -8,6 +8,12 @@ $packres = $conn->query("SELECT * FROM package WHERE category_id = 3  AND packag
 $destsres = $conn->query("SELECT * FROM destination ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, destination_views DESC LIMIT 8");
 
 $blogres = $conn->query("SELECT * FROM blog WHERE blog_status='1' ORDER BY blog_id DESC");
+
+$cntryres = $conn->query("SELECT country.country_id, country.country_name, country.country_flag, country.country_short_description, COUNT(destination.destination_id) as destination_count 
+                FROM country 
+                LEFT JOIN destination ON country.country_id = destination.country_id 
+                GROUP BY country.country_id 
+                ORDER BY country.country_name ASC");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -435,6 +441,7 @@ About END -->
 
         <!-- =======================
 Country Destinations START -->
+
         <section class="pb-0">
             <div class="container">
                 <!-- Title -->
@@ -448,77 +455,33 @@ Country Destinations START -->
                 <div class="tiny-slider arrow-round arrow-blur arrow-hover">
                     <div class="tiny-slider-inner mb-8" data-autoplay="true" data-arrow="true" data-edge="2" data-dots="false" data-items-xl="3" data-items-lg="3" data-items-md="2" data-items-sm="1">
 
+                        <?php 
+                        while ($row = $cntryres->fetch_assoc()) { 
+                        ?>
                         <!-- Country card START -->
                         <div>
                             <div class="card">
-                                <img src="assets/images/flags/kenya.svg" class="card-img" alt="Kenya">
+                                <img src="./uploads/<?php echo htmlspecialchars($row['country_flag']); ?>" class="card-img" alt="<?php echo htmlspecialchars($row['country_name']); ?>">
                                 <!-- Card body -->
                                 <div class="position-absolute top-100 start-50 translate-middle w-100">
                                     <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="country.php?name=kenya">Kenya</a></h6>
-                                        <small>Explore the diverse landscapes and wildlife of Kenya.</small>
-                                        <div class="mt-2">8 Destinations Available</div>
-                                        <div class="mt-2"><a href="country.php" class="btn btn-sm btn-primary mb-0">View Destinations</a></div>
+                                        <h6 class="card-title mb-1"><a href="country.php?name=<?php echo urlencode($row['country_name']); ?>"><?php echo htmlspecialchars($row['country_name']); ?></a></h6>
+                                        <small><?php echo htmlspecialchars($row['country_short_description']); ?></small>
+                                        <div class="mt-2"><?php echo htmlspecialchars($row['destination_count']); ?> Destinations Available</div>
+                                        <div class="mt-2"><a href="country.php?name=<?php echo urlencode($row['country_name']); ?>" class="btn btn-sm btn-primary mb-0">View Destinations</a></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Country card END -->
-
-                        <!-- Country card START -->
-                        <div>
-                            <div class="card">
-                                <img src="assets/images/flags/tanzania.svg" class="card-img" alt="Tanzania">
-                                <!-- Card body -->
-                                <div class="position-absolute top-100 start-50 translate-middle w-100">
-                                    <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="country.php?name=tanzania">Tanzania</a></h6>
-                                        <small>Discover the Serengeti and the beauty of Mount Kilimanjaro.</small>
-                                        <div class="mt-2">6 Destinations Available</div>
-                                        <div class="mt-2"><a href="country.php" class="btn btn-sm btn-primary mb-0">View Destinations</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Country card END -->
-
-                        <!-- Country card START -->
-                        <div>
-                            <div class="card">
-                                <img src="assets/images/flags/uganda.svg" class="card-img" alt="Uganda">
-                                <!-- Card body -->
-                                <div class="position-absolute top-100 start-50 translate-middle w-100">
-                                    <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="country.php?name=uganda">Uganda</a></h6>
-                                        <small>Experience the wildlife and lush landscapes of Uganda.</small>
-                                        <div class="mt-2">5 Destinations Available</div>
-                                        <div class="mt-2"><a href="country.php" class="btn btn-sm btn-primary mb-0">View Destinations</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Country card END -->
-
-                        <!-- Country card START -->
-                        <div>
-                            <div class="card">
-                                <img src="assets/images/flags/rwanda.svg" class="card-img" alt="Rwanda">
-                                <!-- Card body -->
-                                <div class="position-absolute top-100 start-50 translate-middle w-100">
-                                    <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="country.php?name=rwanda">Rwanda</a></h6>
-                                        <small>Explore the land of a thousand hills and its rich cultural heritage.</small>
-                                        <div class="mt-2">4 Destinations Available</div>
-                                        <div class="mt-2"><a href="country.php" class="btn btn-sm btn-primary mb-0">View Destinations</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Country card END -->
+                        <?php 
+                        } 
+                        ?>
 
                     </div>
                 </div>
                 <!-- Slider END -->
+
             </div>
         </section>
         <!-- =======================
