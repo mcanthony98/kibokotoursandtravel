@@ -43,7 +43,10 @@ $qry = $conn->query("SELECT * FROM country ORDER BY country_name ASC");
 					<div class="bg-light rounded p-3 d-none d-lg-block">
 						<div class="row row-cols-7 g-4">
 							<div class="col"><h6 class="mb-0">Country</h6></div>
-							<div class="col"><h6 class="mb-0">Action</h6></div>
+							<div class="col"><h6 class="mb-0">Country Flag</h6></div>
+							<div class="col"><h6 class="mb-0">Short Description</h6></div>
+							<div class="col"><h6 class="mb-0">Description</h6></div>
+							<div class="col"><h6 class="mb-0">Actions</h6></div>
 						</div>
 					</div>
 
@@ -65,7 +68,24 @@ $qry = $conn->query("SELECT * FROM country ORDER BY country_name ASC");
 									<h6 class="mb-0 fw-light"><?php echo $row['country_name'];?></h6>
 								</div>
 							</div>
-						</div>	
+						</div>
+
+						<!-- Data item -->
+						<div class="col">
+							<small class="d-block d-lg-none">Country Flag</small>
+							<div class="d-flex align-items-center">
+								<!-- Avatar -->
+								<div class="avatar avatar-xl flex-shrink-0">
+									<img class="avatar-img " src="../uploads/<?php echo $row['country_flag'];?>" alt="flag_avatar">
+								</div>
+							</div>
+						</div>
+						
+						<!-- Data item -->
+						<div class="col d-none d-lg-block">
+							<small class="d-block d-lg-none">Short Description</small>
+							<h6 class="mb-0 fw-normal"><?php echo $row['country_short_description'];?></h6>
+						</div>
 
 						<!-- Data item -->
 						<div class="col d-none d-lg-block">
@@ -76,7 +96,19 @@ $qry = $conn->query("SELECT * FROM country ORDER BY country_name ASC");
 						
 
 						<!-- Data item -->
-						<div class="col"><a href="edit-country.php?cat=<?php echo $row['country_id'];?>" class="btn btn-sm btn-primary mb-0"><i class="fa-solid fa-edit"></i> Edit</a></div>
+						<div class="col">
+							<a href="edit-country.php?cat=<?php echo $row['country_id'];?>" class="btn btn-sm btn-primary mb-0">
+								<i class="fa-solid fa-edit"></i> Edit
+							</a>
+							<!-- Delete Button -->
+							<form action="processes/processes.php" method="post" style="display:inline;">
+								<input type="hidden" name="country_id" value="<?php echo $row['country_id']; ?>">
+								<button type="submit" class="btn btn-sm btn-danger mb-0" onclick="return confirm('Are you sure you want to delete this country?');">
+									<i class="fa-solid fa-trash"></i> Delete
+								</button>
+							</form>
+						</div>
+
 					</div>
 
 					<?php } ?>
