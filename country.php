@@ -36,6 +36,13 @@ $experience_stmt->bind_param("i", $country_id);
 $experience_stmt->execute();
 $experiences_result = $experience_stmt->get_result();
 
+// Fetch packages from the database
+$package_query = "SELECT * FROM package WHERE country_id = ?";
+$package_stmt = $conn->prepare($package_query);
+$package_stmt->bind_param("i", $country_id);
+$package_stmt->execute();
+$packres = $package_stmt->get_result();
+
 
 ?>
 <!DOCTYPE html>
@@ -61,7 +68,7 @@ $experiences_result = $experience_stmt->get_result();
         }
 
         .dest-img {
-            height: 300px;
+            height: 200px;
             width: ;
         }
 
@@ -85,7 +92,7 @@ Main Banner START -->
                 <div class="row">
                     <div class="col-lg-11 mx-auto">
                         <!-- Banner Image START -->
-                        <div class="card overflow-hidden h-400px h-sm-600px rounded-0" style="background-image:url(assets/images/Small_400x400/lion.png); background-position: center center; background-size: cover;">
+                        <div class="card overflow-hidden h-400px h-sm-600px rounded-0" style="background-image:url(./uploads/<?php echo htmlspecialchars($country['country_image']); ?>); background-position: center center; background-size: cover;">
                             <!-- Background dark overlay -->
                             <div class="bg-overlay bg-dark opacity-3"></div>
                             <!-- Card image overlay -->
@@ -198,7 +205,6 @@ Country Destinations START -->
                                     <!-- Info -->
                                     <div class="card-text mt-auto">
                                         <h4><a href="destinations-details.php?id=<?php echo htmlspecialchars($destination['destination_id']); ?>" class="text-white stretched-link"><?php echo htmlspecialchars($destination['destination_name']); ?></a></h4>
-                                        <p class="short-description text-white mb-2"><?php echo htmlspecialchars($destination['description']); ?></p>
                                         <button class="btn btn-link text-white p-0 mb-0">Explore now <i class="fa-solid fa-arrow-right-long fa-fw"></i></button>
                                     </div>
                                 </div>
@@ -211,6 +217,153 @@ Country Destinations START -->
         </section>
         <!-- =======================
 Country Destinations END -->
+
+        <!-- =======================
+Country Packages START -->
+        <section>
+            <div class="container">
+
+                <!-- Title -->
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h2 class="mb-0">Top Packages in <?php echo htmlspecialchars($country['country_name']); ?></h2>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+
+                    <?php while ($row = $packres->fetch_assoc()) { ?>
+                    <!-- Package item -->
+                    <div class="col-sm-6 col-xl-3 shadow">
+                        <!-- Card START -->
+                        <div class="card card-img-scale overflow-hidden bg-transparent rounded-3">
+                            <!-- Image and overlay -->
+                            <div class="card-img-scale-wrapper rounded-3">
+                                <!-- Image -->
+                                <img src="uploads/<?php echo $row['package_image']; ?>" class="card-img mt-1" alt="kiboko image">
+                                <!-- Badge -->
+                                <div class="position-absolute bottom-0 start-0 p-3">
+                                    <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
+                                            class="bi bi-geo-alt me-2"></i><?php echo htmlspecialchars($country['country_name']); ?></div>
+                                </div>
+                            </div>
+
+                            <!-- Card body -->
+                            <div class="card-body px-2">
+                                <!-- Title -->
+                                <h6 class="card-title"><a href="package-details.php?id=<?php echo $row['package_id']; ?>&<?php echo $row['title_slag']; ?>" class="stretched-link"><?php echo $row['title']; ?></a></h6>
+                                <!-- Price and rating -->
+                                <p><small><?php echo $row['subtitle']; ?></small></p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h5 class="text-success mb-0"><?php echo $row['currency']; ?> <?php echo number_format($row['price']); ?> </h5>
+                                    <ul class="list-inline mb-0 small">
+                                        <li class="list-inline-item text-success"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item text-success"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item text-success"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item text-success"><i class="fas fa-star"></i></li>
+                                        <li class="list-inline-item text-success"><i class="fas fa-star-half-alt"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card END -->
+                    </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </section>
+        <!-- =======================
+Country Packages END -->
+
+        <!-- =======================
+Why Choose Us Start -->
+        <section class="pt-8 pt-md-5">
+            <div class="container">
+                
+                <!-- Section Title -->
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="display-6">Why Choose Us</h2>
+                        <p class="section-subtitle">Discover what sets us apart from the rest</p>
+                    </div>
+                </div>
+
+                <!-- Benefits Grid -->
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Benefit 1 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="icon bg-primary rounded-circle mb-4 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-user-cog fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">Customized Experiences</h5>
+                                <p class="card-text">Each journey is meticulously crafted to align with your unique preferences, from personalized dining to bespoke activities. We ensure every aspect is fine-tuned for your comfort and enjoyment.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 2 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="icon bg-success rounded-circle mb-4 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-users fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">Expert Team</h5>
+                                <p class="card-text">Our dedicated professionals are not only experts in travel but are also passionate advocates for accessible tourism, ensuring every guest experiences the best care and attention possible.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 3 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="icon bg-warning rounded-circle mb-4 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-hands-helping fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">Continued Assistance</h5>
+                                <p class="card-text">From your initial inquiry to the conclusion of your trip, our team is available to offer support and guidance. A dedicated therapist or assistant accompanies group tours for added assurance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 4 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="icon bg-danger rounded-circle mb-4 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-briefcase-medical fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">Emergency Care Ready</h5>
+                                <p class="card-text">With comprehensive emergency medical evacuation available at all times, you can travel confidently knowing that expert care is always on standby, should you need it.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 5 -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 text-center shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="icon bg-info rounded-circle mb-4 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+                                    <i class="fas fa-handshake fa-2x"></i>
+                                </div>
+                                <h5 class="card-title">Carefully Selected Partners</h5>
+                                <p class="card-text">We only collaborate with trusted partners who meet our high standards. Our team personally audits each location to ensure accessibility and suitability for your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- =======================
+Why Choose Us End -->
 
         <!-- =======================
 About Country More Info START -->
