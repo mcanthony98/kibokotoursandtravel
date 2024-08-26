@@ -9,7 +9,7 @@ $destsres = $conn->query("SELECT * FROM destination ORDER BY CASE WHEN priority 
 
 $blogres = $conn->query("SELECT * FROM blog WHERE blog_status='1' ORDER BY blog_id DESC");
 
-$cntryres = $conn->query("SELECT country.country_id, country.country_name, country.country_flag, country.country_short_description, COUNT(destination.destination_id) as destination_count 
+$cntryres = $conn->query("SELECT country.country_id, country.country_name, country.country_flag, country.country_image, country.country_short_description, COUNT(destination.destination_id) as destination_count 
                 FROM country 
                 LEFT JOIN destination ON country.country_id = destination.country_id 
                 GROUP BY country.country_id 
@@ -461,7 +461,7 @@ Country Destinations START -->
                         <!-- Country card START -->
                         <div>
                             <div class="card">
-                                <img src="./uploads/<?php echo htmlspecialchars($row['country_flag']); ?>" class="card-img" alt="<?php echo htmlspecialchars($row['country_name']); ?>">
+                                <img src="./uploads/<?php echo htmlspecialchars($row['country_image']); ?>" class="card-img" alt="<?php echo htmlspecialchars($row['country_name']); ?>">
                                 <!-- Card body -->
                                 <div class="position-absolute top-100 start-50 translate-middle w-100">
                                     <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
