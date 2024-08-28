@@ -92,7 +92,7 @@ Main Banner START -->
                 <div class="row">
                     <div class="col-lg-11 mx-auto">
                         <!-- Banner Image START -->
-                        <div class="card overflow-hidden h-400px h-sm-600px rounded-0" style="background-image:url(./uploads/<?php echo htmlspecialchars($country['country_image']); ?>); background-position: center center; background-size: cover;">
+                        <div class="card overflow-hidden h-400px h-sm-600px rounded-0" style="background-image:url('uploads/<?php echo htmlspecialchars($country['country_image']); ?>'); background-position: center center; background-size: cover;">
                             <!-- Background dark overlay -->
                             <div class="bg-overlay bg-dark opacity-3"></div>
                             <!-- Card image overlay -->
