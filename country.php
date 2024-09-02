@@ -37,7 +37,7 @@ $experience_stmt->execute();
 $experiences_result = $experience_stmt->get_result();
 
 // Fetch packages from the database
-$package_query = "SELECT * FROM package WHERE country_id = ?";
+$package_query = "SELECT * FROM package p JOIN package_day pd ON p.package_id=pd.package_id JOIN package_day_destination pdd ON pd.package_day_id=pdd.package_day_id JOIN destination d ON d.destination_id=pdd.destination_id WHERE d.country_id = ? AND p.package_status = 1 GROUP BY p.package_id ORDER BY CASE WHEN p.priority = 0 THEN 1 ELSE 0 END, p.priority, p.package_id DESC LIMIT 12";
 $package_stmt = $conn->prepare($package_query);
 $package_stmt->bind_param("i", $country_id);
 $package_stmt->execute();
@@ -92,7 +92,7 @@ Main Banner START -->
                 <div class="row">
                     <div class="col-lg-11 mx-auto">
                         <!-- Banner Image START -->
-                        <div class="card overflow-hidden h-400px h-sm-600px rounded-0" style="background-image:url(./uploads/<?php echo htmlspecialchars($country['country_image']); ?>); background-position: center center; background-size: cover;">
+                        <div class="card overflow-hidden h-400px h-sm-600px rounded-0" style="background-image:url('uploads/<?php echo htmlspecialchars($country['country_image']); ?>'); background-position: center center; background-size: cover;">
                             <!-- Background dark overlay -->
                             <div class="bg-overlay bg-dark opacity-3"></div>
                             <!-- Card image overlay -->
@@ -243,8 +243,8 @@ Country Packages START -->
                                 <img src="uploads/<?php echo $row['package_image']; ?>" class="card-img mt-1" alt="kiboko image">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
-                                    <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
-                                            class="bi bi-geo-alt me-2"></i><?php echo htmlspecialchars($country['country_name']); ?></div>
+                                    <div class="badge text-bg-dark fs-6 rounded-pill stretched-link d-none"><i
+                                            class="bi bi-geo-alt me-2 "></i><?php echo htmlspecialchars($country['country_name']); ?></div>
                                 </div>
                             </div>
 
@@ -296,7 +296,7 @@ Why Choose Us Start -->
                         <div class="card h-100 text-center shadow-sm">
                             <div class="card-body p-4">
                                 <div class="icon bg-primary rounded-circle mb-4 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-user-cog fa-2x"></i>
+                                    <i class="fas fa-user-cog fa-2x text-white"></i>
                                 </div>
                                 <h5 class="card-title">Customized Experiences</h5>
                                 <p class="card-text">Each journey is meticulously crafted to align with your unique preferences, from personalized dining to bespoke activities. We ensure every aspect is fine-tuned for your comfort and enjoyment.</p>
@@ -309,7 +309,7 @@ Why Choose Us Start -->
                         <div class="card h-100 text-center shadow-sm">
                             <div class="card-body p-4">
                                 <div class="icon bg-success rounded-circle mb-4 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-users fa-2x"></i>
+                                    <i class="fas fa-users fa-2x text-white"></i>
                                 </div>
                                 <h5 class="card-title">Expert Team</h5>
                                 <p class="card-text">Our dedicated professionals are not only experts in travel but are also passionate advocates for accessible tourism, ensuring every guest experiences the best care and attention possible.</p>
@@ -322,7 +322,7 @@ Why Choose Us Start -->
                         <div class="card h-100 text-center shadow-sm">
                             <div class="card-body p-4">
                                 <div class="icon bg-warning rounded-circle mb-4 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-hands-helping fa-2x"></i>
+                                    <i class="fas fa-hands-helping fa-2x text-white"></i>
                                 </div>
                                 <h5 class="card-title">Continued Assistance</h5>
                                 <p class="card-text">From your initial inquiry to the conclusion of your trip, our team is available to offer support and guidance. A dedicated therapist or assistant accompanies group tours for added assurance.</p>
@@ -335,7 +335,7 @@ Why Choose Us Start -->
                         <div class="card h-100 text-center shadow-sm">
                             <div class="card-body p-4">
                                 <div class="icon bg-danger rounded-circle mb-4 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-briefcase-medical fa-2x"></i>
+                                    <i class="fas fa-briefcase-medical fa-2x text-white"></i>
                                 </div>
                                 <h5 class="card-title">Emergency Care Ready</h5>
                                 <p class="card-text">With comprehensive emergency medical evacuation available at all times, you can travel confidently knowing that expert care is always on standby, should you need it.</p>
@@ -348,7 +348,7 @@ Why Choose Us Start -->
                         <div class="card h-100 text-center shadow-sm">
                             <div class="card-body p-4">
                                 <div class="icon bg-info rounded-circle mb-4 mx-auto" style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
-                                    <i class="fas fa-handshake fa-2x"></i>
+                                    <i class="fas fa-handshake fa-2x text-white"></i>
                                 </div>
                                 <h5 class="card-title">Carefully Selected Partners</h5>
                                 <p class="card-text">We only collaborate with trusted partners who meet our high standards. Our team personally audits each location to ensure accessibility and suitability for your needs.</p>

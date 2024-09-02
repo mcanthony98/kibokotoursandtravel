@@ -173,83 +173,101 @@ $cntryres = $conn->query("SELECT country.country_id, country.country_name, count
 
 
                                         <!-- Nav item Find hotel -->
-                                        <li class="nav-item dropdown dropdown-fullwidth">
-                                            <a class="nav-link dropdown-toggle fw-bold" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER KENYA</a>
-                                            <div class="dropdown-menu" aria-labelledby="hotelMenu">
-                                                <div class="container">
-                                                    <div class="row g-4 justify-content-between p-lg-3">
-                                                        <!-- Destination -->
-                                                        <div class="col-lg-5">
-                                                            <h6 class="mb-3"><a href="destinations.php"><i class="bi bi-pin-map-fill text-warning me-2"></i>Destinations</a></h6>
-                                                            <hr class="my-2">
-                                                            <div class="row">
-                                                                <div class="col-lg-6">
-                                                                    <ul class="list-unstyled">
-                                                                        <?php while ($navdestsrow = $navdestsres->fetch_assoc()) { ?>
-                                                                            <li> <a class="dropdown-item" href="destinations-details.php?id=<?php echo $navdestsrow['destination_id']; ?>&<?php echo $navdestsrow['destination_slag']; ?>"><?php echo $navdestsrow['destination_name']; ?></a> </li>
+                                    <?php
+                                    // Fetch all countries
+                                    $country_query = "SELECT * FROM country";
+                                    $country_res = $conn->query($country_query);
+                                    ?>
 
-                                                                            <?php if ($navcounter == 5) { ?>
-                                                                    </ul>
-                                                                </div>
-
-                                                                <div class="col-lg-6">
-                                                                    <ul class="list-unstyled">
+                                    <li class="nav-item dropdown dropdown-fullwidth">
+                                        <a class="nav-link dropdown-toggle active fw-bold" href="#" id="hotelMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DISCOVER EAST AFRICA</a>
+                                        <div class="dropdown-menu" aria-labelledby="hotelMenu">
+                                            <div class="container">
+                                                <div class="row g-4 justify-content-between p-lg-3">
+                                                    <!-- Destination -->
+                                                    <div class="col-lg-5">
+                                                        <h6 class="mb-3"><a href="destinations.php"><i class="bi bi-pin-map-fill text-warning me-2"></i>Destinations</a></h6>
+                                                        <hr class="my-2">
+                                                        <div class="row">
+                                                            <?php 
+                                                            while($destination_country = $country_res->fetch_assoc()) { 
+                                                                // Fetch destinations for this country
+                                                                $destinations_query = "SELECT * FROM destination WHERE country_id = ?";
+                                                                $dest_stmt = $conn->prepare($destinations_query);
+                                                                $dest_stmt->bind_param("i", $destination_country['country_id']);
+                                                                $dest_stmt->execute();
+                                                                $dest_result = $dest_stmt->get_result();
+                                                            ?>
+                                                            <div class="col-lg-6">
+                                                                <h6 class="dropdown-header"><?php echo htmlspecialchars($destination_country['country_name']); ?></h6>
+                                                                <ul class="list-unstyled">
+                                                                    <?php if ($dest_result->num_rows > 0) { 
+                                                                        while($destination = $dest_result->fetch_assoc()) { ?>
+                                                                        <li>
+                                                                            <a class="dropdown-item" href="destinations-details.php?id=<?php echo $destination['destination_id']; ?>&slug=<?php echo $destination['destination_slag']; ?>">
+                                                                                <?php echo htmlspecialchars($destination['destination_name']); ?>
+                                                                            </a>
+                                                                        </li>
+                                                                    <?php } } else { ?>
+                                                                        <li>
+                                                                            <div class="dropdown-item text-muted">No destinations available</div>
+                                                                        </li>
                                                                     <?php } ?>
+                                                                </ul>
+                                                            </div>
+                                                            <?php } ?>
+                                                        </div>
+                                                    </div>
 
-                                                                <?php $navcounter++;
-                                                                        } ?>
+                                                    <!-- Activities -->
+                                                    <div class="col-lg-3">
+                                                        <h6 class="mb-3"><i class="bi bi-list-ul text-warning me-2"></i>Activities</h6>
+                                                        <hr class="my-2">
+                                                        <ul class="list-unstyled">
+                                                            <?php while($navactsrow = $navactres->fetch_assoc()){ ?>
+                                                            <li> 
+                                                                <a class="dropdown-item" href="experience-details.php?id=<?php echo $navactsrow['experience_id'];?>&slug=<?php echo $navactsrow['experience_slag']; ?>">
+                                                                    <?php echo htmlspecialchars($navactsrow['experience_name']); ?>
+                                                                </a> 
+                                                            </li>
+                                                            <?php } ?>
+                                                        </ul>
+                                                    </div>
 
+                                                    <!-- Safari Types -->
+                                                    <div class="col-lg-3">
+                                                        <h6 class="mb-3"><i class="bi bi-grid-3x3-gap text-warning me-2"></i>Safari Types</h6>
+                                                        <hr class="my-2">
+                                                        <ul class="list-unstyled">
+                                                            <li> <a class="dropdown-item" href="classic-safaris.php"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
+                                                            <li> <a class="dropdown-item" href="accessible-safaris.php"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
+                                                            <li> <a class="dropdown-item" href="family-couple-safaris.php"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <!-- Action box -->
+                                                    <div class="col-12">
+                                                        <div class="card overflow-hidden" style="background-image:url(assets/images/footer-bg.jpg); background-position: center left; background-size: cover;">
+                                                            <div class="bg-overlay bg-dark opacity-5"></div>
+                                                            <div class="card-body d-lg-flex justify-content-between align-items-center position-relative z-index-9">
+                                                                <!-- Meta -->
+                                                                <div class="mb-3 mb-lg-0">
+                                                                    <h5 class="text-white">Enjoy What Nature Offers in Kenya</h5>
+                                                                    <ul class="list-inline">
+                                                                        <li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1 text-warning"></i>Easy Online Booking</li>
+                                                                        <li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1 text-warning"></i>Fast Payment System</li>
+                                                                        <li class="list-inline-item text-white"> <i class="bi bi-patch-check-fill me-1 text-warning"></i>Variety of Destinations</li>
                                                                     </ul>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <!-- Activities -->
-                                                        <div class="col-lg-3">
-                                                            <h6 class="mb-3"><i class="bi bi-list-ul text-warning me-2"></i>Activities</h6>
-                                                            <hr class="my-2">
-                                                            <ul class="list-unstyled">
-                                                                <?php while ($navactsrow = $navactres->fetch_assoc()) { ?>
-                                                                    <li> <a class="dropdown-item" href="experience-details.php?id=<?php echo $navactsrow['experience_id']; ?>&<?php echo $navactsrow['experience_slag']; ?>"><?php echo $navactsrow['experience_name']; ?></a> </li>
-                                                                <?php } ?>
-
-                                                            </ul>
-                                                        </div>
-
-                                                        <!-- Safari Types -->
-                                                        <div class="col-lg-3">
-                                                            <h6 class="mb-3"><i class="bi bi-grid-3x3-gap text-warning me-2"></i>Safari Types</h6>
-                                                            <hr class="my-2">
-                                                            <ul class="list-unstyled">
-                                                                <li> <a class="dropdown-item" href="classic-safaris.php"><i class="fa-solid fa-umbrella-beach fa-fw me-2"></i>Classic Safaris</a> </li>
-                                                                <li> <a class="dropdown-item" href="accessible-safaris.php"><i class="fa-solid fa-city fa-fw me-2"></i>Accessible Safaris</a> </li>
-                                                                <li> <a class="dropdown-item" href="family-couple-safaris.php"><i class="fa-solid fa-spa fa-fw me-2"></i>Family & Couple Safaris</a> </li>
-                                                            </ul>
-                                                        </div>
-
-                                                        <!-- Action box -->
-                                                        <div class="col-12">
-                                                            <div class="card overflow-hidden" style="background-image:url(assets/images/footer-bg.jpg); background-position: center left; background-size: cover;">
-                                                                <div class="bg-overlay bg-dark opacity-5"></div>
-                                                                <div class="card-body d-lg-flex justify-content-between align-items-center position-relative z-index-9">
-                                                                    <!-- Meta -->
-                                                                    <div class="mb-3 mb-lg-0">
-                                                                        <h5 class="text-white">Enjoy What Nature Offers in Kenya</h5>
-                                                                        <ul class="list-inline">
-                                                                            <li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1 text-warning"></i>Easy Online Booking</li>
-                                                                            <li class="list-inline-item text-white me-2"> <i class="bi bi-patch-check-fill me-1 text-warning"></i>Fast Payment System</li>
-                                                                            <li class="list-inline-item text-white"> <i class="bi bi-patch-check-fill me-1 text-warning"></i>Variety of Destinations</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                    <!-- Button -->
-                                                                    <a href="destinations.php" class="btn btn-primary mb-0">Book a Dream Package Now!</a>
-                                                                </div>
+                                                                <!-- Button -->
+                                                                <a href="destinations.php" class="btn btn-primary mb-0">Book a Dream Package Now!</a>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </div>
+                                    </li>    
 
 
                                         <!-- Safaris -->
