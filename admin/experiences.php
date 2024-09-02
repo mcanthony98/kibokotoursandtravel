@@ -3,7 +3,7 @@ include "includes/includes.php";
 include "includes/header.php";
 
 // Modified query with LEFT JOIN to include experiences even if there's no matching country
-$qry = $conn->query("SELECT * FROM experience LEFT JOIN country ON experience.country_id = country.country_id ORDER BY experience_name ASC");
+$qry = $conn->query("SELECT * FROM experience ORDER BY experience_name ASC");
 
 ?>
 </head>
@@ -44,7 +44,6 @@ $qry = $conn->query("SELECT * FROM experience LEFT JOIN country ON experience.co
 					<div class="bg-light rounded p-3 d-none d-lg-block">
 						<div class="row row-cols-7 g-4">
 							<div class="col"><h6 class="mb-0">Experience</h6></div>
-							<div class="col"><h6 class="mb-0">Country</h6></div>
 							<div class="col"><h6 class="mb-0">Description</h6></div>
 							<div class="col"><h6 class="mb-0">Action</h6></div>
 						</div>
@@ -53,8 +52,6 @@ $qry = $conn->query("SELECT * FROM experience LEFT JOIN country ON experience.co
                     <?php 
                     if ($qry->num_rows > 0) {
                         while ($row = $qry->fetch_assoc()) {
-                            // If country_name is null, set it to 'N/A'
-                            $countryName = !empty($row['country_name']) ? $row['country_name'] : 'N/A';
                     ?>
 					<!-- Table data -->
 					<div class="row row-cols-xl-7 align-items-lg-center border-bottom g-4 px-2 py-4">
@@ -71,13 +68,7 @@ $qry = $conn->query("SELECT * FROM experience LEFT JOIN country ON experience.co
 									<h6 class="mb-0 fw-light"><?php echo $row['experience_name'];?></h6>
 								</div>
 							</div>
-						</div>	
-
-						<!-- Country Data -->
-						<div class="col d-none d-lg-block">
-							<small class="d-block d-lg-none">Country</small>
-							<h6 class="mb-0 fw-normal"><?php echo $countryName; ?></h6>
-						</div>	
+						</div>
 
 						<!-- Description -->
 						<div class="col d-none d-lg-block">
