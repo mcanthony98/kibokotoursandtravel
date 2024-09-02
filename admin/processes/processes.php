@@ -111,7 +111,6 @@ elseif(isset($_GET["deletexx"])){
 elseif(isset($_POST["add-experience"])){
     $cat = mysqli_real_escape_string($conn, $_POST["cat"]);
     $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
-    $country = mysqli_real_escape_string($conn, $_POST["country"]);
     $slag = str_replace(' ', '-', $cat);
     $cat = ucwords($cat);
     $slag = strtolower($slag);
@@ -129,7 +128,7 @@ elseif(isset($_POST["add-experience"])){
     $new = $filedate.$file_name;
     $new_name = rename('../../uploads/'.$file_name , '../../uploads/'.$new);
     
-    $cat_insert = "INSERT INTO experience (country_id, experience_name, experience_slag, experience_image, description, short_description) VALUES ('$country', '$cat',  '$slag', '$new', '$desc', '$desc')";
+    $cat_insert = "INSERT INTO experience ( experience_name, experience_slag, experience_image, description, short_description) VALUES ('$cat',  '$slag', '$new', '$desc', '$desc')";
     
     if ($conn->query($cat_insert)===TRUE){
           
@@ -144,14 +143,13 @@ elseif(isset($_POST["add-experience"])){
 }elseif(isset($_POST["edit-experience"])){
     $cat_id = mysqli_real_escape_string($conn, $_POST["exp_id"]);
     $cat = mysqli_real_escape_string($conn, $_POST["cat"]);
-    $country = mysqli_real_escape_string($conn, $_POST["country"]);
     $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
     $slag = str_replace(' ', '-', $cat);
     $slag = strtolower($slag);
     $cat = ucwords($cat);
 
     
-    $updqry = "UPDATE experience SET country_id='$country', experience_name='$cat', experience_slag='$slag', description='$desc', short_description='$desc'  WHERE experience_id = '$cat_id'";
+    $updqry = "UPDATE experience SET experience_name='$cat', experience_slag='$slag', description='$desc', short_description='$desc'  WHERE experience_id = '$cat_id'";
     
     if ($conn->query($updqry)===TRUE){
           
@@ -535,11 +533,10 @@ elseif (isset($_POST["edit-cou-flag"])) {
 }
 
 
-// Add new destination
+// Add new package
 elseif(isset($_POST["add-package"])){
     $tit = mysqli_real_escape_string($conn, $_POST["tit"]);
     $stit = mysqli_real_escape_string($conn, $_POST["stit"]);
-    $country = mysqli_real_escape_string($conn, $_POST["country"]);
     $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
     $price = mysqli_real_escape_string($conn, $_POST["price"]);
     $dates = mysqli_real_escape_string($conn, $_POST["dates"]);
@@ -565,7 +562,7 @@ elseif(isset($_POST["add-package"])){
     $new = $filedate.$file_name;
     $new_name = rename('../../uploads/'.$file_name , '../../uploads/'.$new);
 
-    $cat_insert = "INSERT INTO package (title, title_slag, subtitle, country_id, package_description, currency, price, package_image, last_modified, travel_dates, category_id, year) VALUES ('$tit',  '$slag', '$stit', '$country', '$desc', '$curr','$price', '$new', '$date', '$dates', '$cat','$year')";
+    $cat_insert = "INSERT INTO package (title, title_slag, subtitle, package_description, currency, price, package_image, last_modified, travel_dates, category_id, year) VALUES ('$tit',  '$slag', '$stit', '$desc', '$curr','$price', '$new', '$date', '$dates', '$cat','$year')";
     
     if ($conn->query($cat_insert)===TRUE){
 
@@ -584,7 +581,6 @@ elseif(isset($_POST["add-package"])){
 elseif(isset($_POST["edit-package"])){
     $tit = mysqli_real_escape_string($conn, $_POST["tit"]);
     $stit = mysqli_real_escape_string($conn, $_POST["stit"]);
-    $country = mysqli_real_escape_string($conn, $_POST["country"]);
     $desc = mysqli_real_escape_string($conn, $_POST["desc"]);
     $price = mysqli_real_escape_string($conn, $_POST["price"]);
     $status = mysqli_real_escape_string($conn, $_POST["status"]);
@@ -601,7 +597,7 @@ elseif(isset($_POST["edit-package"])){
    
 
    
-    $cat_insert = "UPDATE package SET title='$tit', title_slag='$slag', subtitle='$stit', country_id='$country', package_description='$desc', currency='$curr', price='$price', package_status='$status', last_modified='$date', travel_dates='$dates', category_id='$cat_id', year='$year' WHERE package_id  = '$pack_id'";
+    $cat_insert = "UPDATE package SET title='$tit', title_slag='$slag', subtitle='$stit', package_description='$desc', currency='$curr', price='$price', package_status='$status', last_modified='$date', travel_dates='$dates', category_id='$cat_id', year='$year' WHERE package_id  = '$pack_id'";
     
     if ($conn->query($cat_insert)===TRUE){
 

@@ -57,24 +57,6 @@ $countryres = $conn->query("SELECT * FROM country");
 									<label class="form-label">Description </label>
 									<textarea class="form-control" rows="5" name="desc" placeholder="Enter Description" required></textarea>
 								</div>
-                                <!-- State -->
-								<div class="col-md-6">
-									<label class="form-label">Country</label>
-									<select class="form-select js-choice" name="country" data-search-enabled="true">
-										<option value="">Select Country</option>
-										<?php 
-										// Ensure we're fetching countries from the result set correctly
-										while ($countryrow = $countryres->fetch_assoc()) {
-										?>
-											<!-- Removed undefined variable $row and corrected the comparison -->
-											<option value="<?php echo htmlspecialchars($countryrow['country_id']); ?>">
-												<?php echo htmlspecialchars($countryrow['country_name']); ?>
-											</option>
-										<?php 
-										} 
-										?>
-									</select>
-								</div>
 
                                 <!-- Desc 
 								<div class="col-12">
