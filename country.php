@@ -15,12 +15,6 @@ $country = $country_result->fetch_assoc();
 // Get the country ID for subsequent queries
 $country_id = $country['country_id'];
 
-// Fetch top categories from the database
-$category_query = "SELECT * FROM package WHERE country_id = ? LIMIT 4";
-$category_stmt = $conn->prepare($category_query);
-$category_stmt->bind_param("i", $country_id);
-$category_stmt->execute();
-$categories_result = $category_stmt->get_result();
 
 // Fetch top destinations from the database
 $destination_query = "SELECT * FROM destination WHERE country_id = ? LIMIT 4";
@@ -30,11 +24,22 @@ $destination_stmt->execute();
 $destinations_result = $destination_stmt->get_result();
 
 // Fetch top experiences from the database
-$experience_query = "SELECT * FROM experience WHERE country_id = ? LIMIT 4";
+$experience_query = "
+    SELECT e.* 
+    FROM experience e 
+    JOIN destination_experience de ON e.experience_id = de.experience_id 
+    JOIN destination d ON de.destination_id = d.destination_id 
+    WHERE d.country_id = ? 
+    GROUP BY e.experience_id 
+    ORDER BY CASE WHEN e.priority = 0 THEN 1 ELSE 0 END, e.priority, e.experience_id DESC 
+    LIMIT 4
+";
+
 $experience_stmt = $conn->prepare($experience_query);
 $experience_stmt->bind_param("i", $country_id);
 $experience_stmt->execute();
 $experiences_result = $experience_stmt->get_result();
+
 
 // Fetch packages from the database
 $package_query = "SELECT * FROM package p JOIN package_day pd ON p.package_id=pd.package_id JOIN package_day_destination pdd ON pd.package_day_id=pdd.package_day_id JOIN destination d ON d.destination_id=pdd.destination_id WHERE d.country_id = ? AND p.package_status = 1 GROUP BY p.package_id ORDER BY CASE WHEN p.priority = 0 THEN 1 ELSE 0 END, p.priority, p.package_id DESC LIMIT 12";
