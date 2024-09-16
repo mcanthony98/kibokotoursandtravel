@@ -133,13 +133,13 @@
                                                 <div class="row g-4 justify-content-between p-lg-3">
                                                     <!-- Destination -->
                                                     <div class="col-lg-5">
-                                                        <h6 class="mb-3"><a href="destinations.php"><i class="bi bi-pin-map-fill text-warning me-2"></i>Destinations</a></h6>
+                                                        <h6 class="mb-3"><a href="destinations.php"><i class="bi bi-pin-map-fill text-warning me-2"></i>Top Destinations in:</a></h6>
                                                         <hr class="my-2">
                                                         <div class="row">
                                                             <?php 
                                                             while($destination_country = $country_res->fetch_assoc()) { 
                                                                 // Fetch destinations for this country
-                                                                $destinations_query = "SELECT * FROM destination WHERE country_id = ?";
+                                                                $destinations_query = "SELECT * FROM destination WHERE country_id = ? ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 5";
                                                                 $dest_stmt = $conn->prepare($destinations_query);
                                                                 $dest_stmt->bind_param("i", $destination_country['country_id']);
                                                                 $dest_stmt->execute();

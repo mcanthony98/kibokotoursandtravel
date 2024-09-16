@@ -192,7 +192,7 @@ $cntryres = $conn->query("SELECT country.country_id, country.country_name, count
                                                             <?php 
                                                             while($destination_country = $country_res->fetch_assoc()) { 
                                                                 // Fetch destinations for this country
-                                                                $destinations_query = "SELECT * FROM destination WHERE country_id = ?";
+                                                                $destinations_query = "SELECT * FROM destination WHERE country_id = ? ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 5";
                                                                 $dest_stmt = $conn->prepare($destinations_query);
                                                                 $dest_stmt->bind_param("i", $destination_country['country_id']);
                                                                 $dest_stmt->execute();
@@ -394,7 +394,7 @@ Main banner START -->
                 <div class="row">
                     <div class="col-xl-8 m-auto text-center pt-7">
                         <h1 class="display-4 text-white mb-3">Experience East Africa's Natural Wonders</h1>
-                        <h5 class="text-white mb-3">Book your adventure with East Africa's Best Tour Agent!</h5>
+                        <h5 class="text-white mb-3">Book your adventure with East Africa's Best Tour Operator!</h5>
                         <a href="contact-us.php#quote" class="btn btn-lg btn-primary mb-0">Request a Free Quote Today!</a>
                     </div>
                 </div>

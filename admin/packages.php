@@ -55,7 +55,7 @@ $qry = $conn->query("SELECT * FROM package ORDER BY title ASC");
                         while ($row = $qry->fetch_assoc()) {
                     ?>
 					<!-- Table data -->
-					<div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
+					<div class="row row-cols-xl-5 align-items-lg-center border-bottom g-4 px-2 py-4">
 						<!-- Data item -->
 						<div class="col">
 							<small class="d-block d-lg-none">Package</small>
