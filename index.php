@@ -592,7 +592,7 @@ Featured Packages START -->
 
                     <?php } ?>
 
-                    <!-- About Us Btn -->
+                    
                     <div class="d-flex justify-content-center align-items-center text-start me-0 me-sm-4">
                         <!-- Button -->
                         <br>
