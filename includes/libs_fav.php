@@ -1,62 +1,61 @@
     <!-- Dark mode -->
     <script>
-    const storedTheme = localStorage.getItem('theme')
+        const storedTheme = localStorage.getItem('theme')
 
-    const getPreferredTheme = () => {
-        if (storedTheme) {
-            return storedTheme
-        }
-        return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
-    }
-
-    const setTheme = function (theme) {
-        if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: light)').matches) {
-            document.documentElement.setAttribute('data-bs-theme', 'light')
-        } else {
-            document.documentElement.setAttribute('data-bs-theme', theme)
-        }
-    }
-
-    setTheme(getPreferredTheme())
-
-    window.addEventListener('DOMContentLoaded', () => {
-        var el = document.querySelector('.theme-icon-active');
-        if (el != 'undefined' && el != null) {
-            const showActiveTheme = theme => {
-                const activeThemeIcon = document.querySelector('.theme-icon-active use')
-                const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-                const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
-
-                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-                    element.classList.remove('active')
-                })
-
-                btnToActive.classList.add('active')
-                activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+        const getPreferredTheme = () => {
+            if (storedTheme) {
+                return storedTheme
             }
+            return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'light'
+        }
 
-            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-                if (storedTheme !== 'light' || storedTheme !== 'dark') {
-                    setTheme(getPreferredTheme())
-                }
-            })
+        const setTheme = function(theme) {
+            if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: light)').matches) {
+                document.documentElement.setAttribute('data-bs-theme', 'light')
+            } else {
+                document.documentElement.setAttribute('data-bs-theme', theme)
+            }
+        }
 
-            showActiveTheme(getPreferredTheme())
+        setTheme(getPreferredTheme())
 
-            document.querySelectorAll('[data-bs-theme-value]')
-                .forEach(toggle => {
-                    toggle.addEventListener('click', () => {
-                        const theme = toggle.getAttribute('data-bs-theme-value')
-                        localStorage.setItem('theme', theme)
-                        setTheme(theme)
-                        showActiveTheme(theme)
+        window.addEventListener('DOMContentLoaded', () => {
+            var el = document.querySelector('.theme-icon-active');
+            if (el != 'undefined' && el != null) {
+                const showActiveTheme = theme => {
+                    const activeThemeIcon = document.querySelector('.theme-icon-active use')
+                    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+                    const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+                    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                        element.classList.remove('active')
                     })
+
+                    btnToActive.classList.add('active')
+                    activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+                }
+
+                window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                    if (storedTheme !== 'light' || storedTheme !== 'dark') {
+                        setTheme(getPreferredTheme())
+                    }
                 })
 
-        }
-    })
+                showActiveTheme(getPreferredTheme())
 
-</script>
+                document.querySelectorAll('[data-bs-theme-value]')
+                    .forEach(toggle => {
+                        toggle.addEventListener('click', () => {
+                            const theme = toggle.getAttribute('data-bs-theme-value')
+                            localStorage.setItem('theme', theme)
+                            setTheme(theme)
+                            showActiveTheme(theme)
+                        })
+                    })
+
+            }
+        })
+    </script>
 
     <!-- Google Translate -->
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -91,15 +90,177 @@
         }
     </style>
 
-<?php
-$navdestsres = $conn->query("SELECT * FROM destination ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 5");
-$footdestsres = $conn->query("SELECT * FROM destination ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 5");
-$navcounter = 0;
+    <!-- 'Chatbot' -->
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-$navactres = $conn->query("SELECT * FROM experience ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 6");
+    <style>
+        /* Main Chat Icon */
+        #main-chat-icon {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #f4732b;
+            z-index: 1001;
+        }
 
-$navclaspack = $conn->query("SELECT * FROM package WHERE category_id = 3 AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 10");
-$navaccpack = $conn->query("SELECT * FROM package WHERE category_id = 4 AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 10");
-$navfampack = $conn->query("SELECT * FROM package WHERE category_id = 5 AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 10");
-$yearsofpack = $conn->query("SELECT year FROM package WHERE category_id = 3 AND package_status = 1 GROUP BY year ORDER BY year DESC")
-?>
+        /* Contact Icons */
+        #contact-icons {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #86CD91;
+            color: #ffffff;
+            font-size: 24px;
+            border-radius: 50%;
+            text-decoration: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .contact-icon.phone {
+            background-color: #03E78B;
+        }
+
+        .contact-icon.facebook {
+            background-color: #1E88E5;
+        }
+
+        .contact-icon.whatsapp {
+            background-color: #49E670;
+        }
+
+        /* Hover Effect for Icons */
+        .contact-icon:hover {
+            transform: scale(1.1);
+        }
+
+        /* WhatsApp Mini Chat Box */
+        #whatsapp-chat {
+            position: fixed;
+            bottom: 100px;
+            right: 30px;
+            width: 300px;
+            height: 300px;
+            background-color: #e5ddd5;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            background-color: #075e54;
+            color: #ffffff;
+            padding: 8px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+        }
+
+        .chat-body {
+            padding: 10px;
+            background-color: #fff;
+            flex-grow: 1;
+            overflow-y: auto;
+            max-height: 200px;
+        }
+
+        .chat-message {
+            background-color: #dcf8c6;
+            padding: 6px;
+            margin: 4px 0;
+            border-radius: 6px;
+            max-width: 90%;
+            word-wrap: break-word;
+        }
+
+        .chat-footer {
+            display: flex;
+            padding: 5px;
+            border-top: 1px solid #ccc;
+            background-color: #f0f0f0;
+        }
+
+        .chat-footer input {
+            flex: 1;
+            padding: 6px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            margin-right: 5px;
+        }
+
+        .chat-footer button {
+            background-color: #075e54;
+            border: none;
+            color: #ffffff;
+            font-size: 16px;
+            padding: 5px 8px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        /* Visibility Classes */
+        .hidden {
+            display: none !important;
+            opacity: 0;
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            animation: fadeIn 0.3s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Close Btn */
+        .close-chat {
+            cursor: pointer;
+            font-size: 20px;
+            padding: 0 5px;
+        }
+
+        .close-chat:hover {
+            opacity: 0.8;
+        }
+    </style>
+
+    <?php
+    $navdestsres = $conn->query("SELECT * FROM destination ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 5");
+    $footdestsres = $conn->query("SELECT * FROM destination ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 5");
+    $navcounter = 0;
+
+    $navactres = $conn->query("SELECT * FROM experience ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 6");
+
+    $navclaspack = $conn->query("SELECT * FROM package WHERE category_id = 3 AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 10");
+    $navaccpack = $conn->query("SELECT * FROM package WHERE category_id = 4 AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 10");
+    $navfampack = $conn->query("SELECT * FROM package WHERE category_id = 5 AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority LIMIT 10");
+    $yearsofpack = $conn->query("SELECT year FROM package WHERE category_id = 3 AND package_status = 1 GROUP BY year ORDER BY year DESC")
+    ?>
