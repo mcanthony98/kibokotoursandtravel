@@ -30,9 +30,6 @@ $cntryres = $conn->query("SELECT country.country_id, country.country_name, count
     <!-- Libraries, Favicon & CSS -->
     <?php include "includes/libs_fav.php"; ?>
 
-    <!-- 'Chatbot'-->
-    <?php include "includes/custom_chatbot.php"; ?>
-
     <style>
         /* Custom CSS for the Our Benefits Accordion */
         .accordion-button:not(.collapsed) {
