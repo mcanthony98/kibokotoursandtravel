@@ -1,3 +1,12 @@
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MZMTM3Y68W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MZMTM3Y68W');
+</script>
     <!-- Dark mode -->
     <script>
         const storedTheme = localStorage.getItem('theme')
