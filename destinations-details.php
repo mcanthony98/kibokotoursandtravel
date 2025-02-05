@@ -24,17 +24,20 @@ $destexpotherres = $conn->query("SELECT * FROM experience LIMIT $expcounts");
 $destpkgres = $conn->query("SELECT * FROM package p JOIN package_day pd ON p.package_id=pd.package_id JOIN package_day_destination pdd ON pdd.package_day_id=pd.package_day_id WHERE pdd.destination_id=$destid AND p.package_status=1 GROUP BY pd.package_id");
 
 ?>
+<?php 
+        $seo_title = $destrow['tit']; 
+        $seo_desc = $destrow['descr']; 
+
+        $seo_img = "uploads/".$destrow['destination_image'];
+        $og_type = "website";
+        $canonical = "destinations-details.php?id=".$destrow['destination_id']."&".$destrow['destination_slag']."/";
+        $robot = "index, follow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
-        <title>Destination Details | Kiboko Tours & Travel</title>
-
-        <!-- Meta Tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="GNM">
-        <meta name="description" content="Kiboko Tours & Travel">
+        
 
         <!-- Libraries, Favicon & CSS -->
         <?php include "includes/libs_fav.php";?>
@@ -73,7 +76,7 @@ About START -->
 				<!-- Image -->
 				<div class="position-relative mb-5">
 					<!-- Image -->
-					<img src="uploads/<?php echo $destrow['destination_image'];?>" class="rounded-3 w-100"  alt="">
+					<img src="uploads/<?php echo $destrow['destination_image'];?>" class="rounded-3 w-100" loading="lazy"  alt="a picture of <?php echo $destrow['destination_name'];?>">
 					<!-- Manager -->
 					<div class="position-absolute bottom-0 start-0 ms-n3 ms-lg-n6 mb-2 z-index-1">
 						<div class="bg-mode shadow d-inline-block text-center rounded-3 position-relative p-4">
@@ -111,7 +114,7 @@ Offers START -->
 			<!-- Offer item -->
 			<div class="col-6 col-md-4 col-xl-2">
 				<div class="card bg-transparent h-100">
-					<img src="uploads/<?php echo $destexprow['experience_image'];?>" class="card-img" alt="<?php echo $destexprow['experience_name'];?> with Kiboko Tours and Travel">
+					<img src="uploads/<?php echo $destexprow['experience_image'];?>" class="card-img" loading="lazy" alt="<?php echo $destexprow['experience_name'];?> with Kiboko Tours and Travel">
 					<div class="card-body text-center p-2">
 						<h6 class="mb-0"><a href="experience-details.php?id=<?php echo $destexprow['experience_id'];?>&<?php echo $destexprow['experience_slag'];?>" class="stretched-link"><?php echo $destexprow['experience_name'];?></a></h6>
 						<p><?php echo substr($destexprow['description'], 0, 35);?>...</p>
@@ -152,7 +155,7 @@ Packages START -->
 				<div class="card card-img-scale overflow-hidden bg-transparent">
 					<div class="card-img-scale-wrapper rounded-3">
 						<!-- Card Image -->
-						<img src="uploads/<?php echo $destpkgrow['package_image'];?>" class="card-img" alt="<?php echo $destpkgrow['title'];?>">
+						<img src="uploads/<?php echo $destpkgrow['package_image'];?>" class="card-img" alt="<?php echo $destpkgrow['title'];?>" loading="lazy">
 						<!-- Overlay -->
 						<div class="card-img-overlay d-flex flex-column z-index-1 p-4">
 							<!-- Card overlay top -->

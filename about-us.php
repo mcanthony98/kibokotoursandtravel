@@ -1,17 +1,21 @@
 <?php 
 require "includes/connect.php";
 ?>
+    
+    <?php 
+        $seo_title = "About Us | Kiboko Tours and Travel"; 
+        $seo_desc = "Kiboko Tours and Travel offers safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond."; 
+
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "about-us.php/";
+        $robot = "index, follow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>About Us | Kiboko Tours & Travel</title>
-
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="GNM">
-    <meta name="description" content="Kiboko Tours & Travel">
+   
 
     <!-- Libraries, Favicon & CSS -->
     <?php include "includes/libs_fav.php";?>
@@ -45,19 +49,19 @@ Main banner START -->
                 <div class="row g-4 align-items-center">
                     <!-- Image -->
                     <div class="col-md-6">
-                        <img src="assets/images/about-1.jpg" class="rounded-3" alt="">
+                        <img src="assets/images/about-1.jpg" class="rounded-3" loading="lazy" alt="Happy tourists in a tour van in Kenya">
                     </div>
 
                     <div class="col-md-6">
                         <div class="row g-4">
                             <!-- Image -->
                             <div class="col-md-8">
-                                <img src="assets/images/about-2.JPG" class="rounded-3" alt="">
+                                <img src="assets/images/about-2.JPG" class="rounded-3" loading="lazy" alt="tourist in front of Mt Kenya">
                             </div>
 
                             <!-- Image -->
                             <div class="col-12">
-                                <img src="assets/images/7.png" class="rounded-3" alt="">
+                                <img src="assets/images/7.png" loading="lazy" class="rounded-3" alt="A happy family in a hotel">
                             </div>
                         </div>
                     </div>
@@ -257,7 +261,7 @@ Team START -->
                         <div class="card card-element-hover bg-transparent">
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/team/person-1.jpg" class="card-img" alt="">
+                                <img src="assets/images/team/person-1.jpg" class="card-img" alt="WILFRED VICTOR JUMA from Kiboko Tours and Travel" loading="lazy">
 
                                 <div class="card-img-overlay hover-element d-flex p-3">
                                     <!-- Category -->
@@ -288,7 +292,7 @@ Team START -->
                         <div class="card card-element-hover bg-transparent">
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/team/person-2.jpg" class="card-img" alt="">
+                                <img src="assets/images/team/person-2.jpg" class="card-img" alt="MICHAEL N MWAURA from Kiboko Tours and Travel" loading="lazy">
 
                                 <div class="card-img-overlay hover-element d-flex p-3">
                                     <!-- Category -->
@@ -320,7 +324,7 @@ Team START -->
                         <div class="card card-element-hover bg-transparent">
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/team/person-3.jpg" class="card-img" alt="">
+                                <img src="assets/images/team/person-3.jpg" class="card-img" alt="MICHAEL N MWAURA from  Kiboko Tours and Travel" loading="lazy">
 
                                 <div class="card-img-overlay hover-element d-flex p-3">
                                     <!-- Category -->
@@ -351,7 +355,7 @@ Team START -->
                         <div class="card card-element-hover bg-transparent">
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="assets/images/team/person-5.jpg" class="card-img" alt="">
+                                <img src="assets/images/team/person-5.jpg" class="card-img" alt="SAMUEL MBUGUA from Kiboko Tours and Travel" loading="lazy">
 
                                 <div class="card-img-overlay hover-element d-flex p-3">
                                     <!-- Category -->
@@ -404,7 +408,7 @@ It's Time to Discover START -->
                             <!-- Title -->
                             <div class="d-flex">
                                 <h3>It's time to discover nature's best</h3>
-                                <img src="assets/images/element/view.svg" class="h-100px w-100px ms-3" alt="">
+                                <img src="assets/images/element/view.svg" class="h-100px w-100px ms-3" alt="elephant under a tree" loading="lazy">
                             </div>
                             <p class="mb-3 mb-lg-0 text-grey">Witness the unseen: Book your once-in-a-lifetime wildlife journey.
                             </p>

@@ -11,30 +11,20 @@ $blogrow = $blogres->fetch_assoc();
 
 
 ?>
+<?php 
+        $seo_title = $blogrow['seo_title']; 
+        $seo_desc =  $blogrow['seo_description']; 
+
+        $seo_img = "uploads/".$blogrow['blog_image'];
+        $og_type = "article";
+        $canonical = "blog-detail.php?id=".$blogrow['blog_id']."&".$blogrow['blog_slag'];
+        $robot = "index, follow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-<title><?php echo $blogrow['seo_title']; ?></title>
 
-<!-- Meta Tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Ganiam Tech">
-<meta name="description" content="<?php echo $blogrow['seo_description']; ?>">
-<meta name="keywords" content="<?php echo $blogrow['seo_keywords']; ?>">
-
-<meta property="og:title" content="<?php echo $blogrow['seo_title']; ?>">
-<meta name="twitter:title" content="<?php echo $blogrow['seo_title']; ?>">
-
-<meta property="og:description" content="<?php echo $blogrow['seo_description']; ?>">
-<meta name="twitter:description" content="<?php echo $blogrow['seo_description']; ?>">
-
-<meta property="og:image" content="https://kibokotoursandtravel.com/uploads/<?php echo $blogrow['blog_image']; ?>">
-<meta name="twitter:image" content="https://kibokotoursandtravel.com/uploads/<?php echo $blogrow['blog_image']; ?>">
-<meta property="og:url" content="https://kibokotoursandtravel.com">
-<meta property="og:site_name" content="kiboko tours and travel">
-<meta property="og:type" content="article">
 
      <!-- Libraries, Favicon & CSS -->
      <?php include "includes/libs_fav.php";?>

@@ -2,6 +2,15 @@
 require "includes/connect.php";
 
 ?>
+<?php 
+        $seo_title = "Sign in | Kiboko Tours & Travel"; 
+        $seo_desc = "Kiboko Tours and Travel offers safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond."; 
+
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "sign-in.php/";
+        $robot = "noindex, nofollow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +22,8 @@ require "includes/connect.php";
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="author" content="GNM">
         <meta name="description" content="Kiboko Tours & Travel">
+		<link rel="canonical" href="https://kibokotoursandtravel.com/sign-in.php/" />
+
 
         <!-- Libraries, Favicon & CSS -->
         <?php include "includes/libs_fav.php";?>
@@ -39,7 +50,7 @@ Main Content START -->
 						<!-- Vector Image -->
 						<div class="col-lg-6 d-flex align-items-center order-2 order-lg-1">
 							<div class="p-3 p-lg-5">
-								<img src="assets/images/hippo.jpg" alt="Hippo SVG">
+								<img src="assets/images/hippo.jpg" loading="lazy" alt="Hippo SVG">
 							</div>
 							<!-- Divider -->
 							<div class="vr opacity-1 d-none d-lg-block"></div>
@@ -50,7 +61,7 @@ Main Content START -->
 							<div class="p-4 p-sm-7">
 								<!-- Logo -->
 								<a href="index.html">
-									<img class="h-50px mb-4" src="assets/images/kiboko-logo.png" alt="logo">
+									<img class="h-50px mb-4" src="assets/images/kiboko-logo.png" loading="lazy" alt="logo">
 								</a>
 								<!-- Title -->
 								<h1 class="mb-2 h3">Welcome back</h1>

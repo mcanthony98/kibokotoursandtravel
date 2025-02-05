@@ -70,8 +70,49 @@
     <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Ganaim Tech">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <title><?php echo $seo_title;?></title>
+
+    <meta name="description" content="<?php echo $seo_desc;?>">
+    
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="<?php echo $seo_title;?>">
+    <meta property="og:description" content="<?php echo $seo_desc;?>">
+    <meta property="og:image" content="https://kibokotoursandtravel.com/<?php echo $seo_img;?>">
+    <meta property="og:url" content="https://kibokotoursandtravel.com/">
+    <meta property="og:type" content="<?php echo $og_type;?>">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="kiboko tours and travel">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:title" content="<?php echo $seo_title;?>">
+    <meta name="twitter:description" content="<?php echo $seo_desc;?>">
+    <meta name="twitter:image" content="https://kibokotoursandtravel.com/<?php echo $seo_img;?>">
+    <meta name="twitter:card" content="summary_large_image">
+
+    
+
+    <!-- Additional Meta Tags for better SEO -->
+    <meta name="robots" content="<?php echo $robot;?>"> <!-- Tells search engines to index and follow the page -->
+    <meta name="robots" content="noarchive"> <!-- Prevents caching of the page -->
+
+    <!-- Canonical Tags -->
+    <link rel="canonical" href="https://kibokotoursandtravel.com/<?php echo $canonical;?>" />
+
+
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/kiboko-logo.png">
+
+     <!-- hreflang -->
+    <link rel="alternate" hreflang="en" href="https://kibokotoursandtravel.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://kibokotoursandtravel.com/" />
+
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com/">

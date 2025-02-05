@@ -4,18 +4,21 @@ $cat = 5;
 $catres = $conn->query("SELECT * FROM category WHERE category_id='$cat'");
 $catrow = $catres->fetch_assoc();
 $packres = $conn->query("SELECT * FROM package WHERE category_id = '$cat' AND package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, package_id DESC");
-?><!DOCTYPE html>
+?>
+<?php 
+        $seo_title = "Classic Safaris | Kiboko Tours & Travel"; 
+        $seo_desc = "Kiboko Tours and Travel offers safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond."; 
+
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "family-couple-safaris.php/";
+        $robot = "index, follow";
+    ?>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Classic Safaris | Kiboko Tours & Travel</title>
-
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="GNM">
-    <meta name="description" content="Kiboko Tours & Travel">
-
+    
     <!-- Libraries, Favicon & CSS -->
     <?php include "includes/libs_fav.php";?>
 
@@ -106,7 +109,7 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="uploads/<?php echo $row['package_image'];?>" class="card-img-top" alt="Card image">
+                                <img src="uploads/<?php echo $row['package_image'];?>" class="card-img-top" loading="lazy" alt="<?php echo $row['title'];?>">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     

@@ -50,17 +50,20 @@ $packres = $package_stmt->get_result();
 
 
 ?>
+<?php 
+        $seo_title = htmlspecialchars($country['country_name']); 
+        $seo_desc = htmlspecialchars($country['seo_description']); 
+
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "country.php?name=".urlencode($country['country_name'])."/";
+        $robot = "index, follow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title><?php echo htmlspecialchars($country['country_name']); ?> | Kiboko Tours & Travel</title>
-
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="GNM">
-    <meta name="description" content="Explore the best of <?php echo htmlspecialchars($country['country_name']); ?> with Kiboko Tours & Travel">
+   
     <style>
         .short-description {
             display: -webkit-box;
@@ -81,6 +84,9 @@ $packres = $package_stmt->get_result();
 
     <!-- Libraries, Favicon & CSS -->
     <?php include "includes/libs_fav.php"; ?>
+
+
+    <link rel="canonical" href="https://kibokotoursandtravel.com/country.php?name=<?php echo urlencode($country['country_name']); ?>/" />
 </head>
 
 <body>
@@ -135,7 +141,7 @@ About Country START -->
                     </div>
                     <!-- Image -->
                     <div class="col-lg-5 text-center">
-                        <img src="./uploads/<?php echo htmlspecialchars($country['country_flag']); ?>" alt="<?php echo htmlspecialchars($country['country_name']); ?>">
+                        <img src="./uploads/<?php echo htmlspecialchars($country['country_flag']); ?>" alt="<?php echo htmlspecialchars($country['country_name']); ?>" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -164,7 +170,7 @@ Experiences You'll Get START -->
                                 <div class="row g-0 align-items-center">
                                     <!-- Image -->
                                     <div class="col-sm-6">
-                                        <img src="./uploads/<?php echo htmlspecialchars($experience['experience_image']); ?>" class="card-img rounded-0" alt="<?php echo htmlspecialchars($experience['experience_name']); ?>">
+                                        <img src="./uploads/<?php echo htmlspecialchars($experience['experience_image']); ?>" class="card-img rounded-0" alt="<?php echo htmlspecialchars($experience['experience_name']); ?>" loading="lazy">
                                     </div>
 
                                     <!-- Title and content -->
@@ -204,7 +210,7 @@ Country Destinations START -->
                         <!-- Card item START -->
                         <div>
                             <div class="card card-metro overflow-hidden">
-                                <img class="dest-img" src="./uploads/<?php echo htmlspecialchars($destination['destination_image']); ?>" alt="<?php echo htmlspecialchars($destination['destination_name']); ?>">
+                                <img class="dest-img" loading="lazy" src="./uploads/<?php echo htmlspecialchars($destination['destination_image']); ?>" alt="<?php echo htmlspecialchars($destination['destination_name']); ?>">
                                 <!-- Image overlay -->
                                 <div class="card-img-overlay d-flex">
                                     <!-- Info -->
@@ -245,7 +251,7 @@ Country Packages START -->
                             <!-- Image and overlay -->
                             <div class="card-img-scale-wrapper rounded-3">
                                 <!-- Image -->
-                                <img src="uploads/<?php echo $row['package_image']; ?>" class="card-img mt-1" alt="kiboko image">
+                                <img src="uploads/<?php echo $row['package_image']; ?>" loading="lazy" class="card-img mt-1" alt="<?php echo $row['title']; ?>">
                                 <!-- Badge -->
                                 <div class="position-absolute bottom-0 start-0 p-3">
                                     <div class="badge text-bg-dark fs-6 rounded-pill stretched-link d-none"><i

@@ -1,20 +1,22 @@
 <?php 
 require "includes/connect.php";
 
-$destres = $conn->query("SELECT * FROM destination ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, destination_id DESC");
+$destres = $conn->query("SELECT * FROM destination d JOIN country c ON d.country_id=c.country_id  ORDER BY CASE WHEN d.priority = 0 THEN 1 ELSE 0 END, d.priority, d.destination_id DESC");
 $pkgres = $conn->query("SELECT * FROM package  WHERE package_status = 1 ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, package_id DESC");
 ?>
+<?php 
+        $seo_title = "Destinations | Kiboko Tours & Travel"; 
+        $seo_desc = "Kiboko Tours and Travel offers safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond."; 
+
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "destinations.php/";
+        $robot = "index, follow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
-        <title>Destinations | Kiboko Tours & Travel</title>
-
-        <!-- Meta Tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="GNM">
-        <meta name="description" content="Kiboko Tours & Travel">
 
         <!-- Libraries, Favicon & CSS -->
         <?php include "includes/libs_fav.php";?>
@@ -40,7 +42,7 @@ Main Banner START -->
                     <!-- Banner title -->
                     <div class="row">
                         <div class="col-md-8 mx-auto my-5">
-                            <h1 class="text-center text-dark">Places to Visit in Kenya</h1></h1>
+                            <h1 class="text-center text-dark">Places to Visit in East Africa</h1></h1>
                             <ul class="nav nav-divider h6 text-dark mb-0 justify-content-center">
                                 <li class="nav-item" style="color: white; font-weight: bold;"><?php echo $destres->num_rows;?> Destinations</li>
                                 <li class="nav-item" style="color: white; font-weight: bold;"><?php echo $pkgres->num_rows;?> Packages</li>
@@ -104,14 +106,14 @@ Tour grid START -->
                             <!-- Overlay item -->
                             <div class="position-relative">
                                 <!-- Image -->
-                                <img src="uploads/<?php echo $row['destination_image'];?>" class="card-img-top" alt="Card image">
+                                <img src="uploads/<?php echo $row['destination_image'];?>" class="card-img-top" loading="lazy" alt="<?php echo $row['destination_name'];?>">
                                 <!-- Overlay -->
                                 <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                     <!-- Card overlay top -->
                                     
                                     <!-- Card overlay bottom -->
                                     <div class="w-100 mt-auto">
-                                        <span class="badge text-bg-white fs-6">Kenya</span>
+                                        <span class="badge text-bg-white fs-6"><?php echo $row['country_name'];?></span>
                                     </div>
                                 </div>
                             </div>

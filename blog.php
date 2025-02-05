@@ -5,19 +5,21 @@ $res = $conn->query("SELECT * FROM blog WHERE blog_status='1' ORDER BY blog_id D
 
 
 ?>
+<?php 
+        $seo_title = "Our Blogs | Kiboko Tours and Travel"; 
+        $seo_desc = "Kiboko Tours and Travel offers safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond."; 
+
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "blog.php/";
+        $robot = "index, follow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
 
 <head>
-	<title>Our Blogs | Kiboko Tours and Travel</title>
-
-	 <!-- Meta Tags -->
-	 <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="GNM">
-        <meta name="description" content="Kiboko Tours & Travel">
-
+	
         <!-- Libraries, Favicon & CSS -->
         <?php include "includes/libs_fav.php";?>
 

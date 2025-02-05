@@ -13,18 +13,21 @@ $pkgid = $bkrow['package_id'];
 $pkgres = $conn->query("SELECT * FROM package WHERE package_id='$pkgid'");
 $pkgrow = $pkgres->fetch_assoc();
 ?>
+
+<?php 
+        $seo_title = "Make Payment | Kiboko Tours & Travel"; 
+        $seo_desc = "Kiboko Tours and Travel offers safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond."; 
+
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "payment.php/";
+        $robot = "noindex, nofollow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
-        <title>Pay | Kiboko Tours & Travel</title>
-
-        <!-- Meta Tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="GNM">
-        <meta name="description" content="Kiboko Tours & Travel">
-
+		
         <!-- Libraries, Favicon & CSS -->
         <?php include "includes/libs_fav.php";?>
 
@@ -164,10 +167,10 @@ Main Content START -->
 							<div class="d-sm-flex justify-content-sm-between align-items-center mb-3">
 								<h6 class="mb-2 mb-sm-0">We Accept:</h6>
 								<ul class="list-inline mb-0">
-									<li class="list-inline-item"> <a href="#"><img src="assets/images/element/M-PESA_LOGO-01.svg.png" class="h-30px" alt=""></a></li>
-									<li class="list-inline-item"> <a href="#"><img src="assets/images/element/visa.svg" class="h-30px" alt=""></a></li>
-									<li class="list-inline-item"> <a href="#"><img src="assets/images/element/mastercard.svg" class="h-30px" alt=""></a></li>
-									<li class="list-inline-item"> <a href="#"><img src="assets/images/element/expresscard.svg" class="h-30px" alt=""></a></li>
+									<li class="list-inline-item"> <a href="#"><img src="assets/images/element/M-PESA_LOGO-01.svg.png" class="h-30px" alt="m-pesa"></a></li>
+									<li class="list-inline-item"> <a href="#"><img src="assets/images/element/visa.svg" class="h-30px" alt="visa"></a></li>
+									<li class="list-inline-item"> <a href="#"><img src="assets/images/element/mastercard.svg" class="h-30px" alt="mastercard"></a></li>
+									<li class="list-inline-item"> <a href="#"><img src="assets/images/element/expresscard.svg" class="h-30px" alt="expresscard"></a></li>
 								</ul>
 							</div>
 

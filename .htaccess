@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^kibokotoursandtravel\.com [NC]
+RewriteRule ^(.*)$ https://www.kibokotoursandtravel.com/$1 [L,R=301]

@@ -17,17 +17,21 @@ $pkgdestres = $conn->query("SELECT * FROM package_day_destination pdd JOIN packa
 
 $pkgdayres = $conn->query("SELECT * FROM package_day pd WHERE pd.package_id=$pkgid ORDER BY pd.day ASC");
 ?>
+
+<?php 
+        $seo_title = $pkgrow['seo_title']; 
+        $seo_desc = $pkgrow['seo_description']; 
+
+        $seo_img = "uploads/".$pkgrow['package_image'];
+        $og_type = "website";
+        $canonical = "package-details.php?id=".$pkgrow['package_id']."&".$pkgrow['title_slag']."/";
+        $robot = "index, follow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
-        <title>Package Details | Kiboko Tours & Travel</title>
-
-        <!-- Meta Tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="GNM">
-        <meta name="description" content="Kiboko Tours & Travel">
+        
 
         <!-- Libraries, Favicon & CSS -->
         <?php include "includes/libs_fav.php";?>

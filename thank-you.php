@@ -2,18 +2,29 @@
 require "includes/connect.php";
 
 ?>
+<?php 
+        $seo_title = "Thank You | Kiboko Tours & Travel"; 
+        $seo_desc = "Kiboko Tours and Travel offers safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond."; 
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "thank-you.php/";
+        $robot = "noindex, nofollow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
 
 <head>
-    <title>Thank You | Kiboko Tours & Travel</title>
+    <title></title>
 
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="GNM">
     <meta name="description" content="Kiboko Tours & Travel">
+
+	<link rel="canonical" href="https://kibokotoursandtravel.com/thank-you.php/" />
+
 
     <!-- Libraries, Favicon & CSS -->
     <?php include "includes/libs_fav.php";?>
@@ -37,7 +48,7 @@ Main content START -->
 
 				<div class="card shadow">
 					<!-- Image -->
-					<img src="assets/images/banner3.jpg" class="rounded-top" alt="">
+					<img src="assets/images/banner3.jpg" class="rounded-top d-none" loading="lazy" alt="image">
 
 					<!-- Card body -->
 					<div class="card-body text-center p-4">

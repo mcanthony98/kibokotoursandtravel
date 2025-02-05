@@ -22,7 +22,7 @@
                                 class="bi bi-telephone me-2"></i>+254 732 962224</a> </p>
                     <p class="mb-0"><a href="mailto:info@kibokotoursandtravel.com"
                             class="text-muted text-primary-hover"><i
-                                class="bi bi-envelope me-2"></i>info@kibokotoursandtravel.com</a></p>
+                                class="bi bi-envelope me-2"></i>&#105;&#110;&#102;&#111;&#064;&#107;&#105;&#098;&#111;&#107;&#111;&#116;&#111;&#117;&#114;&#115;&#097;&#110;&#100;&#116;&#114;&#097;&#118;&#101;&#108;&#046;&#099;&#111;&#109;</a></p>
                 </div>
                 <!-- Widget 1 END -->
 

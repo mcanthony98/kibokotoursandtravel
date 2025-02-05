@@ -4,7 +4,7 @@
         <div class="d-block d-md-none" id="google_translate_element2"></div> 
         <span>
         <span class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
-            <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i><span class="d-none d-md-inline">info@kibokotoursandtravel.com</span></a>
+            <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i><span class="d-none d-md-inline">&#105;&#110;&#102;&#111;&#064;&#107;&#105;&#098;&#111;&#107;&#111;&#116;&#111;&#117;&#114;&#115;&#097;&#110;&#100;&#116;&#114;&#097;&#118;&#101;&#108;&#046;&#099;&#111;&#109;</span></a>
         </span>
         <span class="ms-3">
             <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-success text-decoration-underline"><i class="bi bi-whatsapp"></i><span class="d-none d-md-inline">Whatsapp: +254 732 962224</span></a>

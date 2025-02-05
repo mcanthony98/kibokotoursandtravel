@@ -2,17 +2,20 @@
 require "includes/connect.php";
 
 ?>
+<?php 
+        $seo_title = "Contact Us | Kiboko Tours & Travel"; 
+        $seo_desc = "Kiboko Tours and Travel offers safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond."; 
+
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "contact-us.php/";
+        $robot = "index, follow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Contact Us | Kiboko Tours & Travel</title>
-
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="GNM">
-    <meta name="description" content="Kiboko Tours & Travel">
+    
 
     <!-- Libraries, Favicon & CSS -->
     <?php include "includes/libs_fav.php";?>
@@ -73,7 +76,7 @@ Main banner START -->
                             <p>Our email is open 24/7</p>
                             <!-- Buttons -->
                             <a href="mailto:info@kibokotoursandtravel.com" class="btn btn-link text-decoration-underline p-0 mb-0"><i
-                                    class="bi bi-envelope me-1"></i>info@kibokotoursandtravel.com</a>
+                                    class="bi bi-envelope me-1"></i>&#105;&#110;&#102;&#111;&#064;&#107;&#105;&#098;&#111;&#107;&#111;&#116;&#111;&#117;&#114;&#115;&#097;&#110;&#100;&#116;&#114;&#097;&#118;&#101;&#108;&#046;&#099;&#111;&#109;</a>
                         </div>
                     </div>
                     <!-- Contact item END -->
@@ -143,7 +146,7 @@ Contact form and vector START -->
                 <div class="row g-4 g-lg-5 align-items-center">
                     <!-- Vector image START -->
                     <div class="col-lg-6 text-center">
-                        <img src="assets/images/element/view.svg" alt="">
+                        <img src="assets/images/element/view.svg" loading="lazy" alt="Elephant under a tree">
                     </div>
                     <!-- Vector image END -->
 
@@ -445,7 +448,7 @@ It's Time to Discover START -->
                             <!-- Title -->
                             <div class="d-flex">
                                 <h3>It's time to discover nature's best</h3>
-                                <img src="assets/images/element/wild.svg" class="h-100px w-100px ms-3" alt="">
+                                <img src="assets/images/element/wild.svg" loading="lazy" class="h-100px w-100px ms-3" alt="nature and animals in the wild">
                             </div>
                             <p class="mb-3 mb-lg-0">Witness the unseen: Book your once-in-a-lifetime wildlife journey.
                             </p>

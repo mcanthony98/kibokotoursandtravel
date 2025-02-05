@@ -38,17 +38,20 @@ $txrow = $txres->fetch_assoc();
 
   maillinge('info@kibokotoursandtravel.com', $emsubject, $embody);
 ?>
+<?php 
+        $seo_title = "Payment Confirmed | Kiboko Tours & Travel"; 
+        $seo_desc = "Kiboko Tours and Travel offers safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond."; 
+
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "payment-confirmation.php/";
+        $robot = "noindex, nofollow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
-        <title>Payment Confirmed | Kiboko Tours & Travel</title>
-
-        <!-- Meta Tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="author" content="GNM">
-        <meta name="description" content="Kiboko Tours & Travel">
+        
 
         <!-- Libraries, Favicon & CSS -->
         <?php include "includes/libs_fav.php";?>
@@ -86,7 +89,7 @@ Main content START -->
 
 					<!-- Image -->
 					<div class="d-flex justify-content-center">
-						<img src="assets/images/kiboko-logo.png" class="rounded-top" alt="" style="width: 200px; height: 200px;">
+						<img src="assets/images/kiboko-logo.png" class="rounded-top" alt="logo" loading="lazy" style="width: 200px; height: 200px;">
 					</div>
 
 					<!-- Card body -->

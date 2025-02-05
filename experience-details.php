@@ -11,30 +11,21 @@ $blogrow = $blogres->fetch_assoc();
 
 
 ?>
+
+<?php 
+        $seo_title = $blogrow['seo_title'];
+        $seo_desc = $blogrow['seo_description']; 
+
+        $seo_img = "uplaods/".$blogrow['experience_image'];;
+        $og_type = "website";
+        $canonical = "experience-details.php?id=".$blogrow['experience_id']."&".$blogrow['experience_slag']."/";
+        $robot = "index, follow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
     <head>
-    <title><?php echo $blogrow['seo_title']; ?></title>
-
-<!-- Meta Tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="Ganiam Tech">
-<meta name="description" content="<?php echo $blogrow['seo_description']; ?>">
-
-<meta property="og:title" content="<?php echo $blogrow['seo_title']; ?>">
-<meta name="twitter:title" content="<?php echo $blogrow['seo_title']; ?>">
-
-<meta property="og:description" content="<?php echo $blogrow['seo_description']; ?>">
-<meta name="twitter:description" content="<?php echo $blogrow['seo_description']; ?>">
-
-<meta property="og:image" content="https://kibokotoursandtravel.com/uploads/<?php echo $blogrow['experience_image']; ?>">
-<meta name="twitter:image" content="https://kibokotoursandtravel.com/uploads/<?php echo $blogrow['experience_image']; ?>">
-<meta property="og:url" content="https://kibokotoursandtravel.com">
-<meta property="og:site_name" content="kiboko tours and travel">
-<meta property="og:type" content="website">
-
+    
         <!-- Libraries, Favicon & CSS -->
         <?php include "includes/libs_fav.php";?>
 
@@ -110,7 +101,7 @@ $blogrow = $blogres->fetch_assoc();
                                         <!-- Overlay item -->
                                         <div class="position-relative">
                                             <!-- Image -->
-                                            <img src="uploads/<?php echo $row['package_image'];?>" class="card-img-top" alt="Card image">
+                                            <img src="uploads/<?php echo $row['package_image'];?>" loading="lazy" class="card-img-top" alt="<?php echo $row['title'];?>">
                                             <!-- Overlay -->
                                             <div class="card-img-overlay d-flex flex-column p-4 z-index-1">
                                                 

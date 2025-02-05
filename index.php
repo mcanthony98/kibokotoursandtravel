@@ -15,17 +15,20 @@ $cntryres = $conn->query("SELECT country.country_id, country.country_name, count
                 GROUP BY country.country_id 
                 ORDER BY country.country_name ASC");
 ?>
+<?php 
+        $seo_title = "Safari Tours in East Africa | Kiboko Tours & Travel"; 
+        $seo_desc = "Kiboko Tours and Travel offers safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond."; 
+
+        $seo_img = "assets/images/kiboko.jpeg";
+        $og_type = "website";
+        $canonical = "";
+        $robot = "index, follow";
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Home | Kiboko Tours & Travel</title>
-
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="GNM">
-    <meta name="description" content="Kiboko Tours & Travel">
+    
 
     <!-- Libraries, Favicon & CSS -->
     <?php include "includes/libs_fav.php"; ?>
@@ -43,6 +46,67 @@ $cntryres = $conn->query("SELECT country.country_id, country.country_name, count
         }
     </style>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "Kiboko Tours and Travel",
+  "url": "https://kibokotoursandtravel.com/",
+  "logo": "https://kibokotoursandtravel.com/assets/images/kiboko-logo.png",
+  "image": "https://kibokotoursandtravel.com/assets/images/kiboko.jpeg",
+  "description": "Kiboko Tours and Travel specializes in safari tours, travel booking, hotel reservations, beach tours, and gorilla trekking in Kenya and beyond.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Kabarnet Rd",
+    "addressLocality": "Ngong",
+    "addressRegion": "Nairobi",
+    "postalCode": "00100",
+    "addressCountry": "KE"
+  },
+  "telephone": "+254732962224",
+  "email": "info@kibokotoursandtravel.com",
+  "priceRange": "$65 - $20,000",
+  "openingHours": "Mo-Fr 08:00-18:00",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+254732962224",
+    "contactType": "customer service",
+    "availableLanguage": ["English", "Swahili", "French", "Italian", "Spanish", "Portuguese"]
+  },
+  "sameAs": [
+    "https://www.instagram.com/kiboko_tours/",
+    "https://www.tripadvisor.com/Attraction_Review-g294207-d17206466-Reviews-KIBOKO_TOURS_AND_TRAVEL_LTD-Nairobi.html",
+    "https://www.linkedin.com/company/kiboko-tours-and-travel/",
+    "https://www.tiktok.com/@kibokotours"
+  ],
+  "areaServed": {
+    "@type": "Country",
+    "name": "Kenya"
+  },
+  "serviceProvided": [
+    {
+      "@type": "TouristInformationCenter",
+      "name": "Safari Tours"
+    },
+    {
+      "@type": "TravelAgency",
+      "name": "Travel Booking"
+    },
+    {
+      "@type": "LodgingBusiness",
+      "name": "Hotel Reservations"
+    },
+    {
+      "@type": "Beach",
+      "name": "Beach Tours"
+    },
+    {
+      "@type": "TravelAgency",
+      "name": "Gorilla Trekking"
+    }
+  ]
+}
+</script>
 
 
 
@@ -59,7 +123,7 @@ $cntryres = $conn->query("SELECT country.country_id, country.country_name, count
             <div class="d-block d-md-none" id="google_translate_element2"></div>
             <span>
                 <span class="text-warning m-0" style="color: #ff8c00; margin-right: 5px;">
-                    <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i><span class="d-none d-md-inline"> info@kibokotoursandtravel.com</span></a>
+                    <a href="mailto:info@kibokotoursandtravel.com" class="link-light text-decoration-underline" style="color: #ff8c00;"><i class="fa fa-envelope"></i><span class="d-none d-md-inline"> &#105;&#110;&#102;&#111;&#064;&#107;&#105;&#098;&#111;&#107;&#111;&#116;&#111;&#117;&#114;&#115;&#097;&#110;&#100;&#116;&#114;&#097;&#118;&#101;&#108;&#046;&#099;&#111;&#109;</span></a>
                 </span>
                 <span class="ms-3">
                     <a href="https://api.whatsapp.com/send?phone=254732962224" target="_blank" class="link-success text-decoration-underline"><i class="bi bi-whatsapp"></i><span class="d-none d-md-inline"> Whatsapp: +254 732 962224</span></a>
@@ -77,8 +141,8 @@ $cntryres = $conn->query("SELECT country.country_id, country.country_name, count
             <div class="container-fluid px-md-5">
                 <!-- Logo START -->
                 <a class="navbar-brand pt-2" href="index.php">
-                    <img class="navbar-brand-item d-none d-md-block" src="assets/images/kiboko-logo.png" alt="logo" style="width:100px; height:auto;">
-                    <img class="navbar-brand-item d-block d-md-none" src="assets/images/kiboko-logo.png" alt="logo" style="width:80px; height:auto;">
+                    <img class="navbar-brand-item d-none d-md-block" src="assets/images/kiboko-logo.png" alt="logo" style="width:100px; height:auto;" loading="lazy">
+                    <img class="navbar-brand-item d-block d-md-none" src="assets/images/kiboko-logo.png" alt="logo" style="width:80px; height:auto;" loading="lazy">
                 </a>
                 <!-- Logo END -->
 
@@ -480,7 +544,7 @@ Country Destinations START -->
                             <!-- Country card START -->
                             <div>
                                 <div class="card">
-                                    <img src="./uploads/<?php echo htmlspecialchars($row['country_image']); ?>" class="card-img" alt="<?php echo htmlspecialchars($row['country_name']); ?>">
+                                    <img src="./uploads/<?php echo htmlspecialchars($row['country_image']); ?>" class="card-img" alt="<?php echo htmlspecialchars($row['country_name']); ?>" loading="lazy">
                                     <!-- Card body -->
                                     <div class="position-absolute top-100 start-50 translate-middle w-100">
                                         <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
@@ -524,7 +588,7 @@ Offers START -->
                     <?php while ($actrow = $actres->fetch_assoc()) { ?>
                         <div class="col-6 col-md-4 col-xl-2">
                             <div class="card bg-transparent h-100">
-                                <img src="uploads/<?php echo $actrow['experience_image']; ?>" class="card-img" alt="">
+                                <img src="uploads/<?php echo $actrow['experience_image']; ?>" class="card-img" alt="<?php echo $actrow['experience_name']; ?>" loading="lazy">
                                 <div class="card-body text-center p-2">
                                     <h6 class="mb-0"><a href="experience-details.php?id=<?php echo $actrow['experience_id']; ?>&<?php echo $actrow['experience_slag']; ?>" class="stretched-link"><?php echo $actrow['experience_name']; ?></a></h6>
                                     <p><?php echo substr($actrow['description'], 0, 35); ?>...</p>
@@ -564,7 +628,7 @@ Featured Packages START -->
                                 <!-- Image and overlay -->
                                 <div class="card-img-scale-wrapper rounded-3">
                                     <!-- Image -->
-                                    <img src="uploads/<?php echo $row['package_image']; ?>" class="card-img mt-1" alt="kiboko image">
+                                    <img src="uploads/<?php echo $row['package_image']; ?>" loading="lazy" class="card-img mt-1" alt="<?php echo $row['title'];?>">
                                     <!-- Badge -->
                                     <div class="position-absolute bottom-0 start-0 p-3">
                                         <div class="badge text-bg-dark fs-6 rounded-pill stretched-link"><i
@@ -624,23 +688,23 @@ Accreitations START -->
                 <div class="row g-4 g-lg-7 justify-content-center align-items-center">
                     <!-- Image -->
                     <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/ECO2.jpg" class="grayscale" alt="">
+                        <img src="assets/images/client/ECO2.jpg" class="grayscale" loading="lazy" alt="eco tourism membership">
                     </div>
                     <!-- Image -->
                     <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/KAT.jpg" class="grayscale" alt="">
+                        <img src="assets/images/client/KAT.jpg" class="grayscale" loading="lazy" alt="KATO Membership">
                     </div>
                     <!-- Image -->
                     <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/MK.jpeg" class="grayscale" alt="">
+                        <img src="assets/images/client/MK.jpeg" class="grayscale" loading="lazy" alt="Magical kenya">
                     </div>
                     <!-- Image -->
                     <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/TRA.png" class="grayscale" alt="">
+                        <img src="assets/images/client/TRA.png" class="grayscale" loading="lazy" alt="Tourism Regulatory Authority logo">
                     </div>
                     <!-- Image -->
                     <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/tosk-cert.jpg" class="grayscale" alt="">
+                        <img src="assets/images/client/tosk-cert.jpg" loading="lazy" class="grayscale" alt="TOSK Certificate">
                     </div>
                 </div>
 
@@ -657,7 +721,7 @@ Accreitations START -->
 
                                 <div id="TA_rated511" class="TA_rated">
                                     <ul id="XilmmB" class="TA_links z8ISMh6">
-                                        <li id="4HFiYkWs7c7" class="ZFKcSEurPD4"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294207-d17206466-Reviews-KIBOKO_TOURS_AND_TRAVEL_LTD-Nairobi.html" rel="noopener"><img src="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif" alt="TripAdvisor" /></a></li>
+                                        <li id="4HFiYkWs7c7" class="ZFKcSEurPD4"><a target="_blank" href="https://www.tripadvisor.com/Attraction_Review-g294207-d17206466-Reviews-KIBOKO_TOURS_AND_TRAVEL_LTD-Nairobi.html" rel="noopener"><img src="https://www.tripadvisor.com/img/cdsi/img2/badges/ollie-11424-2.gif" loading="lazy" alt="Our reviews on TripAdvisor" /></a></li>
                                     </ul>
                                 </div>
 
@@ -676,7 +740,7 @@ Main Banner START -->
                 <div class="row g-4 align-items-center">
                     <div class="col-lg-7">
                         <!-- Title -->
-                        <h1 class="mb-4 display-5">Experience a Wildlife Tour of a <span class="text-bg-warning">Lifetime!</span></h1>
+                        <h2 class="h1 mb-4 display-5">Experience a Wildlife Tour of a <span class="text-bg-warning">Lifetime!</span></h2>
                         <!-- Info -->
                         <p class="mb-4">Life is all about adventure and enjoying what nature has to offer!</p>
                         <!-- Button -->
@@ -684,7 +748,7 @@ Main Banner START -->
                     </div>
                     <!-- Image -->
                     <div class="col-lg-5 text-center">
-                        <img src="assets/images/element/wild.svg" alt="">
+                        <img src="assets/images/element/wild.svg" loading="lazy" alt="wild nature animals">
                     </div>
                 </div>
             </div>
@@ -797,7 +861,7 @@ Experience START -->
                             <!-- Card item START -->
                             <div>
                                 <div class="card card-metro overflow-hidden">
-                                    <img src="uploads/<?php echo $row['destination_image']; ?>" alt="">
+                                    <img src="uploads/<?php echo $row['destination_image']; ?>"  loading="lazy" alt="<?php echo $row['destination_name']; ?>">
                                     <!-- Image overlay -->
                                     <div class="card-img-overlay d-flex">
                                         <!-- Info -->
@@ -850,7 +914,7 @@ Blog grid START -->
                             <div class="card bg-transparent">
                                 <!-- Image -->
                                 <div class="position-relative">
-                                    <img src="uploads/<?php echo $blogrow['blog_image']; ?>" class="card-img" alt="<?php echo $blogrow['blog_title']; ?>">
+                                    <img src="uploads/<?php echo $blogrow['blog_image']; ?>" class="card-img" alt="<?php echo $blogrow['blog_title']; ?>" loading="lazy">
                                     <!-- Badge -->
                                     <div class="card-img-overlay p-3">
                                         <a href="blog-detail.php?id=<?php echo $blogrow['blog_id']; ?>&<?php echo $blogrow['blog_slag']; ?>" class="badge text-bg-<?php echo $blogrow['blog_category_color']; ?> mb-2"><?php echo $blogrow['blog_category']; ?></a>
@@ -899,7 +963,7 @@ Gallery START -->
                             <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/birds.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/Small_400x400/birds.png" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/birds.png" class="rounded-3" alt="birds" loading="lazy">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -914,7 +978,7 @@ Gallery START -->
                             <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/cheetahs.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/Small_400x400/cheetahs.jpg" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/cheetahs.jpg" class="rounded-3" alt="cheetahs" loading="lazy">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -929,7 +993,7 @@ Gallery START -->
                             <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/gazelles.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/Small_400x400/gazelles.jpg" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/gazelles.jpg" class="rounded-3" alt="gazelles" loading="lazy">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -944,7 +1008,7 @@ Gallery START -->
                             <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/cheetahs-2.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/Small_400x400/cheetahs-2.png" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/cheetahs-2.png" class="rounded-3" alt="cheetahs" loading="lazy">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -959,7 +1023,7 @@ Gallery START -->
                             <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/zebras.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/Small_400x400/zebras.jpg" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/zebras.jpg" class="rounded-3" loading="lazy" alt="zebras">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -974,7 +1038,7 @@ Gallery START -->
                             <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/lion.png">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/Small_400x400/lion.png" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/lion.png" class="rounded-3" loading="lazy" alt="lion">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -989,7 +1053,7 @@ Gallery START -->
                             <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/rhinos.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/Small_400x400/rhinos.jpg" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/rhinos.jpg" class="rounded-3" loading="lazy" alt="rhinos">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -1004,7 +1068,7 @@ Gallery START -->
                             <a data-glightbox="" data-gallery="gallery" href="assets/images/Small_400x400/wildebeasts.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="assets/images/Small_400x400/wildebeasts.jpg" class="rounded-3" alt="">
+                                    <img src="assets/images/Small_400x400/wildebeasts.jpg" class="rounded-3" loading="lazy" alt="wildebeasts running">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
