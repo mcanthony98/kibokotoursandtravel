@@ -7,7 +7,7 @@ $packres = $conn->query("SELECT * FROM package WHERE category_id = 3  AND packag
 
 $destsres = $conn->query("SELECT * FROM destination ORDER BY CASE WHEN priority = 0 THEN 1 ELSE 0 END, priority, destination_views DESC LIMIT 8");
 
-$blogres = $conn->query("SELECT * FROM blog WHERE blog_status='1' ORDER BY blog_id DESC");
+$blogres = $conn->query("SELECT * FROM blog WHERE blog_status='1' ORDER BY blog_id DESC LIMIT 3");
 
 $cntryres = $conn->query("SELECT country.country_id, country.country_name, country.country_flag, country.country_image, country.country_short_description, COUNT(destination.destination_id) as destination_count 
                 FROM country 
