@@ -252,3 +252,6 @@
             });
         });
     </script>
+    <?php 
+    $conn->close();
+    ?>
