@@ -480,7 +480,7 @@ It's Time to Discover END -->
         <script type="text/javascript">
             var onloadCallback = function() {
                 grecaptcha.render('google-recaptcha-checkbox', {
-                    'sitekey' : '6Ldm68IpAAAAAOWn8REuugOiRF3Tv6ydezAD2Ui9'
+                    'sitekey' : '6LfZhx0qAAAAAHRyj59xY6EgXKM1SoNxgcVl-yVI'
                 });
             };
         </script>

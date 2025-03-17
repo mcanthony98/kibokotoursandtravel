@@ -16,12 +16,13 @@ if(isset($_POST['sendsms'])){
 	// 	aka stored as environment variables
 	#$captchaPublic = constant('CAPTCHA_PUBLIC');
 	#$captchaSecret = constant('CAPTCHA_SECRET');
-	$captchaPublic = "6Ldm68IpAAAAAOWn8REuugOiRF3Tv6ydezAD2Ui9";
-	$captchaSecret = "6Ldm68IpAAAAADmkyMcZ8mudq9LKjxhPTtBmLW_s";
+	$captchaPublic = "6LfZhx0qAAAAAHRyj59xY6EgXKM1SoNxgcVl-yVI";
+	$captchaSecret = "6LfZhx0qAAAAAKozl0q57nD9SlTLzguNoacJ3mZ2";
 
 	$res = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$captchaSecret ."&response=".$captcha));
 
 	if($res->success === true){
+    
         $fname = mysqli_real_escape_string($conn, $_POST["fname"]);
         $lname = mysqli_real_escape_string($conn, $_POST["lname"]);
         $email = mysqli_real_escape_string($conn, $_POST["email"]);
