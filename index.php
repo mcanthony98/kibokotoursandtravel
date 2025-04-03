@@ -688,6 +688,10 @@ Accreitations START -->
                 <div class="row g-4 g-lg-7 justify-content-center align-items-center">
                     <!-- Image -->
                     <div class="col-5 col-sm-3 col-xl-2">
+                        <img src="assets/images/client/ATTA.jpeg" class="grayscale" loading="lazy" alt="African Travel and Tourism membership">
+                    </div>
+                    <!-- Image -->
+                    <div class="col-5 col-sm-3 col-xl-2">
                         <img src="assets/images/client/ECO2.jpg" class="grayscale" loading="lazy" alt="eco tourism membership">
                     </div>
                     <!-- Image -->
