@@ -688,7 +688,7 @@ Accreitations START -->
                 <div class="row g-4 g-lg-7 justify-content-center align-items-center">
                     <!-- Image -->
                     <div class="col-5 col-sm-3 col-xl-2">
-                        <img src="assets/images/client/ATTA.jpeg" class="grayscale" loading="lazy" alt="African Travel and Tourism membership">
+                        <a href="https://atta.travel/organisation/kiboko-tours-and-travel-ltd.html"><img src="assets/images/client/ATTA.jpeg" class="grayscale" loading="lazy" alt="African Travel and Tourism membership"></a>
                     </div>
                     <!-- Image -->
                     <div class="col-5 col-sm-3 col-xl-2">
